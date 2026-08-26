@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CORE Roadmap</title>
+  <script src="data.js"></script>
+  <style>
+    :root {
+      --bg: #181818;
+      --card: #222222;
+      --fill: #2a2a2a;
+      --text: #ececec;
+      --muted: #9a9a9a;
+      --faint: #7a7a7a;
+      --accent: #6cb2ff;
+      --stroke: #3a3a3a;
+      --pill: #333333;
+      --pill-on: #3d5a80;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", "Avenir Next", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1480px; margin: 0 auto; padding: 28px 24px 48px; }
+    h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+    .sub { margin: 4px 0 0; color: var(--accent); font-weight: 500; font-size: 14px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .card-h {
+      padding: 10px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--stroke);
+    }
+    .card-b { padding: 16px; }
+    .filter { margin-bottom: 16px; }
+    .filter:last-child { margin-bottom: 0; }
+    .filter-h {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .pills { display: flex; flex-wrap: wrap; gap: 6px; }
+    .pill {
+      border: 0;
+      background: var(--pill);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .pill.on { background: var(--pill-on); }
+    .pill.sm { padding: 3px 8px; font-size: 11px; }
+    .toggles { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+    .tog { display: flex; gap: 8px; align-items: center; font-size: 13px; }
+    .switch {
+      width: 36px;
+      height: 20px;
+      border-radius: 999px;
+      background: #444;
+      position: relative;
+      cursor: pointer;
+      border: 0;
+      padding: 0;
+    }
+    .switch.on { background: #3b7ddd; }
+    .switch i {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #fff;
+      transition: left 0.12s;
+    }
+    .switch.on i { left: 18px; }
+    .grid {
+      display: grid;
+      gap: 16px;
+      align-items: start;
+    }
+    .col {
+      background: var(--fill);
+      border-radius: 12px;
+      overflow: hidden;
+      min-width: 0;
+    }
+    .bar { height: 4px; }
+    .inner { padding: 16px 16px 20px; }
+    .q {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+    .months {
+      margin: 2px 0 14px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+    .group { margin-bottom: 12px; }
+    .group-h { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+    .epic { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 10px; }
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+    .epic-body { min-width: 0; flex: 1; }
+    .title { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+    .field {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      margin-top: 4px;
+    }
+    .lbl { color: var(--faint); font-size: 12px; }
+    .val { font-size: 12px; }
+    .why, .tickets { margin-top: 4px; font-size: 12px; color: var(--muted); }
+    .tickets { display: flex; flex-direction: column; gap: 2px; padding-left: 4px; }
+    .foot { color: var(--faint); font-size: 12px; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>CORE Roadmap</h1>
+    <p class="sub">Quarterly Delivery</p>
+    <div class="card">
+      <div class="card-h">View By Options</div>
+      <div class="card-b" id="filters"></div>
+    </div>
+    <div class="grid" id="board"></div>
+    <p class="foot" id="foot"></p>
+  </div>
+  <script>
+    const JIRA = "https://payitdev.atlassian.net/browse/";
+    const QUARTERS = ["2026 Q3","2026 Q4","2027 Q1","2027 Q2","2027 Q3","2027 Q4","2028 Q1","2028 Q2","2028 Q3"];
+    const TEAMS = ["Events","Licensing","Vehicle","Financials","Mobile","Platform"];
+    const TEAM_TO_PROJECT = { Events:"RESRV", Licensing:"LICS", Vehicle:"CVEH", Financials:"FNCL", Mobile:"CALM", Platform:"SYST" };
+    const PROJECT_LABEL = { RESRV:"Events", LICS:"Licensing", CVEH:"Vehicle", FNCL:"Financials", CALM:"Mobile", SYST:"Platform" };
+    const PROJECT_ORDER = ["RESRV","LICS","CVEH","FNCL","CALM","SYST"];
+    const CLIENTS = ["Ohio","Missouri","Minnesota","Mississippi","Louisiana","Oregon","Arkansas","Michigan","Cherokee","All","PayIt"];
+    const CLIENT_ABBR = { Ohio:"OH", Missouri:"MO", Minnesota:"MN", Mississippi:"MS", Louisiana:"LA", Oregon:"OR", Arkansas:"AR", Michigan:"MI", Cherokee:"Cherokee", All:"All", PayIt:"PayIt" };
+    const META = {
+      "2026 Q3": { heading:"Q3 2026", months:"JUL – SEP", color:"#d46a9a" },
+      "2026 Q4": { heading:"Q4 2026", months:"OCT – DEC", color:"#3db89a" },
+      "2027 Q1": { heading:"Q1 2027", months:"JAN – MAR", color:"#2f6fbf" },
+      "2027 Q2": { heading:"Q2 2027", months:"APR – JUN", color:"#e3b23c" },
+      "2027 Q3": { heading:"Q3 2027", months:"JUL – SEP", color:"#d46a9a" },
+      "2027 Q4": { heading:"Q4 2027", months:"OCT – DEC", color:"#3db89a" },
+      "2028 Q1": { heading:"Q1 2028", months:"JAN – MAR", color:"#2f6fbf" },
+      "2028 Q2": { heading:"Q2 2028", months:"APR – JUN", color:"#e3b23c" },
+      "2028 Q3": { heading:"Q3 2028", months:"JUL – SEP", color:"#d46a9a" },
+    };
+
+    const data = window.ROADMAP_DATA || { epics: [], updated: "" };
+    const LS = "core-roadmap-view";
+    function loadState() {
+      try { return JSON.parse(localStorage.getItem(LS) || "null"); } catch (e) { return null; }
+    }
+    const saved = loadState() || {};
+    const state = {
+      teams: saved.teams || TEAMS.slice(),
+      quarters: saved.quarters || QUARTERS.slice(),
+      clients: saved.clients || CLIENTS.slice(),
+      showShirt: saved.showShirt !== false,
+      showClients: saved.showClients !== false,
+      showTickets: saved.showTickets !== false,
+      showWhy: saved.showWhy !== false,
+      openWhy: {},
+      openTickets: {},
+    };
+    function save() {
+      localStorage.setItem(LS, JSON.stringify({
+        teams: state.teams, quarters: state.quarters, clients: state.clients,
+        showShirt: state.showShirt, showClients: state.showClients,
+        showTickets: state.showTickets, showWhy: state.showWhy,
+      }));
+    }
+    function toggleValue(list, value) {
+      return list.includes(value) ? list.filter((x) => x !== value) : list.concat(value);
+    }
+    function setList(key, next) { state[key] = next; save(); render(); }
+    function pillClick(key, options, opt) {
+      const selected = state[key];
+      const allOn = selected.length === options.length;
+      setList(key, allOn ? [opt] : toggleValue(selected, opt));
+    }
+    function matchesClient(epic) {
+      if (!state.clients.length) return true;
+      return epic.clients.some((c) => state.clients.includes(c));
+    }
+    function matchesTeam(epic) {
+      if (!state.teams.length) return true;
+      return state.teams.some((t) => TEAM_TO_PROJECT[t] === epic.project);
+    }
+    function el(tag, attrs, kids) {
+      const n = document.createElement(tag);
+      if (attrs) Object.entries(attrs).forEach(([k, v]) => {
+        if (k === "class") n.className = v;
+        else if (k === "style") n.setAttribute("style", v);
+        else if (k.slice(0, 2) === "on") n.addEventListener(k.slice(2).toLowerCase(), v);
+        else if (v !== null && v !== undefined) n.setAttribute(k, v);
+      });
+      (kids || []).forEach((c) => n.appendChild(typeof c === "string" ? document.createTextNode(c) : c));
+      return n;
+    }
+    function filterRow(label, key, options, display) {
+      const selected = state[key];
+      const allOn = selected.length === options.length;
+      const head = el("div", { class: "filter-h" }, [label]);
+      if (!allOn) {
+        head.appendChild(el("button", { class: "pill sm", onClick: () => setList(key, options.slice()) }, ["Select all"]));
+      }
+      const pills = el("div", { class: "pills" });
+      options.forEach((opt) => {
+        pills.appendChild(el("button", {
+          class: "pill" + (selected.includes(opt) ? " on" : ""),
+          onClick: () => pillClick(key, options, opt),
+        }, [display ? display(opt) : opt]));
+      });
+      return el("div", { class: "filter" }, [head, pills]);
+    }
+    function switchBtn(on, fn) {
+      return el("button", { class: "switch" + (on ? " on" : ""), onClick: fn }, [el("i")]);
+    }
+    function fieldLine(label, value, expandable, open, onToggle) {
+      const row = el("div", { class: "field" }, [
+        el("span", { class: "lbl" }, [label + ":"]),
+      ]);
+      if (expandable) {
+        row.appendChild(el("button", {
+          class: "pill sm" + (open ? " on" : ""),
+          onClick: onToggle,
+        }, [open ? "Hide" : "Click to expand"]));
+      } else {
+        row.appendChild(el("span", { class: "val" }, [value || ""]));
+      }
+      return row;
+    }
+    function renderFilters() {
+      const box = document.getElementById("filters");
+      box.innerHTML = "";
+      box.appendChild(filterRow("Teams", "teams", TEAMS));
+      box.appendChild(filterRow("Quarters", "quarters", QUARTERS));
+      box.appendChild(filterRow("Clients", "clients", CLIENTS, (c) => c === "All" ? "All clients" : c));
+      const toggles = el("div", { class: "toggles" });
+      [
+        ["T-Shirt", "showShirt"],
+        ["Clients", "showClients"],
+        ["Client Tickets", "showTickets"],
+        ["Why It Matters", "showWhy"],
+      ].forEach(([label, key]) => {
+        toggles.appendChild(el("div", { class: "tog" }, [
+          el("span", null, [label]),
+          switchBtn(state[key], () => { state[key] = !state[key]; save(); render(); }),
+        ]));
+      });
+      box.appendChild(el("div", { class: "filter" }, [
+        el("div", { class: "filter-h" }, ["On each item"]),
+        toggles,
+      ]));
+    }
+    function groupsInQuarter(items) {
+      const projects = new Set(items.map((e) => e.project));
+      if (projects.size <= 1) return [{ label: null, items }];
+      return PROJECT_ORDER.flatMap((p) => {
+        const group = items.filter((e) => e.project === p);
+        return group.length ? [{ label: PROJECT_LABEL[p] || p, items: group }] : [];
+      });
+    }
+    function epicView(epic, color) {
+      const wrap = el("div", { class: "epic" });
+      wrap.appendChild(el("div", { class: "dot", style: "background:" + color }));
+      const body = el("div", { class: "epic-body" });
+      const title = el("div", { class: "title" });
+      title.appendChild(el("a", { href: JIRA + epic.key, target: "_blank", rel: "noreferrer" }, [epic.title]));
+      body.appendChild(title);
+      if (state.showShirt) body.appendChild(fieldLine("T-Shirt", epic.shirt));
+      if (state.showClients) {
+        body.appendChild(fieldLine("Clients", (epic.clients || []).map((c) => CLIENT_ABBR[c] || c).join(", ")));
+      }
+      if (state.showTickets) {
+        const has = (epic.tickets || []).length > 0;
+        if (has) {
+          body.appendChild(fieldLine("Client Tickets", "", true, !!state.openTickets[epic.key], () => {
+            state.openTickets[epic.key] = !state.openTickets[epic.key];
+            render();
+          }));
+          if (state.openTickets[epic.key]) {
+            const list = el("div", { class: "tickets" });
+            epic.tickets.forEach((t) => {
+              list.appendChild(el("a", { href: JIRA + t.key, target: "_blank", rel: "noreferrer" }, [t.key + " — " + t.name]));
+            });
+            if (epic.ticketCount > epic.tickets.length) {
+              list.appendChild(el("span", { class: "lbl" }, ["+" + (epic.ticketCount - epic.tickets.length) + " more"]));
+            }
+            body.appendChild(list);
+          }
+        } else {
+          body.appendChild(fieldLine("Client Tickets", "None linked"));
+        }
+      }
+      if (state.showWhy) {
+        body.appendChild(fieldLine("Why It Matters", "", true, !!state.openWhy[epic.key], () => {
+          state.openWhy[epic.key] = !state.openWhy[epic.key];
+          render();
+        }));
+        if (state.openWhy[epic.key]) body.appendChild(el("div", { class: "why" }, [epic.why || ""]));
+      }
+      wrap.appendChild(body);
+      return wrap;
+    }
+    function renderBoard() {
+      const visible = (data.epics || []).filter((e) => {
+        if (state.quarters.length && !state.quarters.includes(e.q)) return false;
+        if (!matchesClient(e)) return false;
+        if (!matchesTeam(e)) return false;
+        return true;
+      });
+      const byQ = QUARTERS.filter((q) => !state.quarters.length || state.quarters.includes(q))
+        .map((q) => ({ q, epics: visible.filter((e) => e.q === q) }))
+        .filter((x) => x.epics.length > 0);
+      const board = document.getElementById("board");
+      board.innerHTML = "";
+      board.style.gridTemplateColumns = "repeat(" + Math.min(4, Math.max(1, byQ.length)) + ", minmax(0, 1fr))";
+      byQ.forEach((block) => {
+        const meta = META[block.q];
+        const col = el("div", { class: "col" });
+        col.appendChild(el("div", { class: "bar", style: "background:" + meta.color }));
+        const inner = el("div", { class: "inner" });
+        inner.appendChild(el("p", { class: "q" }, [meta.heading]));
+        inner.appendChild(el("div", { class: "months" }, [meta.months + " · " + block.epics.length]));
+        groupsInQuarter(block.epics).forEach((group) => {
+          const g = el("div", { class: "group" });
+          if (group.label) g.appendChild(el("div", { class: "group-h" }, [group.label]));
+          group.items.forEach((epic) => g.appendChild(epicView(epic, meta.color)));
+          inner.appendChild(g);
+        });
+        col.appendChild(inner);
+        board.appendChild(col);
+      });
+      document.getElementById("foot").textContent =
+        visible.length + " epics in view of " + (data.epics || []).length + " in scope · Unplanned and Support omitted · Updated " + (data.updated || "") + " · Why-it-matters copy is a first draft";
+    }
+    function render() { renderFilters(); renderBoard(); }
+    if (!data.epics || !data.epics.length) {
+      document.getElementById("foot").textContent = "Roadmap data did not load. Keep index.html next to data.js.";
+    } else {
+      render();
+    }
+  </script>
+</body>
+</html>
