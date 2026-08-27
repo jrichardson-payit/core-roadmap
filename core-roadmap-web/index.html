@@ -140,6 +140,17 @@
     .val { font-size: 12px; }
     .why, .tickets { margin-top: 4px; font-size: 12px; color: var(--muted); }
     .tickets { display: flex; flex-direction: column; gap: 2px; padding-left: 4px; }
+    .search {
+      width: 100%;
+      max-width: 480px;
+      background: var(--pill);
+      border: 1px solid var(--stroke);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 13px;
+    }
+    .search:focus { outline: 1px solid var(--accent); }
     .foot { color: var(--faint); font-size: 12px; margin-top: 16px; }
   </style>
 </head>
@@ -149,7 +160,16 @@
     <p class="sub">Quarterly Delivery</p>
     <div class="card">
       <div class="card-h">View By Options</div>
-      <div class="card-b" id="filters"></div>
+      <div class="card-b">
+        <div class="filter" id="search-filter">
+          <div class="filter-h">
+            Search
+            <button type="button" class="pill sm" id="search-clear" hidden>Clear</button>
+          </div>
+          <input id="search" class="search" type="search" placeholder="Epic #, title, ticket, client…" />
+        </div>
+        <div id="filters"></div>
+      </div>
     </div>
     <div class="grid" id="board"></div>
     <p class="foot" id="foot"></p>
@@ -190,6 +210,7 @@
       showClients: saved.showClients !== false,
       showTickets: saved.showTickets !== false,
       showWhy: saved.showWhy !== false,
+      search: typeof saved.search === "string" ? saved.search : "",
       openWhy: {},
       openTickets: {},
     };
@@ -197,7 +218,7 @@
       localStorage.setItem(LS, JSON.stringify({
         teams: state.teams, quarters: state.quarters, clients: state.clients,
         showKey: state.showKey, showShirt: state.showShirt, showClients: state.showClients,
-        showTickets: state.showTickets, showWhy: state.showWhy,
+        showTickets: state.showTickets, showWhy: state.showWhy, search: state.search,
       }));
     }
     function toggleValue(list, value) {
@@ -217,11 +238,29 @@
       if (!state.teams.length) return true;
       return state.teams.some((t) => TEAM_TO_PROJECT[t] === epic.project);
     }
+    function searchHaystack(epic) {
+      const clients = epic.clients || [];
+      const tickets = epic.tickets || [];
+      return [
+        epic.key, epic.title, epic.why, epic.shirt, epic.q, epic.project,
+        PROJECT_LABEL[epic.project] || "",
+        clients.join(" "),
+        clients.map((c) => CLIENT_ABBR[c] || "").join(" "),
+        tickets.map((t) => t.key + " " + t.name).join(" "),
+      ].join(" ").toLowerCase();
+    }
+    function matchesSearch(epic) {
+      const tokens = (state.search || "").toLowerCase().split(/\s+/).filter(Boolean);
+      if (!tokens.length) return true;
+      const hay = searchHaystack(epic);
+      return tokens.every((t) => hay.includes(t));
+    }
     function visibleEpics() {
       return (data.epics || []).filter((e) => {
         if (state.quarters.length && !state.quarters.includes(e.q)) return false;
         if (!matchesClient(e)) return false;
         if (!matchesTeam(e)) return false;
+        if (!matchesSearch(e)) return false;
         return true;
       });
     }
@@ -394,10 +433,34 @@
         col.appendChild(inner);
         board.appendChild(col);
       });
+      if (!byQ.length && (state.search || "").trim()) {
+        board.style.gridTemplateColumns = "minmax(0, 1fr)";
+        board.appendChild(el("p", { class: "foot", style: "margin:0" }, ["No epics match that search."]));
+      }
       document.getElementById("foot").textContent =
         visible.length + " epics in view of " + (data.epics || []).length + " in scope · Unplanned and Support omitted · Updated " + (data.updated || "") + " · Why-it-matters copy is a first draft";
     }
     function render() { renderFilters(); renderBoard(); }
+    const searchEl = document.getElementById("search");
+    const searchClear = document.getElementById("search-clear");
+    function syncSearchClear() {
+      searchClear.hidden = !(state.search || "").trim();
+    }
+    searchEl.value = state.search || "";
+    syncSearchClear();
+    searchEl.addEventListener("input", () => {
+      state.search = searchEl.value;
+      save();
+      syncSearchClear();
+      renderBoard();
+    });
+    searchClear.addEventListener("click", () => {
+      state.search = "";
+      searchEl.value = "";
+      save();
+      syncSearchClear();
+      renderBoard();
+    });
     if (!data.epics || !data.epics.length) {
       document.getElementById("foot").textContent = "Roadmap data did not load. Keep index.html next to data.js.";
     } else {
