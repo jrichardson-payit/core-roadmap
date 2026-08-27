@@ -269,7 +269,7 @@
       box.appendChild(filterRow("Clients", "clients", CLIENTS, (c) => c === "All" ? "All clients" : c));
       const toggles = el("div", { class: "toggles" });
       [
-        ["Epic number", "showKey"],
+        ["Epic #", "showKey"],
         ["T-Shirt", "showShirt"],
         ["Clients", "showClients"],
         ["Client Tickets", "showTickets"],
@@ -302,7 +302,7 @@
       body.appendChild(title);
       if (state.showKey) {
         const keyRow = el("div", { class: "field" }, [
-          el("span", { class: "lbl" }, ["Epic:"]),
+          el("span", { class: "lbl" }, ["Epic #:"]),
           el("a", { class: "val", href: JIRA + epic.key, target: "_blank", rel: "noreferrer" }, [epic.key]),
         ]);
         body.appendChild(keyRow);
