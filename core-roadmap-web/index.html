@@ -217,6 +217,26 @@
       if (!state.teams.length) return true;
       return state.teams.some((t) => TEAM_TO_PROJECT[t] === epic.project);
     }
+    function visibleEpics() {
+      return (data.epics || []).filter((e) => {
+        if (state.quarters.length && !state.quarters.includes(e.q)) return false;
+        if (!matchesClient(e)) return false;
+        if (!matchesTeam(e)) return false;
+        return true;
+      });
+    }
+    function expandAll() {
+      visibleEpics().forEach((e) => {
+        state.openWhy[e.key] = true;
+        if ((e.tickets || []).length) state.openTickets[e.key] = true;
+      });
+      render();
+    }
+    function closeAll() {
+      state.openWhy = {};
+      state.openTickets = {};
+      render();
+    }
     function el(tag, attrs, kids) {
       const n = document.createElement(tag);
       if (attrs) Object.entries(attrs).forEach(([k, v]) => {
@@ -281,8 +301,16 @@
         ]));
       });
       box.appendChild(el("div", { class: "filter" }, [
-        el("div", { class: "filter-h" }, ["On each item"]),
+        el("div", { class: "filter-h" }, ["On Each Item"]),
         toggles,
+      ]));
+      const expandBtns = el("div", { class: "pills" }, [
+        el("button", { class: "pill sm", onClick: expandAll }, ["Expand All"]),
+        el("button", { class: "pill sm", onClick: closeAll }, ["Close All"]),
+      ]);
+      box.appendChild(el("div", { class: "filter" }, [
+        el("div", { class: "filter-h" }, ["Expand"]),
+        expandBtns,
       ]));
     }
     function groupsInQuarter(items) {
@@ -343,12 +371,7 @@
       return wrap;
     }
     function renderBoard() {
-      const visible = (data.epics || []).filter((e) => {
-        if (state.quarters.length && !state.quarters.includes(e.q)) return false;
-        if (!matchesClient(e)) return false;
-        if (!matchesTeam(e)) return false;
-        return true;
-      });
+      const visible = visibleEpics();
       const byQ = QUARTERS.filter((q) => !state.quarters.length || state.quarters.includes(q))
         .map((q) => ({ q, epics: visible.filter((e) => e.q === q) }))
         .filter((x) => x.epics.length > 0);
