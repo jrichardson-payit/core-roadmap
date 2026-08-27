@@ -185,6 +185,7 @@
       teams: saved.teams || TEAMS.slice(),
       quarters: saved.quarters || QUARTERS.slice(),
       clients: saved.clients || CLIENTS.slice(),
+      showKey: saved.showKey !== false,
       showShirt: saved.showShirt !== false,
       showClients: saved.showClients !== false,
       showTickets: saved.showTickets !== false,
@@ -195,7 +196,7 @@
     function save() {
       localStorage.setItem(LS, JSON.stringify({
         teams: state.teams, quarters: state.quarters, clients: state.clients,
-        showShirt: state.showShirt, showClients: state.showClients,
+        showKey: state.showKey, showShirt: state.showShirt, showClients: state.showClients,
         showTickets: state.showTickets, showWhy: state.showWhy,
       }));
     }
@@ -268,6 +269,7 @@
       box.appendChild(filterRow("Clients", "clients", CLIENTS, (c) => c === "All" ? "All clients" : c));
       const toggles = el("div", { class: "toggles" });
       [
+        ["Epic number", "showKey"],
         ["T-Shirt", "showShirt"],
         ["Clients", "showClients"],
         ["Client Tickets", "showTickets"],
@@ -298,6 +300,13 @@
       const title = el("div", { class: "title" });
       title.appendChild(el("a", { href: JIRA + epic.key, target: "_blank", rel: "noreferrer" }, [epic.title]));
       body.appendChild(title);
+      if (state.showKey) {
+        const keyRow = el("div", { class: "field" }, [
+          el("span", { class: "lbl" }, ["Epic:"]),
+          el("a", { class: "val", href: JIRA + epic.key, target: "_blank", rel: "noreferrer" }, [epic.key]),
+        ]);
+        body.appendChild(keyRow);
+      }
       if (state.showShirt) body.appendChild(fieldLine("T-Shirt", epic.shirt));
       if (state.showClients) {
         body.appendChild(fieldLine("Clients", (epic.clients || []).map((c) => CLIENT_ABBR[c] || c).join(", ")));
