@@ -196,7 +196,7 @@
     };
 
     const data = window.ROADMAP_DATA || { epics: [], updated: "" };
-    const LS = "core-roadmap-view";
+    const LS = "core-roadmap-view-v2";
     function loadState() {
       try { return JSON.parse(localStorage.getItem(LS) || "null"); } catch (e) { return null; }
     }
@@ -205,12 +205,12 @@
       teams: saved.teams || TEAMS.slice(),
       quarters: saved.quarters || QUARTERS.slice(),
       clients: saved.clients || CLIENTS.slice(),
-      showEpicTitle: saved.showEpicTitle !== false,
-      showKey: saved.showKey !== false,
+      showEpicTitle: saved.showEpicTitle === true,
+      showKey: saved.showKey === true,
       showSprint: saved.showSprint !== false,
-      showShirt: saved.showShirt !== false,
+      showShirt: saved.showShirt === true,
       showClients: saved.showClients !== false,
-      showTickets: saved.showTickets !== false,
+      showTickets: saved.showTickets === true,
       showWhy: saved.showWhy !== false,
       search: typeof saved.search === "string" ? saved.search : "",
       openWhy: {},
@@ -245,7 +245,7 @@
       const clients = epic.clients || [];
       const tickets = epic.tickets || [];
       return [
-        epic.key, epic.title, epic.epicTitle, epic.sprint, epic.why, epic.shirt, epic.q, epic.project,
+        epic.key, epic.title, epic.epicTitle, epic.sprint, formatSprint(epic.sprint), epic.why, epic.shirt, epic.q, epic.project,
         PROJECT_LABEL[epic.project] || "",
         clients.join(" "),
         clients.map((c) => CLIENT_ABBR[c] || "").join(" "),
@@ -328,7 +328,7 @@
       box.innerHTML = "";
       box.appendChild(filterRow("Teams", "teams", TEAMS));
       box.appendChild(filterRow("Quarters", "quarters", QUARTERS));
-      box.appendChild(filterRow("Clients", "clients", CLIENTS, (c) => c === "All" ? "All clients" : c));
+      box.appendChild(filterRow("Clients", "clients", CLIENTS, (c) => c === "All" ? "All Clients" : c));
       const toggles = el("div", { class: "toggles" });
       [
         ["Epic Title", "showEpicTitle"],
@@ -357,11 +357,27 @@
         expandBtns,
       ]));
     }
+    const SPRINT_WHEN = /(20\d{2})[-.\s]?Q(\d)(?:[-.\s]S?(\d+))?/i;
+    const SPRINT_RELEASE = {
+      "2026-3-1": "07/13/2026",
+      "2026-3-2": "08/03/2026",
+      "2026-3-3": "08/17/2026",
+      "2026-3-4": "08/31/2026",
+      "2026-3-5": "09/14/2026",
+      "2026-3-6": "09/28/2026",
+    };
     function sprintSortKey(name) {
       if (!name) return [9999, 9, 999, ""];
-      const match = String(name).match(/(20\d{2})[-.\s]?Q(\d)(?:[-.\s]?S(\d+))?/i);
+      const match = String(name).match(SPRINT_WHEN);
       if (match) return [Number(match[1]), Number(match[2]), Number(match[3] || 0), name];
       return [9998, 9, 0, name];
+    }
+    function formatSprint(name) {
+      const match = name ? String(name).match(SPRINT_WHEN) : null;
+      const n = match ? Number(match[3] || 0) : 0;
+      if (n < 1 || n > 6) return "To Be Scheduled";
+      const release = SPRINT_RELEASE[Number(match[1]) + "-" + Number(match[2]) + "-" + n];
+      return release ? ("Sprint " + n + " (" + release + ")") : ("Sprint " + n);
     }
     function compareBySprint(a, b) {
       const left = sprintSortKey(a.sprint);
@@ -395,7 +411,7 @@
         ]);
         body.appendChild(keyRow);
       }
-      if (state.showSprint) body.appendChild(fieldLine("Sprint", epic.sprint || "None"));
+      if (state.showSprint) body.appendChild(fieldLine("Sprint", formatSprint(epic.sprint)));
       if (state.showShirt) body.appendChild(fieldLine("T-Shirt", epic.shirt));
       if (state.showClients) {
         body.appendChild(fieldLine("Clients", (epic.clients || []).map((c) => CLIENT_ABBR[c] || c).join(", ")));
