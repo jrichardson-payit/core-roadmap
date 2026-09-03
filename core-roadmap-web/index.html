@@ -205,7 +205,9 @@
       teams: saved.teams || TEAMS.slice(),
       quarters: saved.quarters || QUARTERS.slice(),
       clients: saved.clients || CLIENTS.slice(),
+      showEpicTitle: saved.showEpicTitle !== false,
       showKey: saved.showKey !== false,
+      showSprint: saved.showSprint !== false,
       showShirt: saved.showShirt !== false,
       showClients: saved.showClients !== false,
       showTickets: saved.showTickets !== false,
@@ -217,7 +219,8 @@
     function save() {
       localStorage.setItem(LS, JSON.stringify({
         teams: state.teams, quarters: state.quarters, clients: state.clients,
-        showKey: state.showKey, showShirt: state.showShirt, showClients: state.showClients,
+        showEpicTitle: state.showEpicTitle, showKey: state.showKey, showSprint: state.showSprint,
+        showShirt: state.showShirt, showClients: state.showClients,
         showTickets: state.showTickets, showWhy: state.showWhy, search: state.search,
       }));
     }
@@ -242,7 +245,7 @@
       const clients = epic.clients || [];
       const tickets = epic.tickets || [];
       return [
-        epic.key, epic.title, epic.why, epic.shirt, epic.q, epic.project,
+        epic.key, epic.title, epic.epicTitle, epic.sprint, epic.why, epic.shirt, epic.q, epic.project,
         PROJECT_LABEL[epic.project] || "",
         clients.join(" "),
         clients.map((c) => CLIENT_ABBR[c] || "").join(" "),
@@ -328,7 +331,9 @@
       box.appendChild(filterRow("Clients", "clients", CLIENTS, (c) => c === "All" ? "All clients" : c));
       const toggles = el("div", { class: "toggles" });
       [
+        ["Epic Title", "showEpicTitle"],
         ["Epic #", "showKey"],
+        ["Sprint", "showSprint"],
         ["T-Shirt", "showShirt"],
         ["Clients", "showClients"],
         ["Client Tickets", "showTickets"],
@@ -352,12 +357,27 @@
         expandBtns,
       ]));
     }
+    function sprintSortKey(name) {
+      if (!name) return [9999, 9, 999, ""];
+      const match = String(name).match(/(20\d{2})[-.\s]?Q(\d)(?:[-.\s]?S(\d+))?/i);
+      if (match) return [Number(match[1]), Number(match[2]), Number(match[3] || 0), name];
+      return [9998, 9, 0, name];
+    }
+    function compareBySprint(a, b) {
+      const left = sprintSortKey(a.sprint);
+      const right = sprintSortKey(b.sprint);
+      for (let i = 0; i < 3; i += 1) {
+        if (left[i] !== right[i]) return left[i] - right[i];
+      }
+      if (left[3] !== right[3]) return left[3] < right[3] ? -1 : 1;
+      return (a.key || "").localeCompare(b.key || "");
+    }
     function groupsInQuarter(items) {
       const projects = new Set(items.map((e) => e.project));
-      if (projects.size <= 1) return [{ label: null, items }];
+      if (projects.size <= 1) return [{ label: null, items: items.slice().sort(compareBySprint) }];
       return PROJECT_ORDER.flatMap((p) => {
         const group = items.filter((e) => e.project === p);
-        return group.length ? [{ label: PROJECT_LABEL[p] || p, items: group }] : [];
+        return group.length ? [{ label: PROJECT_LABEL[p] || p, items: group.slice().sort(compareBySprint) }] : [];
       });
     }
     function epicView(epic, color) {
@@ -367,6 +387,7 @@
       const title = el("div", { class: "title" });
       title.appendChild(el("a", { href: JIRA + epic.key, target: "_blank", rel: "noreferrer" }, [epic.title]));
       body.appendChild(title);
+      if (state.showEpicTitle) body.appendChild(fieldLine("Epic Title", epic.epicTitle || "—"));
       if (state.showKey) {
         const keyRow = el("div", { class: "field" }, [
           el("span", { class: "lbl" }, ["Epic #:"]),
@@ -374,6 +395,7 @@
         ]);
         body.appendChild(keyRow);
       }
+      if (state.showSprint) body.appendChild(fieldLine("Sprint", epic.sprint || "None"));
       if (state.showShirt) body.appendChild(fieldLine("T-Shirt", epic.shirt));
       if (state.showClients) {
         body.appendChild(fieldLine("Clients", (epic.clients || []).map((c) => CLIENT_ABBR[c] || c).join(", ")));

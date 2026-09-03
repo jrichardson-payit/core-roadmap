@@ -646,5 +646,13 @@
   "LICS-624": {
     "title": "ESA harvest messages and CWD test results to the hunter",
     "why": "Ohio hunters need ESA harvest messages and CWD test results in the channel they already use. If results live in a side mailbox, compliance and trust both drop. This is the close of the harvest loop."
+  },
+  "CALM-3554": {
+    "title": "LED iOS builds and Apple Business Manager distribution to client devices",
+    "why": "Law-enforcement iOS builds still have to reach agency devices through Apple Business Manager. If that pipeline is not owned, officers stay on a stale build and a client cannot roll a fix. This is distribution, not a new LED feature."
+  },
+  "SYST-3212": {
+    "title": "Missouri commercial print templates",
+    "why": "Missouri commercial print still uses the wrong templates, so a business license or receipt can print with the wrong layout. Staff reprint and customers walk with a document that does not match the sale. This is Missouri print, not a new product line."
   }
 }
