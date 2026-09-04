@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CORE Roadmap</title>
+  <title>Product Roadmap</title>
   <script src="data.js"></script>
   <style>
     :root {
@@ -30,8 +30,30 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .wrap { max-width: 1480px; margin: 0 auto; padding: 28px 24px 48px; }
+    .hero { margin: 0 0 4px; }
     h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
-    .sub { margin: 4px 0 0; color: var(--accent); font-weight: 500; font-size: 14px; }
+    h1 span { color: var(--accent); }
+    .hero-rule {
+      width: 72px;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--accent);
+      margin: 10px 0 8px;
+    }
+    .sub { margin: 0; color: var(--muted); font-weight: 500; font-size: 14px; }
+    .intro-h {
+      margin: 0 0 8px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .intro-p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+      max-width: 72ch;
+    }
     .card {
       background: var(--card);
       border: 1px solid var(--stroke);
@@ -156,8 +178,17 @@
 </head>
 <body>
   <div class="wrap">
-    <h1>CORE Roadmap</h1>
-    <p class="sub">Quarterly Delivery</p>
+    <div class="hero">
+      <h1>Product <span>Roadmap</span></h1>
+      <div class="hero-rule"></div>
+      <p class="sub">Quarterly Delivery</p>
+    </div>
+    <div class="card">
+      <div class="card-b">
+        <p class="intro-h">Powering conversation and creating lasting memories for generations</p>
+        <p class="intro-p">Advancing connected licensing, vehicles, financials, reservations, mobile, and platform capabilities into intelligent, adaptive systems that simplify the outdoor experience, help agencies better serve hunters and anglers, and strengthen conservation.</p>
+      </div>
+    </div>
     <div class="card">
       <div class="card-h">View By Options</div>
       <div class="card-b">
