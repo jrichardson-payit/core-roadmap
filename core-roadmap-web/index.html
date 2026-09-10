@@ -430,7 +430,7 @@
         row.appendChild(el("button", {
           class: "pill sm" + (open ? " on" : ""),
           onClick: onToggle,
-        }, [open ? "Hide" : "Click to expand"]));
+        }, [open ? "Hide" : "Expand"]));
       } else {
         row.appendChild(el("span", { class: "val" }, [value || ""]));
       }
@@ -463,7 +463,7 @@
       ]));
       const expandBtns = el("div", { class: "pills" }, [
         el("button", { class: "pill sm", onClick: expandAll }, ["Expand All"]),
-        el("button", { class: "pill sm", onClick: closeAll }, ["Close All"]),
+        el("button", { class: "pill sm", onClick: closeAll }, ["Hide All"]),
       ]);
       box.appendChild(el("div", { class: "filter" }, [
         el("div", { class: "filter-h" }, ["Expand"]),
