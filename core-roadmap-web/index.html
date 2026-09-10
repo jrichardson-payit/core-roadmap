@@ -305,7 +305,7 @@
       showTickets: saved.showTickets === true,
       showWhy: saved.showWhy !== false,
       search: typeof saved.search === "string" ? saved.search : "",
-      openWhy: {},
+      openWhy: Object.fromEntries((data.epics || []).map((e) => [e.key, true])),
       openTickets: {},
     };
     function save() {
@@ -383,7 +383,7 @@
       state.showTickets = false;
       state.showWhy = true;
       state.search = "";
-      state.openWhy = {};
+      state.openWhy = Object.fromEntries((data.epics || []).map((e) => [e.key, true]));
       state.openTickets = {};
       const searchBox = document.getElementById("search");
       if (searchBox) searchBox.value = "";
