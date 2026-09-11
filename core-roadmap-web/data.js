@@ -1,5 +1,5 @@
 window.ROADMAP_DATA = {
-  "updated": "2026-09-03",
+  "updated": "2026-09-11",
   "source": "Jira Roadmap Scope + T-Shirt Size + CORE sprint, merged with overlay.json",
   "epics": [
     {
@@ -112,21 +112,6 @@ window.ROADMAP_DATA = {
       "why": "Each mobile release needs testing, store submission, and fixes so hunters are not stuck on a broken build mid-season. This is release hygiene, not a new screen. All app clients feel it when it slips."
     },
     {
-      "key": "CALM-3502",
-      "q": "2026 Q3",
-      "project": "CALM",
-      "title": "Move mobile builds from Azure DevOps to GitHub and Fastlane",
-      "epicTitle": "Switch from Azure DevOps to GitHub and FastLane",
-      "sprint": "Future Work",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "All"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Mobile builds still depend on a pipeline we are leaving. If we do not move to GitHub and Fastlane, every client release gets slower and riskier. Hunters never see this; product managers will if a season build cannot ship."
-    },
-    {
       "key": "CALM-3516",
       "q": "2026 Q3",
       "project": "CALM",
@@ -183,7 +168,7 @@ window.ROADMAP_DATA = {
       "project": "CVEH",
       "title": "Minnesota vehicles go-live remaining work",
       "epicTitle": "2026 Q3 MN Vehicles Go Live (MN)",
-      "sprint": "Prioritized",
+      "sprint": "2026 Q4 - MN Work",
       "shirt": "L - 3 sprints",
       "clients": [
         "Minnesota"
@@ -256,7 +241,7 @@ window.ROADMAP_DATA = {
       "project": "FNCL",
       "title": "Staff can sweep an agent\u2019s full ACH balance by hand",
       "epicTitle": "Manual ACH Sweep (Agent-Level, Full Balance) (MO)",
-      "sprint": "FNCL 2026-Q3-S5",
+      "sprint": "FNCL 2026-Q3-S6",
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
@@ -298,7 +283,7 @@ window.ROADMAP_DATA = {
       "project": "FNCL",
       "title": "Record full or partial payments that are not ACH",
       "epicTitle": "Non-ACH Manual Payments (Full, Partial) (MO)",
-      "sprint": "Features To Schedule (Roadmap)",
+      "sprint": "Potentially Cancel",
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
@@ -520,34 +505,6 @@ window.ROADMAP_DATA = {
       "why": "Missouri license start times, per-agent caps, and policy messages are still easy to get wrong at the counter. Defaults and limits need to match how they sell. This prevents a clerk from issuing something the rule does not allow."
     },
     {
-      "key": "LICS-3001",
-      "q": "2026 Q3",
-      "project": "LICS",
-      "title": "Separate landowner bonus points by hunt type and county",
-      "epicTitle": "Multi-type county bonus points for landowner permits (MO)",
-      "sprint": "LICS 2026-Q3-S6",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1484",
-          "name": "Land>County Display: Need columns displayed"
-        },
-        {
-          "key": "COMO-1402",
-          "name": "Product 101: 75+ Acre Policy"
-        },
-        {
-          "key": "COMO-1481",
-          "name": "Landowner Design Issues"
-        }
-      ],
-      "ticketCount": 3,
-      "why": "Missouri landowner bonus points are mixed across hunt types and counties, so a point earned in one place spends in another. Split them the way the regulation is written. Landowners will treat this as fairness."
-    },
-    {
       "key": "LICS-3930",
       "q": "2026 Q3",
       "project": "LICS",
@@ -613,33 +570,32 @@ window.ROADMAP_DATA = {
       "why": "Staff should find a survey by confirmation number without opening the whole customer. Today they hunt through the profile and burn the window. Arkansas, Mississippi, and Ohio need this at the counter and in the back office."
     },
     {
-      "key": "RESRV-1466",
+      "key": "LICS-3001",
       "q": "2026 Q3",
-      "project": "RESRV",
-      "title": "Educator API so Kalkomey / IHEA course completions post to CORE",
-      "epicTitle": "Educator API Integration (Kalkomey / IHEA)",
-      "sprint": "Core RESRV 2026-Q3-S1",
-      "shirt": "XS - Less than 1 sprint",
+      "project": "LICS",
+      "title": "Separate landowner bonus points by hunt type and county",
+      "epicTitle": "Multi-type county bonus points for landowner permits (MO)",
+      "sprint": "2026 Q4 - Feature Work",
+      "shirt": "M - 2 sprints",
       "clients": [
-        "Missouri",
-        "Ohio"
+        "Missouri"
       ],
       "tickets": [
         {
-          "key": "COMO-1944",
-          "name": "IHEA API for Online Courses"
+          "key": "COMO-1484",
+          "name": "Land>County Display: Need columns displayed"
         },
         {
-          "key": "COMO-2123",
-          "name": "API with IHEA-USA OutdoorELN"
+          "key": "COMO-1402",
+          "name": "Product 101: 75+ Acre Policy"
         },
         {
-          "key": "CROH-176",
-          "name": "5.1.13 Interface With Online Class Provider"
+          "key": "COMO-1481",
+          "name": "Landowner Design Issues"
         }
       ],
       "ticketCount": 3,
-      "why": "Hunter-ed completions from Kalkomey and IHEA still do not post into CORE on their own. Educators and agencies re-key or leave certifications missing, and then the student cannot buy. Several states share this dependency."
+      "why": "Missouri landowner bonus points are mixed across hunt types and counties, so a point earned in one place spends in another. Split them the way the regulation is written. Landowners will treat this as fairness."
     },
     {
       "key": "RESRV-1543",
@@ -679,7 +635,7 @@ window.ROADMAP_DATA = {
       "project": "RESRV",
       "title": "Customer mobile check-in and check-out at unmanned Class B ranges",
       "epicTitle": "Customer mobile check-in/check-out for unmanned Class B shooting ranges (OH)",
-      "sprint": "Core RESRV 2026-Q3-S1",
+      "sprint": "Core RESRV 2026-Q3-S2",
       "shirt": "S - 1 sprint",
       "clients": [
         "Ohio"
@@ -698,12 +654,56 @@ window.ROADMAP_DATA = {
       "why": "Ohio Class B ranges are often unmanned. Hunters need to check in and out on their phone so the range can run without a roster desk. Without this, those sites stay on paper or stay closed to CORE."
     },
     {
+      "key": "RESRV-1677",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Return vehicle documents when a Minnesota sale is voided",
+      "epicTitle": "MN Vehicle Document Returns on Void (MN)",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "When a Minnesota vehicle sale is voided, the documents still look sold. Title staff then chase paper that should have rolled back. Returning documents on void keeps the file and the money in sync."
+    },
+    {
+      "key": "RESRV-1466",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Educator API so Kalkomey / IHEA course completions post to CORE",
+      "epicTitle": "Educator API Integration (Kalkomey / IHEA)",
+      "sprint": "Features To Schedule (Roadmap)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1944",
+          "name": "IHEA API for Online Courses"
+        },
+        {
+          "key": "COMO-2123",
+          "name": "API with IHEA-USA OutdoorELN"
+        },
+        {
+          "key": "CROH-176",
+          "name": "5.1.13 Interface With Online Class Provider"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "Hunter-ed completions from Kalkomey and IHEA still do not post into CORE on their own. Educators and agencies re-key or leave certifications missing, and then the student cannot buy. Several states share this dependency."
+    },
+    {
       "key": "RESRV-449",
       "q": "2026 Q3",
       "project": "RESRV",
       "title": "Informational event pages with no attendee or volunteer signup",
       "epicTitle": "Informational Event Pages - No Attendee/Volunteer Signup (MO)",
-      "sprint": "Core RESRV 2026-Q3-S5",
+      "sprint": "Features To Schedule (Roadmap)",
       "shirt": "S - 1 sprint",
       "clients": [
         "Missouri"
@@ -716,22 +716,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 1,
       "why": "Missouri needs event pages that inform without taking signups. Today every event wants attendees or volunteers, so they fake a class or skip CORE. This is a communications page, not a registration product."
-    },
-    {
-      "key": "RESRV-1677",
-      "q": "2026 Q3",
-      "project": "RESRV",
-      "title": "Return vehicle documents when a Minnesota sale is voided",
-      "epicTitle": "MN Vehicle Document Returns on Void (MN)",
-      "sprint": "Core RESRV 2026-Q3-S6",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "All",
-        "Minnesota"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "When a Minnesota vehicle sale is voided, the documents still look sold. Title staff then chase paper that should have rolled back. Returning documents on void keeps the file and the money in sync."
     },
     {
       "key": "SYST-3781",
@@ -768,42 +752,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 5,
       "why": "Citation entry and revocations share access, so the wrong person can revoke or cannot write a citation. Ohio needs those jobs split. Officers write citations; a smaller set should revoke."
-    },
-    {
-      "key": "SYST-3855",
-      "q": "2026 Q3",
-      "project": "SYST",
-      "title": "Ohio customer and login bugs needed for go-live",
-      "epicTitle": "OH Tickets (Changes and Bugs) Customer / Login (OH)",
-      "sprint": "SYST 2026-Q3-S1",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Ohio"
-      ],
-      "tickets": [
-        {
-          "key": "CROH-1569",
-          "name": "Staging - PayIt SSO_ Staging_ Error when trying to log into Sales via 'Account'"
-        },
-        {
-          "key": "CROH-1501",
-          "name": "Staging - PayIt SSO_ Not finding online account and profile which have already been created"
-        },
-        {
-          "key": "CROH-1475",
-          "name": "Staging - PayIt SSO_ Unable to Access Account"
-        },
-        {
-          "key": "CROH-1726",
-          "name": "Reports not returning data"
-        },
-        {
-          "key": "CROH-1671",
-          "name": "VEMS_ Volunteer can't complete transaction (no ReCaptcha)"
-        }
-      ],
-      "ticketCount": 5,
-      "why": "Ohio customer and login defects still block go-live. If a resident cannot sign in or the profile is wrong, nothing else in Q3 matters for them. These are launch bugs."
     },
     {
       "key": "SYST-4614",
@@ -906,12 +854,37 @@ window.ROADMAP_DATA = {
       "why": "Business customers cannot be revoked with the same tools as a person. A shop that should be stopped can still sell. Ohio needs the same revocation path for both."
     },
     {
+      "key": "SYST-2366",
+      "q": "2026 Q3",
+      "project": "SYST",
+      "title": "Choose Radar, ESRI, or Google for address lookup",
+      "epicTitle": "Update Address Lookup to use either Radar, ESRI, or Google (PayIt)",
+      "sprint": "SYST 2026-Q3-S6",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "All",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-49",
+          "name": "1.5.4 License Purchase Requirements"
+        },
+        {
+          "key": "CROH-57",
+          "name": "1.5.12 Geocoded Addresses"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "Address lookup quality depends on the vendor, and one vendor does not win everywhere. Agencies need to choose Radar, ESRI, or Google without a code change. Ohio and platform-wide sales all use addresses to tax, ship, and prove residency."
+    },
+    {
       "key": "SYST-4327",
       "q": "2026 Q3",
       "project": "SYST",
       "title": "Highest-priority security bugs",
       "epicTitle": "Other Q3 Highest Security Bugs (PayIt)",
-      "sprint": "SYST 2026-Q3-S4",
+      "sprint": "SYST 2026-Q3-S6",
       "shirt": "S - 1 sprint",
       "clients": [
         "PayIt"
@@ -926,7 +899,7 @@ window.ROADMAP_DATA = {
       "project": "SYST",
       "title": "Mississippi vehicle print-template changes",
       "epicTitle": "MS Vehicle Template Changes/Additions",
-      "sprint": "SYST 2026-Q3-S5",
+      "sprint": "SYST 2026-Q3-S6",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
         "Mississippi"
@@ -953,37 +926,12 @@ window.ROADMAP_DATA = {
       "why": "Mississippi vehicle print templates do not match what they issue at the counter. Wrong paper means a customer leaves with a document they cannot use. This is template correction, not a new title type."
     },
     {
-      "key": "SYST-2366",
-      "q": "2026 Q3",
-      "project": "SYST",
-      "title": "Choose Radar, ESRI, or Google for address lookup",
-      "epicTitle": "Update Address Lookup to use either Radar, ESRI, or Google (PayIt)",
-      "sprint": "SYST 2026-Q3-S6",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "All",
-        "Ohio"
-      ],
-      "tickets": [
-        {
-          "key": "CROH-49",
-          "name": "1.5.4 License Purchase Requirements"
-        },
-        {
-          "key": "CROH-57",
-          "name": "1.5.12 Geocoded Addresses"
-        }
-      ],
-      "ticketCount": 2,
-      "why": "Address lookup quality depends on the vendor, and one vendor does not win everywhere. Agencies need to choose Radar, ESRI, or Google without a code change. Ohio and platform-wide sales all use addresses to tax, ship, and prove residency."
-    },
-    {
       "key": "SYST-4630",
       "q": "2026 Q3",
       "project": "SYST",
       "title": "Work rolled from Q2 into Q3",
       "epicTitle": "ROLLOVER 2026 Q2 to Q3",
-      "sprint": "SYST 2026-Q3-S6",
+      "sprint": "2026 Q4",
       "shirt": "S - 1 sprint",
       "clients": [
         "PayIt"
@@ -991,6 +939,72 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Platform leftovers from Q2, not new promises. They stay on the roadmap so committed work is not dropped. PayIt tracks the list."
+    },
+    {
+      "key": "SYST-3855",
+      "q": "2026 Q3",
+      "project": "SYST",
+      "title": "Ohio customer and login bugs needed for go-live",
+      "epicTitle": "OH Tickets (Changes and Bugs) Customer / Login (OH)",
+      "sprint": "2027 Q1",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1569",
+          "name": "Staging - PayIt SSO_ Staging_ Error when trying to log into Sales via 'Account'"
+        },
+        {
+          "key": "CROH-1501",
+          "name": "Staging - PayIt SSO_ Not finding online account and profile which have already been created"
+        },
+        {
+          "key": "CROH-1475",
+          "name": "Staging - PayIt SSO_ Unable to Access Account"
+        },
+        {
+          "key": "CROH-1726",
+          "name": "Reports not returning data"
+        },
+        {
+          "key": "CROH-1671",
+          "name": "VEMS_ Volunteer can't complete transaction (no ReCaptcha)"
+        }
+      ],
+      "ticketCount": 5,
+      "why": "Ohio customer and login defects still block go-live. If a resident cannot sign in or the profile is wrong, nothing else in Q3 matters for them. These are launch bugs."
+    },
+    {
+      "key": "CALM-2905",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Mobile app upgrades and maintenance",
+      "epicTitle": "2026 Q4 Tech Debt/Upgrades",
+      "sprint": "2026 Q4",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Mobile OS and library upgrades so the app does not die on a new phone. No new hunter-facing feature. PayIt-owned maintenance that every app client needs."
+    },
+    {
+      "key": "CALM-3502",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Move mobile builds from Azure DevOps to GitHub and Fastlane",
+      "epicTitle": "Switch from Azure DevOps to GitHub and FastLane",
+      "sprint": "Future Work",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "All"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Mobile builds still depend on a pipeline we are leaving. If we do not move to GitHub and Fastlane, every client release gets slower and riskier. Hunters never see this; product managers will if a season build cannot ship."
     },
     {
       "key": "CALM-1866",
@@ -1006,21 +1020,6 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Hunters open the app and cannot tell what to tap first: buy, check game, or find rules. This first slice puts primary actions, menus, and first-time guidance in the right place. Research said utility beats a new look\u2014so we are not restyling for its own sake."
-    },
-    {
-      "key": "CALM-2905",
-      "q": "2026 Q4",
-      "project": "CALM",
-      "title": "Mobile app upgrades and maintenance",
-      "epicTitle": "2026 Q4 Tech Debt/Upgrades",
-      "sprint": "",
-      "shirt": "XS - Less than 1 sprint",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Mobile OS and library upgrades so the app does not die on a new phone. No new hunter-facing feature. PayIt-owned maintenance that every app client needs."
     },
     {
       "key": "CALM-3382",
@@ -1042,7 +1041,7 @@ window.ROADMAP_DATA = {
       "q": "2026 Q4",
       "project": "CALM",
       "title": "LED iOS builds and Apple Business Manager distribution to client devices",
-      "epicTitle": "LED iOS Builds and Client Apple Business Manager Distribution",
+      "epicTitle": "LED iOS Builds and Client Apple Business Manager Distribution, Android for Arkansas",
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
@@ -1051,6 +1050,34 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Law-enforcement iOS builds still have to reach agency devices through Apple Business Manager. If that pipeline is not owned, officers stay on a stale build and a client cannot roll a fix. This is distribution, not a new LED feature."
+    },
+    {
+      "key": "CVEH-1575",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Transfer-on-death successors cannot transact until they take title",
+      "epicTitle": "Title \u2014 Transfer on Death cannot transact (MN)",
+      "sprint": "2026 Q4 - MN Work",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-3108",
+          "name": "UAT-VEH-POS-System Allows Adding TOD on Non-Titled Vehicles (ATV, ORV, OHM, Snowmobile, Non-Titled Watercraft)"
+        },
+        {
+          "key": "MELS-3051",
+          "name": "UAT-VEH-CC-CC Admin Cannot Identify TOD Assigned to a Registered Vehicle-Conjunction Not Displayed"
+        },
+        {
+          "key": "MELS-3107",
+          "name": "UAT-VEH-POS-Customer Listed as TOD Able to Transact on Registered Vehicle - Should Be Restricted"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "Minnesota transfer-on-death successors sometimes transact before they take title. That is a legal miss. They must be blocked until title is in their name."
     },
     {
       "key": "CVEH-67",
@@ -1079,34 +1106,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 3,
       "why": "Some boats cannot be registered until inspection is on file. Louisiana and Mississippi already have the rule; CORE still lets the registration through. Block it when the rule says so."
-    },
-    {
-      "key": "CVEH-1575",
-      "q": "2026 Q4",
-      "project": "CVEH",
-      "title": "Transfer-on-death successors cannot transact until they take title",
-      "epicTitle": "Title \u2014 Transfer on Death cannot transact (MN)",
-      "sprint": "Prioritized",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MELS-3108",
-          "name": "UAT-VEH-POS-System Allows Adding TOD on Non-Titled Vehicles (ATV, ORV, OHM, Snowmobile, Non-Titled Watercraft)"
-        },
-        {
-          "key": "MELS-3051",
-          "name": "UAT-VEH-CC-CC Admin Cannot Identify TOD Assigned to a Registered Vehicle-Conjunction Not Displayed"
-        },
-        {
-          "key": "MELS-3107",
-          "name": "UAT-VEH-POS-Customer Listed as TOD Able to Transact on Registered Vehicle - Should Be Restricted"
-        }
-      ],
-      "ticketCount": 3,
-      "why": "Minnesota transfer-on-death successors sometimes transact before they take title. That is a legal miss. They must be blocked until title is in their name."
     },
     {
       "key": "CVEH-1378",
@@ -1153,11 +1152,11 @@ window.ROADMAP_DATA = {
       "q": "2026 Q4",
       "project": "FNCL",
       "title": "Finish delayed-payment work not required for first go-live",
-      "epicTitle": "LA Delayed Payments FF Work",
+      "epicTitle": "Delayed Payments Report Updates (FF) (LA)",
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "S - 1 sprint",
       "clients": [
-        "PayIt"
+        "Louisiana"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -1241,46 +1240,6 @@ window.ROADMAP_DATA = {
       "why": "Missouri hunt-draw maps and replacement harvest-check IDs are how a hunter knows where to go and how to check in if the first ID is lost. Wrong map or no replacement ID is a season-stopping call. This is operations, not a new draw type."
     },
     {
-      "key": "LICS-3019",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "Manage a customer\u2019s land from their profile",
-      "epicTitle": "Customer Profile \u2014 Land profiles tab (CC) (MO)",
-      "sprint": "2026 Q4 - Feature Work",
-      "shirt": "XS - Less than 1 sprint",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1627",
-          "name": "Land Profile>Search: Include Conservation ID as a Search Field"
-        },
-        {
-          "key": "COMO-1630",
-          "name": "Customers>Landowner Tab: Identify what columns should be displayed"
-        },
-        {
-          "key": "COMO-1626",
-          "name": "Land Profile>Customers: As an Admin User/Customer, I need to see USEFUL information with minimal scrolling or swapping between screens, tabs, or tiles, to view the entire picture of my landprofile. "
-        },
-        {
-          "key": "COMO-152",
-          "name": "2.5.51\u00a0- Landowner Tracking"
-        },
-        {
-          "key": "COMO-154",
-          "name": "2.5.53\u00a0- Landowner Admin Entry"
-        },
-        {
-          "key": "COMO-155",
-          "name": "2.5.54\u00a0- Landowner Verification"
-        }
-      ],
-      "ticketCount": 6,
-      "why": "Staff should manage a customer's land from the customer profile instead of a side database. Missouri clerks lose land when they have to leave the person they are helping. One profile, one place."
-    },
-    {
       "key": "LICS-3064",
       "q": "2026 Q4",
       "project": "LICS",
@@ -1321,6 +1280,21 @@ window.ROADMAP_DATA = {
       "why": "Missouri landowner permits depend on residency, contiguous acres, and attestations that CORE does not enforce cleanly. Get those wrong and a permit is issued on land that does not qualify. This is eligibility, not a form tweak."
     },
     {
+      "key": "LICS-3575",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "CWD and deer-management permit updates",
+      "epicTitle": "CWD / DMAP allocations \u2014 landowner remaining and hunter self-purchase",
+      "sprint": "2026 Q4 - MO Work",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Missouri CWD and deer-management permits change with the disease map. Product and rule updates have to land before those seasons open. Biologists and the counter will both ask if the old permit is still for sale."
+    },
+    {
       "key": "LICS-3576",
       "q": "2026 Q4",
       "project": "LICS",
@@ -1339,61 +1313,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 1,
       "why": "Missouri camping stays are limited on a rolling window of days, not a calendar month. CORE still lets people overstay. Rangers need the system to count the days the way the rule is written."
-    },
-    {
-      "key": "LICS-3032",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "Collect only the land details the agency uses (part 1)",
-      "epicTitle": "Land Profile Attribute Configuration Pt 1. (MO)",
-      "sprint": "PROD SUPPORT PULL FROM LIST",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1621",
-          "name": "Land Profile>Is Active? If a property is entered in from licensing, does it default to is active? If so, land entered in CC should default to Yes Is active as wel."
-        },
-        {
-          "key": "COMO-1589",
-          "name": "Land Profile: Is Sub-Unit Enabled MUST BE REMOVED"
-        },
-        {
-          "key": "COMO-1586",
-          "name": "Land Profile: Size MUST Accommodate Decimal Poins to the 100ths"
-        },
-        {
-          "key": "COMO-1587",
-          "name": "Land Profile: Unit of Measure - Acres ONLY"
-        },
-        {
-          "key": "COMO-1580",
-          "name": "Land Profile: Land Name Does/Will NOT Apply to Missouri"
-        },
-        {
-          "key": "COMO-1592",
-          "name": "Land Profile: Make Check-In Req/Disclaimer/Disc Notes Manageable on Land Profile Settings"
-        }
-      ],
-      "ticketCount": 15,
-      "why": "Missouri collects land details CORE still shows as empty cards and unused fields. Turn off what they do not use, keep land type, and save acres the way they measure them. This is configuration, not a new land product."
-    },
-    {
-      "key": "LICS-3575",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "CWD and deer-management permit updates",
-      "epicTitle": "CWD / DMAP allocations \u2014 landowner remaining and hunter self-purchase",
-      "sprint": "PROD SUPPORT PULL FROM LIST",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Missouri CWD and deer-management permits change with the disease map. Product and rule updates have to land before those seasons open. Biologists and the counter will both ask if the old permit is still for sale."
     },
     {
       "key": "RESRV-1380",
@@ -1439,7 +1358,6 @@ window.ROADMAP_DATA = {
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "S - 1 sprint",
       "clients": [
-        "All",
         "Missouri"
       ],
       "tickets": [],
@@ -1569,6 +1487,21 @@ window.ROADMAP_DATA = {
       "why": "Notification history is a list of labels with no body, so staff cannot see what the customer was actually emailed. Show the content. Missouri and platform support both need this to answer 'I never got it.'"
     },
     {
+      "key": "SYST-4669",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Issue the ginseng authorization permit in CORE",
+      "epicTitle": "FROM DTSD - Unable to create Ginseng Authorization permit in CORE",
+      "sprint": "2026 Q4",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Missouri issues a ginseng authorization that still does not live in CORE. Until it does, that permit is a side process. Put it on the same customer as everything else they buy."
+    },
+    {
       "key": "SYST-4803",
       "q": "2026 Q4",
       "project": "SYST",
@@ -1627,34 +1560,84 @@ window.ROADMAP_DATA = {
       "why": "Buying licenses for a spouse or child still means extra checkouts. One cart for other people is how families actually buy. Minnesota, Mississippi, Missouri, and anyone using household sales will feel this."
     },
     {
-      "key": "SYST-4669",
+      "key": "SYST-4896",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "Issue the ginseng authorization permit in CORE",
-      "epicTitle": "FROM DTSD - Unable to create Ginseng Authorization permit in CORE",
-      "sprint": "",
+      "title": "Customer Profile \u2014 Land profiles tab (CC)",
+      "epicTitle": "Customer Profile \u2014 Land profiles tab (CC) (MO)",
+      "sprint": "2026 Q4 - Feature Work",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Missouri issues a ginseng authorization that still does not live in CORE. Until it does, that permit is a side process. Put it on the same customer as everything else they buy."
+      "tickets": [
+        {
+          "key": "COMO-1627",
+          "name": "Land Profile>Search: Include Conservation ID as a Search Field"
+        },
+        {
+          "key": "COMO-1630",
+          "name": "Customers>Landowner Tab: Identify what columns should be displayed"
+        },
+        {
+          "key": "COMO-1626",
+          "name": "Land Profile>Customers: As an Admin User/Customer, I need to see USEFUL information with minimal scrolling or swapping between screens, tabs, or tiles, to view the entire picture of my landprofile. "
+        },
+        {
+          "key": "COMO-152",
+          "name": "2.5.51\u00a0- Landowner Tracking"
+        },
+        {
+          "key": "COMO-154",
+          "name": "2.5.53\u00a0- Landowner Admin Entry"
+        },
+        {
+          "key": "COMO-155",
+          "name": "2.5.54\u00a0- Landowner Verification"
+        }
+      ],
+      "ticketCount": 6,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
     },
     {
-      "key": "CALM-2939",
-      "q": "2027 Q1",
-      "project": "CALM",
-      "title": "Switch address lookup vendors (Radar, Google, or others)",
-      "epicTitle": "Update Address Lookups",
-      "sprint": "",
-      "shirt": "XS - Less than 1 sprint",
+      "key": "SYST-4915",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Land Profile Attribute Configuration Pt 1.",
+      "epicTitle": "Land Profile Attribute Configuration Pt 1. (MO)",
+      "sprint": "Future Work",
+      "shirt": "S - 1 sprint",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Mobile address lookup has to follow the vendor the agency picked (Radar, Google, or other). A wrong or dead vendor means residency and shipping fail on the phone. PayIt-owned switch work that every app client inherits."
+      "tickets": [
+        {
+          "key": "COMO-1621",
+          "name": "Land Profile>Is Active? If a property is entered in from licensing, does it default to is active? If so, land entered in CC should default to Yes Is active as wel."
+        },
+        {
+          "key": "COMO-1589",
+          "name": "Land Profile: Is Sub-Unit Enabled MUST BE REMOVED"
+        },
+        {
+          "key": "COMO-1586",
+          "name": "Land Profile: Size MUST Accommodate Decimal Poins to the 100ths"
+        },
+        {
+          "key": "COMO-1587",
+          "name": "Land Profile: Unit of Measure - Acres ONLY"
+        },
+        {
+          "key": "COMO-1580",
+          "name": "Land Profile: Land Name Does/Will NOT Apply to Missouri"
+        },
+        {
+          "key": "COMO-1592",
+          "name": "Land Profile: Make Check-In Req/Disclaimer/Disc Notes Manageable on Land Profile Settings"
+        }
+      ],
+      "ticketCount": 15,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
     },
     {
       "key": "CALM-3134",
@@ -1773,14 +1756,19 @@ window.ROADMAP_DATA = {
       "q": "2027 Q1",
       "project": "CVEH",
       "title": "Fill make and year from the hull ID",
-      "epicTitle": "Autofill Manufacturer and Year from HIN (NN) (MN, LA, MS)",
+      "epicTitle": "Vehicle registration \u2014 autofill Make and Year from HIN",
       "sprint": "Priority Unrefined Work",
       "shirt": "S - 1 sprint",
       "clients": [
         "Mississippi"
       ],
-      "tickets": [],
-      "ticketCount": 0,
+      "tickets": [
+        {
+          "key": "MDWFP-1848",
+          "name": "Auto populate a boat's manufacturer name based off of the MIC number the Coast Guard assigned"
+        }
+      ],
+      "ticketCount": 1,
       "why": "Hull ID already knows make and year; clerks retype it and mismatch. Autofill from the hull ID for Louisiana, Minnesota, and Mississippi. Faster counter, fewer typos on the title."
     },
     {
@@ -2483,7 +2471,7 @@ window.ROADMAP_DATA = {
       "q": "2027 Q1",
       "project": "SYST",
       "title": "Group mailed credentials from the same sale consistently",
-      "epicTitle": "Fulfillment Refactor - Rollup (ALL)",
+      "epicTitle": "Fulfillment Refactor (ALL)",
       "sprint": "2027 and Beyond",
       "shirt": "M - 2 sprints",
       "clients": [
@@ -2516,48 +2504,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "A revoked hunter from another state can still open an account and buy. Missouri and Ohio want interstate revocation checked before the first sale. This is compact enforcement, not a marketing flag."
-    },
-    {
-      "key": "SYST-3630",
-      "q": "2027 Q1",
-      "project": "SYST",
-      "title": "Search and reuse certification records instead of retyping",
-      "epicTitle": "Certifications Pt. 4.5 (FF) (MO, OR)",
-      "sprint": "2027 and Beyond",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "All",
-        "Missouri",
-        "Oregon"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1660",
-          "name": "MDC Attestation for POS Users"
-        },
-        {
-          "key": "COMO-2180",
-          "name": "Products>Policies: Limited character limit to provide directions on how to send in hunter education"
-        },
-        {
-          "key": "OV-2641",
-          "name": "Search for Missing Certificate (INT)"
-        },
-        {
-          "key": "OV-2627",
-          "name": "Add Certification Reorder in Cart (INT)"
-        },
-        {
-          "key": "OV-2651",
-          "name": "Missing Certification Search Results Pages - Exact Match (INT)"
-        },
-        {
-          "key": "OV-2652",
-          "name": " Missing Certification Search Results Pages - Partial Match or Multiple Exact  Matches (INT)"
-        }
-      ],
-      "ticketCount": 8,
-      "why": "Staff retype certification records that already exist, and then duplicates fight each other. Search and reuse. Missouri, Oregon, and shared hunter-ed."
     },
     {
       "key": "SYST-1043",
