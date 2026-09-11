@@ -346,11 +346,28 @@
         tickets.map((t) => t.key + " " + t.name).join(" "),
       ].join(" ").toLowerCase();
     }
+    function matchesSprintLabel(hay, n) {
+      return hay.includes("sprint " + n) || hay.includes("s" + n) ||
+        new RegExp("(?:^|[^a-z0-9])s" + n + "(?:[^a-z0-9]|$)").test(hay);
+    }
     function matchesSearch(epic) {
-      const tokens = (state.search || "").toLowerCase().split(/\s+/).filter(Boolean);
-      if (!tokens.length) return true;
+      const raw = (state.search || "").toLowerCase().trim();
+      if (!raw) return true;
       const hay = searchHaystack(epic);
-      return tokens.every((t) => hay.includes(t));
+      if (hay.includes(raw)) return true;
+      const sprintOnly = raw.match(/^sprint\s+(\d+)$/);
+      if (sprintOnly) return matchesSprintLabel(hay, sprintOnly[1]);
+      const tokens = raw.split(/\s+/).filter(Boolean);
+      const needed = [];
+      for (let i = 0; i < tokens.length; i += 1) {
+        if (tokens[i] === "sprint" && tokens[i + 1] && /^\d+$/.test(tokens[i + 1])) {
+          if (!matchesSprintLabel(hay, tokens[i + 1])) return false;
+          i += 1;
+          continue;
+        }
+        needed.push(tokens[i]);
+      }
+      return needed.every((t) => hay.includes(t));
     }
     function visibleEpics() {
       return (data.epics || []).filter((e) => {
