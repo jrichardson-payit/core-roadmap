@@ -336,9 +336,11 @@
     function searchHaystack(epic) {
       const clients = epic.clients || [];
       const tickets = epic.tickets || [];
+      const meta = META[epic.q] || {};
       return [
-        epic.key, epic.title, epic.epicTitle, epic.sprint, formatSprint(epic.sprint), epic.why, epic.shirt, epic.q, epic.project,
-        PROJECT_LABEL[epic.project] || "",
+        epic.key, epic.title, epic.epicTitle, sprintSearchText(epic.sprint), epic.why, epic.shirt, epic.q,
+        meta.heading || "", meta.months || "",
+        epic.project, PROJECT_LABEL[epic.project] || "",
         clients.join(" "),
         clients.map((c) => CLIENT_ABBR[c] || "").join(" "),
         tickets.map((t) => t.key + " " + t.name).join(" "),
@@ -497,6 +499,18 @@
       if (n < 1 || n > 6) return "To Be Scheduled";
       const release = SPRINT_RELEASE[Number(match[1]) + "-" + Number(match[2]) + "-" + n];
       return release ? ("Sprint " + n + " (" + release + ")") : ("Sprint " + n);
+    }
+    function sprintSearchText(name) {
+      const shown = formatSprint(name);
+      const match = name ? String(name).match(SPRINT_WHEN) : null;
+      const n = match ? Number(match[3] || 0) : 0;
+      const extras = [shown, name || ""];
+      if (n >= 1 && n <= 6) {
+        extras.push("S" + n, "Sprint " + n);
+        const release = SPRINT_RELEASE[Number(match[1]) + "-" + Number(match[2]) + "-" + n];
+        if (release) extras.push(release, release.replace(/\//g, "-"));
+      }
+      return extras.join(" ");
     }
     function compareBySprint(a, b) {
       const left = sprintSortKey(a.sprint);
