@@ -1,5 +1,5 @@
 window.ROADMAP_DATA = {
-  "updated": "2026-09-11",
+  "updated": "2026-09-24",
   "source": "Jira Roadmap Scope + T-Shirt Size + CORE sprint, merged with overlay.json",
   "epics": [
     {
@@ -47,12 +47,27 @@ window.ROADMAP_DATA = {
       "why": "Long license lists on the phone currently stall or never finish loading, so a hunter cannot see what they already bought. Paging the list is the difference between a usable app and a dead screen in the field. Michigan needs this before staff tell customers to 'just use the app.'"
     },
     {
+      "key": "CALM-2903",
+      "q": "2026 Q3",
+      "project": "CALM",
+      "title": "Mobile tech debt, upgrades, and go-lives",
+      "epicTitle": "2026 Q3 Tech Debt/Upgrades/Go-Lives",
+      "sprint": "CALM 2026-Q3-S6",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "All"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "The mobile app has to stay current through OS upgrades and client go-lives or seasons stall on last year's build. This is keep-the-lights-on work, not a new hunter feature. Every client on the app depends on it shipping on time."
+    },
+    {
       "key": "CALM-3213",
       "q": "2026 Q3",
       "project": "CALM",
       "title": "Ohio survey mobile changes required right after go-live",
       "epicTitle": "OH Tickets (Changes and Bugs) Survey Updates (FF) (OH)",
-      "sprint": "CALM 2026-Q3-S5",
+      "sprint": "CALM 2026-Q3-S6",
       "shirt": "M - 2 sprints",
       "clients": [
         "Ohio"
@@ -72,7 +87,7 @@ window.ROADMAP_DATA = {
       "project": "CALM",
       "title": "Show revocations on business-customer mobile profiles",
       "epicTitle": "Business Customer Revocations Display (ALL)",
-      "sprint": "CALM 2026-Q3-S5",
+      "sprint": "CALM 2026-Q3-S6",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
         "PayIt"
@@ -82,27 +97,12 @@ window.ROADMAP_DATA = {
       "why": "Business accounts can be revoked like people, but the phone profile does not show it. A clerk or owner who only uses the app can keep trying to buy. Showing the revocation on mobile stops that surprise at the counter."
     },
     {
-      "key": "CALM-2903",
-      "q": "2026 Q3",
-      "project": "CALM",
-      "title": "Mobile tech debt, upgrades, and go-lives",
-      "epicTitle": "2026 Q3 Tech Debt/Upgrades/Go-Lives",
-      "sprint": "CALM 2026-Q3-S6",
-      "shirt": "XS - Less than 1 sprint",
-      "clients": [
-        "All"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "The mobile app has to stay current through OS upgrades and client go-lives or seasons stall on last year's build. This is keep-the-lights-on work, not a new hunter feature. Every client on the app depends on it shipping on time."
-    },
-    {
       "key": "CALM-3491",
       "q": "2026 Q3",
       "project": "CALM",
       "title": "Mobile release maintenance",
       "epicTitle": "2026 Q3 Release Maintenance",
-      "sprint": "CALM 2026-Q3-S6",
+      "sprint": "CALM 2026-Q4-S1",
       "shirt": "S - 1 sprint",
       "clients": [
         "All"
@@ -110,21 +110,6 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Each mobile release needs testing, store submission, and fixes so hunters are not stuck on a broken build mid-season. This is release hygiene, not a new screen. All app clients feel it when it slips."
-    },
-    {
-      "key": "CALM-3516",
-      "q": "2026 Q3",
-      "project": "CALM",
-      "title": "Sort and paginate available vs submitted surveys on mobile",
-      "epicTitle": "Survey Tab updates (MI)",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Michigan"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Michigan officers and biologists cannot tell submitted surveys from ones still on the device when the list is one long scroll. Sort and page so field staff find the right survey without calling support. This is a field-time saver, not a new survey type."
     },
     {
       "key": "CVEH-2578",
@@ -168,7 +153,7 @@ window.ROADMAP_DATA = {
       "project": "CVEH",
       "title": "Minnesota vehicles go-live remaining work",
       "epicTitle": "2026 Q3 MN Vehicles Go Live (MN)",
-      "sprint": "2026 Q4 - MN Work",
+      "sprint": "CVEH 2026-Q3-S3",
       "shirt": "L - 3 sprints",
       "clients": [
         "Minnesota"
@@ -478,7 +463,7 @@ window.ROADMAP_DATA = {
       "project": "LICS",
       "title": "License start-time defaults, per-agent limits, and policy messages",
       "epicTitle": "Product Configuration & Policy Enhancements (MO)",
-      "sprint": "LICS 2026-Q3-S5",
+      "sprint": "LICS 2026-Q3-S6",
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri"
@@ -503,41 +488,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 4,
       "why": "Missouri license start times, per-agent caps, and policy messages are still easy to get wrong at the counter. Defaults and limits need to match how they sell. This prevents a clerk from issuing something the rule does not allow."
-    },
-    {
-      "key": "LICS-3930",
-      "q": "2026 Q3",
-      "project": "LICS",
-      "title": "Refresh the product catalog without a full rebuild",
-      "epicTitle": "Product catalog \u2014 targeted refresh without a full rebuild",
-      "sprint": "LICS 2026-Q3-S6",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Refreshing the product catalog today is close to a rebuild, so price and rule fixes wait. A safer refresh lets merchandising change products without a project. PayIt-owned; clients feel it as faster catalog corrections."
-    },
-    {
-      "key": "LICS-3931",
-      "q": "2026 Q3",
-      "project": "LICS",
-      "title": "Load customers with long histories faster in POS, licensing, and mobile",
-      "epicTitle": "Customer cache \u2014 faster customer load in POS, Licensing, and mobile",
-      "sprint": "LICS 2026-Q3-S6",
-      "shirt": "XS - Less than 1 sprint",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1641",
-          "name": "Land Profile:  When entering in CC does not appear on Public Web"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "Customers with long purchase histories freeze POS, licensing, and mobile. Clerks wait, hunters wait, and the line grows. Faster load is a counter-time issue, not a new report."
     },
     {
       "key": "LICS-2579",
@@ -570,32 +520,39 @@ window.ROADMAP_DATA = {
       "why": "Staff should find a survey by confirmation number without opening the whole customer. Today they hunt through the profile and burn the window. Arkansas, Mississippi, and Ohio need this at the counter and in the back office."
     },
     {
-      "key": "LICS-3001",
+      "key": "LICS-3930",
       "q": "2026 Q3",
       "project": "LICS",
-      "title": "Separate landowner bonus points by hunt type and county",
-      "epicTitle": "Multi-type county bonus points for landowner permits (MO)",
-      "sprint": "2026 Q4 - Feature Work",
-      "shirt": "M - 2 sprints",
+      "title": "Refresh the product catalog without a full rebuild",
+      "epicTitle": "Product catalog \u2014 targeted refresh without a full rebuild",
+      "sprint": "LICS 2026-Q4-S1",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "All"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Refreshing the product catalog today is close to a rebuild, so price and rule fixes wait. A safer refresh lets merchandising change products without a project. PayIt-owned; clients feel it as faster catalog corrections."
+    },
+    {
+      "key": "LICS-3931",
+      "q": "2026 Q3",
+      "project": "LICS",
+      "title": "Load customers with long histories faster in POS, licensing, and mobile",
+      "epicTitle": "Customer cache \u2014 faster customer load in POS, Licensing, and mobile",
+      "sprint": "LICS 2026-Q4-S1",
+      "shirt": "XS - Less than 1 sprint",
       "clients": [
         "Missouri"
       ],
       "tickets": [
         {
-          "key": "COMO-1484",
-          "name": "Land>County Display: Need columns displayed"
-        },
-        {
-          "key": "COMO-1402",
-          "name": "Product 101: 75+ Acre Policy"
-        },
-        {
-          "key": "COMO-1481",
-          "name": "Landowner Design Issues"
+          "key": "COMO-1641",
+          "name": "Land Profile:  When entering in CC does not appear on Public Web"
         }
       ],
-      "ticketCount": 3,
-      "why": "Missouri landowner bonus points are mixed across hunt types and counties, so a point earned in one place spends in another. Split them the way the regulation is written. Landowners will treat this as fairness."
+      "ticketCount": 1,
+      "why": "Customers with long purchase histories freeze POS, licensing, and mobile. Clerks wait, hunters wait, and the line grows. Faster load is a counter-time issue, not a new report."
     },
     {
       "key": "RESRV-1543",
@@ -894,6 +851,21 @@ window.ROADMAP_DATA = {
       "why": "Highest-priority security defects sit here so they are not lost under feature work. Clients will not brief this as a product; they will feel it if we skip it. PayIt-owned on purpose."
     },
     {
+      "key": "SYST-4630",
+      "q": "2026 Q3",
+      "project": "SYST",
+      "title": "Work rolled from Q2 into Q3",
+      "epicTitle": "ROLLOVER 2026 Q2 to Q3",
+      "sprint": "SYST 2026-Q3-S6",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Platform leftovers from Q2, not new promises. They stay on the roadmap so committed work is not dropped. PayIt tracks the list."
+    },
+    {
       "key": "SYST-4714",
       "q": "2026 Q3",
       "project": "SYST",
@@ -924,21 +896,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 4,
       "why": "Mississippi vehicle print templates do not match what they issue at the counter. Wrong paper means a customer leaves with a document they cannot use. This is template correction, not a new title type."
-    },
-    {
-      "key": "SYST-4630",
-      "q": "2026 Q3",
-      "project": "SYST",
-      "title": "Work rolled from Q2 into Q3",
-      "epicTitle": "ROLLOVER 2026 Q2 to Q3",
-      "sprint": "2026 Q4",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Platform leftovers from Q2, not new promises. They stay on the roadmap so committed work is not dropped. PayIt tracks the list."
     },
     {
       "key": "SYST-3855",
@@ -977,12 +934,42 @@ window.ROADMAP_DATA = {
       "why": "Ohio customer and login defects still block go-live. If a resident cannot sign in or the profile is wrong, nothing else in Q3 matters for them. These are launch bugs."
     },
     {
+      "key": "CALM-1866",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Clearer mobile home screen: primary actions, menus, and first-time guidance (part 1)",
+      "epicTitle": "Drive Mobile Adoption through UX Modernization (All) Pt. 1",
+      "sprint": "2026 Q4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Hunters open the app and cannot tell what to tap first: buy, check game, or find rules. This first slice puts primary actions, menus, and first-time guidance in the right place. Research said utility beats a new look\u2014so we are not restyling for its own sake."
+    },
+    {
+      "key": "CALM-3516",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Sort and paginate available vs submitted surveys on mobile",
+      "epicTitle": "Survey Tab updates (MI)",
+      "sprint": "CALM 2026-Q4-S2",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Michigan"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Michigan officers and biologists cannot tell submitted surveys from ones still on the device when the list is one long scroll. Sort and page so field staff find the right survey without calling support. This is a field-time saver, not a new survey type."
+    },
+    {
       "key": "CALM-2905",
       "q": "2026 Q4",
       "project": "CALM",
       "title": "Mobile app upgrades and maintenance",
       "epicTitle": "2026 Q4 Tech Debt/Upgrades",
-      "sprint": "2026 Q4",
+      "sprint": "CALM 2026-Q4-S6",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
         "PayIt"
@@ -990,6 +977,21 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Mobile OS and library upgrades so the app does not die on a new phone. No new hunter-facing feature. PayIt-owned maintenance that every app client needs."
+    },
+    {
+      "key": "CALM-3382",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Mobile release maintenance",
+      "epicTitle": "2026 Q4 Release Maintenance",
+      "sprint": "CALM 2026-Q4-S6",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Routine mobile release work for Q4: submit, fix, ship. If this slips, hunters stay on a stale build through fall. Not a product announcement."
     },
     {
       "key": "CALM-3502",
@@ -1007,58 +1009,13 @@ window.ROADMAP_DATA = {
       "why": "Mobile builds still depend on a pipeline we are leaving. If we do not move to GitHub and Fastlane, every client release gets slower and riskier. Hunters never see this; product managers will if a season build cannot ship."
     },
     {
-      "key": "CALM-1866",
-      "q": "2026 Q4",
-      "project": "CALM",
-      "title": "Clearer mobile home screen: primary actions, menus, and first-time guidance (part 1)",
-      "epicTitle": "Drive Mobile Adoption through UX Modernization (All) Pt. 1",
-      "sprint": "",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Hunters open the app and cannot tell what to tap first: buy, check game, or find rules. This first slice puts primary actions, menus, and first-time guidance in the right place. Research said utility beats a new look\u2014so we are not restyling for its own sake."
-    },
-    {
-      "key": "CALM-3382",
-      "q": "2026 Q4",
-      "project": "CALM",
-      "title": "Mobile release maintenance",
-      "epicTitle": "2026 Q4 Release Maintenance",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Routine mobile release work for Q4: submit, fix, ship. If this slips, hunters stay on a stale build through fall. Not a product announcement."
-    },
-    {
-      "key": "CALM-3554",
-      "q": "2026 Q4",
-      "project": "CALM",
-      "title": "LED iOS builds and Apple Business Manager distribution to client devices",
-      "epicTitle": "LED iOS Builds and Client Apple Business Manager Distribution, Android for Arkansas",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Law-enforcement iOS builds still have to reach agency devices through Apple Business Manager. If that pipeline is not owned, officers stay on a stale build and a client cannot roll a fix. This is distribution, not a new LED feature."
-    },
-    {
       "key": "CVEH-1575",
       "q": "2026 Q4",
       "project": "CVEH",
       "title": "Transfer-on-death successors cannot transact until they take title",
       "epicTitle": "Title \u2014 Transfer on Death cannot transact (MN)",
-      "sprint": "2026 Q4 - MN Work",
-      "shirt": "M - 2 sprints",
+      "sprint": "CVEH 2026-Q4-S2",
+      "shirt": "S - 1 sprint",
       "clients": [
         "Minnesota"
       ],
@@ -1080,72 +1037,34 @@ window.ROADMAP_DATA = {
       "why": "Minnesota transfer-on-death successors sometimes transact before they take title. That is a legal miss. They must be blocked until title is in their name."
     },
     {
-      "key": "CVEH-67",
+      "key": "CVEH-2754",
       "q": "2026 Q4",
       "project": "CVEH",
-      "title": "Require boat inspections before registration when the rules say so",
-      "epicTitle": "Inspections (FF) [LA, MS]",
-      "sprint": "Future Work",
-      "shirt": "L - 3 sprints",
+      "title": "2026 Q4 New Reg/Delayed Payment Launch",
+      "epicTitle": "2026 Q4 New Reg/Delayed Payment Launch (LA)",
+      "sprint": "CVEH 2026-Q4-S2",
+      "shirt": "M - 2 sprints",
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-261",
-          "name": "Inspection Scheduling and Process"
-        },
-        {
-          "key": "CLV-20",
-          "name": "Inspections"
-        },
-        {
-          "key": "CLV-405",
-          "name": "Boat Inspections "
-        }
-      ],
-      "ticketCount": 3,
-      "why": "Some boats cannot be registered until inspection is on file. Louisiana and Mississippi already have the rule; CORE still lets the registration through. Block it when the rule says so."
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
     },
     {
-      "key": "CVEH-1378",
+      "key": "CVEH-2755",
       "q": "2026 Q4",
       "project": "CVEH",
-      "title": "Mark a vehicle sold, including buyers with no account",
-      "epicTitle": "Marking Vehicles as Sold (NC) (MS, LA, MN)",
-      "sprint": "",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Mississippi",
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MDWFP-1575",
-          "name": "Stop renewals on vessles marked as sold"
-        },
-        {
-          "key": "MDWFP-1359",
-          "name": "Able to renew a boat you no longer own"
-        }
-      ],
-      "ticketCount": 2,
-      "why": "A sold boat or vehicle has to leave the seller's record, including when the buyer has no account yet. Louisiana, Minnesota, and Mississippi cannot close the sale if CORE insists the buyer already exists. This is how a private sale actually works."
-    },
-    {
-      "key": "CVEH-1924",
-      "q": "2026 Q4",
-      "project": "CVEH",
-      "title": "Stop duplicate registration numbers and reuse unused numbers",
-      "epicTitle": "Registration Number Generation \u201a\u00c4\u00ec Dupe Check & Reuse (CR) (ALL)",
-      "sprint": "",
+      "title": "Vehicle Transfer and Renewal \u2014 configurable when category has changed",
+      "epicTitle": "Vehicle Transfer and Renewal \u2014 configurable when category has changed (MN)",
+      "sprint": "CVEH 2026-Q4-S2",
       "shirt": "S - 1 sprint",
       "clients": [
-        "All"
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "Duplicate registration numbers and wasted unused numbers show up on the water and in audits. Stop the duplicates and reuse the unused pool. Every vehicle client inherits bad numbers if we do not."
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
     },
     {
       "key": "FNCL-2361",
@@ -1198,6 +1117,21 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 5,
       "why": "Failed bank returns should lock the agent automatically so they cannot keep selling on bad paper. Minnesota, Missouri, and Ohio finance chase this by hand today. It is risk control, not a new fee."
+    },
+    {
+      "key": "FNCL-2505",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "2026.Q4 Vulnerabilities",
+      "epicTitle": "2026.Q4 Vulnerabilities",
+      "sprint": "",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "All"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
     },
     {
       "key": "LICS-2740",
@@ -1280,27 +1214,12 @@ window.ROADMAP_DATA = {
       "why": "Missouri landowner permits depend on residency, contiguous acres, and attestations that CORE does not enforce cleanly. Get those wrong and a permit is issued on land that does not qualify. This is eligibility, not a form tweak."
     },
     {
-      "key": "LICS-3575",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "CWD and deer-management permit updates",
-      "epicTitle": "CWD / DMAP allocations \u2014 landowner remaining and hunter self-purchase",
-      "sprint": "2026 Q4 - MO Work",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Missouri CWD and deer-management permits change with the disease map. Product and rule updates have to land before those seasons open. Biologists and the counter will both ask if the old permit is still for sale."
-    },
-    {
       "key": "LICS-3576",
       "q": "2026 Q4",
       "project": "LICS",
       "title": "Camping stay limits on rolling day-windows",
       "epicTitle": "Licensing catalog \u2014 Missouri camping permits (700)",
-      "sprint": "Future Work",
+      "sprint": "LICS 2026-Q4-S3",
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri"
@@ -1313,6 +1232,64 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 1,
       "why": "Missouri camping stays are limited on a rolling window of days, not a calendar month. CORE still lets people overstay. Rangers need the system to count the days the way the rule is written."
+    },
+    {
+      "key": "LICS-3001",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Separate landowner bonus points by hunt type and county",
+      "epicTitle": "Multi-type county bonus points for landowner permits (MO)",
+      "sprint": "LICS 2026-Q4-S4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1484",
+          "name": "Land>County Display: Need columns displayed"
+        },
+        {
+          "key": "COMO-1402",
+          "name": "Product 101: 75+ Acre Policy"
+        },
+        {
+          "key": "COMO-1481",
+          "name": "Landowner Design Issues"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "Missouri landowner bonus points are mixed across hunt types and counties, so a point earned in one place spends in another. Split them the way the regulation is written. Landowners will treat this as fairness."
+    },
+    {
+      "key": "LICS-3575",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "CWD and deer-management permit updates",
+      "epicTitle": "CWD / DMAP allocations \u2014 landowner remaining and hunter self-purchase",
+      "sprint": "LICS 2026-Q4-S4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Missouri CWD and deer-management permits change with the disease map. Product and rule updates have to land before those seasons open. Biologists and the counter will both ask if the old permit is still for sale."
+    },
+    {
+      "key": "LICS-4031",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy",
+      "epicTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
     },
     {
       "key": "RESRV-1380",
@@ -1369,9 +1346,9 @@ window.ROADMAP_DATA = {
       "q": "2026 Q4",
       "project": "RESRV",
       "title": "Stop signup when an event is full; keep waitlists accurate",
-      "epicTitle": "Event Capacity & Waitlist Management (AR, MN, MO, OR, MS) (CV-363 / CV-321)",
-      "sprint": "Features To Schedule (Roadmap)",
-      "shirt": "M - 2 sprints",
+      "epicTitle": "Event Capacity & Waitlist Management (AR, MN, MO, OR)",
+      "sprint": "Potentially Cancel",
+      "shirt": "S - 1 sprint",
       "clients": [
         "Mississippi",
         "Oregon"
@@ -1406,24 +1383,19 @@ window.ROADMAP_DATA = {
       "why": "Events still take signups after they are full, and waitlists lie. Stop the extra seat and keep the waitlist honest. Shared across the states that sell seats in CORE."
     },
     {
-      "key": "SYST-3212",
+      "key": "RESRV-1731",
       "q": "2026 Q4",
-      "project": "SYST",
-      "title": "Missouri commercial print templates",
-      "epicTitle": "MEDA-1798 - Missouri Commercial Print Templates (FF) (MO)",
-      "sprint": "2026 Q4",
-      "shirt": "M - 2 sprints",
+      "project": "RESRV",
+      "title": "2026.Q4 Vulnerabilities",
+      "epicTitle": "2026.Q4 Vulnerabilities",
+      "sprint": "",
+      "shirt": "Needs Estimate",
       "clients": [
-        "Missouri"
+        "All"
       ],
-      "tickets": [
-        {
-          "key": "COMO-1042",
-          "name": "Commercial Print Templates (MO)"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "Missouri commercial print still uses the wrong templates, so a business license or receipt can print with the wrong layout. Staff reprint and customers walk with a document that does not match the sale. This is Missouri print, not a new product line."
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
     },
     {
       "key": "SYST-3491",
@@ -1502,21 +1474,6 @@ window.ROADMAP_DATA = {
       "why": "Missouri issues a ginseng authorization that still does not live in CORE. Until it does, that permit is a side process. Put it on the same customer as everything else they buy."
     },
     {
-      "key": "SYST-4803",
-      "q": "2026 Q4",
-      "project": "SYST",
-      "title": "Remind customers before products expire",
-      "epicTitle": "Product Expiration Notifications (FF)",
-      "sprint": "2026 Q4",
-      "shirt": "XS - Less than 1 sprint",
-      "clients": [
-        "All"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Customers find out a privilege expired when they are already in the field or at the counter. A reminder before expiry is fewer angry lines and fewer lost sales. Platform-wide."
-    },
-    {
       "key": "SYST-882",
       "q": "2026 Q4",
       "project": "SYST",
@@ -1560,12 +1517,42 @@ window.ROADMAP_DATA = {
       "why": "Buying licenses for a spouse or child still means extra checkouts. One cart for other people is how families actually buy. Minnesota, Mississippi, Missouri, and anyone using household sales will feel this."
     },
     {
+      "key": "SYST-4803",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Remind customers before products expire",
+      "epicTitle": "Product Expiration Notifications (FF)",
+      "sprint": "SYST 2026-Q4-S1",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Customers find out a privilege expired when they are already in the field or at the counter. A reminder before expiry is fewer angry lines and fewer lost sales. Platform-wide."
+    },
+    {
+      "key": "SYST-4936",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Arkansas Hard Card Resends",
+      "epicTitle": "Arkansas Hard Card Resends",
+      "sprint": "SYST 2026-Q4-S1",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
+    },
+    {
       "key": "SYST-4896",
       "q": "2026 Q4",
       "project": "SYST",
       "title": "Customer Profile \u2014 Land profiles tab (CC)",
       "epicTitle": "Customer Profile \u2014 Land profiles tab (CC) (MO)",
-      "sprint": "2026 Q4 - Feature Work",
+      "sprint": "2027 Q1 Work",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
         "Missouri"
@@ -1640,6 +1627,46 @@ window.ROADMAP_DATA = {
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
     },
     {
+      "key": "SYST-4945",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "2026.Q4 Vulnerabilities",
+      "epicTitle": "2026.Q4 Vulnerabilities",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "All"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
+    },
+    {
+      "key": "CALM-3100",
+      "q": "2027 Q1",
+      "project": "CALM",
+      "title": "API - Vehicle Ownership Transfer Pending State (LA, MS, MN)",
+      "epicTitle": "API - Vehicle Ownership Transfer Pending State (NN) (LA, MS, MN)",
+      "sprint": "Future Work",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Mississippi",
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-1593",
+          "name": "Pending Owner status when a boat application is in pending or more information needed. "
+        },
+        {
+          "key": "MDWFP-1480",
+          "name": "Online Boat application that has titles and liens is making it disappear when the customer uploads their transfer request."
+        }
+      ],
+      "ticketCount": 2,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
+    },
+    {
       "key": "CALM-3134",
       "q": "2027 Q1",
       "project": "CALM",
@@ -1685,13 +1712,28 @@ window.ROADMAP_DATA = {
       "why": "Q1 mobile upgrades and OS maintenance. PayIt-owned. Required to keep the store listing alive."
     },
     {
+      "key": "CALM-3554",
+      "q": "2027 Q1",
+      "project": "CALM",
+      "title": "LED iOS builds and Apple Business Manager distribution to client devices",
+      "epicTitle": "LED iOS Builds and Client Apple Business Manager Distribution, Android for Arkansas",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Law-enforcement iOS builds still have to reach agency devices through Apple Business Manager. If that pipeline is not owned, officers stay on a stale build and a client cannot roll a fix. This is distribution, not a new LED feature."
+    },
+    {
       "key": "CVEH-1420",
       "q": "2027 Q1",
       "project": "CVEH",
       "title": "One primary owner on each vehicle",
       "epicTitle": "(Rollover) Primary Vehicle Owner (NC) (All)",
       "sprint": "Future Work",
-      "shirt": "M - 2 sprints",
+      "shirt": "S - 1 sprint",
       "clients": [
         "All",
         "Minnesota",
@@ -1713,6 +1755,34 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 3,
       "why": "Vehicles end up with two 'primary' owners and then every mailing and liability question is ambiguous. One primary owner. Minnesota, Mississippi, and platform vehicle clients."
+    },
+    {
+      "key": "CVEH-67",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Require boat inspections before registration when the rules say so",
+      "epicTitle": "Inspections (FF) [LA, MS]",
+      "sprint": "Future Work",
+      "shirt": "L - 3 sprints",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [
+        {
+          "key": "CLV-261",
+          "name": "Inspection Scheduling and Process"
+        },
+        {
+          "key": "CLV-20",
+          "name": "Inspections"
+        },
+        {
+          "key": "CLV-405",
+          "name": "Boat Inspections "
+        }
+      ],
+      "ticketCount": 3,
+      "why": "Some boats cannot be registered until inspection is on file. Louisiana and Mississippi already have the rule; CORE still lets the registration through. Block it when the rule says so."
     },
     {
       "key": "CVEH-117",
@@ -1802,6 +1872,31 @@ window.ROADMAP_DATA = {
       "why": "A DNR office and a retail seller should not have the same vehicle powers. Louisiana and Mississippi already run that split; CORE still treats them alike. Wrong power means a dealer does an office job or vice versa."
     },
     {
+      "key": "CVEH-1378",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Mark a vehicle sold, including buyers with no account",
+      "epicTitle": "Marking Vehicles as Sold (NC) (MS, LA, MN)",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Mississippi",
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-1575",
+          "name": "Stop renewals on vessles marked as sold"
+        },
+        {
+          "key": "MDWFP-1359",
+          "name": "Able to renew a boat you no longer own"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "A sold boat or vehicle has to leave the seller's record, including when the buyer has no account yet. Louisiana, Minnesota, and Mississippi cannot close the sale if CORE insists the buyer already exists. This is how a private sale actually works."
+    },
+    {
       "key": "CVEH-1404",
       "q": "2027 Q1",
       "project": "CVEH",
@@ -1815,6 +1910,32 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Bad VIN format still saves, and then every later document is wrong. Reject it before save. This is data hygiene every title shop will thank you for."
+    },
+    {
+      "key": "CVEH-1586",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Vehicle Ownership Transfer Pending State (LA, MS, MN)",
+      "epicTitle": "Vehicle Ownership Transfer Pending State (NN) (LA, MS, MN)",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "All",
+        "Mississippi",
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-1593",
+          "name": "Pending Owner status when a boat application is in pending or more information needed. "
+        },
+        {
+          "key": "MDWFP-1480",
+          "name": "Online Boat application that has titles and liens is making it disappear when the customer uploads their transfer request."
+        }
+      ],
+      "ticketCount": 2,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
     },
     {
       "key": "CVEH-1617",
@@ -1845,6 +1966,21 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Mississippi needs a mailing list of titles for a date range to run the print vendor. Without it, they export by hand. This is operations for title-by-mail."
+    },
+    {
+      "key": "CVEH-1924",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Stop duplicate registration numbers and reuse unused numbers",
+      "epicTitle": "Registration Number Generation \u201a\u00c4\u00ec Dupe Check & Reuse (CR) (ALL)",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "All"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Duplicate registration numbers and wasted unused numbers show up on the water and in audits. Stop the duplicates and reuse the unused pool. Every vehicle client inherits bad numbers if we do not."
     },
     {
       "key": "FNCL-1547",
@@ -2003,36 +2139,6 @@ window.ROADMAP_DATA = {
       "why": "Ohio has to report tax by taxing district, and by the customer's home state when they are not Ohio. Without that breakdown, finance cannot file what DOW owes the state. This attributes tax already collected; it does not invent a new tax."
     },
     {
-      "key": "LICS-3712",
-      "q": "2027 Q1",
-      "project": "LICS",
-      "title": "Turn land profiles on separately for businesses vs people",
-      "epicTitle": "Land profiles \u2014 independent on/off for business vs individual customers",
-      "sprint": "2026 Q4 - Feature Work",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Land profiles for a business and for a person should be turned on separately. Some agencies are ready for people and not for outfitters, or the reverse. PayIt-owned switch so we do not force both."
-    },
-    {
-      "key": "LICS-3886",
-      "q": "2027 Q1",
-      "project": "LICS",
-      "title": "Draw group: leader buys the quota, members buy a companion license",
-      "epicTitle": "Draw Award \u2014 leader Product A / member Product B purchase with single group quota",
-      "sprint": "2026 Q4 - Feature Work",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "A draw group needs the leader to buy the quota and members to buy a companion license, not six people fighting for the same tag. PayIt-owned pattern several states will use. Hunters already hunt this way in camp."
-    },
-    {
       "key": "LICS-2736",
       "q": "2027 Q1",
       "project": "LICS",
@@ -2110,6 +2216,36 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 1,
       "why": "Merging two customer records today can drop land history. Missouri still needs to know which land that person used. History has to survive the merge."
+    },
+    {
+      "key": "LICS-3712",
+      "q": "2027 Q1",
+      "project": "LICS",
+      "title": "Turn land profiles on separately for businesses vs people",
+      "epicTitle": "Land profiles \u2014 independent on/off for business vs individual customers",
+      "sprint": "2027 Q1 Work",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Land profiles for a business and for a person should be turned on separately. Some agencies are ready for people and not for outfitters, or the reverse. PayIt-owned switch so we do not force both."
+    },
+    {
+      "key": "LICS-3886",
+      "q": "2027 Q1",
+      "project": "LICS",
+      "title": "Draw group: leader buys the quota, members buy a companion license",
+      "epicTitle": "Draw Award \u2014 leader Product A / member Product B purchase with single group quota",
+      "sprint": "2027 Q1 Work",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "A draw group needs the leader to buy the quota and members to buy a companion license, not six people fighting for the same tag. PayIt-owned pattern several states will use. Hunters already hunt this way in camp."
     },
     {
       "key": "LICS-2157",
@@ -2403,6 +2539,26 @@ window.ROADMAP_DATA = {
       "why": "Volunteer roles are buried unless you already know the name. Search, filters, and categories let a new volunteer find 'range safety' without a staff email. Same states as event find."
     },
     {
+      "key": "SYST-3212",
+      "q": "2027 Q1",
+      "project": "SYST",
+      "title": "Missouri commercial print templates",
+      "epicTitle": "MEDA-1798 - Missouri Commercial Print Templates (FF) (MO)",
+      "sprint": "2027 Q1",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1042",
+          "name": "Commercial Print Templates (MO)"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Missouri commercial print still uses the wrong templates, so a business license or receipt can print with the wrong layout. Staff reprint and customers walk with a document that does not match the sale. This is Missouri print, not a new product line."
+    },
+    {
       "key": "SYST-2531",
       "q": "2027 Q1",
       "project": "SYST",
@@ -2471,7 +2627,7 @@ window.ROADMAP_DATA = {
       "q": "2027 Q1",
       "project": "SYST",
       "title": "Group mailed credentials from the same sale consistently",
-      "epicTitle": "Fulfillment Refactor (ALL)",
+      "epicTitle": "Printing/Delivery Refactor (PayIt) (All Clients)",
       "sprint": "2027 and Beyond",
       "shirt": "M - 2 sprints",
       "clients": [
@@ -2567,6 +2723,26 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Missouri email links dump people on the wrong web page after login, so they think the notice was a dead end. Land on the page the email promised. This is trust in every notice you send."
+    },
+    {
+      "key": "SYST-4922",
+      "q": "2027 Q1",
+      "project": "SYST",
+      "title": "Customer Data API \u2014 production customer data access",
+      "epicTitle": "Customer Data API \u2014 production customer data access (MO)",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2521",
+          "name": "Customer Data API"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for."
     },
     {
       "key": "CALM-1563",
@@ -2789,7 +2965,7 @@ window.ROADMAP_DATA = {
           "name": "Custom Lookups> Residency Exemption Reasons Updates Needed Pt 2"
         }
       ],
-      "ticketCount": 13,
+      "ticketCount": 15,
       "why": "Second slice of the same Missouri licensing request pack. Same rule: do not brief the bucket; brief the COMO tickets inside it."
     },
     {
@@ -3034,7 +3210,7 @@ window.ROADMAP_DATA = {
       "project": "SYST",
       "title": "Missouri-requested platform (part 1 of 2)",
       "epicTitle": "MO Requests (Pt. 1 of 2) (MO)",
-      "sprint": "MO/MDC Print Templates",
+      "sprint": "2027 and Beyond",
       "shirt": "2XL - 8 sprints",
       "clients": [
         "Missouri"
