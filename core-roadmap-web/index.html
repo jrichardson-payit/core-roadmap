@@ -298,11 +298,11 @@
       { id: "backlog", label: "Backlog" },
     ];
     const QUARTERS = ["2026 Q3","2026 Q4","2027 Q1","2027 Q2","2027 Q3","2027 Q4","2028 Q1","2028 Q2","2028 Q3","Not Scheduled"];
-    const TEAMS = ["Events","Licensing","Vehicle","Financials","Mobile","Platform"];
-    const TEAM_TO_PROJECT = { Events:"RESRV", Licensing:"LICS", Vehicle:"CVEH", Financials:"FNCL", Mobile:"CALM", Platform:"SYST" };
-    const PROJECT_LABEL = { RESRV:"Events", LICS:"Licensing", CVEH:"Vehicle", FNCL:"Financials", CALM:"Mobile", SYST:"Platform" };
+    const TEAMS = ["Reservations","Licensing","Vehicle","Financials","Mobile","Platform"];
+    const TEAM_TO_PROJECT = { Reservations:"RESRV", Licensing:"LICS", Vehicle:"CVEH", Financials:"FNCL", Mobile:"CALM", Platform:"SYST" };
+    const PROJECT_LABEL = { RESRV:"Reservations", LICS:"Licensing", CVEH:"Vehicle", FNCL:"Financials", CALM:"Mobile", SYST:"Platform" };
     const TEAM_RIBBON = {
-      RESRV: { name: "Events", bg: "#2e6b4a", fg: "#fff" },
+      RESRV: { name: "Reservations", bg: "#2e6b4a", fg: "#fff" },
       LICS: { name: "Licensing", bg: "#2f6fbf", fg: "#fff" },
       CVEH: { name: "Vehicle", bg: "#2a9d82", fg: "#fff" },
       FNCL: { name: "Financials", bg: "#c4921a", fg: "#fff" },
@@ -396,7 +396,10 @@
       if (!savedView) return d;
       const clients = (savedView.clients || []).filter((c) => CLIENTS.includes(c));
       return {
-        teams: savedView.teams || d.teams,
+        teams: (() => {
+          const loaded = (savedView.teams || []).map((t) => t === "Events" ? "Reservations" : t).filter((t) => TEAMS.includes(t));
+          return loaded.length ? loaded : d.teams;
+        })(),
         quarters: savedView.quarters || d.quarters,
         clients: clients.length ? clients : d.clients,
         showTicketTitle: savedView.showTicketTitle === true,
