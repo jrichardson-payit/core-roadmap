@@ -180,16 +180,34 @@
     }
     .group { margin-bottom: 12px; }
     .group-h { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
-    .epic { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 10px; }
-    .dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      margin-top: 6px;
-      flex-shrink: 0;
+    .epic {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 10px;
     }
-    .epic-body { min-width: 0; flex: 1; }
+    .ribbon {
+      padding: 4px 10px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.3;
+    }
+    .epic-body { min-width: 0; padding: 8px 10px 10px; }
     .title { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+    .rank-in {
+      width: 64px;
+      background: var(--pill);
+      border: 1px solid var(--stroke);
+      color: var(--text);
+      border-radius: 6px;
+      padding: 3px 6px;
+      font-size: 12px;
+    }
+    .rank-in:focus { outline: 1px solid var(--accent); }
     .field {
       display: flex;
       flex-wrap: wrap;
@@ -212,7 +230,24 @@
       font-size: 13px;
     }
     .search:focus { outline: 1px solid var(--accent); }
+    .search-hint {
+      margin: 6px 0 0;
+      color: var(--faint);
+      font-size: 12px;
+    }
     .foot { color: var(--faint); font-size: 12px; margin-top: 16px; }
+    .views { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; }
+    .view-tab {
+      border: 1px solid var(--stroke);
+      background: var(--pill);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .view-tab.on { background: var(--pill-on); }
   </style>
 </head>
 <body>
@@ -235,6 +270,7 @@
         <p class="intro-p">Advancing connected licensing, vehicles, financials, reservations, mobile, and platform capabilities into intelligent, adaptive systems that simplify the outdoor experience, help agencies better serve hunters and anglers, and strengthen conservation.</p>
       </div>
     </div>
+    <div class="views" id="views"></div>
     <div class="card">
       <div class="card-h">View By Options</div>
       <div class="card-b">
@@ -244,6 +280,7 @@
             <button type="button" class="pill sm" id="search-clear" hidden>Clear</button>
           </div>
           <input id="search" class="search" type="search" />
+          <p class="search-hint">Search by Ticket #, State, Name, Sprint # and more...</p>
         </div>
         <div id="filters"></div>
       </div>
@@ -253,13 +290,26 @@
   </div>
   <script>
     const JIRA = "https://payitdev.atlassian.net/browse/";
-    const QUARTERS = ["2026 Q3","2026 Q4","2027 Q1","2027 Q2","2027 Q3","2027 Q4","2028 Q1","2028 Q2","2028 Q3"];
+    const VIEWS = [
+      { id: "features", label: "Features" },
+      { id: "bugs", label: "Bugs and Support" },
+      { id: "backlog", label: "Backlog" },
+    ];
+    const QUARTERS = ["2026 Q3","2026 Q4","2027 Q1","2027 Q2","2027 Q3","2027 Q4","2028 Q1","2028 Q2","2028 Q3","Not Scheduled"];
     const TEAMS = ["Events","Licensing","Vehicle","Financials","Mobile","Platform"];
     const TEAM_TO_PROJECT = { Events:"RESRV", Licensing:"LICS", Vehicle:"CVEH", Financials:"FNCL", Mobile:"CALM", Platform:"SYST" };
     const PROJECT_LABEL = { RESRV:"Events", LICS:"Licensing", CVEH:"Vehicle", FNCL:"Financials", CALM:"Mobile", SYST:"Platform" };
+    const TEAM_RIBBON = {
+      RESRV: { name: "Events", bg: "#2e6b4a", fg: "#fff" },
+      LICS: { name: "Licensing", bg: "#2f6fbf", fg: "#fff" },
+      CVEH: { name: "Vehicle", bg: "#2a9d82", fg: "#fff" },
+      FNCL: { name: "Financials", bg: "#c4921a", fg: "#fff" },
+      CALM: { name: "Mobile", bg: "#6d5bce", fg: "#fff" },
+      SYST: { name: "Platform", bg: "#6b7280", fg: "#fff" },
+    };
     const PROJECT_ORDER = ["RESRV","LICS","CVEH","FNCL","CALM","SYST"];
-    const CLIENTS = ["Ohio","Missouri","Minnesota","Mississippi","Louisiana","Oregon","Arkansas","Michigan","Cherokee","All","PayIt"];
-    const CLIENT_ABBR = { Ohio:"OH", Missouri:"MO", Minnesota:"MN", Mississippi:"MS", Louisiana:"LA", Oregon:"OR", Arkansas:"AR", Michigan:"MI", Cherokee:"Cherokee", All:"All", PayIt:"PayIt" };
+    const CLIENTS = ["Ohio","Missouri","Minnesota","Mississippi","Louisiana","Oregon","Arkansas","Michigan","Cherokee","Ontario","Klamath","New Hampshire","PayIt"];
+    const CLIENT_ABBR = { Ohio:"OH", Missouri:"MO", Minnesota:"MN", Mississippi:"MS", Louisiana:"LA", Oregon:"OR", Arkansas:"AR", Michigan:"MI", Cherokee:"Cherokee", Ontario:"Ontario", Klamath:"Klamath", "New Hampshire":"NH", PayIt:"PayIt" };
     const META = {
       "2026 Q3": { heading:"Q3 2026", months:"JUL – SEP", color:"#d46a9a" },
       "2026 Q4": { heading:"Q4 2026", months:"OCT – DEC", color:"#3db89a" },
@@ -270,10 +320,34 @@
       "2028 Q1": { heading:"Q1 2028", months:"JAN – MAR", color:"#2f6fbf" },
       "2028 Q2": { heading:"Q2 2028", months:"APR – JUN", color:"#e3b23c" },
       "2028 Q3": { heading:"Q3 2028", months:"JUL – SEP", color:"#d46a9a" },
+      "Not Scheduled": { heading:"Not Scheduled", months:"BACKLOG", color:"#8a8a8a" },
     };
 
-    const data = window.ROADMAP_DATA || { epics: [], updated: "" };
-    const LS = "core-roadmap-view-v2";
+    const data = window.ROADMAP_DATA || { epics: [], features: [], bugs: [], backlog: [], updated: "" };
+    const LS = "core-roadmap-view-v5";
+    const RANK_LS = "core-roadmap-ranks-v1";
+    function allRoadmapItems() {
+      return [].concat(data.features || [], data.epics || [], data.bugs || [], data.backlog || []);
+    }
+    function loadRanks() {
+      try { return JSON.parse(localStorage.getItem(RANK_LS) || "{}"); } catch (e) { return {}; }
+    }
+    function applyStoredRanks() {
+      const ranks = loadRanks();
+      allRoadmapItems().forEach((item) => {
+        if (Object.prototype.hasOwnProperty.call(ranks, item.key)) item.rank = ranks[item.key];
+      });
+    }
+    function setRank(key, value) {
+      const ranks = loadRanks();
+      if (value == null) delete ranks[key];
+      else ranks[key] = value;
+      localStorage.setItem(RANK_LS, JSON.stringify(ranks));
+      allRoadmapItems().forEach((item) => {
+        if (item.key === key) item.rank = value;
+      });
+    }
+    applyStoredRanks();
     const THEME_LS = "core-roadmap-theme-v2";
     function currentTheme() {
       return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
@@ -293,52 +367,122 @@
       try { return JSON.parse(localStorage.getItem(LS) || "null"); } catch (e) { return null; }
     }
     const saved = loadState() || {};
+    function itemsFor(viewId) {
+      if (viewId === "bugs") return data.bugs || [];
+      if (viewId === "backlog") return data.backlog || [];
+      return data.features || data.epics || [];
+    }
+    function defaultViewPrefs(viewId) {
+      return {
+        teams: TEAMS.slice(),
+        quarters: QUARTERS.slice(),
+        clients: CLIENTS.slice(),
+        showTicketTitle: false,
+        showKey: false,
+        showSprint: true,
+        showShirt: false,
+        showClients: true,
+        showTickets: false,
+        showWhy: true,
+        search: "",
+        openWhy: Object.fromEntries(itemsFor(viewId).map((e) => [e.key, true])),
+        openTickets: {},
+      };
+    }
+    function loadViewPrefs(savedView, viewId) {
+      const d = defaultViewPrefs(viewId);
+      if (!savedView) return d;
+      const clients = (savedView.clients || []).filter((c) => CLIENTS.includes(c));
+      return {
+        teams: savedView.teams || d.teams,
+        quarters: savedView.quarters || d.quarters,
+        clients: clients.length ? clients : d.clients,
+        showTicketTitle: savedView.showTicketTitle === true,
+        showKey: savedView.showKey === true,
+        showSprint: savedView.showSprint !== false,
+        showShirt: savedView.showShirt === true,
+        showClients: savedView.showClients !== false,
+        showTickets: savedView.showTickets === true,
+        showWhy: savedView.showWhy !== false,
+        search: typeof savedView.search === "string" ? savedView.search : "",
+        openWhy: d.openWhy,
+        openTickets: {},
+      };
+    }
+    const savedViews = saved.views || {};
     const state = {
-      teams: saved.teams || TEAMS.slice(),
-      quarters: saved.quarters || QUARTERS.slice(),
-      clients: saved.clients || CLIENTS.slice(),
-      showEpicTitle: saved.showEpicTitle === true,
-      showKey: saved.showKey === true,
-      showSprint: saved.showSprint !== false,
-      showShirt: saved.showShirt === true,
-      showClients: saved.showClients !== false,
-      showTickets: saved.showTickets === true,
-      showWhy: saved.showWhy !== false,
-      search: typeof saved.search === "string" ? saved.search : "",
-      openWhy: Object.fromEntries((data.epics || []).map((e) => [e.key, true])),
-      openTickets: {},
+      view: VIEWS.some((v) => v.id === saved.view) ? saved.view : "features",
+      views: {
+        features: loadViewPrefs(savedViews.features, "features"),
+        bugs: loadViewPrefs(savedViews.bugs, "bugs"),
+        backlog: loadViewPrefs(savedViews.backlog, "backlog"),
+      },
     };
+    function vs() { return state.views[state.view]; }
+    function currentItems() { return itemsFor(state.view); }
+    function persistView(v) {
+      return {
+        teams: v.teams, quarters: v.quarters, clients: v.clients,
+        showTicketTitle: v.showTicketTitle, showKey: v.showKey, showSprint: v.showSprint,
+        showShirt: v.showShirt, showClients: v.showClients,
+        showTickets: v.showTickets, showWhy: v.showWhy, search: v.search,
+      };
+    }
     function save() {
       localStorage.setItem(LS, JSON.stringify({
-        teams: state.teams, quarters: state.quarters, clients: state.clients,
-        showEpicTitle: state.showEpicTitle, showKey: state.showKey, showSprint: state.showSprint,
-        showShirt: state.showShirt, showClients: state.showClients,
-        showTickets: state.showTickets, showWhy: state.showWhy, search: state.search,
+        view: state.view,
+        views: {
+          features: persistView(state.views.features),
+          bugs: persistView(state.views.bugs),
+          backlog: persistView(state.views.backlog),
+        },
       }));
     }
     function toggleValue(list, value) {
       return list.includes(value) ? list.filter((x) => x !== value) : list.concat(value);
     }
-    function setList(key, next) { state[key] = next; save(); render(); }
-    function pillClick(key, options, opt) {
-      const selected = state[key];
-      const allOn = selected.length === options.length;
-      setList(key, allOn ? [opt] : toggleValue(selected, opt));
+    function setList(key, next) { vs()[key] = next; save(); render(); }
+    function pillsWithData(key) {
+      const items = currentItems();
+      if (key === "teams") {
+        const projects = new Set(items.map((e) => e.project));
+        return TEAMS.filter((t) => projects.has(TEAM_TO_PROJECT[t]));
+      }
+      if (key === "quarters") {
+        const qs = new Set(items.map((e) => e.q));
+        return QUARTERS.filter((q) => qs.has(q));
+      }
+      const clients = new Set();
+      items.forEach((e) => (e.clients || []).forEach((c) => clients.add(c)));
+      return CLIENTS.filter((c) => clients.has(c));
+    }
+    function keepHidden(selected, visible) {
+      return selected.filter((x) => !visible.includes(x));
+    }
+    function pillClick(key, visible, opt) {
+      const selected = vs()[key];
+      const visibleSelected = visible.filter((o) => selected.includes(o));
+      const allOn = visible.length > 0 && visibleSelected.length === visible.length;
+      const hidden = keepHidden(selected, visible);
+      setList(key, hidden.concat(allOn ? [opt] : toggleValue(visibleSelected, opt)));
+    }
+    function selectVisible(key, visible) {
+      setList(key, keepHidden(vs()[key], visible).concat(visible));
     }
     function matchesClient(epic) {
-      if (!state.clients.length) return true;
-      return epic.clients.some((c) => state.clients.includes(c));
+      if (!vs().clients.length) return true;
+      return epic.clients.some((c) => vs().clients.includes(c));
     }
     function matchesTeam(epic) {
-      if (!state.teams.length) return true;
-      return state.teams.some((t) => TEAM_TO_PROJECT[t] === epic.project);
+      if (!vs().teams.length) return true;
+      return vs().teams.some((t) => TEAM_TO_PROJECT[t] === epic.project);
     }
     function searchHaystack(epic) {
       const clients = epic.clients || [];
       const tickets = epic.tickets || [];
       const meta = META[epic.q] || {};
       return [
-        epic.key, epic.title, epic.epicTitle, sprintSearchText(epic.sprint), epic.why, epic.shirt, epic.q,
+        epic.key, epic.title, epic.ticketTitle || epic.epicTitle, sprintSearchText(epic.sprint), epic.why, epic.shirt, epic.q,
         meta.heading || "", meta.months || "",
         epic.project, PROJECT_LABEL[epic.project] || "",
         clients.join(" "),
@@ -351,7 +495,7 @@
         new RegExp("(?:^|[^a-z0-9])s" + n + "(?:[^a-z0-9]|$)").test(hay);
     }
     function matchesSearch(epic) {
-      const raw = (state.search || "").toLowerCase().trim();
+      const raw = (vs().search || "").toLowerCase().trim();
       if (!raw) return true;
       const hay = searchHaystack(epic);
       if (hay.includes(raw)) return true;
@@ -370,8 +514,8 @@
       return needed.every((t) => hay.includes(t));
     }
     function visibleEpics() {
-      return (data.epics || []).filter((e) => {
-        if (state.quarters.length && !state.quarters.includes(e.q)) return false;
+      return currentItems().filter((e) => {
+        if (vs().quarters.length && !vs().quarters.includes(e.q)) return false;
         if (!matchesClient(e)) return false;
         if (!matchesTeam(e)) return false;
         if (!matchesSearch(e)) return false;
@@ -379,35 +523,26 @@
       });
     }
     function expandAll() {
-      visibleEpics().forEach((e) => {
-        state.openWhy[e.key] = true;
-        if ((e.tickets || []).length) state.openTickets[e.key] = true;
+      const cur = vs();
+      currentItems().forEach((e) => {
+        cur.openWhy[e.key] = true;
+        if ((e.tickets || []).length) cur.openTickets[e.key] = true;
       });
       render();
     }
     function closeAll() {
-      state.openWhy = {};
-      state.openTickets = {};
+      const cur = vs();
+      currentItems().forEach((e) => {
+        delete cur.openWhy[e.key];
+        delete cur.openTickets[e.key];
+      });
       render();
     }
     function resetDefaults() {
-      state.teams = TEAMS.slice();
-      state.quarters = QUARTERS.slice();
-      state.clients = CLIENTS.slice();
-      state.showEpicTitle = false;
-      state.showKey = false;
-      state.showSprint = true;
-      state.showShirt = false;
-      state.showClients = true;
-      state.showTickets = false;
-      state.showWhy = true;
-      state.search = "";
-      state.openWhy = Object.fromEntries((data.epics || []).map((e) => [e.key, true]));
-      state.openTickets = {};
+      state.views[state.view] = defaultViewPrefs(state.view);
       const searchBox = document.getElementById("search");
       if (searchBox) searchBox.value = "";
       syncSearchClear();
-      applyTheme("light");
       save();
       render();
     }
@@ -422,12 +557,14 @@
       (kids || []).forEach((c) => n.appendChild(typeof c === "string" ? document.createTextNode(c) : c));
       return n;
     }
-    function filterRow(label, key, options, display) {
-      const selected = state[key];
-      const allOn = selected.length === options.length;
+    function filterRow(label, key, display) {
+      const options = pillsWithData(key);
+      const selected = vs()[key];
+      const visibleSelected = options.filter((o) => selected.includes(o));
+      const allOn = options.length > 0 && visibleSelected.length === options.length;
       const head = el("div", { class: "filter-h" }, [label]);
       if (!allOn) {
-        head.appendChild(el("button", { class: "pill sm", onClick: () => setList(key, options.slice()) }, ["Select all"]));
+        head.appendChild(el("button", { class: "pill sm", onClick: () => selectVisible(key, options) }, ["Select all"]));
       }
       const pills = el("div", { class: "pills" });
       options.forEach((opt) => {
@@ -458,13 +595,13 @@
     function renderFilters() {
       const box = document.getElementById("filters");
       box.innerHTML = "";
-      box.appendChild(filterRow("Teams", "teams", TEAMS));
-      box.appendChild(filterRow("Quarters", "quarters", QUARTERS));
-      box.appendChild(filterRow("Clients", "clients", CLIENTS, (c) => c === "All" ? "All Clients" : c));
+      box.appendChild(filterRow("Teams", "teams"));
+      box.appendChild(filterRow("Quarters", "quarters"));
+      box.appendChild(filterRow("Clients", "clients"));
       const toggles = el("div", { class: "toggles" });
       [
-        ["Epic Title", "showEpicTitle"],
-        ["Epic #", "showKey"],
+        ["Ticket Title", "showTicketTitle"],
+        ["Ticket #", "showKey"],
         ["Sprint", "showSprint"],
         ["T-Shirt", "showShirt"],
         ["Clients", "showClients"],
@@ -473,7 +610,7 @@
       ].forEach(([label, key]) => {
         toggles.appendChild(el("div", { class: "tog" }, [
           el("span", null, [label]),
-          switchBtn(state[key], () => { state[key] = !state[key]; save(); render(); }),
+          switchBtn(vs()[key], () => { vs()[key] = !vs()[key]; save(); render(); }),
         ]));
       });
       box.appendChild(el("div", { class: "filter" }, [
@@ -503,6 +640,24 @@
       "2026-3-4": "08/31/2026",
       "2026-3-5": "09/14/2026",
       "2026-3-6": "09/28/2026",
+      "2026-4-1": "10/19/2026",
+      "2026-4-2": "11/02/2026",
+      "2026-4-3": "11/16/2026",
+      "2026-4-4": "11/30/2026",
+      "2026-4-5": "12/14/2026",
+      "2026-4-6": "12/28/2026",
+      "2027-1-1": "01/18/2027",
+      "2027-1-2": "02/01/2027",
+      "2027-1-3": "02/15/2027",
+      "2027-1-4": "03/01/2027",
+      "2027-1-5": "03/15/2027",
+      "2027-1-6": "03/29/2027",
+      "2027-2-1": "04/19/2027",
+      "2027-2-2": "05/03/2027",
+      "2027-2-3": "05/17/2027",
+      "2027-2-4": "05/31/2027",
+      "2027-2-5": "06/14/2027",
+      "2027-2-6": "06/28/2027",
     };
     function sprintSortKey(name) {
       if (!name) return [9999, 9, 999, ""];
@@ -529,6 +684,15 @@
       }
       return extras.join(" ");
     }
+    function compareItems(a, b) {
+      if (state.view === "backlog") {
+        const ar = a.rank == null || a.rank === "" ? Number.POSITIVE_INFINITY : Number(a.rank);
+        const br = b.rank == null || b.rank === "" ? Number.POSITIVE_INFINITY : Number(b.rank);
+        if (ar !== br) return ar - br;
+        return (a.key || "").localeCompare(b.key || "", undefined, { numeric: true });
+      }
+      return compareBySprint(a, b);
+    }
     function compareBySprint(a, b) {
       const left = sprintSortKey(a.sprint);
       const right = sprintSortKey(b.sprint);
@@ -540,40 +704,75 @@
     }
     function groupsInQuarter(items) {
       const projects = new Set(items.map((e) => e.project));
-      if (projects.size <= 1) return [{ label: null, items: items.slice().sort(compareBySprint) }];
+      if (projects.size <= 1) return [{ label: null, items: items.slice().sort(compareItems) }];
       return PROJECT_ORDER.flatMap((p) => {
         const group = items.filter((e) => e.project === p);
-        return group.length ? [{ label: PROJECT_LABEL[p] || p, items: group.slice().sort(compareBySprint) }] : [];
+        return group.length ? [{ label: PROJECT_LABEL[p] || p, items: group.slice().sort(compareItems) }] : [];
       });
     }
+    function rankField(epic) {
+      const row = el("div", { class: "field" }, [el("span", { class: "lbl" }, ["Rank:"])]);
+      const input = document.createElement("input");
+      input.type = "number";
+      input.min = "1";
+      input.step = "1";
+      input.className = "rank-in";
+      input.setAttribute("aria-label", "Rank for " + epic.key);
+      input.placeholder = "—";
+      if (epic.rank != null && epic.rank !== "") input.value = String(epic.rank);
+      const commit = () => {
+        const raw = input.value.trim();
+        const next = raw === "" ? null : Number(raw);
+        if (next !== null && !Number.isFinite(next)) return;
+        const prev = epic.rank == null || epic.rank === "" ? null : Number(epic.rank);
+        if (prev === next) return;
+        setRank(epic.key, next);
+        renderBoard();
+      };
+      input.addEventListener("change", commit);
+      input.addEventListener("keydown", (evt) => {
+        if (evt.key === "Enter") { evt.preventDefault(); input.blur(); }
+      });
+      row.appendChild(input);
+      return row;
+    }
     function epicView(epic, color) {
+      const team = TEAM_RIBBON[epic.project] || {
+        name: PROJECT_LABEL[epic.project] || epic.project,
+        bg: color,
+        fg: "#fff",
+      };
       const wrap = el("div", { class: "epic" });
-      wrap.appendChild(el("div", { class: "dot", style: "background:" + color }));
+      wrap.appendChild(el("div", {
+        class: "ribbon",
+        style: "background:" + team.bg + ";color:" + team.fg,
+      }, [team.name]));
       const body = el("div", { class: "epic-body" });
       const title = el("div", { class: "title" });
       title.appendChild(el("a", { href: JIRA + epic.key, target: "_blank", rel: "noreferrer" }, [epic.title]));
       body.appendChild(title);
-      if (state.showEpicTitle) body.appendChild(fieldLine("Epic Title", epic.epicTitle || "—"));
-      if (state.showKey) {
+      if (vs().showTicketTitle) body.appendChild(fieldLine("Ticket Title", epic.ticketTitle || epic.epicTitle || "—"));
+      if (vs().showKey) {
         const keyRow = el("div", { class: "field" }, [
-          el("span", { class: "lbl" }, ["Epic #:"]),
+          el("span", { class: "lbl" }, ["Ticket #:"]),
           el("a", { class: "val", href: JIRA + epic.key, target: "_blank", rel: "noreferrer" }, [epic.key]),
         ]);
         body.appendChild(keyRow);
       }
-      if (state.showSprint) body.appendChild(fieldLine("Sprint", formatSprint(epic.sprint)));
-      if (state.showShirt) body.appendChild(fieldLine("T-Shirt", epic.shirt));
-      if (state.showClients) {
+      if (state.view === "backlog") body.appendChild(rankField(epic));
+      if (vs().showSprint) body.appendChild(fieldLine("Sprint", formatSprint(epic.sprint)));
+      if (vs().showShirt) body.appendChild(fieldLine("T-Shirt", epic.shirt));
+      if (vs().showClients) {
         body.appendChild(fieldLine("Clients", (epic.clients || []).map((c) => CLIENT_ABBR[c] || c).join(", ")));
       }
-      if (state.showTickets) {
+      if (vs().showTickets) {
         const has = (epic.tickets || []).length > 0;
         if (has) {
-          body.appendChild(fieldLine("Client Tickets", "", true, !!state.openTickets[epic.key], () => {
-            state.openTickets[epic.key] = !state.openTickets[epic.key];
+          body.appendChild(fieldLine("Client Tickets", "", true, !!vs().openTickets[epic.key], () => {
+            vs().openTickets[epic.key] = !vs().openTickets[epic.key];
             render();
           }));
-          if (state.openTickets[epic.key]) {
+          if (vs().openTickets[epic.key]) {
             const list = el("div", { class: "tickets" });
             epic.tickets.forEach((t) => {
               list.appendChild(el("a", { href: JIRA + t.key, target: "_blank", rel: "noreferrer" }, [t.key + " — " + t.name]));
@@ -587,19 +786,19 @@
           body.appendChild(fieldLine("Client Tickets", "None linked"));
         }
       }
-      if (state.showWhy) {
-        body.appendChild(fieldLine("Why It Matters", "", true, !!state.openWhy[epic.key], () => {
-          state.openWhy[epic.key] = !state.openWhy[epic.key];
+      if (vs().showWhy) {
+        body.appendChild(fieldLine("Why It Matters", "", true, !!vs().openWhy[epic.key], () => {
+          vs().openWhy[epic.key] = !vs().openWhy[epic.key];
           render();
         }));
-        if (state.openWhy[epic.key]) body.appendChild(el("div", { class: "why" }, [epic.why || ""]));
+        if (vs().openWhy[epic.key]) body.appendChild(el("div", { class: "why" }, [epic.why || ""]));
       }
       wrap.appendChild(body);
       return wrap;
     }
     function renderBoard() {
       const visible = visibleEpics();
-      const byQ = QUARTERS.filter((q) => !state.quarters.length || state.quarters.includes(q))
+      const byQ = QUARTERS.filter((q) => !vs().quarters.length || vs().quarters.includes(q))
         .map((q) => ({ q, epics: visible.filter((e) => e.q === q) }))
         .filter((x) => x.epics.length > 0);
       const board = document.getElementById("board");
@@ -621,35 +820,54 @@
         col.appendChild(inner);
         board.appendChild(col);
       });
-      if (!byQ.length && (state.search || "").trim()) {
+      if (!byQ.length && (vs().search || "").trim()) {
         board.style.gridTemplateColumns = "minmax(0, 1fr)";
-        board.appendChild(el("p", { class: "foot", style: "margin:0" }, ["No epics match that search."]));
+        board.appendChild(el("p", { class: "foot", style: "margin:0" }, ["Nothing matches that search."]));
       }
+      const viewLabel = (VIEWS.find((v) => v.id === state.view) || {}).label || "Features";
       document.getElementById("foot").textContent =
-        visible.length + " epics in view of " + (data.epics || []).length + " in scope · Unplanned and Support omitted · Updated " + (data.updated || "") + " · Why-it-matters copy is a first draft";
+        visible.length + " in view of " + currentItems().length + " in " + viewLabel +
+        " · Vulnerabilities and Engineering Updates omitted · Updated " + (data.updated || "") +
+        " · Why-it-matters copy is a first draft";
     }
-    function render() { renderFilters(); renderBoard(); }
+    function renderViews() {
+      const box = document.getElementById("views");
+      box.innerHTML = "";
+      VIEWS.forEach((view) => {
+        box.appendChild(el("button", {
+          class: "view-tab" + (state.view === view.id ? " on" : ""),
+          onClick: () => {
+            state.view = view.id;
+            searchEl.value = vs().search || "";
+            syncSearchClear();
+            save();
+            render();
+          },
+        }, [view.label]));
+      });
+    }
+    function render() { renderViews(); renderFilters(); renderBoard(); }
     const searchEl = document.getElementById("search");
     const searchClear = document.getElementById("search-clear");
     function syncSearchClear() {
-      searchClear.hidden = !(state.search || "").trim();
+      searchClear.hidden = !(vs().search || "").trim();
     }
-    searchEl.value = state.search || "";
+    searchEl.value = vs().search || "";
     syncSearchClear();
     searchEl.addEventListener("input", () => {
-      state.search = searchEl.value;
+      vs().search = searchEl.value;
       save();
       syncSearchClear();
       renderBoard();
     });
     searchClear.addEventListener("click", () => {
-      state.search = "";
+      vs().search = "";
       searchEl.value = "";
       save();
       syncSearchClear();
       renderBoard();
     });
-    if (!data.epics || !data.epics.length) {
+    if (!currentItems().length && !(data.epics || []).length) {
       document.getElementById("foot").textContent = "Roadmap data did not load. Keep index.html next to data.js.";
     } else {
       render();
