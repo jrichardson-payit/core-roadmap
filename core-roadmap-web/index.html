@@ -28,6 +28,7 @@
       --pill-on: #3d5a80;
       --switch: #444;
       --switch-on: #3b7ddd;
+      --hit: #f0b429;
     }
     html[data-theme="light"] {
       color-scheme: light;
@@ -43,6 +44,7 @@
       --pill-on: #c5d8f0;
       --switch: #c4c4c4;
       --switch-on: #3b7ddd;
+      --hit: #c45a32;
     }
     * { box-sizing: border-box; }
     html, body {
@@ -250,6 +252,7 @@
       cursor: pointer;
     }
     .view-tab.on { background: var(--pill-on); }
+    .view-count { color: var(--hit); font-weight: 700; }
   </style>
 </head>
 <body>
@@ -869,7 +872,11 @@
       box.innerHTML = "";
       const searching = !!(state.search || "").trim();
       VIEWS.forEach((view) => {
-        const label = searching ? view.label + " " + searchHits(view.id) : view.label;
+        const kids = [view.label];
+        if (searching) {
+          kids.push(" ");
+          kids.push(el("span", { class: "view-count" }, ["(" + searchHits(view.id) + ")"]));
+        }
         box.appendChild(el("button", {
           class: "view-tab" + (state.view === view.id ? " on" : ""),
           onClick: () => {
@@ -877,7 +884,7 @@
             save();
             render();
           },
-        }, [label]));
+        }, kids));
       });
     }
     function render() { renderViews(); renderFilters(); renderBoard(); }
