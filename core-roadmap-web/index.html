@@ -326,7 +326,7 @@
     };
 
     const data = window.ROADMAP_DATA || { epics: [], features: [], bugs: [], backlog: [], updated: "" };
-    const LS = "core-roadmap-view-v5";
+    const LS = "core-roadmap-view-v6";
     const RANK_LS = "core-roadmap-ranks-v1";
     function allRoadmapItems() {
       return [].concat(data.features || [], data.epics || [], data.bugs || [], data.backlog || []);
@@ -374,11 +374,15 @@
       if (viewId === "backlog") return data.backlog || [];
       return data.features || data.epics || [];
     }
-    function defaultViewPrefs(viewId) {
+    function defaultViewPrefs() {
       return {
         teams: TEAMS.slice(),
         quarters: QUARTERS.slice(),
         clients: CLIENTS.slice(),
+      };
+    }
+    function defaultItemPrefs() {
+      return {
         showTicketTitle: false,
         showKey: false,
         showSprint: true,
@@ -386,13 +390,13 @@
         showClients: true,
         showTickets: false,
         showWhy: true,
-        search: "",
-        openWhy: Object.fromEntries(itemsFor(viewId).map((e) => [e.key, true])),
-        openTickets: {},
       };
     }
-    function loadViewPrefs(savedView, viewId) {
-      const d = defaultViewPrefs(viewId);
+    function defaultOpenWhy() {
+      return Object.fromEntries(allRoadmapItems().map((e) => [e.key, true]));
+    }
+    function loadViewPrefs(savedView) {
+      const d = defaultViewPrefs();
       if (!savedView) return d;
       const clients = (savedView.clients || []).filter((c) => CLIENTS.includes(c));
       return {
@@ -402,40 +406,58 @@
         })(),
         quarters: savedView.quarters || d.quarters,
         clients: clients.length ? clients : d.clients,
-        showTicketTitle: savedView.showTicketTitle === true,
-        showKey: savedView.showKey === true,
-        showSprint: savedView.showSprint !== false,
-        showShirt: savedView.showShirt === true,
-        showClients: savedView.showClients !== false,
-        showTickets: savedView.showTickets === true,
-        showWhy: savedView.showWhy !== false,
-        search: typeof savedView.search === "string" ? savedView.search : "",
-        openWhy: d.openWhy,
-        openTickets: {},
+      };
+    }
+    function loadItemPrefs() {
+      const src = saved.item || (saved.views || {})[saved.view] || (saved.views || {}).features || {};
+      return {
+        showTicketTitle: src.showTicketTitle === true,
+        showKey: src.showKey === true,
+        showSprint: src.showSprint !== false,
+        showShirt: src.showShirt === true,
+        showClients: src.showClients !== false,
+        showTickets: src.showTickets === true,
+        showWhy: src.showWhy !== false,
       };
     }
     const savedViews = saved.views || {};
+    function initialSearch() {
+      if (typeof saved.search === "string") return saved.search;
+      const fromViews = [savedViews.features, savedViews.bugs, savedViews.backlog]
+        .map((v) => (v && typeof v.search === "string" ? v.search : ""))
+        .find((s) => s.trim());
+      return fromViews || "";
+    }
     const state = {
       view: VIEWS.some((v) => v.id === saved.view) ? saved.view : "features",
+      search: initialSearch(),
+      item: loadItemPrefs(),
+      openWhy: defaultOpenWhy(),
+      openTickets: {},
       views: {
-        features: loadViewPrefs(savedViews.features, "features"),
-        bugs: loadViewPrefs(savedViews.bugs, "bugs"),
-        backlog: loadViewPrefs(savedViews.backlog, "backlog"),
+        features: loadViewPrefs(savedViews.features),
+        bugs: loadViewPrefs(savedViews.bugs),
+        backlog: loadViewPrefs(savedViews.backlog),
       },
     };
     function vs() { return state.views[state.view]; }
     function currentItems() { return itemsFor(state.view); }
     function persistView(v) {
+      return { teams: v.teams, quarters: v.quarters, clients: v.clients };
+    }
+    function persistItem() {
+      const i = state.item;
       return {
-        teams: v.teams, quarters: v.quarters, clients: v.clients,
-        showTicketTitle: v.showTicketTitle, showKey: v.showKey, showSprint: v.showSprint,
-        showShirt: v.showShirt, showClients: v.showClients,
-        showTickets: v.showTickets, showWhy: v.showWhy, search: v.search,
+        showTicketTitle: i.showTicketTitle, showKey: i.showKey, showSprint: i.showSprint,
+        showShirt: i.showShirt, showClients: i.showClients,
+        showTickets: i.showTickets, showWhy: i.showWhy,
       };
     }
     function save() {
       localStorage.setItem(LS, JSON.stringify({
         view: state.view,
+        search: state.search,
+        item: persistItem(),
         views: {
           features: persistView(state.views.features),
           bugs: persistView(state.views.bugs),
@@ -500,7 +522,7 @@
         new RegExp("(?:^|[^a-z0-9])s" + n + "(?:[^a-z0-9]|$)").test(hay);
     }
     function matchesSearch(epic) {
-      const raw = (vs().search || "").toLowerCase().trim();
+      const raw = (state.search || "").toLowerCase().trim();
       if (!raw) return true;
       const hay = searchHaystack(epic);
       if (hay.includes(raw)) return true;
@@ -528,23 +550,27 @@
       });
     }
     function expandAll() {
-      const cur = vs();
-      currentItems().forEach((e) => {
-        cur.openWhy[e.key] = true;
-        if ((e.tickets || []).length) cur.openTickets[e.key] = true;
+      allRoadmapItems().forEach((e) => {
+        state.openWhy[e.key] = true;
+        if ((e.tickets || []).length) state.openTickets[e.key] = true;
       });
       render();
     }
     function closeAll() {
-      const cur = vs();
-      currentItems().forEach((e) => {
-        delete cur.openWhy[e.key];
-        delete cur.openTickets[e.key];
+      allRoadmapItems().forEach((e) => {
+        delete state.openWhy[e.key];
+        delete state.openTickets[e.key];
       });
       render();
     }
     function resetDefaults() {
-      state.views[state.view] = defaultViewPrefs(state.view);
+      state.views.features = defaultViewPrefs();
+      state.views.bugs = defaultViewPrefs();
+      state.views.backlog = defaultViewPrefs();
+      state.item = defaultItemPrefs();
+      state.openWhy = defaultOpenWhy();
+      state.openTickets = {};
+      state.search = "";
       const searchBox = document.getElementById("search");
       if (searchBox) searchBox.value = "";
       syncSearchClear();
@@ -615,7 +641,7 @@
       ].forEach(([label, key]) => {
         toggles.appendChild(el("div", { class: "tog" }, [
           el("span", null, [label]),
-          switchBtn(vs()[key], () => { vs()[key] = !vs()[key]; save(); render(); }),
+          switchBtn(state.item[key], () => { state.item[key] = !state.item[key]; save(); render(); }),
         ]));
       });
       box.appendChild(el("div", { class: "filter" }, [
@@ -756,8 +782,8 @@
       const title = el("div", { class: "title" });
       title.appendChild(el("a", { href: JIRA + epic.key, target: "_blank", rel: "noreferrer" }, [epic.title]));
       body.appendChild(title);
-      if (vs().showTicketTitle) body.appendChild(fieldLine("Ticket Title", epic.ticketTitle || epic.epicTitle || "—"));
-      if (vs().showKey) {
+      if (state.item.showTicketTitle) body.appendChild(fieldLine("Ticket Title", epic.ticketTitle || epic.epicTitle || "—"));
+      if (state.item.showKey) {
         const keyRow = el("div", { class: "field" }, [
           el("span", { class: "lbl" }, ["Ticket #:"]),
           el("a", { class: "val", href: JIRA + epic.key, target: "_blank", rel: "noreferrer" }, [epic.key]),
@@ -765,19 +791,19 @@
         body.appendChild(keyRow);
       }
       if (state.view === "backlog") body.appendChild(rankField(epic));
-      if (vs().showSprint) body.appendChild(fieldLine("Sprint", formatSprint(epic.sprint)));
-      if (vs().showShirt) body.appendChild(fieldLine("T-Shirt", epic.shirt));
-      if (vs().showClients) {
+      if (state.item.showSprint) body.appendChild(fieldLine("Sprint", formatSprint(epic.sprint)));
+      if (state.item.showShirt) body.appendChild(fieldLine("T-Shirt", epic.shirt));
+      if (state.item.showClients) {
         body.appendChild(fieldLine("Clients", (epic.clients || []).map((c) => CLIENT_ABBR[c] || c).join(", ")));
       }
-      if (vs().showTickets) {
+      if (state.item.showTickets) {
         const has = (epic.tickets || []).length > 0;
         if (has) {
-          body.appendChild(fieldLine("Client Tickets", "", true, !!vs().openTickets[epic.key], () => {
-            vs().openTickets[epic.key] = !vs().openTickets[epic.key];
+          body.appendChild(fieldLine("Client Tickets", "", true, !!state.openTickets[epic.key], () => {
+            state.openTickets[epic.key] = !state.openTickets[epic.key];
             render();
           }));
-          if (vs().openTickets[epic.key]) {
+          if (state.openTickets[epic.key]) {
             const list = el("div", { class: "tickets" });
             epic.tickets.forEach((t) => {
               list.appendChild(el("a", { href: JIRA + t.key, target: "_blank", rel: "noreferrer" }, [t.key + " — " + t.name]));
@@ -791,12 +817,12 @@
           body.appendChild(fieldLine("Client Tickets", "None linked"));
         }
       }
-      if (vs().showWhy) {
-        body.appendChild(fieldLine("Why It Matters", "", true, !!vs().openWhy[epic.key], () => {
-          vs().openWhy[epic.key] = !vs().openWhy[epic.key];
+      if (state.item.showWhy) {
+        body.appendChild(fieldLine("Why It Matters", "", true, !!state.openWhy[epic.key], () => {
+          state.openWhy[epic.key] = !state.openWhy[epic.key];
           render();
         }));
-        if (vs().openWhy[epic.key]) body.appendChild(el("div", { class: "why" }, [epic.why || ""]));
+        if (state.openWhy[epic.key]) body.appendChild(el("div", { class: "why" }, [epic.why || ""]));
       }
       wrap.appendChild(body);
       return wrap;
@@ -825,7 +851,7 @@
         col.appendChild(inner);
         board.appendChild(col);
       });
-      if (!byQ.length && (vs().search || "").trim()) {
+      if (!byQ.length && (state.search || "").trim()) {
         board.style.gridTemplateColumns = "minmax(0, 1fr)";
         board.appendChild(el("p", { class: "foot", style: "margin:0" }, ["Nothing matches that search."]));
       }
@@ -835,41 +861,46 @@
         " · Vulnerabilities and Engineering Updates omitted · Updated " + (data.updated || "") +
         " · Why-it-matters copy is a first draft";
     }
+    function searchHits(viewId) {
+      return itemsFor(viewId).filter(matchesSearch).length;
+    }
     function renderViews() {
       const box = document.getElementById("views");
       box.innerHTML = "";
+      const searching = !!(state.search || "").trim();
       VIEWS.forEach((view) => {
+        const label = searching ? view.label + " " + searchHits(view.id) : view.label;
         box.appendChild(el("button", {
           class: "view-tab" + (state.view === view.id ? " on" : ""),
           onClick: () => {
             state.view = view.id;
-            searchEl.value = vs().search || "";
-            syncSearchClear();
             save();
             render();
           },
-        }, [view.label]));
+        }, [label]));
       });
     }
     function render() { renderViews(); renderFilters(); renderBoard(); }
     const searchEl = document.getElementById("search");
     const searchClear = document.getElementById("search-clear");
     function syncSearchClear() {
-      searchClear.hidden = !(vs().search || "").trim();
+      searchClear.hidden = !(state.search || "").trim();
     }
-    searchEl.value = vs().search || "";
+    searchEl.value = state.search || "";
     syncSearchClear();
     searchEl.addEventListener("input", () => {
-      vs().search = searchEl.value;
+      state.search = searchEl.value;
       save();
       syncSearchClear();
+      renderViews();
       renderBoard();
     });
     searchClear.addEventListener("click", () => {
-      vs().search = "";
+      state.search = "";
       searchEl.value = "";
       save();
       syncSearchClear();
+      renderViews();
       renderBoard();
     });
     if (!currentItems().length && !(data.epics || []).length) {

@@ -1,5 +1,5 @@
 window.ROADMAP_DATA = {
-  "updated": "2026-09-29",
+  "updated": "2026-10-01",
   "source": "Jira Features + Bugs/Support children + Not Scheduled backlog, merged with overlay.json",
   "epics": [
     {
@@ -10627,6 +10627,135 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "FNCL-2252",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Tender Type Report Over Calculating Split",
+      "ticketTitle": "Tender Type Report Over Calculating Split",
+      "epicTitle": "Tender Type Report Over Calculating Split",
+      "sprint": "FNCL 2026-Q3-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Tender Type Report Over Calculating Split. If this stays broken, money, statements, or renewals come out wrong. Louisiana customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2341",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Change split-tender CC fee basis from proportional to exempt-first allocation",
+      "ticketTitle": "Change split-tender CC fee basis from proportional to exempt-first allocation",
+      "epicTitle": "Change split-tender CC fee basis from proportional to exempt-first allocation",
+      "sprint": "FNCL 2026-Q3-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Change split-tender CC fee basis from proportional to exempt-first allocation. If this stays broken, money, statements, or renewals come out wrong. Louisiana customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2342",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Sales by Time Period - not displaying proper collection of money through the flow",
+      "ticketTitle": "Sales by Time Period - not displaying proper collection of money through the flow",
+      "epicTitle": "Sales by Time Period - not displaying proper collection of money through the flow",
+      "sprint": "FNCL 2026-Q3-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Sales by Time Period - not displaying proper collection of money through the flow. If this stays broken, money, statements, or renewals come out wrong. Louisiana customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2353",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Allow post-statement void journals for credit card transactions",
+      "ticketTitle": "Allow post-statement void journals for credit card transactions",
+      "epicTitle": "Allow post-statement void journals for credit card transactions",
+      "sprint": "FNCL 2026-Q3-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1721",
+          "name": "EFT Report is not Reflecting Voids that were Completed Through CC"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Allow post-statement void journals for credit card transactions. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2355",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "OHQA - Payment method not found",
+      "ticketTitle": "INT - OHQA - Payment method not found",
+      "epicTitle": "INT - OHQA - Payment method not found",
+      "sprint": "FNCL 2026-Q3-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "OHQA - Payment method not found. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2371",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "MDWFP Commission Report - Updates",
+      "ticketTitle": "MDWFP Commission Report - Updates",
+      "epicTitle": "MDWFP Commission Report - Updates",
+      "sprint": "FNCL 2026-Q3-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-2327",
+          "name": "MDWFP Commission Report - Updates"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "MDWFP Commission Report - Updates. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2385",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Fund Split Detail Report same-day voids do not reverse PayIt fees",
+      "ticketTitle": "Fund Split Detail Report same-day voids do not reverse PayIt fees",
+      "epicTitle": "Fund Split Detail Report same-day voids do not reverse PayIt fees",
+      "sprint": "FNCL 2026-Q3-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Fund Split Detail Report same-day voids do not reverse PayIt fees. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
       "key": "FNCL-2387",
       "q": "2026 Q3",
       "project": "FNCL",
@@ -10641,6 +10770,111 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Fix wrong numbers on License sales by date report. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2401",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Credit Card Return Remittance Report is extremely slow to run (32+ minutes)",
+      "ticketTitle": "Credit Card Return Remittance Report is extremely slow to run (32+ minutes)",
+      "epicTitle": "Credit Card Return Remittance Report is extremely slow to run (32+ minutes)",
+      "sprint": "FNCL 2026-Q3-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Credit Card Return Remittance Report is extremely slow to run (32+ minutes). If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-1668",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "EFT Schedule Job Error message",
+      "ticketTitle": "EFT Schedule Job_ Error message",
+      "epicTitle": "EFT Schedule Job_ Error message",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1562",
+          "name": "EFT Schedule Job_ Error message"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "EFT Schedule Job Error message. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2272",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Reports Agent Void Report Void Amount Format Wrong",
+      "ticketTitle": "Reports_ Agent Void Report_ Void Amount Format Wrong",
+      "epicTitle": "Reports_ Agent Void Report_ Void Amount Format Wrong",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1939",
+          "name": "Reports_ Agent Void Report_ Void Amount Format Wrong"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Reports Agent Void Report Void Amount Format Wrong. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2281",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Let staff Autorenew for a customer",
+      "ticketTitle": "Unable to Autorenew for a customer",
+      "epicTitle": "Unable to Autorenew for a customer",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-2279",
+          "name": "Unable to Autorenew for a customer"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Let staff Autorenew for a customer. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2292",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Daily Reports are showing too many fields",
+      "ticketTitle": "Daily Reports are showing too many fields",
+      "epicTitle": "Daily Reports are showing too many fields",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Mississippi"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-2281",
+          "name": "Sales By Time Period: Daily Reports are showing too many fields"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Daily Reports are showing too many fields. If this stays broken, money, statements, or renewals come out wrong. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
     {
@@ -10678,6 +10912,62 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "FNCL-2360",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Auto Renewal Previous Year's Expired Products Available to Enroll",
+      "ticketTitle": "Auto Renewal_ Previous Year's Expired Products Available to Enroll",
+      "epicTitle": "Auto Renewal_ Previous Year's Expired Products Available to Enroll",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1995",
+          "name": "Auto Renewal_ Previous Year's Expired Products Available to Enroll"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Auto Renewal Previous Year's Expired Products Available to Enroll. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2391",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Federal Detail Report is returning no data in AR",
+      "ticketTitle": "Federal Detail Report is returning no data in AR-Prod",
+      "epicTitle": "Federal Detail Report is returning no data in AR-Prod",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Federal Detail Report is returning no data in AR. If this stays broken, money, statements, or renewals come out wrong. Arkansas customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2393",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Fund Split Summary Report same-day voids do not reverse PayIt fees",
+      "ticketTitle": "Fund Split Summary Report same-day voids do not reverse PayIt fees",
+      "epicTitle": "Fund Split Summary Report same-day voids do not reverse PayIt fees",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Fund Split Summary Report same-day voids do not reverse PayIt fees. If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
       "key": "FNCL-2394",
       "q": "2026 Q3",
       "project": "FNCL",
@@ -10695,6 +10985,74 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "FNCL-2395",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Represent PayIt-managed fees as a first-class ledger entry to close the journal-level\u2026",
+      "ticketTitle": "Represent PayIt-managed fees as a first-class ledger entry to close the journal-level reconciliation gap",
+      "epicTitle": "Represent PayIt-managed fees as a first-class ledger entry to close the journal-level reconciliation gap",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Represent PayIt-managed fees as a first-class ledger entry to close the journal-level\u2026. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2396",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Non-same-day (post-EFT) voids surface PayIt-retained fees in WIRES for internet/remote\u2026",
+      "ticketTitle": "Non-same-day (post-EFT) voids surface PayIt-retained fees in WIRES for internet/remote agents",
+      "epicTitle": "Non-same-day (post-EFT) voids surface PayIt-retained fees in WIRES for internet/remote agents",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Non-same-day (post-EFT) voids surface PayIt-retained fees in WIRES for internet/remote\u2026. If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2400",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Monthly Commission Report",
+      "ticketTitle": "MDWFP: Monthly Commission Report",
+      "epicTitle": "MDWFP: Monthly Commission Report",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Monthly Commission Report. If this stays broken, money, statements, or renewals come out wrong. Mississippi customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2415",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "System: July '26 Release Item: Updates for Handling of Voids",
+      "ticketTitle": "AGFC: System: July '26 Release Item: Updates for Handling of Voids",
+      "epicTitle": "AGFC: System: July '26 Release Item: Updates for Handling of Voids",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "System: July '26 Release Item: Updates for Handling of Voids. If this stays broken, money, statements, or renewals come out wrong. Arkansas customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
       "key": "FNCL-2416",
       "q": "2026 Q3",
       "project": "FNCL",
@@ -10709,6 +11067,137 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Card is declined upon purchase. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2423",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Package Auto-Renew \u2014 child products not added (IsSkipped default on pre-built\u2026",
+      "ticketTitle": "Package Auto-Renew \u2014 child products not added (IsSkipped default on pre-built catalogSelection)",
+      "epicTitle": "Package Auto-Renew \u2014 child products not added (IsSkipped default on pre-built catalogSelection)",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Package Auto-Renew \u2014 child products not added (IsSkipped default on pre-built\u2026. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2434",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Package pricing excludes commission configured as Keep Package Amount",
+      "ticketTitle": "Package pricing excludes commission configured as Keep Package Amount",
+      "epicTitle": "Package pricing excludes commission configured as Keep Package Amount",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1535",
+          "name": "Package Products_ Cart and Price Issues (3)"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Package pricing excludes commission configured as Keep Package Amount. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2437",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "DataFix: Auto-renew package purchases (EI2-1224) \u2014 missing child products and fulfillment",
+      "ticketTitle": "DataFix: Auto-renew package purchases (EI2-1224) \u2014 missing child products and fulfillment",
+      "epicTitle": "DataFix: Auto-renew package purchases (EI2-1224) \u2014 missing child products and fulfillment",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "DataFix: Auto-renew package purchases (EI2-1224) \u2014 missing child products and fulfillment. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2438",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Concern that voids are not working appropriately in UA2",
+      "ticketTitle": "concern that voids are not working appropriately in UA2",
+      "epicTitle": "concern that voids are not working appropriately in UA2",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana",
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Concern that voids are not working appropriately in UA2. If this stays broken, money, statements, or renewals come out wrong. Louisiana and Ohio both feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2439",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Agent EFT Statement Report \u2014 include inactive/terminated-agent statements with non-zero\u2026",
+      "ticketTitle": "Agent EFT Statement Report \u2014 include inactive/terminated-agent statements with non-zero journals",
+      "epicTitle": "Agent EFT Statement Report \u2014 include inactive/terminated-agent statements with non-zero journals",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-399",
+          "name": "10.1.9 Voids"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Agent EFT Statement Report \u2014 include inactive/terminated-agent statements with non-zero\u2026. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2440",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "MDWFP Commission Report Failing",
+      "ticketTitle": "MDWFP Commission Report Failing",
+      "epicTitle": "MDWFP Commission Report Failing",
+      "sprint": "FNCL 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "MDWFP Commission Report Failing. If this stays broken, money, statements, or renewals come out wrong. Mississippi customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2370",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Add statement readiness gate before WIRES and OAKS file generation",
+      "ticketTitle": "Add statement readiness gate before WIRES and OAKS file generation",
+      "epicTitle": "Add statement readiness gate before WIRES and OAKS file generation",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota",
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Add statement readiness gate before WIRES and OAKS file generation. If this stays broken, money, statements, or renewals come out wrong. Minnesota and Ohio both feel this until it is fixed.",
       "rank": null
     },
     {
@@ -10746,6 +11235,119 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "FNCL-2411",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Prenote never included in NACHA file \u2014 pending prenote strands agent in Waiting (no ACH\u2026",
+      "ticketTitle": "Prenote never included in NACHA file \u2014 pending prenote strands agent in Waiting (no ACH sweep)",
+      "epicTitle": "Prenote never included in NACHA file \u2014 pending prenote strands agent in Waiting (no ACH sweep)",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Prenote never included in NACHA file \u2014 pending prenote strands agent in Waiting (no ACH\u2026. If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2412",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Exclude Waiting statements from Fund Split Detail (FSD) report",
+      "ticketTitle": "Exclude Waiting statements from Fund Split Detail (FSD) report",
+      "epicTitle": "Exclude Waiting statements from Fund Split Detail (FSD) report",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Exclude Waiting statements from Fund Split Detail (FSD) report. If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2413",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Exclude Waiting statements from Fund Split Summary (FSS) report",
+      "ticketTitle": "Exclude Waiting statements from Fund Split Summary (FSS) report",
+      "epicTitle": "Exclude Waiting statements from Fund Split Summary (FSS) report",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Exclude Waiting statements from Fund Split Summary (FSS) report. If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2414",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Exclude Waiting journals/statements from WIRES export/distribution",
+      "ticketTitle": "Exclude Waiting journals/statements from WIRES export/distribution",
+      "epicTitle": "Exclude Waiting journals/statements from WIRES export/distribution",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Exclude Waiting journals/statements from WIRES export/distribution. If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2435",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Expired Gift Certificate Report: Status and remaining-balance filters return no records",
+      "ticketTitle": "Expired Gift Certificate Report: Status and remaining-balance filters return no records",
+      "epicTitle": "Expired Gift Certificate Report: Status and remaining-balance filters return no records",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-2040",
+          "name": "Expired Gift Certificate Report: Status and remaining-balance filters return no records"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Expired Gift Certificate Report: Status and remaining-balance filters return no records. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2441",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "OH: Multi-Year Lifetime Revenue Report counts and dollars do not match legacy (CROH-409)",
+      "ticketTitle": "OH: Multi-Year Lifetime Revenue Report counts and dollars do not match legacy (CROH-409)",
+      "epicTitle": "OH: Multi-Year Lifetime Revenue Report counts and dollars do not match legacy (CROH-409)",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-409",
+          "name": "10.1.19 Multiyear license transfer report"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "OH: Multi-Year Lifetime Revenue Report counts and dollars do not match legacy (CROH-409). If this stays broken, money, statements, or renewals come out wrong. Oregon and Ohio both feel this until it is fixed.",
+      "rank": null
+    },
+    {
       "key": "FNCL-2442",
       "q": "2026 Q3",
       "project": "FNCL",
@@ -10772,6 +11374,220 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "FNCL-2445",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Void Payments job \u2014 prevent overlapping runs from duplicate void processing",
+      "ticketTitle": "Void Payments job \u2014 prevent overlapping runs from duplicate void processing",
+      "epicTitle": "Void Payments job \u2014 prevent overlapping runs from duplicate void processing",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Void Payments job \u2014 prevent overlapping runs from duplicate void processing. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2448",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Agent EFT Statement \u2014 add \"Allow Credits in ACH\" setting to carry negative balances forward",
+      "ticketTitle": "Agent EFT Statement \u2014 add \"Allow Credits in ACH\" setting to carry negative balances forward",
+      "epicTitle": "Agent EFT Statement \u2014 add \"Allow Credits in ACH\" setting to carry negative balances forward",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-399",
+          "name": "10.1.9 Voids"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Agent EFT Statement \u2014 add \"Allow Credits in ACH\" setting to carry negative balances forward. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2449",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Per-item fees \u2014 fee amount under-recorded when cart items are priced at $0",
+      "ticketTitle": "Per-item fees \u2014 fee amount under-recorded when cart items are priced at $0",
+      "epicTitle": "Per-item fees \u2014 fee amount under-recorded when cart items are priced at $0",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Per-item fees \u2014 fee amount under-recorded when cart items are priced at $0. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2452",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "LDWF: FNCL-2438: Voids not working appropriately fix",
+      "ticketTitle": "LDWF: FNCL-2438: Voids not working appropriately fix",
+      "epicTitle": "LDWF: FNCL-2438: Voids not working appropriately fix",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "LDWF: FNCL-2438: Voids not working appropriately fix. If this stays broken, money, statements, or renewals come out wrong. Louisiana customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2456",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Surplus and Commercial Application sales \u2014 product fund amounts not recorded",
+      "ticketTitle": "Surplus and Commercial Application sales \u2014 product fund amounts not recorded",
+      "epicTitle": "Surplus and Commercial Application sales \u2014 product fund amounts not recorded",
+      "sprint": "FNCL 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Surplus and Commercial Application sales \u2014 product fund amounts not recorded. If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2446",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Donations fee not showing correctly",
+      "ticketTitle": "Donations fee not showing correctly",
+      "epicTitle": "Donations fee not showing correctly",
+      "sprint": "FNCL 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Mississippi"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-2358",
+          "name": "Donations fee not showing correctly"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Donations fee not showing correctly. If this stays broken, money, statements, or renewals come out wrong. Mississippi customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2472",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Void Not Working in LA-UA2",
+      "ticketTitle": "Void Not Working in LA-UA2",
+      "epicTitle": "Void Not Working in LA-UA2",
+      "sprint": "FNCL 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Void Not Working in LA-UA2. If this stays broken, money, statements, or renewals come out wrong. Louisiana customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2478",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "EftScheduleJob sweep fails with DbUpdateException: DELETE on AchBatchDetail conflicts\u2026",
+      "ticketTitle": "EftScheduleJob sweep fails with DbUpdateException: DELETE on AchBatchDetail conflicts with FK_AchBatchDetail_Statement_StatementId",
+      "epicTitle": "EftScheduleJob sweep fails with DbUpdateException: DELETE on AchBatchDetail conflicts with FK_AchBatchDetail_Statement_StatementId",
+      "sprint": "FNCL 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "EftScheduleJob sweep fails with DbUpdateException: DELETE on AchBatchDetail conflicts\u2026. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2419",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Route post-statement (non-same-day) void corrections by tender type in WIRES output",
+      "ticketTitle": "Route post-statement (non-same-day) void corrections by tender type in WIRES output",
+      "epicTitle": "Route post-statement (non-same-day) void corrections by tender type in WIRES output",
+      "sprint": "FNCL 2026-Q3-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Route post-statement (non-same-day) void corrections by tender type in WIRES output. If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2484",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Ohio production PayIt SDK \u2014 align non-secret configuration values",
+      "ticketTitle": "Ohio production PayIt SDK \u2014 align non-secret configuration values",
+      "epicTitle": "Ohio production PayIt SDK \u2014 align non-secret configuration values",
+      "sprint": "FNCL 2026-Q3-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Ohio production PayIt SDK \u2014 align non-secret configuration values. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2485",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Prenote Journals \u2014 restrict manual creation and use agent charge type on statements",
+      "ticketTitle": "Prenote Journals \u2014 restrict manual creation and use agent charge type on statements",
+      "epicTitle": "Prenote Journals \u2014 restrict manual creation and use agent charge type on statements",
+      "sprint": "FNCL 2026-Q3-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Prenote Journals \u2014 restrict manual creation and use agent charge type on statements. If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2420",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Improve performance of ACH/EFT statement creation notifications",
+      "ticketTitle": "Improve performance of ACH/EFT statement creation notifications",
+      "epicTitle": "Improve performance of ACH/EFT statement creation notifications",
+      "sprint": "FNCL 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Improve performance of ACH/EFT statement creation notifications. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
       "key": "FNCL-2455",
       "q": "2026 Q3",
       "project": "FNCL",
@@ -10786,6 +11602,143 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "OAKS Export: exclude $0 distribution/redemption entries from INF65 output. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2488",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "OAKS File Needs to Account for Gift Certificate Redemption at DOW Agents",
+      "ticketTitle": "OAKS File Needs to Account for Gift Certificate Redemption at DOW Agents",
+      "epicTitle": "OAKS File Needs to Account for Gift Certificate Redemption at DOW Agents",
+      "sprint": "FNCL 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "OAKS File Needs to Account for Gift Certificate Redemption at DOW Agents. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2491",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Year to Year Sales Report Is Blank",
+      "ticketTitle": "Year to Year Sales Report Is Blank",
+      "epicTitle": "Year to Year Sales Report Is Blank",
+      "sprint": "FNCL 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Year to Year Sales Report Is Blank. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2493",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "OAKS File For Failures Not Created",
+      "ticketTitle": "OAKS File For Failures Not Created",
+      "epicTitle": "OAKS File For Failures Not Created",
+      "sprint": "FNCL 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "OAKS File For Failures Not Created. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2496",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Payit-outdoors-oaks: FTP export fails - PASV returned separate data-transfer host\u2026",
+      "ticketTitle": "payit-outdoors-oaks: FTP export fails - PASV returned separate data-transfer host (basic-ftp allowSeparateTransferHost)",
+      "epicTitle": "payit-outdoors-oaks: FTP export fails - PASV returned separate data-transfer host (basic-ftp allowSeparateTransferHost)",
+      "sprint": "FNCL 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Payit-outdoors-oaks: FTP export fails - PASV returned separate data-transfer host\u2026. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2497",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "NACHA: configurable Effective Entry Date separate from transmit date (per EFT Schedule)",
+      "ticketTitle": "NACHA: configurable Effective Entry Date separate from transmit date (per EFT Schedule)",
+      "epicTitle": "NACHA: configurable Effective Entry Date separate from transmit date (per EFT Schedule)",
+      "sprint": "FNCL 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio",
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "NACHA: configurable Effective Entry Date separate from transmit date (per EFT Schedule). If this stays broken, money, statements, or renewals come out wrong. Ohio and Minnesota both feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2498",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "OAKS sends the weekly ACH file on Thursday instead of Tuesday",
+      "ticketTitle": "OAKS sends the weekly ACH file on Thursday instead of Tuesday",
+      "epicTitle": "OAKS sends the weekly ACH file on Thursday instead of Tuesday",
+      "sprint": "FNCL 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "OAKS sends the weekly ACH file on Thursday instead of Tuesday. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2500",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Ohio ODNR: IM config \u2014 reclassify PayIt-managed fees as Commission",
+      "ticketTitle": "Ohio ODNR: IM config \u2014 reclassify PayIt-managed fees as Commission",
+      "epicTitle": "Ohio ODNR: IM config \u2014 reclassify PayIt-managed fees as Commission",
+      "sprint": "FNCL 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Ohio ODNR: IM config \u2014 reclassify PayIt-managed fees as Commission. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2509",
+      "q": "2026 Q3",
+      "project": "FNCL",
+      "title": "Exchange Journals not created correctly",
+      "ticketTitle": "Exchange Journals not created correctly",
+      "epicTitle": "Exchange Journals not created correctly",
+      "sprint": "FNCL 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Exchange Journals not created correctly. If this stays broken, money, statements, or renewals come out wrong. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
     {
@@ -13290,6 +14243,491 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "RESRV-1559",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 - Event Header Not in Vocab & Mispelled",
+      "ticketTitle": "UA2 - INT Event Header Not in Vocab & Mispelled",
+      "epicTitle": "UA2 - INT Event Header Not in Vocab & Mispelled",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5365",
+          "name": "UA2 - INT Event Header Not in Vocab & Mispelled"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 - Event Header Not in Vocab & Mispelled. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1572",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "\"Needed By Date\" for Supply Orders",
+      "ticketTitle": "\"Needed By Date\" for Supply Orders (FF) (OH)",
+      "epicTitle": "\"Needed By Date\" for Supply Orders (FF) (OH)",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "\"Needed By Date\" for Supply Orders. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1573",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Shooting Range Editing Session Data Returns to 'Check-in' button",
+      "ticketTitle": "Shooting Range_ Editing Session Data Returns to 'Check-in' button",
+      "epicTitle": "Shooting Range_ Editing Session Data Returns to 'Check-in' button",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1833",
+          "name": "Shooting Range_ Editing Session Data Returns to 'Check-in' button"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Shooting Range Editing Session Data Returns to 'Check-in' button. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1574",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Reserv - Error occurred when setting up Shooting Range Location (OH Staging)",
+      "ticketTitle": "CV-1973 - Reserv - Error occurred when setting up Shooting Range Location (OH Staging)",
+      "epicTitle": "CV-1973 - Reserv - Error occurred when setting up Shooting Range Location (OH Staging)",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1502",
+          "name": "Staging - Shooting Range_ Reservations>Locations Error"
+        },
+        {
+          "key": "CROH-1498",
+          "name": "Shooting Range Module_ Staging_ Locations Issue"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "Reserv - Error occurred when setting up Shooting Range Location (OH Staging). If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1575",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Only allow edits if volunteer is associated to the roster for an event (configurable)",
+      "ticketTitle": "Only allow edits if volunteer is associated to the roster for an event (configurable)",
+      "epicTitle": "Only allow edits if volunteer is associated to the roster for an event (configurable)",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1782",
+          "name": "VEMS_ Volunteer Can Add Students to Other Volunteer's Events"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Only allow edits if volunteer is associated to the roster for an event (configurable). If this stays broken, event signup or check-in fails. Oregon and Ohio both feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1578",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Let staff access \"Edit Session Details\" for Shooting Range",
+      "ticketTitle": "Unable to access \"Edit Session Details\" for Shooting Range",
+      "epicTitle": "Unable to access \"Edit Session Details\" for Shooting Range",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-118",
+          "name": "3.2.4 Staff Role Groups and Permissions"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Let staff access \"Edit Session Details\" for Shooting Range. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1579",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "VEMS Documents Unable to Update Documents",
+      "ticketTitle": "VEMS_ Documents_ Unable to Update Documents",
+      "epicTitle": "VEMS_ Documents_ Unable to Update Documents",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-2010",
+          "name": "VEMS_ Documents_ Unable to Update Documents"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "VEMS Documents Unable to Update Documents. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1592",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Must be in position to see projects or event (make configurable)",
+      "ticketTitle": "Must be in position to see projects or event (make configurable)",
+      "epicTitle": "Must be in position to see projects or event (make configurable)",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon",
+        "Arkansas",
+        "Missouri",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2427",
+          "name": "VEMS - Projects should not be visible to public"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Must be in position to see projects or event (make configurable). If this stays broken, event signup or check-in fails. Oregon, Arkansas, Missouri, and Ohio all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1593",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Mobile cart checkout redirect from Reservations webview",
+      "ticketTitle": "Fix mobile cart checkout redirect from Reservations webview",
+      "epicTitle": "Fix mobile cart checkout redirect from Reservations webview",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Mobile cart checkout redirect from Reservations webview. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1600",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 CC - Volunteer award triggering when volunteer has 0 award points",
+      "ticketTitle": "UA2 CC - Volunteer award triggering when volunteer has 0 award points",
+      "epicTitle": "UA2 CC - Volunteer award triggering when volunteer has 0 award points",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5357",
+          "name": "UA2 CC - Volunteer award triggering when volunteer has 0 award points"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 CC - Volunteer award triggering when volunteer has 0 award points. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1606",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Add Recademics as an accepted certification source value in the API",
+      "ticketTitle": "Add Recademics as an accepted certification source value in the API.",
+      "epicTitle": "Add Recademics as an accepted certification source value in the API.",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Add Recademics as an accepted certification source value in the API. If this stays broken, event signup or check-in fails. Arkansas customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1622",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Reservables Attendance and Shooting reports return no results for completed sessions",
+      "ticketTitle": "Reservables Attendance and Shooting reports return no results for completed sessions",
+      "epicTitle": "Reservables Attendance and Shooting reports return no results for completed sessions",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1947",
+          "name": "Reports_ Reservables- Shooting Report_ Data Not Correct (2)"
+        },
+        {
+          "key": "CROH-1949",
+          "name": "Reports_ Reservables-Attendance (Shooting Range Custome List)_ Missing Data/Fields (4)"
+        },
+        {
+          "key": "CROH-109",
+          "name": "3.1.3 Check-Out and Saving Data in OWLS"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "Reservables Attendance and Shooting reports return no results for completed sessions. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1625",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Shooting Range Unable to Check Customer In",
+      "ticketTitle": "Shooting Range_ Unable to Check Customer In",
+      "epicTitle": "Shooting Range_ Unable to Check Customer In",
+      "sprint": "Core RESRV 2026-Q3-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-2052",
+          "name": "Shooting Range_ Unable to Check Customer In"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Shooting Range Unable to Check Customer In. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1332",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 CC - Broadcast does not appear anywhere when created",
+      "ticketTitle": "UA2 CC - Broadcast does not appear anywhere when created",
+      "epicTitle": "UA2 CC - Broadcast does not appear anywhere when created",
+      "sprint": "Core RESRV 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5336",
+          "name": "UA2 CC - Broadcast does not appear anywhere when created"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 CC - Broadcast does not appear anywhere when created. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1558",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 - Guest Checkout does not prompt user for contact info or add to roster",
+      "ticketTitle": "UA2 - Guest Checkout does not prompt user for contact info or add to roster",
+      "epicTitle": "UA2 - Guest Checkout does not prompt user for contact info or add to roster",
+      "sprint": "Core RESRV 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5369",
+          "name": "UA2 - Guest Checkout does not prompt user for contact info or add to roster"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 - Guest Checkout does not prompt user for contact info or add to roster. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1607",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Prospective volunteers cannot register for project roster slots when pending\u2026",
+      "ticketTitle": "Prospective volunteers cannot register for project roster slots when pending registration is enabled",
+      "epicTitle": "Prospective volunteers cannot register for project roster slots when pending registration is enabled",
+      "sprint": "Core RESRV 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5376",
+          "name": "[UA2] \"Allow Pending Registration for Volunteers\" functionality is not working properly"
+        },
+        {
+          "key": "OV-5375",
+          "name": "[UA2] (INT) Volunteer event registration workflow is not functioning properly"
+        },
+        {
+          "key": "OV-4614",
+          "name": "PROJECTS - Logic for Project Volunteer Limits displaying on INT"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "Prospective volunteers cannot register for project roster slots when pending\u2026. If this stays broken, event signup or check-in fails. Arkansas and Oregon both feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1609",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Volunteer event registration dead-ends after selecting a position",
+      "ticketTitle": "(INT): Volunteer event registration dead-ends after selecting a position",
+      "epicTitle": "(INT): Volunteer event registration dead-ends after selecting a position",
+      "sprint": "Core RESRV 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5375",
+          "name": "[UA2] (INT) Volunteer event registration workflow is not functioning properly"
+        },
+        {
+          "key": "OV-5374",
+          "name": "UA2 - VSD Apps show inappropriate \"Active - Action Required\" status"
+        },
+        {
+          "key": "OV-4614",
+          "name": "PROJECTS - Logic for Project Volunteer Limits displaying on INT"
+        },
+        {
+          "key": "OV-5376",
+          "name": "[UA2] \"Allow Pending Registration for Volunteers\" functionality is not working properly"
+        }
+      ],
+      "ticketCount": 4,
+      "why": "Volunteer event registration dead-ends after selecting a position. If this stays broken, event signup or check-in fails. Arkansas and Oregon both feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1610",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "ODFW: Year to Year Summary Report \u2014 date picker UX and flexible date range (up to 365 days)",
+      "ticketTitle": "ODFW: Year to Year Summary Report \u2014 date picker UX and flexible date range (up to 365 days)",
+      "epicTitle": "ODFW: Year to Year Summary Report \u2014 date picker UX and flexible date range (up to 365 days)",
+      "sprint": "Core RESRV 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5368",
+          "name": "PROD: Year to Year Summary Report"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "ODFW: Year to Year Summary Report \u2014 date picker UX and flexible date range (up to 365 days). If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1628",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "VEMS CC User (volunteer?) Can Add student Score Before Event is Held",
+      "ticketTitle": "VEMS_ CC User (volunteer?) Can Add student Score Before Event is Held",
+      "epicTitle": "VEMS_ CC User (volunteer?) Can Add student Score Before Event is Held",
+      "sprint": "Core RESRV 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1783",
+          "name": "VEMS_ CC User (volunteer?) Can Add student Score Before Event is Held"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "VEMS CC User (volunteer?) Can Add student Score Before Event is Held. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1630",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 CC - Unable to open transaction details",
+      "ticketTitle": "UA2 CC - Unable to open transaction details",
+      "epicTitle": "UA2 CC - Unable to open transaction details",
+      "sprint": "Core RESRV 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5371",
+          "name": "UA2 CC - Unable to open transaction details"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 CC - Unable to open transaction details. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1640",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "VEMS Dashboard Manage Supply Orders Link Error",
+      "ticketTitle": "VEMS_ Dashboard_ Manage Supply Orders Link Error",
+      "epicTitle": "VEMS_ Dashboard_ Manage Supply Orders Link Error",
+      "sprint": "Core RESRV 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-2078",
+          "name": "VEMS_ Dashboard_ Manage Supply Orders Link Error"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "VEMS Dashboard Manage Supply Orders Link Error. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
       "key": "RESRV-1642",
       "q": "2026 Q3",
       "project": "RESRV",
@@ -13304,6 +14742,137 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "RESV: Secure check-in reads, report M2M auth, and disable standalone bypass. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1644",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Engagement attendee capacity \u2014 include guest registrations",
+      "ticketTitle": "Engagement attendee capacity \u2014 include guest registrations",
+      "epicTitle": "Engagement attendee capacity \u2014 include guest registrations",
+      "sprint": "Core RESRV 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Engagement attendee capacity \u2014 include guest registrations. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1645",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "VEMS Dashboard Manage Supply Orders Link Error",
+      "ticketTitle": "VEMS_ Dashboard_ Manage Supply Orders Link Error",
+      "epicTitle": "VEMS_ Dashboard_ Manage Supply Orders Link Error",
+      "sprint": "Core RESRV 2026-Q3-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-2078",
+          "name": "VEMS_ Dashboard_ Manage Supply Orders Link Error"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "VEMS Dashboard Manage Supply Orders Link Error. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1613",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "FlyOut Menu>Event Participation: Error when clicking on Evt. Part. in the menu on\u2026",
+      "ticketTitle": "FlyOut Menu>Event Participation: Error when clicking on Evt. Part. in the menu on VEMS/Licensing",
+      "epicTitle": "FlyOut Menu>Event Participation: Error when clicking on Evt. Part. in the menu on VEMS/Licensing",
+      "sprint": "Core RESRV 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2445",
+          "name": "FlyOut Menu>Event Participation: Error when clicking on Evt. Part. in the menu on VEMS/Licensing"
+        },
+        {
+          "key": "COMO-2437",
+          "name": "Customers: Unable to open CID 037578515 in UA w/o erroring out"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "FlyOut Menu>Event Participation: Error when clicking on Evt. Part. in the menu on\u2026. If this stays broken, event signup or check-in fails. Missouri customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1635",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Certifications> Unable to print active certifications",
+      "ticketTitle": "Certifications> Unable to print active certifications",
+      "epicTitle": "Certifications> Unable to print active certifications",
+      "sprint": "Core RESRV 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2477",
+          "name": "Certifications> Unable to print active certifications"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Certifications> Unable to print active certifications. If this stays broken, event signup or check-in fails. Missouri customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1637",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 CC - Contact Search does not filter out \"Is Volunteer\"",
+      "ticketTitle": "UA2 CC - Contact Search does not filter out \"Is Volunteer\"",
+      "epicTitle": "UA2 CC - Contact Search does not filter out \"Is Volunteer\"",
+      "sprint": "Core RESRV 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5378",
+          "name": "UA2 CC - Contact Search does not filter out \"Is Volunteer\""
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 CC - Contact Search does not filter out \"Is Volunteer\". If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1641",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "VEMS Dashboard Event Participation Class Data error",
+      "ticketTitle": "VEMS_ Dashboard_ Event Participation_ Class Data error",
+      "epicTitle": "VEMS_ Dashboard_ Event Participation_ Class Data error",
+      "sprint": "Core RESRV 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-2079",
+          "name": "VEMS_ Dashboard_ Event Participation_ Class Data error"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "VEMS Dashboard Event Participation Class Data error. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
     {
@@ -13324,6 +14893,106 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "RESRV-1652",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Let staff add a customer to a roster without a PayIt login",
+      "ticketTitle": "Ability to add customer to roster w/o PayIt Login established on cust profile (OH)",
+      "epicTitle": "Ability to add customer to roster w/o PayIt Login established on cust profile (OH)",
+      "sprint": "Core RESRV 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-2088",
+          "name": "VEMS_ Volunteers Can Only Add Students Who Have an Online (PayIt SSO) Account"
+        },
+        {
+          "key": "CROH-1670",
+          "name": "VEMS: Volunteer Instructors Need to easily add multiple students"
+        },
+        {
+          "key": "CROH-2030",
+          "name": "VEMS_ Volunteer Can't Create Student Accounts"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "Let staff add a customer to a roster without a PayIt login. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1670",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 - Guest checkout confirmation page is blank and confirmation email is not received",
+      "ticketTitle": "UA2 - Guest checkout confirmation page is blank and confirmation email is not received",
+      "epicTitle": "UA2 - Guest checkout confirmation page is blank and confirmation email is not received",
+      "sprint": "Core RESRV 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5369",
+          "name": "UA2 - Guest Checkout does not prompt user for contact info or add to roster"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 - Guest checkout confirmation page is blank and confirmation email is not received. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1671",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 CC - Cannot open or create a Broadcast (error page)",
+      "ticketTitle": "UA2 CC - Cannot open or create a Broadcast (error page)",
+      "epicTitle": "UA2 CC - Cannot open or create a Broadcast (error page)",
+      "sprint": "Core RESRV 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5336",
+          "name": "UA2 CC - Broadcast does not appear anywhere when created"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 CC - Cannot open or create a Broadcast (error page). If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1672",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 - Pending project volunteer lands as Registered with no next step for requirements",
+      "ticketTitle": "UA2 - Pending project volunteer lands as Registered with no next step for requirements",
+      "epicTitle": "UA2 - Pending project volunteer lands as Registered with no next step for requirements",
+      "sprint": "Core RESRV 2026-Q3-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5376",
+          "name": "[UA2] \"Allow Pending Registration for Volunteers\" functionality is not working properly"
+        },
+        {
+          "key": "OV-5375",
+          "name": "[UA2] (INT) Volunteer event registration workflow is not functioning properly"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "UA2 - Pending project volunteer lands as Registered with no next step for requirements. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
       "key": "RESRV-1693",
       "q": "2026 Q3",
       "project": "RESRV",
@@ -13338,6 +15007,212 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Events Home \u2014 distance search fails when online events are in the catalog. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1324",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "[UA2] Event leads shown project-specific set-up option while creating non-project events",
+      "ticketTitle": "[UA2] (INT) Event leads shown project-specific set-up option while creating non-project events",
+      "epicTitle": "[UA2] (INT) Event leads shown project-specific set-up option while creating non-project events",
+      "sprint": "Core RESRV 2026-Q3-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5322",
+          "name": "[UA2] (INT) Event leads shown project-specific set-up option while creating non-project events"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "[UA2] Event leads shown project-specific set-up option while creating non-project events. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1334",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 CC - Broadcasts \"Eligible?\" field gives error that required but does not have a red star",
+      "ticketTitle": "UA2 CC - Broadcasts \"Eligible?\" field gives error that required but does not have a red star",
+      "epicTitle": "UA2 CC - Broadcasts \"Eligible?\" field gives error that required but does not have a red star",
+      "sprint": "Core RESRV 2026-Q3-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5337",
+          "name": "UA2 CC - Broadcasts \"Eligible?\" field gives error that required but does not have a red star"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 CC - Broadcasts \"Eligible?\" field gives error that required but does not have a red star. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1560",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 - CC Able to Add an Inactive Location to an Event",
+      "ticketTitle": "UA2 - CC Able to Add an Inactive Location to an Event",
+      "epicTitle": "UA2 - CC Able to Add an Inactive Location to an Event",
+      "sprint": "Core RESRV 2026-Q3-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5364",
+          "name": "UA2 - CC Able to Add an Inactive Location to an Event"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 - CC Able to Add an Inactive Location to an Event. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1611",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Make VEMS Reports work",
+      "ticketTitle": "VEMS Reports Not Working",
+      "epicTitle": "VEMS Reports Not Working",
+      "sprint": "Core RESRV 2026-Q3-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Make VEMS Reports work. If this stays broken, event signup or check-in fails. Arkansas customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1654",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Custom Lookups Do Not Reflect Language Configuration Settings (CC)",
+      "ticketTitle": "Custom Lookups Do Not Reflect Language Configuration Settings (CC)",
+      "epicTitle": "Custom Lookups Do Not Reflect Language Configuration Settings (CC)",
+      "sprint": "Core RESRV 2026-Q3-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "OV-4303",
+          "name": "Custom Lookups Do Not Reflect Language Configuration Settings (CC)"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Custom Lookups Do Not Reflect Language Configuration Settings (CC). If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1655",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Inbox showing notification indicator when none exist in inbox",
+      "ticketTitle": "Inbox showing notification indicator when none exist in inbox",
+      "epicTitle": "Inbox showing notification indicator when none exist in inbox",
+      "sprint": "Core RESRV 2026-Q3-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2130",
+          "name": "Inbox showing notification indicator when none exist in inbox"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Inbox showing notification indicator when none exist in inbox. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1656",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 Unable to access all messages in inbox",
+      "ticketTitle": "UA2 INT - Unable to access all messages in inbox",
+      "epicTitle": "UA2 INT - Unable to access all messages in inbox",
+      "sprint": "Core RESRV 2026-Q3-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5372",
+          "name": "UA2 INT - Unable to access all messages in inbox"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 Unable to access all messages in inbox. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1335",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "VEMS requirements not displaying in order set by configuration",
+      "ticketTitle": "VEMS requirements not displaying in order set by configuration",
+      "epicTitle": "VEMS requirements not displaying in order set by configuration",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "VEMS requirements not displaying in order set by configuration. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1336",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Let staff see Events when the correct permissions exist",
+      "ticketTitle": "Unable to see Events when the correct permissions exist",
+      "epicTitle": "Unable to see Events when the correct permissions exist",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2108",
+          "name": "Unable to see Events when the correct permissions exist"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Let staff see Events when the correct permissions exist. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
     {
@@ -13358,6 +15233,177 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "HTML link appears as text on the Engagement Create page in VEMS. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1377",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "\"Events Pending Closure\" dashboard title shows inaccurate number",
+      "ticketTitle": "\"Events Pending Closure\" dashboard title shows inaccurate number",
+      "epicTitle": "\"Events Pending Closure\" dashboard title shows inaccurate number",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "\"Events Pending Closure\" dashboard title shows inaccurate number. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1387",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "\"NOT FOUND\" text appearing on supply ordering screen in CC",
+      "ticketTitle": "\"NOT FOUND\" text appearing on supply ordering screen in CC",
+      "epicTitle": "\"NOT FOUND\" text appearing on supply ordering screen in CC",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5338",
+          "name": "UA2 - CC Supply Orders page displays NOT FOUND title"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "\"NOT FOUND\" text appearing on supply ordering screen in CC. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1417",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "OH: MG: Agent location: Configuration",
+      "ticketTitle": "OH: MG: Agent location: Configuration",
+      "epicTitle": "OH: MG: Agent location: Configuration",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "OH: MG: Agent location: Configuration. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1448",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Vocabulary Word \"Pass\" Needs Split Out By Use",
+      "ticketTitle": "Vocabulary_ Word \"Pass\" Needs Split Out By Use",
+      "epicTitle": "Vocabulary_ Word \"Pass\" Needs Split Out By Use",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-1867",
+          "name": "Vocabulary_ Word \"Pass\" Needs Split Out By Use"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Vocabulary Word \"Pass\" Needs Split Out By Use. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1675",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "UA2 - CC missing certification template",
+      "ticketTitle": "UA2 - CC missing certification template",
+      "epicTitle": "UA2 - CC missing certification template",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5261",
+          "name": "UA2 - CC missing certification template"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "UA2 - CC missing certification template. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1709",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "Notifications VEMS Volunteer Event Registration Notification Links Not Working (CROH-2017)",
+      "ticketTitle": "Notifications_ VEMS_ Volunteer Event Registration Notification Links Not Working (CROH-2017)",
+      "epicTitle": "Notifications_ VEMS_ Volunteer Event Registration Notification Links Not Working (CROH-2017)",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio",
+        "Arkansas",
+        "Missouri",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-2017",
+          "name": "Notifications_ VEMS_ Volunteer Event Registration Notification Links Not Working"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Notifications VEMS Volunteer Event Registration Notification Links Not Working (CROH-2017). If this stays broken, event signup or check-in fails. Ohio, Arkansas, Missouri, and Oregon all feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1711",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "VEMS Images Not Showing Up or Migrated",
+      "ticketTitle": "VEMS Images Not Showing Up or Migrated",
+      "epicTitle": "VEMS Images Not Showing Up or Migrated",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "VEMS Images Not Showing Up or Migrated. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1730",
+      "q": "2026 Q3",
+      "project": "RESRV",
+      "title": "VEMS - Event Confirmation Email Issue",
+      "ticketTitle": "VEMS - Event Confirmation Email Issue",
+      "epicTitle": "VEMS - Event Confirmation Email Issue",
+      "sprint": "Core RESRV 2026-Q3-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "VEMS - Event Confirmation Email Issue. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
       "rank": null
     },
     {
@@ -16286,6 +18332,311 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "FNCL-2477",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Wallet: sync wallet on page load to resolve \"account already exists in wallet\" error\u2026",
+      "ticketTitle": "Wallet: sync wallet on page load to resolve \"account already exists in wallet\" error (MDWFP/Tyler)",
+      "epicTitle": "Wallet: sync wallet on page load to resolve \"account already exists in wallet\" error (MDWFP/Tyler)",
+      "sprint": "FNCL 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Wallet: sync wallet on page load to resolve \"account already exists in wallet\" error\u2026. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2490",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Last Week's ACH Failure Not showing up",
+      "ticketTitle": "Last Week's ACH Failure_ Not showing up",
+      "epicTitle": "Last Week's ACH Failure_ Not showing up",
+      "sprint": "FNCL 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Last Week's ACH Failure Not showing up. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2494",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "PILogin>Wallet>AR Enrollment: Why does the system remove toggle for AR enrollment?",
+      "ticketTitle": "PILogin>Wallet>AR Enrollment: Why does the system remove toggle for AR enrollment?",
+      "epicTitle": "PILogin>Wallet>AR Enrollment: Why does the system remove toggle for AR enrollment?",
+      "sprint": "FNCL 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2283",
+          "name": "PILogin>Wallet>AR Enrollment: Why does the system remove toggle for AR enrollment?"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "PILogin>Wallet>AR Enrollment: Why does the system remove toggle for AR enrollment?. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2495",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Line-item void removes transaction-level void option",
+      "ticketTitle": "Line-item void removes transaction-level void option",
+      "epicTitle": "Line-item void removes transaction-level void option",
+      "sprint": "FNCL 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2110",
+          "name": "Voiding at line item level removes transaction level void option"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Line-item void removes transaction-level void option. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2499",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Weekly ACH/OAKS: keep gift-certificate redemptions off the weekly cash-draw file",
+      "ticketTitle": "Weekly ACH/OAKS: keep gift-certificate redemptions off the weekly cash-draw file",
+      "epicTitle": "Weekly ACH/OAKS: keep gift-certificate redemptions off the weekly cash-draw file",
+      "sprint": "FNCL 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Weekly ACH/OAKS: keep gift-certificate redemptions off the weekly cash-draw file. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2510",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Review and Validate FY26 Mississippi eGov Fee Revenue Report",
+      "ticketTitle": "MDWFP: Review and Validate FY26 Mississippi eGov Fee Revenue Report",
+      "epicTitle": "MDWFP: Review and Validate FY26 Mississippi eGov Fee Revenue Report",
+      "sprint": "FNCL 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Review and Validate FY26 Mississippi eGov Fee Revenue Report. If this stays broken, money, statements, or renewals come out wrong. Mississippi customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2511",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "WIRES fund distribution file \u2014 include activity that settles on a later sweep than the\u2026",
+      "ticketTitle": "WIRES fund distribution file \u2014 include activity that settles on a later sweep than the one that generated it",
+      "epicTitle": "WIRES fund distribution file \u2014 include activity that settles on a later sweep than the one that generated it",
+      "sprint": "FNCL 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "WIRES fund distribution file \u2014 include activity that settles on a later sweep than the\u2026. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2512",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Journal type not pulling into reports",
+      "ticketTitle": "Journal type not pulling into reports",
+      "epicTitle": "Journal type not pulling into reports",
+      "sprint": "FNCL 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Journal type not pulling into reports. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2516",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "OAKS: align weekend delivery with Ohio\u2019s processing schedule and retain sent-file evidence",
+      "ticketTitle": "OAKS: align weekend delivery with Ohio\u2019s processing schedule and retain sent-file evidence",
+      "epicTitle": "OAKS: align weekend delivery with Ohio\u2019s processing schedule and retain sent-file evidence",
+      "sprint": "FNCL 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "OAKS: align weekend delivery with Ohio\u2019s processing schedule and retain sent-file evidence. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2521",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "AGFC Void Error",
+      "ticketTitle": "AGFC Void Error",
+      "epicTitle": "AGFC Void Error",
+      "sprint": "FNCL 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "AGFC Void Error. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2451",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Monthly Commission Report \u2014 confirmed calculation, columns, and rows",
+      "ticketTitle": "MDWFP: Monthly Commission Report \u2014 confirmed calculation, columns, and rows",
+      "epicTitle": "MDWFP: Monthly Commission Report \u2014 confirmed calculation, columns, and rows",
+      "sprint": "FNCL 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Mississippi",
+        "Louisiana"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-2375",
+          "name": "MDWFP Commission Report Failing Again in Core (fix July 2026)"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Monthly Commission Report \u2014 confirmed calculation, columns, and rows. If this stays broken, money, statements, or renewals come out wrong. Mississippi and Louisiana both feel this until it is fixed.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2402",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Placeholder to show epic doesn't close until Sprint 6",
+      "ticketTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "epicTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "sprint": "FNCL 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Placeholder to show epic doesn't close until Sprint 6. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2403",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Placeholder to show epic doesn't close until Sprint 6",
+      "ticketTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "epicTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "sprint": "FNCL 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Placeholder to show epic doesn't close until Sprint 6. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2404",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Placeholder to show epic doesn't close until Sprint 6",
+      "ticketTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "epicTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "sprint": "FNCL 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Placeholder to show epic doesn't close until Sprint 6. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2405",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Placeholder to show epic doesn't close until Sprint 6",
+      "ticketTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "epicTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "sprint": "FNCL 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Placeholder to show epic doesn't close until Sprint 6. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2406",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Placeholder to show epic doesn't close until Sprint 6",
+      "ticketTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "epicTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "sprint": "FNCL 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Placeholder to show epic doesn't close until Sprint 6. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2407",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Placeholder to show epic doesn't close until Sprint 6",
+      "ticketTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "epicTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "sprint": "FNCL 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Placeholder to show epic doesn't close until Sprint 6. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
       "key": "FNCL-2408",
       "q": "2026 Q4",
       "project": "FNCL",
@@ -16893,6 +19244,252 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "RESRV-1383",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Update display text for customer's certification tile",
+      "ticketTitle": "Update display text for customer's certification tile",
+      "epicTitle": "Update display text for customer's certification tile",
+      "sprint": "Core RESRV 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Update display text for customer's certification tile. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1451",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Check Image Library file types and remove language for those that aren't allowed",
+      "ticketTitle": "Check Image Library file types and remove language for those that aren't allowed",
+      "epicTitle": "Check Image Library file types and remove language for those that aren't allowed",
+      "sprint": "Core RESRV 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2042",
+          "name": "Check Image Library file types and remove language for those that aren't allowed"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Check Image Library file types and remove language for those that aren't allowed. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1455",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Make \"Became Registered from Pending Review\" notification is work",
+      "ticketTitle": "\"Became Registered from Pending Review\" notification is not working",
+      "epicTitle": "\"Became Registered from Pending Review\" notification is not working",
+      "sprint": "Core RESRV 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "CRAR-2153",
+          "name": "\"Became Registered from Pending Review\" notification is not working"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Make \"Became Registered from Pending Review\" notification is work. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1495",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Html showing for VEMS requirement in AGFC",
+      "ticketTitle": "Html showing for VEMS requirement in AGFC prod",
+      "epicTitle": "Html showing for VEMS requirement in AGFC prod",
+      "sprint": "Core RESRV 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "CRAR-2168",
+          "name": "Html showing for VEMS requirement in AGFC prod"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Html showing for VEMS requirement in AGFC. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1739",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "VEMS Volunteer Statuses Changes to Inactive-Action Required Run Script to Advance 1 year",
+      "ticketTitle": "VEMS_ Volunteer Statuses Changes to Inactive-Action Required_ Run Script to Advance 1 year",
+      "epicTitle": "VEMS_ Volunteer Statuses Changes to Inactive-Action Required_ Run Script to Advance 1 year",
+      "sprint": "Core RESRV 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "VEMS Volunteer Statuses Changes to Inactive-Action Required Run Script to Advance 1 year. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1742",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "OR-UA2 Password reset returns 404 error page",
+      "ticketTitle": "OR-UA2 Password reset returns 404 error page",
+      "epicTitle": "OR-UA2 Password reset returns 404 error page",
+      "sprint": "Core RESRV 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "OR-UA2 Password reset returns 404 error page. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1743",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "OR-MG \u2014 Client Name config blocks Oregon print-template seed (Customer Certificate missing)",
+      "ticketTitle": "OR-MG \u2014 Client Name config blocks Oregon print-template seed (Customer Certificate missing)",
+      "epicTitle": "OR-MG \u2014 Client Name config blocks Oregon print-template seed (Customer Certificate missing)",
+      "sprint": "Core RESRV 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "OV-5261",
+          "name": "UA2 - CC missing certification template"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "OR-MG \u2014 Client Name config blocks Oregon print-template seed (Customer Certificate missing). If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-648",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "CLONE - Change vocabulary bug for VEMS terminology",
+      "ticketTitle": "CV-1018 - CLONE - Change vocabulary bug for VEMS terminology",
+      "epicTitle": "CV-1018 - CLONE - Change vocabulary bug for VEMS terminology",
+      "sprint": "Core RESRV 2026-Q4-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "CROH-933",
+          "name": "Engagement Start Date From field not updating"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "CLONE - Change vocabulary bug for VEMS terminology. If this stays broken, event signup or check-in fails. Missouri customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1740",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Event Search Box Add Location Field",
+      "ticketTitle": "Event Search Box_ Add Location Field",
+      "epicTitle": "Event Search Box_ Add Location Field",
+      "sprint": "Core RESRV 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Event Search Box Add Location Field. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1594",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Placeholder to show epic doesn't close until Sprint 6",
+      "ticketTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "epicTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "sprint": "Core RESRV 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Placeholder to show epic doesn't close until Sprint 6. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1595",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Placeholder to show epic doesn't close until Sprint 6",
+      "ticketTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "epicTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "sprint": "Core RESRV 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Placeholder to show epic doesn't close until Sprint 6. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1596",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Placeholder to show epic doesn't close until Sprint 6",
+      "ticketTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "epicTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "sprint": "Core RESRV 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Placeholder to show epic doesn't close until Sprint 6. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1597",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Placeholder to show epic doesn't close until Sprint 6",
+      "ticketTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "epicTitle": "Placeholder to show epic doesn't close until Sprint 6",
+      "sprint": "Core RESRV 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Placeholder to show epic doesn't close until Sprint 6. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
       "key": "RESRV-1598",
       "q": "2026 Q4",
       "project": "RESRV",
@@ -17183,6 +19780,28 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "S6 Planning Story (No Work). If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2343",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Registration card \u2014 print the current owner's address",
+      "ticketTitle": "Registration card \u2014 print the current owner's address",
+      "epicTitle": "Registration card \u2014 print the current owner's address",
+      "sprint": "CVEH 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [
+        {
+          "key": "CLV-607",
+          "name": "CC: Address missing from Boat Registration"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Registration card \u2014 print the current owner's address. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     }
   ],
