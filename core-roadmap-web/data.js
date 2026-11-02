@@ -1306,6 +1306,28 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-2868",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
+      "ticketTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
+      "epicTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
+      "sprint": "CVEH 2026-Q4-S3",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-1633",
+          "name": "Define Non-Titled Watercraft Requirements/Exceptions"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-1577",
       "q": "2026 Q4",
       "project": "CVEH",
@@ -2240,28 +2262,6 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-2868",
-      "q": "2027 Q1",
-      "project": "CVEH",
-      "title": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
-      "ticketTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
-      "epicTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
-      "sprint": "CVEH 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MELS-1633",
-          "name": "Define Non-Titled Watercraft Requirements/Exceptions"
-        }
-      ],
-      "ticketCount": 1,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -6532,6 +6532,28 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-2868",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
+      "ticketTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
+      "epicTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
+      "sprint": "CVEH 2026-Q4-S3",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-1633",
+          "name": "Define Non-Titled Watercraft Requirements/Exceptions"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-1577",
       "q": "2026 Q4",
       "project": "CVEH",
@@ -7466,28 +7488,6 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-2868",
-      "q": "2027 Q1",
-      "project": "CVEH",
-      "title": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
-      "ticketTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
-      "epicTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
-      "sprint": "CVEH 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MELS-1633",
-          "name": "Define Non-Titled Watercraft Requirements/Exceptions"
-        }
-      ],
-      "ticketCount": 1,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
