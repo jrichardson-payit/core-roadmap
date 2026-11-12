@@ -1,5 +1,5 @@
 window.ROADMAP_DATA = {
-  "updated": "2026-11-02",
+  "updated": "2026-11-12",
   "source": "Jira Features + Bugs/Support children + Not Scheduled backlog, merged with overlay.json",
   "epics": [
     {
@@ -12,8 +12,8 @@ window.ROADMAP_DATA = {
       "sprint": "CALM 2026-Q3-S2",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Ohio",
-        "Mississippi"
+        "Mississippi",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -258,9 +258,9 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q3-S6",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Ohio",
         "Missouri",
         "Minnesota",
-        "Ohio",
         "Mississippi"
       ],
       "tickets": [
@@ -831,8 +831,8 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S1",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Ohio",
-        "Missouri"
+        "Missouri",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -1240,6 +1240,23 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-2754",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "2026 Q4 New Reg/Delayed Payment Launch",
+      "ticketTitle": "2026 Q4 New Reg/Delayed Payment Launch (LA)",
+      "epicTitle": "2026 Q4 New Reg/Delayed Payment Launch (LA)",
+      "sprint": "CVEH 2026-Q4-S2",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2755",
       "q": "2026 Q4",
       "project": "CVEH",
@@ -1286,23 +1303,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 3,
       "why": "Minnesota transfer-on-death successors sometimes transact before they take title. That is a legal miss. They must be blocked until title is in their name.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-2754",
-      "q": "2026 Q4",
-      "project": "CVEH",
-      "title": "2026 Q4 New Reg/Delayed Payment Launch",
-      "ticketTitle": "2026 Q4 New Reg/Delayed Payment Launch (LA)",
-      "epicTitle": "2026 Q4 New Reg/Delayed Payment Launch (LA)",
-      "sprint": "CVEH 2026-Q4-S3",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Louisiana"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -1579,23 +1579,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "LICS-4031",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy",
-      "ticketTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
-      "epicTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
-      "sprint": "LICS 2026-Q4-S3",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "LICS-3001",
       "q": "2026 Q4",
       "project": "LICS",
@@ -1654,6 +1637,23 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "Missouri CWD and deer-management permits change with the disease map. Product and rule updates have to land before those seasons open. Biologists and the counter will both ask if the old permit is still for sale.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4031",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy",
+      "ticketTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
+      "epicTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
+      "sprint": "LICS 2026-Q4-S4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -1840,10 +1840,10 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S5",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Mississippi",
-        "Oregon",
         "Missouri",
         "Minnesota",
+        "Mississippi",
+        "Oregon",
         "Arkansas",
         "Ohio"
       ],
@@ -1891,6 +1891,45 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-3711",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Hard Card image selection needs refactored",
+      "ticketTitle": "Hard Card image selection needs refactored",
+      "epicTitle": "Hard Card image selection needs refactored",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Missouri",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-235",
+          "name": "2.10.2\u00a0- Conservation Permit Cards 6 Images"
+        },
+        {
+          "key": "COMO-722",
+          "name": "Hard Cards: Unable to manage background images within CC"
+        },
+        {
+          "key": "COMO-236",
+          "name": "2.10.3\u00a0- Conservation Permit Cards Image Mgmt"
+        },
+        {
+          "key": "CROH-905",
+          "name": "Hard Card selection process"
+        },
+        {
+          "key": "CROH-61",
+          "name": "1.6.1 Hard Card Fulfillment"
+        }
+      ],
+      "ticketCount": 5,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -2011,10 +2050,10 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S4",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Missouri",
         "Minnesota",
-        "Mississippi",
         "Oregon",
+        "Missouri",
+        "Mississippi",
         "Arkansas",
         "Louisiana"
       ],
@@ -2033,12 +2072,12 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S5",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "Missouri",
         "Arkansas",
         "Minnesota",
         "Mississippi",
         "Louisiana",
-        "Oregon"
+        "Oregon",
+        "Missouri"
       ],
       "tickets": [
         {
@@ -2069,8 +2108,8 @@ window.ROADMAP_DATA = {
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
-        "Mississippi",
         "Minnesota",
+        "Mississippi",
         "Arkansas",
         "Oregon",
         "Louisiana",
@@ -2211,6 +2250,66 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-1471",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Navigate to Customer Profile from Vehicle View (All)",
+      "ticketTitle": "Licensing POS \u2014 collect a fee or a tax adjustment from the vehicle",
+      "epicTitle": "Licensing POS \u2014 collect a fee or a tax adjustment from the vehicle",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-2514",
+          "name": "UAT-VEH-POS-No option for POS user to navigate to customer's full vehicle list from vehicle search results"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-1544",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Linked Users for Vehicle Transactions (LA, MN, MS)",
+      "ticketTitle": "Linked Users for Vehicle Transactions (NN) (LA, MN, MS)",
+      "epicTitle": "Linked Users for Vehicle Transactions (NN) (LA, MN, MS)",
+      "sprint": "",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana",
+        "Minnesota",
+        "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2922",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Vehicle search \u2014 one order, dealer and manufacturer numbers, and a longer POS list",
+      "ticketTitle": "Vehicle search \u2014 one order, dealer and manufacturer numbers, and a longer POS list",
+      "epicTitle": "Vehicle search \u2014 one order, dealer and manufacturer numbers, and a longer POS list",
+      "sprint": "",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana",
+        "Minnesota",
+        "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-1888",
       "q": "2027 Q1",
       "project": "CVEH",
@@ -2228,6 +2327,30 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-1648",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Merge duplicate vehicle records",
+      "ticketTitle": "Control Center \u2014 merge two vehicles of the same classification",
+      "epicTitle": "Control Center \u2014 merge two vehicles of the same classification",
+      "sprint": "2027 Q1 - All Work",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-1562",
+          "name": "Boat merge button request for when a boat has two boat profiles?"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Mississippi has duplicate vehicle records for the same hull or VIN, so history and fees split. Merge them. Title staff cannot certify a file that exists twice.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2899",
       "q": "2027 Q1",
       "project": "CVEH",
@@ -2235,7 +2358,7 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Duplicate Registration \u2014 set a fulfillment item's expiration window",
       "epicTitle": "Duplicate Registration \u2014 set a fulfillment item's expiration window",
       "sprint": "2027 Q1 - All Work",
-      "shirt": "Needs Estimate",
+      "shirt": "XS - Less than 1 sprint",
       "clients": [
         "Minnesota",
         "Mississippi",
@@ -2301,10 +2424,10 @@ window.ROADMAP_DATA = {
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Mississippi",
-        "Minnesota",
+        "Arkansas",
         "Ohio",
-        "Arkansas"
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -2346,11 +2469,11 @@ window.ROADMAP_DATA = {
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "L - 3 sprints",
       "clients": [
+        "Ohio",
         "Mississippi",
         "Arkansas",
         "Minnesota",
-        "Missouri",
-        "Ohio"
+        "Missouri"
       ],
       "tickets": [
         {
@@ -2471,36 +2594,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "LICS-3063",
-      "q": "2027 Q1",
-      "project": "LICS",
-      "title": "Confirm the land before buying a landowner permit",
-      "ticketTitle": "Confirm Land Property Details During Landowner Permit Purchase (MO)",
-      "epicTitle": "Confirm Land Property Details During Landowner Permit Purchase (MO)",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1853",
-          "name": "Updates to Cart/Purchase functionality for Landowner"
-        },
-        {
-          "key": "COMO-2035",
-          "name": "Available Properties to display upon purchase of permits"
-        },
-        {
-          "key": "COMO-156",
-          "name": "2.5.55\u00a0- Landowner Sales Process"
-        }
-      ],
-      "ticketCount": 3,
-      "why": "Missouri landowner permits should not sell until the hunter confirms the land. A wrong tract is a compliance miss. Confirm at buy time.",
-      "rank": null
-    },
-    {
       "key": "LICS-3020",
       "q": "2027 Q1",
       "project": "LICS",
@@ -2531,8 +2624,8 @@ window.ROADMAP_DATA = {
       "q": "2027 Q1",
       "project": "LICS",
       "title": "Hide land editing from the sales counter",
-      "ticketTitle": "Restrict Land Profile Management in POS (MO)",
-      "epicTitle": "Restrict Land Profile Management in POS (MO)",
+      "ticketTitle": "Licensing POS \u2014 stop agents from changing a land profile",
+      "epicTitle": "Licensing POS \u2014 stop agents from changing a land profile",
       "sprint": "2027 Q1 - MO Work",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
@@ -2546,6 +2639,36 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 1,
       "why": "The sales counter should not edit land; that is how acres get changed during a rush. Missouri wants land edits in the back office. Clerks sell; specialists maintain land.",
+      "rank": null
+    },
+    {
+      "key": "LICS-3063",
+      "q": "2027 Q1",
+      "project": "LICS",
+      "title": "Confirm the land before buying a landowner permit",
+      "ticketTitle": "Confirm Land Property Details During Landowner Permit Purchase (MO)",
+      "epicTitle": "Confirm Land Property Details During Landowner Permit Purchase (MO)",
+      "sprint": "2027 Q1 - MO Work",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1853",
+          "name": "Updates to Cart/Purchase functionality for Landowner"
+        },
+        {
+          "key": "COMO-2035",
+          "name": "Available Properties to display upon purchase of permits"
+        },
+        {
+          "key": "COMO-156",
+          "name": "2.5.55\u00a0- Landowner Sales Process"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "Missouri landowner permits should not sell until the hunter confirms the land. A wrong tract is a compliance miss. Confirm at buy time.",
       "rank": null
     },
     {
@@ -2720,28 +2843,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "RESRV-435",
-      "q": "2027 Q1",
-      "project": "RESRV",
-      "title": "Save, withdraw, or submit a volunteer application (not tied to one event)",
-      "ticketTitle": "Adoption & Conversion Optimization - Volunteer Application Requirements - (NN) (All)",
-      "epicTitle": "Adoption & Conversion Optimization - Volunteer Application Requirements - (NN) (All)",
-      "sprint": "",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1310",
-          "name": "VEMS: Volunteer Event Entry Issues"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "Volunteer applications (not tied to one event) also need save, withdraw, and submit. People start an application on the couch and finish later. Missouri and shared VEMS.",
-      "rank": null
-    },
-    {
       "key": "RESRV-775",
       "q": "2027 Q1",
       "project": "RESRV",
@@ -2771,6 +2872,31 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 3,
       "why": "Volunteer roles are buried unless you already know the name. Search, filters, and categories let a new volunteer find 'range safety' without a staff email. Same states as event find.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-435",
+      "q": "2027 Q1",
+      "project": "RESRV",
+      "title": "Save, withdraw, or submit a volunteer application (not tied to one event)",
+      "ticketTitle": "Adoption & Conversion Optimization - Volunteer / Student Requirements - (NN) (All)",
+      "epicTitle": "Adoption & Conversion Optimization - Volunteer / Student Requirements - (NN) (All)",
+      "sprint": "Features To Schedule (Roadmap)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri",
+        "Arkansas",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1310",
+          "name": "VEMS: Volunteer Event Entry Issues"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Volunteer applications (not tied to one event) also need save, withdraw, and submit. People start an application on the couch and finish later. Missouri and shared VEMS.",
       "rank": null
     },
     {
@@ -2938,7 +3064,7 @@ window.ROADMAP_DATA = {
       "title": "Group mailed credentials from the same sale consistently",
       "ticketTitle": "Printing/Delivery Refactor (PayIt) (All Clients)",
       "epicTitle": "Printing/Delivery Refactor (PayIt) (All Clients)",
-      "sprint": "2027 and Beyond",
+      "sprint": "Changes - Future work",
       "shirt": "M - 2 sprints",
       "clients": [
         "PayIt"
@@ -2955,7 +3081,7 @@ window.ROADMAP_DATA = {
       "title": "Check new accounts against interstate revocation data before they can buy",
       "ticketTitle": "MEDA-505 - IWVC Updates (OH, MO)",
       "epicTitle": "MEDA-505 - IWVC Updates (OH, MO)",
-      "sprint": "2027 and Beyond",
+      "sprint": "2027 Q1",
       "shirt": "M - 2 sprints",
       "clients": [
         "Arkansas",
@@ -3226,6 +3352,40 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-2937",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
+      "ticketTitle": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
+      "epicTitle": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
+      "sprint": "",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2941",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Louisiana new registration \u2014 a notary can complete it outside specific LDWF sales locations",
+      "ticketTitle": "Louisiana new registration \u2014 a notary can complete it outside specific LDWF sales locations",
+      "epicTitle": "Louisiana new registration \u2014 a notary can complete it outside specific LDWF sales locations",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2889",
       "q": "2027 Q2",
       "project": "CVEH",
@@ -3367,7 +3527,7 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Vehicle information and catalog \u2014 current data after a change, without a manual clear",
       "epicTitle": "Vehicle information and catalog \u2014 current data after a change, without a manual clear",
       "sprint": "2027 Q1 - All Work",
-      "shirt": "Needs Estimate",
+      "shirt": "S - 1 sprint",
       "clients": [
         "Ohio",
         "Missouri",
@@ -3388,7 +3548,7 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Ownership letter \u2014 one letter for every vehicles client",
       "epicTitle": "Ownership letter \u2014 one letter for every vehicles client",
       "sprint": "2027 Q1 - All Work",
-      "shirt": "Needs Estimate",
+      "shirt": "XS - Less than 1 sprint",
       "clients": [
         "Louisiana",
         "Minnesota",
@@ -3787,6 +3947,26 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "RESRV-1810",
+      "q": "2027 Q2",
+      "project": "RESRV",
+      "title": "Event template attributes control",
+      "ticketTitle": "Event template attributes control",
+      "epicTitle": "Event template attributes control",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Missouri",
+        "Arkansas",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "RESRV-447",
       "q": "2027 Q2",
       "project": "RESRV",
@@ -3807,38 +3987,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 1,
       "why": "People hunt and take classes as a group, then register one by one. Favorites and join-as-group is how families and clubs actually sign up. Minnesota and Missouri.",
-      "rank": null
-    },
-    {
-      "key": "RESRV-774",
-      "q": "2027 Q2",
-      "project": "RESRV",
-      "title": "Let guests search events and roles; create an account only when they register",
-      "ticketTitle": "Adoption & Conversion Optimization - Guest Experience (NN) (ALL)",
-      "epicTitle": "Adoption & Conversion Optimization - Guest Experience (NN) (ALL)",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Ohio",
-        "Minnesota",
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "CROH-201",
-          "name": "5.3.7 Map Features"
-        },
-        {
-          "key": "MELS-1888",
-          "name": "LE Mobile App - camera zoom/scalable QR code (post release 1 epic)"
-        },
-        {
-          "key": "COMO-160",
-          "name": "2.5.59\u00a0- Interactive Maps"
-        }
-      ],
-      "ticketCount": 3,
-      "why": "Guests should search events and volunteer roles before they create an account. Forcing a login first is why people leave. Account at register-time, not at browse-time.",
       "rank": null
     },
     {
@@ -3879,13 +4027,13 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "RESRV-485",
+      "key": "SYST-2277",
       "q": "2027 Q2",
-      "project": "RESRV",
-      "title": "Save a registration in progress, withdraw it, and clearer requirement steps",
-      "ticketTitle": "Adoption & Conversion Optimization - Event Registration Workflow - (NN) (All)",
-      "epicTitle": "Adoption & Conversion Optimization - Event Registration Workflow - (NN) (All)",
-      "sprint": "Features To Schedule (Roadmap)",
+      "project": "SYST",
+      "title": "User Platform Detection for Device Type Identification",
+      "ticketTitle": "User Platform Detection for Device Type Identification (CR) (MO)",
+      "epicTitle": "User Platform Detection for Device Type Identification (CR) (MO)",
+      "sprint": "Changes - Future work",
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
@@ -3893,20 +4041,20 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [
         {
-          "key": "COMO-1310",
-          "name": "VEMS: Volunteer Event Entry Issues"
+          "key": "COMO-149",
+          "name": "2.5.48\u00a0- Sales Channel Reporting"
         },
         {
-          "key": "CROH-201",
-          "name": "5.3.7 Map Features"
+          "key": "CROH-882",
+          "name": "Ability to report mobile browser vs desktop sales "
         },
         {
-          "key": "COMO-1264",
-          "name": "VEMS: Add Event image upload to Event Template"
+          "key": "CROH-267",
+          "name": "7.2.2 App Sales"
         }
       ],
       "ticketCount": 3,
-      "why": "A registration in progress cannot be saved or withdrawn, so people abandon or create duplicates. Clearer requirement steps tell them why they are stuck. Missouri, Ohio, and shared VEMS.",
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -3916,7 +4064,7 @@ window.ROADMAP_DATA = {
       "title": "Automated HIP File Generation & Configuration (All",
       "ticketTitle": "Automated HIP File Generation & Configuration (NN) (All)",
       "epicTitle": "Automated HIP File Generation & Configuration (NN) (All)",
-      "sprint": "2027 and Beyond",
+      "sprint": "Changes - Future work",
       "shirt": "M - 2 sprints",
       "clients": [
         "Minnesota",
@@ -4084,28 +4232,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 1,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-1648",
-      "q": "2027 Q3",
-      "project": "CVEH",
-      "title": "Merge duplicate vehicle records",
-      "ticketTitle": "Merge Vehicles",
-      "epicTitle": "Merge Vehicles",
-      "sprint": "",
-      "shirt": "L - 3 sprints",
-      "clients": [
-        "Mississippi"
-      ],
-      "tickets": [
-        {
-          "key": "MDWFP-1562",
-          "name": "Boat merge button request for when a boat has two boat profiles?"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "Mississippi has duplicate vehicle records for the same hull or VIN, so history and fees split. Merge them. Title staff cannot certify a file that exists twice.",
       "rank": null
     },
     {
@@ -4356,6 +4482,52 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "SYST-856",
+      "q": "2027 Q3",
+      "project": "SYST",
+      "title": "Merge duplicate customers into one surviving record",
+      "ticketTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
+      "epicTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
+      "sprint": "Changes - Future work",
+      "shirt": "L - 3 sprints",
+      "clients": [
+        "Missouri",
+        "Arkansas",
+        "Minnesota",
+        "Louisiana",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-165",
+          "name": "2.5.64\u00a0- Automated Merge Process"
+        },
+        {
+          "key": "COMO-580",
+          "name": "Exception Report for Possible Customer Record Merges"
+        },
+        {
+          "key": "COMO-164",
+          "name": "2.5.63\u00a0- Duplicate Accounts"
+        },
+        {
+          "key": "COMO-255",
+          "name": "2.12.5\u00a0- Customer Merge"
+        },
+        {
+          "key": "COMO-1197",
+          "name": "Merges: Merge History is not tracking Merge History"
+        },
+        {
+          "key": "COMO-1195",
+          "name": "Merges: Unmerge Screen and Functionality"
+        }
+      ],
+      "ticketCount": 8,
+      "why": "Duplicate customers split sales, harvest, and money across two people. Merge into one surviving record for Arkansas, Louisiana, Minnesota, and Missouri. This is how you stop refunding the wrong file.",
+      "rank": null
+    },
+    {
       "key": "SYST-4103",
       "q": "2027 Q3",
       "project": "SYST",
@@ -4395,52 +4567,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 44,
       "why": "Second half of Missouri's platform request pack. XXL for the same reason as part 1: many contracted tickets, one delivery bucket.",
-      "rank": null
-    },
-    {
-      "key": "SYST-856",
-      "q": "2027 Q3",
-      "project": "SYST",
-      "title": "Merge duplicate customers into one surviving record",
-      "ticketTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
-      "epicTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
-      "sprint": "2026 Q4",
-      "shirt": "L - 3 sprints",
-      "clients": [
-        "Arkansas",
-        "Minnesota",
-        "Missouri",
-        "Louisiana",
-        "Ohio"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-165",
-          "name": "2.5.64\u00a0- Automated Merge Process"
-        },
-        {
-          "key": "COMO-580",
-          "name": "Exception Report for Possible Customer Record Merges"
-        },
-        {
-          "key": "COMO-164",
-          "name": "2.5.63\u00a0- Duplicate Accounts"
-        },
-        {
-          "key": "COMO-255",
-          "name": "2.12.5\u00a0- Customer Merge"
-        },
-        {
-          "key": "COMO-1197",
-          "name": "Merges: Merge History is not tracking Merge History"
-        },
-        {
-          "key": "COMO-1195",
-          "name": "Merges: Unmerge Screen and Functionality"
-        }
-      ],
-      "ticketCount": 8,
-      "why": "Duplicate customers split sales, harvest, and money across two people. Merge into one surviving record for Arkansas, Louisiana, Minnesota, and Missouri. This is how you stop refunding the wrong file.",
       "rank": null
     },
     {
@@ -4833,7 +4959,7 @@ window.ROADMAP_DATA = {
       "title": "Control Center and counter usability fixes from client feedback",
       "ticketTitle": "Control Center & POS UI/UX Enhancements (FF) (MO, All States)",
       "epicTitle": "Control Center & POS UI/UX Enhancements (FF) (MO, All States)",
-      "sprint": "2027 and Beyond",
+      "sprint": "Changes - Future work",
       "shirt": "L - 3 sprints",
       "clients": [
         "Missouri",
@@ -5238,8 +5364,8 @@ window.ROADMAP_DATA = {
       "sprint": "CALM 2026-Q3-S2",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Ohio",
-        "Mississippi"
+        "Mississippi",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -5484,9 +5610,9 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q3-S6",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Ohio",
         "Missouri",
         "Minnesota",
-        "Ohio",
         "Mississippi"
       ],
       "tickets": [
@@ -6057,8 +6183,8 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S1",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Ohio",
-        "Missouri"
+        "Missouri",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -6466,6 +6592,23 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-2754",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "2026 Q4 New Reg/Delayed Payment Launch",
+      "ticketTitle": "2026 Q4 New Reg/Delayed Payment Launch (LA)",
+      "epicTitle": "2026 Q4 New Reg/Delayed Payment Launch (LA)",
+      "sprint": "CVEH 2026-Q4-S2",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2755",
       "q": "2026 Q4",
       "project": "CVEH",
@@ -6512,23 +6655,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 3,
       "why": "Minnesota transfer-on-death successors sometimes transact before they take title. That is a legal miss. They must be blocked until title is in their name.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-2754",
-      "q": "2026 Q4",
-      "project": "CVEH",
-      "title": "2026 Q4 New Reg/Delayed Payment Launch",
-      "ticketTitle": "2026 Q4 New Reg/Delayed Payment Launch (LA)",
-      "epicTitle": "2026 Q4 New Reg/Delayed Payment Launch (LA)",
-      "sprint": "CVEH 2026-Q4-S3",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Louisiana"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -6805,23 +6931,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "LICS-4031",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy",
-      "ticketTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
-      "epicTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
-      "sprint": "LICS 2026-Q4-S3",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "LICS-3001",
       "q": "2026 Q4",
       "project": "LICS",
@@ -6880,6 +6989,23 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "Missouri CWD and deer-management permits change with the disease map. Product and rule updates have to land before those seasons open. Biologists and the counter will both ask if the old permit is still for sale.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4031",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy",
+      "ticketTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
+      "epicTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
+      "sprint": "LICS 2026-Q4-S4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -7066,10 +7192,10 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S5",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Mississippi",
-        "Oregon",
         "Missouri",
         "Minnesota",
+        "Mississippi",
+        "Oregon",
         "Arkansas",
         "Ohio"
       ],
@@ -7117,6 +7243,45 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-3711",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Hard Card image selection needs refactored",
+      "ticketTitle": "Hard Card image selection needs refactored",
+      "epicTitle": "Hard Card image selection needs refactored",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Missouri",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-235",
+          "name": "2.10.2\u00a0- Conservation Permit Cards 6 Images"
+        },
+        {
+          "key": "COMO-722",
+          "name": "Hard Cards: Unable to manage background images within CC"
+        },
+        {
+          "key": "COMO-236",
+          "name": "2.10.3\u00a0- Conservation Permit Cards Image Mgmt"
+        },
+        {
+          "key": "CROH-905",
+          "name": "Hard Card selection process"
+        },
+        {
+          "key": "CROH-61",
+          "name": "1.6.1 Hard Card Fulfillment"
+        }
+      ],
+      "ticketCount": 5,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -7237,10 +7402,10 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S4",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Missouri",
         "Minnesota",
-        "Mississippi",
         "Oregon",
+        "Missouri",
+        "Mississippi",
         "Arkansas",
         "Louisiana"
       ],
@@ -7259,12 +7424,12 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S5",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "Missouri",
         "Arkansas",
         "Minnesota",
         "Mississippi",
         "Louisiana",
-        "Oregon"
+        "Oregon",
+        "Missouri"
       ],
       "tickets": [
         {
@@ -7295,8 +7460,8 @@ window.ROADMAP_DATA = {
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
-        "Mississippi",
         "Minnesota",
+        "Mississippi",
         "Arkansas",
         "Oregon",
         "Louisiana",
@@ -7437,6 +7602,66 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-1471",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Navigate to Customer Profile from Vehicle View (All)",
+      "ticketTitle": "Licensing POS \u2014 collect a fee or a tax adjustment from the vehicle",
+      "epicTitle": "Licensing POS \u2014 collect a fee or a tax adjustment from the vehicle",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-2514",
+          "name": "UAT-VEH-POS-No option for POS user to navigate to customer's full vehicle list from vehicle search results"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-1544",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Linked Users for Vehicle Transactions (LA, MN, MS)",
+      "ticketTitle": "Linked Users for Vehicle Transactions (NN) (LA, MN, MS)",
+      "epicTitle": "Linked Users for Vehicle Transactions (NN) (LA, MN, MS)",
+      "sprint": "",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana",
+        "Minnesota",
+        "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2922",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Vehicle search \u2014 one order, dealer and manufacturer numbers, and a longer POS list",
+      "ticketTitle": "Vehicle search \u2014 one order, dealer and manufacturer numbers, and a longer POS list",
+      "epicTitle": "Vehicle search \u2014 one order, dealer and manufacturer numbers, and a longer POS list",
+      "sprint": "",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana",
+        "Minnesota",
+        "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-1888",
       "q": "2027 Q1",
       "project": "CVEH",
@@ -7454,6 +7679,30 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-1648",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Merge duplicate vehicle records",
+      "ticketTitle": "Control Center \u2014 merge two vehicles of the same classification",
+      "epicTitle": "Control Center \u2014 merge two vehicles of the same classification",
+      "sprint": "2027 Q1 - All Work",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-1562",
+          "name": "Boat merge button request for when a boat has two boat profiles?"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Mississippi has duplicate vehicle records for the same hull or VIN, so history and fees split. Merge them. Title staff cannot certify a file that exists twice.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2899",
       "q": "2027 Q1",
       "project": "CVEH",
@@ -7461,7 +7710,7 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Duplicate Registration \u2014 set a fulfillment item's expiration window",
       "epicTitle": "Duplicate Registration \u2014 set a fulfillment item's expiration window",
       "sprint": "2027 Q1 - All Work",
-      "shirt": "Needs Estimate",
+      "shirt": "XS - Less than 1 sprint",
       "clients": [
         "Minnesota",
         "Mississippi",
@@ -7527,10 +7776,10 @@ window.ROADMAP_DATA = {
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Mississippi",
-        "Minnesota",
+        "Arkansas",
         "Ohio",
-        "Arkansas"
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -7572,11 +7821,11 @@ window.ROADMAP_DATA = {
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "L - 3 sprints",
       "clients": [
+        "Ohio",
         "Mississippi",
         "Arkansas",
         "Minnesota",
-        "Missouri",
-        "Ohio"
+        "Missouri"
       ],
       "tickets": [
         {
@@ -7697,36 +7946,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "LICS-3063",
-      "q": "2027 Q1",
-      "project": "LICS",
-      "title": "Confirm the land before buying a landowner permit",
-      "ticketTitle": "Confirm Land Property Details During Landowner Permit Purchase (MO)",
-      "epicTitle": "Confirm Land Property Details During Landowner Permit Purchase (MO)",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1853",
-          "name": "Updates to Cart/Purchase functionality for Landowner"
-        },
-        {
-          "key": "COMO-2035",
-          "name": "Available Properties to display upon purchase of permits"
-        },
-        {
-          "key": "COMO-156",
-          "name": "2.5.55\u00a0- Landowner Sales Process"
-        }
-      ],
-      "ticketCount": 3,
-      "why": "Missouri landowner permits should not sell until the hunter confirms the land. A wrong tract is a compliance miss. Confirm at buy time.",
-      "rank": null
-    },
-    {
       "key": "LICS-3020",
       "q": "2027 Q1",
       "project": "LICS",
@@ -7757,8 +7976,8 @@ window.ROADMAP_DATA = {
       "q": "2027 Q1",
       "project": "LICS",
       "title": "Hide land editing from the sales counter",
-      "ticketTitle": "Restrict Land Profile Management in POS (MO)",
-      "epicTitle": "Restrict Land Profile Management in POS (MO)",
+      "ticketTitle": "Licensing POS \u2014 stop agents from changing a land profile",
+      "epicTitle": "Licensing POS \u2014 stop agents from changing a land profile",
       "sprint": "2027 Q1 - MO Work",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
@@ -7772,6 +7991,36 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 1,
       "why": "The sales counter should not edit land; that is how acres get changed during a rush. Missouri wants land edits in the back office. Clerks sell; specialists maintain land.",
+      "rank": null
+    },
+    {
+      "key": "LICS-3063",
+      "q": "2027 Q1",
+      "project": "LICS",
+      "title": "Confirm the land before buying a landowner permit",
+      "ticketTitle": "Confirm Land Property Details During Landowner Permit Purchase (MO)",
+      "epicTitle": "Confirm Land Property Details During Landowner Permit Purchase (MO)",
+      "sprint": "2027 Q1 - MO Work",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1853",
+          "name": "Updates to Cart/Purchase functionality for Landowner"
+        },
+        {
+          "key": "COMO-2035",
+          "name": "Available Properties to display upon purchase of permits"
+        },
+        {
+          "key": "COMO-156",
+          "name": "2.5.55\u00a0- Landowner Sales Process"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "Missouri landowner permits should not sell until the hunter confirms the land. A wrong tract is a compliance miss. Confirm at buy time.",
       "rank": null
     },
     {
@@ -7946,28 +8195,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "RESRV-435",
-      "q": "2027 Q1",
-      "project": "RESRV",
-      "title": "Save, withdraw, or submit a volunteer application (not tied to one event)",
-      "ticketTitle": "Adoption & Conversion Optimization - Volunteer Application Requirements - (NN) (All)",
-      "epicTitle": "Adoption & Conversion Optimization - Volunteer Application Requirements - (NN) (All)",
-      "sprint": "",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1310",
-          "name": "VEMS: Volunteer Event Entry Issues"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "Volunteer applications (not tied to one event) also need save, withdraw, and submit. People start an application on the couch and finish later. Missouri and shared VEMS.",
-      "rank": null
-    },
-    {
       "key": "RESRV-775",
       "q": "2027 Q1",
       "project": "RESRV",
@@ -7997,6 +8224,31 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 3,
       "why": "Volunteer roles are buried unless you already know the name. Search, filters, and categories let a new volunteer find 'range safety' without a staff email. Same states as event find.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-435",
+      "q": "2027 Q1",
+      "project": "RESRV",
+      "title": "Save, withdraw, or submit a volunteer application (not tied to one event)",
+      "ticketTitle": "Adoption & Conversion Optimization - Volunteer / Student Requirements - (NN) (All)",
+      "epicTitle": "Adoption & Conversion Optimization - Volunteer / Student Requirements - (NN) (All)",
+      "sprint": "Features To Schedule (Roadmap)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri",
+        "Arkansas",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1310",
+          "name": "VEMS: Volunteer Event Entry Issues"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Volunteer applications (not tied to one event) also need save, withdraw, and submit. People start an application on the couch and finish later. Missouri and shared VEMS.",
       "rank": null
     },
     {
@@ -8164,7 +8416,7 @@ window.ROADMAP_DATA = {
       "title": "Group mailed credentials from the same sale consistently",
       "ticketTitle": "Printing/Delivery Refactor (PayIt) (All Clients)",
       "epicTitle": "Printing/Delivery Refactor (PayIt) (All Clients)",
-      "sprint": "2027 and Beyond",
+      "sprint": "Changes - Future work",
       "shirt": "M - 2 sprints",
       "clients": [
         "PayIt"
@@ -8181,7 +8433,7 @@ window.ROADMAP_DATA = {
       "title": "Check new accounts against interstate revocation data before they can buy",
       "ticketTitle": "MEDA-505 - IWVC Updates (OH, MO)",
       "epicTitle": "MEDA-505 - IWVC Updates (OH, MO)",
-      "sprint": "2027 and Beyond",
+      "sprint": "2027 Q1",
       "shirt": "M - 2 sprints",
       "clients": [
         "Arkansas",
@@ -8452,6 +8704,40 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-2937",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
+      "ticketTitle": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
+      "epicTitle": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
+      "sprint": "",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2941",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Louisiana new registration \u2014 a notary can complete it outside specific LDWF sales locations",
+      "ticketTitle": "Louisiana new registration \u2014 a notary can complete it outside specific LDWF sales locations",
+      "epicTitle": "Louisiana new registration \u2014 a notary can complete it outside specific LDWF sales locations",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2889",
       "q": "2027 Q2",
       "project": "CVEH",
@@ -8593,7 +8879,7 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Vehicle information and catalog \u2014 current data after a change, without a manual clear",
       "epicTitle": "Vehicle information and catalog \u2014 current data after a change, without a manual clear",
       "sprint": "2027 Q1 - All Work",
-      "shirt": "Needs Estimate",
+      "shirt": "S - 1 sprint",
       "clients": [
         "Ohio",
         "Missouri",
@@ -8614,7 +8900,7 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Ownership letter \u2014 one letter for every vehicles client",
       "epicTitle": "Ownership letter \u2014 one letter for every vehicles client",
       "sprint": "2027 Q1 - All Work",
-      "shirt": "Needs Estimate",
+      "shirt": "XS - Less than 1 sprint",
       "clients": [
         "Louisiana",
         "Minnesota",
@@ -9013,6 +9299,26 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "RESRV-1810",
+      "q": "2027 Q2",
+      "project": "RESRV",
+      "title": "Event template attributes control",
+      "ticketTitle": "Event template attributes control",
+      "epicTitle": "Event template attributes control",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Missouri",
+        "Arkansas",
+        "Ohio",
+        "Oregon"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "RESRV-447",
       "q": "2027 Q2",
       "project": "RESRV",
@@ -9033,38 +9339,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 1,
       "why": "People hunt and take classes as a group, then register one by one. Favorites and join-as-group is how families and clubs actually sign up. Minnesota and Missouri.",
-      "rank": null
-    },
-    {
-      "key": "RESRV-774",
-      "q": "2027 Q2",
-      "project": "RESRV",
-      "title": "Let guests search events and roles; create an account only when they register",
-      "ticketTitle": "Adoption & Conversion Optimization - Guest Experience (NN) (ALL)",
-      "epicTitle": "Adoption & Conversion Optimization - Guest Experience (NN) (ALL)",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Ohio",
-        "Minnesota",
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "CROH-201",
-          "name": "5.3.7 Map Features"
-        },
-        {
-          "key": "MELS-1888",
-          "name": "LE Mobile App - camera zoom/scalable QR code (post release 1 epic)"
-        },
-        {
-          "key": "COMO-160",
-          "name": "2.5.59\u00a0- Interactive Maps"
-        }
-      ],
-      "ticketCount": 3,
-      "why": "Guests should search events and volunteer roles before they create an account. Forcing a login first is why people leave. Account at register-time, not at browse-time.",
       "rank": null
     },
     {
@@ -9105,13 +9379,13 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "RESRV-485",
+      "key": "SYST-2277",
       "q": "2027 Q2",
-      "project": "RESRV",
-      "title": "Save a registration in progress, withdraw it, and clearer requirement steps",
-      "ticketTitle": "Adoption & Conversion Optimization - Event Registration Workflow - (NN) (All)",
-      "epicTitle": "Adoption & Conversion Optimization - Event Registration Workflow - (NN) (All)",
-      "sprint": "Features To Schedule (Roadmap)",
+      "project": "SYST",
+      "title": "User Platform Detection for Device Type Identification",
+      "ticketTitle": "User Platform Detection for Device Type Identification (CR) (MO)",
+      "epicTitle": "User Platform Detection for Device Type Identification (CR) (MO)",
+      "sprint": "Changes - Future work",
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
@@ -9119,20 +9393,20 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [
         {
-          "key": "COMO-1310",
-          "name": "VEMS: Volunteer Event Entry Issues"
+          "key": "COMO-149",
+          "name": "2.5.48\u00a0- Sales Channel Reporting"
         },
         {
-          "key": "CROH-201",
-          "name": "5.3.7 Map Features"
+          "key": "CROH-882",
+          "name": "Ability to report mobile browser vs desktop sales "
         },
         {
-          "key": "COMO-1264",
-          "name": "VEMS: Add Event image upload to Event Template"
+          "key": "CROH-267",
+          "name": "7.2.2 App Sales"
         }
       ],
       "ticketCount": 3,
-      "why": "A registration in progress cannot be saved or withdrawn, so people abandon or create duplicates. Clearer requirement steps tell them why they are stuck. Missouri, Ohio, and shared VEMS.",
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -9142,7 +9416,7 @@ window.ROADMAP_DATA = {
       "title": "Automated HIP File Generation & Configuration (All",
       "ticketTitle": "Automated HIP File Generation & Configuration (NN) (All)",
       "epicTitle": "Automated HIP File Generation & Configuration (NN) (All)",
-      "sprint": "2027 and Beyond",
+      "sprint": "Changes - Future work",
       "shirt": "M - 2 sprints",
       "clients": [
         "Minnesota",
@@ -9310,28 +9584,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 1,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-1648",
-      "q": "2027 Q3",
-      "project": "CVEH",
-      "title": "Merge duplicate vehicle records",
-      "ticketTitle": "Merge Vehicles",
-      "epicTitle": "Merge Vehicles",
-      "sprint": "",
-      "shirt": "L - 3 sprints",
-      "clients": [
-        "Mississippi"
-      ],
-      "tickets": [
-        {
-          "key": "MDWFP-1562",
-          "name": "Boat merge button request for when a boat has two boat profiles?"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "Mississippi has duplicate vehicle records for the same hull or VIN, so history and fees split. Merge them. Title staff cannot certify a file that exists twice.",
       "rank": null
     },
     {
@@ -9582,6 +9834,52 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "SYST-856",
+      "q": "2027 Q3",
+      "project": "SYST",
+      "title": "Merge duplicate customers into one surviving record",
+      "ticketTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
+      "epicTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
+      "sprint": "Changes - Future work",
+      "shirt": "L - 3 sprints",
+      "clients": [
+        "Missouri",
+        "Arkansas",
+        "Minnesota",
+        "Louisiana",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-165",
+          "name": "2.5.64\u00a0- Automated Merge Process"
+        },
+        {
+          "key": "COMO-580",
+          "name": "Exception Report for Possible Customer Record Merges"
+        },
+        {
+          "key": "COMO-164",
+          "name": "2.5.63\u00a0- Duplicate Accounts"
+        },
+        {
+          "key": "COMO-255",
+          "name": "2.12.5\u00a0- Customer Merge"
+        },
+        {
+          "key": "COMO-1197",
+          "name": "Merges: Merge History is not tracking Merge History"
+        },
+        {
+          "key": "COMO-1195",
+          "name": "Merges: Unmerge Screen and Functionality"
+        }
+      ],
+      "ticketCount": 8,
+      "why": "Duplicate customers split sales, harvest, and money across two people. Merge into one surviving record for Arkansas, Louisiana, Minnesota, and Missouri. This is how you stop refunding the wrong file.",
+      "rank": null
+    },
+    {
       "key": "SYST-4103",
       "q": "2027 Q3",
       "project": "SYST",
@@ -9621,52 +9919,6 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 44,
       "why": "Second half of Missouri's platform request pack. XXL for the same reason as part 1: many contracted tickets, one delivery bucket.",
-      "rank": null
-    },
-    {
-      "key": "SYST-856",
-      "q": "2027 Q3",
-      "project": "SYST",
-      "title": "Merge duplicate customers into one surviving record",
-      "ticketTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
-      "epicTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
-      "sprint": "2026 Q4",
-      "shirt": "L - 3 sprints",
-      "clients": [
-        "Arkansas",
-        "Minnesota",
-        "Missouri",
-        "Louisiana",
-        "Ohio"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-165",
-          "name": "2.5.64\u00a0- Automated Merge Process"
-        },
-        {
-          "key": "COMO-580",
-          "name": "Exception Report for Possible Customer Record Merges"
-        },
-        {
-          "key": "COMO-164",
-          "name": "2.5.63\u00a0- Duplicate Accounts"
-        },
-        {
-          "key": "COMO-255",
-          "name": "2.12.5\u00a0- Customer Merge"
-        },
-        {
-          "key": "COMO-1197",
-          "name": "Merges: Merge History is not tracking Merge History"
-        },
-        {
-          "key": "COMO-1195",
-          "name": "Merges: Unmerge Screen and Functionality"
-        }
-      ],
-      "ticketCount": 8,
-      "why": "Duplicate customers split sales, harvest, and money across two people. Merge into one surviving record for Arkansas, Louisiana, Minnesota, and Missouri. This is how you stop refunding the wrong file.",
       "rank": null
     },
     {
@@ -10059,7 +10311,7 @@ window.ROADMAP_DATA = {
       "title": "Control Center and counter usability fixes from client feedback",
       "ticketTitle": "Control Center & POS UI/UX Enhancements (FF) (MO, All States)",
       "epicTitle": "Control Center & POS UI/UX Enhancements (FF) (MO, All States)",
-      "sprint": "2027 and Beyond",
+      "sprint": "Changes - Future work",
       "shirt": "L - 3 sprints",
       "clients": [
         "Missouri",
@@ -10534,13 +10786,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3434",
-          "name": "CM-Hamburger Menu Overlaps Android Actions Bar"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Keep Hamburger Menu from covering Android Actions Bar. If this stays broken, hunters hit a dead or wrong screen in the field. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -10572,9 +10819,7 @@ window.ROADMAP_DATA = {
       "sprint": "CALM 2026-Q3-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
-        "Mississippi",
-        "Arkansas"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -10610,13 +10855,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Michigan"
       ],
-      "tickets": [
-        {
-          "key": "MICH-2971",
-          "name": "PROD Consumer Android: App Not Compliant "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Bring the consumer Android app back into store compliance. If this stays broken, hunters hit a dead or wrong screen in the field. Michigan customers and counter staff feel this first.",
       "rank": null
     },
@@ -10632,13 +10872,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1885",
-          "name": "HuntFish OH_ Game Checks Not Showing Up"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Show submitted game checks in one list. If this stays broken, hunters hit a dead or wrong screen in the field. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -10654,13 +10889,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1965",
-          "name": "HuntFish OH_ Inbox/Push Notification Issues (3)"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Fix inbox and push notification delivery. If this stays broken, hunters hit a dead or wrong screen in the field. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -10676,13 +10906,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1885",
-          "name": "HuntFish OH_ Game Checks Not Showing Up"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Show available harvest registrations on the mobile tile. If this stays broken, hunters hit a dead or wrong screen in the field. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -10732,13 +10957,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3015",
-          "name": "LED - login button is covered by keyboard on iPhone SE"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "LED - login button is covered by keyboard on iPhone SE. If this stays broken, hunters hit a dead or wrong screen in the field. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -10754,13 +10974,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Michigan"
       ],
-      "tickets": [
-        {
-          "key": "MICH-2917",
-          "name": "MI LED Enable Notes Feature "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MI LED Enable Notes Feature. If this stays broken, hunters hit a dead or wrong screen in the field. Michigan customers and counter staff feel this first.",
       "rank": null
     },
@@ -10776,13 +10991,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2066",
-          "name": "HuntFish OH_ Game Check Not Displaying All Questions (Secondary Checkbox)"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Show every game-check question, including secondary checkboxes. If this stays broken, hunters hit a dead or wrong screen in the field. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -10798,13 +11008,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2067",
-          "name": "HuntFish OH_ Document Upload_ Selecting 'Take Photo' Crashes the App"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Stop the app from crashing when Document Upload Selecting 'Take Photo'. If this stays broken, hunters hit a dead or wrong screen in the field. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -10837,13 +11042,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1291",
-          "name": "HuntFish OH_ Regulations & Info_ Remove ORV and Snowmobile"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Regulations & Info Remove ORV and Snowmobile. If this stays broken, hunters hit a dead or wrong screen in the field. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -10859,13 +11059,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-967",
-          "name": "Linked Accounts_ handling stored financial data"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Update Embedded Pages which use the Wallet to enforce token mgmt/refresh. If this stays broken, hunters hit a dead or wrong screen in the field. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -10898,17 +11093,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-276",
-          "name": "7.3.3 Notification of Previous Submission"
-        },
-        {
-          "key": "CROH-92",
-          "name": "2.2.4 Recent Harvest Submission Notification"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Mobile harvest report \u2014 recent duplicate warning (online + offline sync). If this stays broken, hunters hit a dead or wrong screen in the field. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -10924,13 +11110,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-288",
-          "name": "7.5.2 Weather Widget"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Add wind direction value to weather widget. If this stays broken, hunters hit a dead or wrong screen in the field. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -10946,13 +11127,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2105",
-          "name": "HuntFish OH_ Inbox_ Unable to Save Push Notification = No"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Inbox Unable to Save Push Notification = No. If this stays broken, hunters hit a dead or wrong screen in the field. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -11022,13 +11198,8 @@ window.ROADMAP_DATA = {
         "Mississippi",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2115",
-          "name": "HuntFish_OH : Blank screen encountered following game check submission"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Show a real screen after game check submission. If this stays broken, hunters hit a dead or wrong screen in the field. Arkansas, Minnesota, Mississippi, and Ohio all feel this until it is fixed.",
       "rank": null
     },
@@ -11078,13 +11249,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1067",
-          "name": "WMA Check-in Enhancements"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "WMA Check-In: display purposes and species in configured order (mobile app). If this stays broken, hunters hit a dead or wrong screen in the field. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -11100,13 +11266,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MICH-2972",
-          "name": "LED: iOS distribution profile for DNR MICO LED Expires 09/30/2026"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Renew the Michigan LED iOS distribution profile. If this stays broken, hunters hit a dead or wrong screen in the field. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -11174,13 +11335,8 @@ window.ROADMAP_DATA = {
         "Louisiana",
         "Missouri"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2034",
-          "name": "Unable to renew dealer number "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Let staff renew dealer number. If this stays broken, staff cannot finish a boat or title sale. Louisiana and Missouri both feel this until it is fixed.",
       "rank": null
     },
@@ -11198,13 +11354,8 @@ window.ROADMAP_DATA = {
         "Minnesota",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2222",
-          "name": "Able to deny/send back vessel applications without permissions"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Block deny/send back vessel applications unless the user has permission. If this stays broken, staff cannot finish a boat or title sale. Louisiana, Minnesota, and Mississippi all feel this until it is fixed.",
       "rank": null
     },
@@ -11220,13 +11371,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-664",
-          "name": "Chase Renewals: Boats ran on Friday 6/5/26 had their registration # removed"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Chase Renewals: Boats ran on Friday 6/5/26 had their registration # removed. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -11259,13 +11405,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-675",
-          "name": "LOCKBOX/CHASE RENEWAL AGENT- SALES BY TIME PERIOD REPORT"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Rerun chase individual records that failed because customer was inactive. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -11281,13 +11422,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-544",
-          "name": "Titles & Registrations - Missing Dual Owners"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -11320,13 +11456,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-662",
-          "name": "2029 Skipped Decals and Certificates That Don't Have Decals"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Resend 2 registration decal files to PSS. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -11342,13 +11473,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-679",
-          "name": "Chase renewal notifications need to be limited to certain statuses"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -11381,13 +11507,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1525",
-          "name": "Boats being given brand new MI registration numbers"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Revert boats to correct reg# when they got a new one. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -11422,13 +11543,8 @@ window.ROADMAP_DATA = {
         "Minnesota",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2034",
-          "name": "Unable to renew dealer number "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Update logic on dealer workflow products. If this stays broken, staff cannot finish a boat or title sale. Louisiana, Minnesota, and Mississippi all feel this until it is fixed.",
       "rank": null
     },
@@ -11459,17 +11575,12 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q3-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Mississippi",
         "Louisiana",
-        "Minnesota"
+        "Minnesota",
+        "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2034",
-          "name": "Unable to renew dealer number "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Business customer registration renewal \u2014 select product by license year, not calendar year. If this stays broken, staff cannot finish a boat or title sale. Mississippi, Louisiana, and Minnesota all feel this until it is fixed.",
       "rank": null
     },
@@ -11539,17 +11650,8 @@ window.ROADMAP_DATA = {
         "Louisiana",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2364",
-          "name": "Renewal is not available while a registration application for this vehicle is under review. ERROR!"
-        },
-        {
-          "key": "CLV-695",
-          "name": "LDWF: Boat Unable to Renew LA-5804-BL \" "
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vessel registration renewal \u2014 ignore historical voided applications. If this stays broken, staff cannot finish a boat or title sale. Louisiana and Mississippi both feel this until it is fixed.",
       "rank": null
     },
@@ -11565,17 +11667,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1524",
-          "name": "Voided online boat application added previous owner's information to new owner's boat profile. "
-        },
-        {
-          "key": "MDWFP-1607",
-          "name": "Vessel has two registartions at same time"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MS vessel PLR21377B999 \u2014 restore single owner and registration. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -11591,13 +11684,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1647",
-          "name": "\"Commercial Application Comment Details\" Language Change"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Application Comments \u2014 use neutral comments wording. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -11613,17 +11701,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3699",
-          "name": "QA-VEH-CC/POS Dealer and Manufacturer registration numbers (including 4-digit reg number) not displaying in CC or POS"
-        },
-        {
-          "key": "CLV-597",
-          "name": "CC & POS: Dealer Boat Registration Does NOT display"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Control Center \u2014 search dealer and manufacturer registration numbers. If this stays broken, staff cannot finish a boat or title sale. Louisiana customers and counter staff feel this first.",
       "rank": null
     },
@@ -11658,13 +11737,8 @@ window.ROADMAP_DATA = {
         "Minnesota",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1939",
-          "name": "Non Standard HIN Button Grayed"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vessel profile \u2014 clearer duplicate HIN/VIN save message. If this stays broken, staff cannot finish a boat or title sale. Louisiana, Minnesota, and Mississippi all feel this until it is fixed.",
       "rank": null
     },
@@ -11680,17 +11754,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1945",
-          "name": "MI number not being assigned"
-        },
-        {
-          "key": "MDWFP-2153",
-          "name": "Same MI showing after 1525 cleanup. "
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vessel registration \u2014 assign MI number when required. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -11706,13 +11771,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1525",
-          "name": "Boats being given brand new MI registration numbers"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MS boat registration \u2014 restore original MI numbers for incorrectly reassigned vessels. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -11728,13 +11788,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2100",
-          "name": "Voided online registration by migration"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Control Center vessel registration \u2014 restore Garrett Tillman boat to active. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -11748,20 +11803,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q3-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1747",
-          "name": "Online boat registration TRANSFER also being put in as a NEW boat registration with different MI# to same customer"
-        },
-        {
-          "key": "MDWFP-1525",
-          "name": "Boats being given brand new MI registration numbers"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MS vessel registration \u2014 block New Registration when HIN already has an active registration. If this stays broken, staff cannot finish a boat or title sale. Minnesota and Mississippi both feel this until it is fixed.",
       "rank": null
     },
@@ -11777,13 +11822,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1685",
-          "name": "Migrated Title information from Legacy does not show owner information in UI"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Title Profile \u2014 diagnose missing owner info on migrated titles. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -11818,13 +11858,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-681",
-          "name": "Request to set decals to active and assign to agent 3001"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -11857,13 +11892,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2371",
-          "name": "Title numbers reset to 00000 after 99999"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Title numbers reset to 00000 after 99999. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -11877,16 +11907,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q3-S4",
       "shirt": "Needs Estimate",
       "clients": [
-        "Mississippi",
-        "Louisiana"
+        "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1599",
-          "name": "Unable to process online application after invalidating the duplicate registration that was placed on it. "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Control Center \u2014 restore prior registration when undoing a Duplicate Registration. If this stays broken, staff cannot finish a boat or title sale. Mississippi and Louisiana both feel this until it is fixed.",
       "rank": null
     },
@@ -11919,13 +11943,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-673",
-          "name": "PSS 2029 decal statuses"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -11941,13 +11960,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1971",
-          "name": "Boat Registration Application Updates"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vehicles (Boat) \u2014 capture Year Built separately through the registration lifecycle. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -11963,13 +11977,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-562",
-          "name": "CC: Decals burned after voiding transactions"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -11985,13 +11994,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1875",
-          "name": "Customer completed two renewals on the same day one is missing MI number"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Customer completed two renewals on the same day one is missing MI number. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -12007,13 +12011,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2231",
-          "name": "Request that hyperlinks open in a new window"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Open vehicle hyperlinks in a new window. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -12063,13 +12062,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2307",
-          "name": "Boat Registration \"Error occurred processing your Request\""
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Agent POS vehicle details \u2014 open vessel after title void/invalidate. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -12085,17 +12079,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-678",
-          "name": "Character Limit on Address Line via Print Preview Page"
-        },
-        {
-          "key": "CLV-607",
-          "name": "CC: Address missing from Boat Registration"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vehicle registration card \u2014 print street and unit as a full address. If this stays broken, staff cannot finish a boat or title sale. Louisiana customers and counter staff feel this first.",
       "rank": null
     },
@@ -12111,13 +12096,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-690",
-          "name": "Dealer Renewals Failing through Lockbox"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -12137,13 +12117,8 @@ window.ROADMAP_DATA = {
         "Missouri",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3936",
-          "name": "UAT- VEH- CC-Remove Lien fails for Business owner registrations due to invalid First/Last Name validation"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Control Center Title Profile \u2014 remove lien fails for business owners. If this stays broken, staff cannot finish a boat or title sale. Louisiana, Minnesota, Mississippi, Missouri, and Ohio all feel this until it is fixed.",
       "rank": null
     },
@@ -12159,13 +12134,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1685",
-          "name": "Migrated Title information from Legacy does not show owner information in UI"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Title Profile \u2014 show owners when the vehicle has owners. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -12249,13 +12219,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-1721",
-          "name": "EFT Report is not Reflecting Voids that were Completed Through CC"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Allow post-statement void journals for credit card transactions. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -12288,13 +12253,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2327",
-          "name": "MDWFP Commission Report - Updates"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MDWFP Commission Report - Updates. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -12361,13 +12321,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1562",
-          "name": "EFT Schedule Job_ Error message"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "EFT Schedule Job Error message. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -12383,13 +12338,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1939",
-          "name": "Reports_ Agent Void Report_ Void Amount Format Wrong"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Reports Agent Void Report Void Amount Format Wrong. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -12405,13 +12355,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2279",
-          "name": "Unable to Autorenew for a customer"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Let staff Autorenew for a customer. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -12427,13 +12372,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2281",
-          "name": "Sales By Time Period: Daily Reports are showing too many fields"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Daily Reports are showing too many fields. If this stays broken, money, statements, or renewals come out wrong. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -12483,13 +12423,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1995",
-          "name": "Auto Renewal_ Previous Year's Expired Products Available to Enroll"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Auto Renewal Previous Year's Expired Products Available to Enroll. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -12658,13 +12593,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1535",
-          "name": "Package Products_ Cart and Price Issues (3)"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Package pricing excludes commission configured as Keep Package Amount. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -12715,13 +12645,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-399",
-          "name": "10.1.9 Voids"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Agent EFT Statement Report \u2014 include inactive/terminated-agent statements with non-zero\u2026. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -12874,13 +12799,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2040",
-          "name": "Expired Gift Certificate Report: Status and remaining-balance filters return no records"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Expired Gift Certificate Report: Status and remaining-balance filters return no records. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -12894,16 +12814,10 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q3-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Oregon",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-409",
-          "name": "10.1.19 Multiyear license transfer report"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "OH: Multi-Year Lifetime Revenue Report counts and dollars do not match legacy (CROH-409). If this stays broken, money, statements, or renewals come out wrong. Oregon and Ohio both feel this until it is fixed.",
       "rank": null
     },
@@ -12919,17 +12833,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2023",
-          "name": "Reports_ Fund Split Reports (both)_ Data Migration_ Products' Funds Codes are Incorrect"
-        },
-        {
-          "key": "CROH-2075",
-          "name": "Complete Financial/Accounting Reconciliation, EFT Migration, and Fund Configuration Validation"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Statements page loading indefinitely and missing details in MS, LA, and MN. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -12962,13 +12867,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-399",
-          "name": "10.1.9 Voids"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Agent EFT Statement \u2014 add \"Allow Credits in ACH\" setting to carry negative balances forward. If this stays broken, money, statements, or renewals come out wrong. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -13035,13 +12935,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2358",
-          "name": "Donations fee not showing correctly"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Donations fee not showing correctly. If this stays broken, money, statements, or renewals come out wrong. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -13242,8 +13137,7 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q3-S6",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
-        "Minnesota"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -13313,13 +13207,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1654",
-          "name": "Draw Hunt Application: Group ID Changed for user's application without user making any modifications"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Draw Hunt Application: Group ID Changed for user's application without user making any\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -13335,17 +13224,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1490",
-          "name": "Cart Items_ Removing one product removes other independent products"
-        },
-        {
-          "key": "MELS-4155",
-          "name": "LIC: Removing Cross-Sell Item Incorrectly Removes Primary Product from Cart"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Removing any cart item deletes a separate license whose certification was satisfied via\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -13378,13 +13258,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2298",
-          "name": "Survey Raw Data Report: WMAs no longer showing in the \"Lands\" column "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Survey Raw Data Report: \"Lands\" column shows all WMAs on every row instead of the WMA\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -13451,13 +13326,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2295",
-          "name": "Unable to autorenew packages"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Renewal selection: bypass package-level qualification rules to match child-product\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -13473,13 +13343,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1948",
-          "name": "Shooting Range_ Customer Profile Verification Page & Catalog"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Shooting Range Customer Profile Verification Page & Catalog. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -13547,13 +13412,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1457",
-          "name": "Specialty Permits_ Templates_ multiple issues"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Print Template Variable Override: Effective End Date entry blocked and false start/end\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -13620,13 +13480,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2283",
-          "name": "Hunt Detail Summary report spreadsheet won't unlock"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Hunt Detail Summary report spreadsheet won't unlock and missing some column data. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -13676,13 +13531,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1829",
-          "name": "General License Template failing to load in UA for \"Download/Print Documents\" link"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "(Commercial Propagation Permit) Template failing to load in for \"Download/Print\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -13732,13 +13582,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2052",
-          "name": "Customer was able to purchase two Sportsman License"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Customer was able to purchase two Sportsman License. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -13771,13 +13616,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1772",
-          "name": "Control Center_ Edit Survey Button Doesn't Show User Original Responses"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Editing a date question on a survey response wipes out other (dropdown/multi-select) answers. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -13844,13 +13684,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2324",
-          "name": "Reports: WMA Check-In Report failing after ~4k records"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Reports: WMA Check-In Report fails on large date ranges (100s HTTP render timeout). If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -13866,13 +13701,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1435",
-          "name": "POS_ Customer's Active Products not Showing up"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Quick Sale/Active Products showing all customer transactions. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -13888,13 +13718,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1921",
-          "name": "Survey_ Harvest Surveys_ Time Completed Missing"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Display survey submission date AND time in Control Center survey grids. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -13910,13 +13735,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2009",
-          "name": "Specialty Pemit_ Transaction Number Not Differentiating Between Individual vs. Business Transactions"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Specialty Permit: Claimed Transaction Detail link not differentiating between Individual\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -14000,13 +13820,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-2806",
-          "name": "Part 2: Prairie Chicken Lottery Eligibility and Execution"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Prairie chicken lottery execution did not honor group lowest point config. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -14022,13 +13837,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-2816",
-          "name": "Part 5: Prairie Chicken Surplus License Sale"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Let staff void prairie chicken surplus license. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -14076,7 +13886,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Arkansas"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -14095,13 +13905,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-371",
-          "name": "9.2.2 Harvest Flag Types"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Enforcement Triggers \u2014 apply Harvest Limit Exceeded across mapped game check surveys. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -14202,13 +14007,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2024",
-          "name": "Sales Page_ Display Page Not Honoring Products in Cart for Eligibility "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Product display page \u2014 honor in-cart products for eligibility. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -14259,13 +14059,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4351",
-          "name": "Control Center admins can't change hunt choice for youth lottery; see age-policy error for all changes"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Control Center Application Detail \u2014 allow hunt choice edits when applicant meets age policy. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -14298,13 +14093,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4374",
-          "name": "ALL AGES BEAR SURPLUS LICENSE: Unable to purchase Surplus Bear License due to a \"parsing error\""
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "ALL AGES BEAR SURPLUS LICENSE: Unable to purchase Surplus Bear License due to a \"parsing\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -14337,13 +14127,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4378",
-          "name": "Super Sports Deer Archery and Muzzleloader licenses remain available after Super Sports Firearm license selection"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Catalog \u2014 exclude-by-product-code ignores package-selected products. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -14359,13 +14144,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-1350",
-          "name": "Will Events be added to Residency Configuration?"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Add VEMS to Residency Configuration and enforce on the VEMS customer profile. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -14381,13 +14161,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2009",
-          "name": "Max Active - 161 Waterfowl Stamp"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Add new \"Requires by Product Codes\" policy condition with configurable matching criteria. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -14401,21 +14176,12 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
         "Minnesota",
-        "Mississippi"
+        "Mississippi",
+        "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3331",
-          "name": "UAT-VEH-POS-DLN/DL State and Residency not required for vehicle customers"
-        },
-        {
-          "key": "CROH-1948",
-          "name": "Shooting Range_ Customer Profile Verification Page & Catalog"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "POS residency looker \u2014 suppress for non-license-sales agents; catalog safety net when\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Ohio, Minnesota, and Mississippi all feel this until it is fixed.",
       "rank": null
     },
@@ -14448,13 +14214,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1806",
-          "name": "Control Center WMA Check-Ins - No Option to Select Activity"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Show Purpose/Activity selection on the initial WMA check-in screen. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -14470,13 +14231,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2291",
-          "name": "Draw Hunt and Special Permit applications from over a year ago still showing as \"Active\" "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Move Draw and application products out of the \"Active\" Purchase History view once they\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -14492,13 +14248,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2358",
-          "name": "Cards: Code is displaying vs. Product Name"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Customer Hard Cards tab displays product code instead of product name. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -14512,20 +14263,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Arkansas",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-96",
-          "name": "2.3.2 Providing Customer Confirmation Code"
-        },
-        {
-          "key": "CROH-83",
-          "name": "2.1.13 ESA Counties Notification"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Individual Customer Survey Response Print Template. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Arkansas and Ohio both feel this until it is fixed.",
       "rank": null
     },
@@ -14561,17 +14302,8 @@ window.ROADMAP_DATA = {
         "Mississippi",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2006",
-          "name": "Sales Page_ Harvest Button When Not Logged In and No Permit"
-        },
-        {
-          "key": "CROH-76",
-          "name": "2.1.6 Customer Look-up"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Guest game check lookup auto-selects a report when a landowner has multiple open harvest\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Arkansas, Minnesota, Mississippi, and Ohio all feel this until it is fixed.",
       "rank": null
     },
@@ -14585,15 +14317,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Mississippi"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2342",
-          "name": "Draw Hunts: Youth users with same linked adult guardian able to submit multiple applications"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Draw Hunts \u2014 prevent applicants from submitting multiple applications for the same draw. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -14611,13 +14338,8 @@ window.ROADMAP_DATA = {
         "Mississippi",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2007",
-          "name": "Specialty Permits_ Migration_ Updated Date Field Wrong"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Application Search \u2014 show blank Updated Date when missing. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Arkansas, Mississippi, and Ohio all feel this until it is fixed.",
       "rank": null
     },
@@ -14633,13 +14355,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4367",
-          "name": "System Allows Exchange to Super Sports Deer Archery License When Customer Already Possesses an Original Deer Archery License"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "License Exchange \u2014 honor Exclude by Product Code for retained licenses. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -14655,13 +14372,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4369",
-          "name": "Deer License: Deer License Can Be Exchanged After Harvest Registration Is Completed"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "License Exchange \u2014 block exchange after completed Harvest Registration. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -14745,13 +14457,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2034",
-          "name": "Replacements: Unavailable message showing that is not in vocab, policies, etc"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Replacements: revocation-disabled items show hardcoded \"Not allowed: package product\"\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -14767,13 +14474,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2053",
-          "name": "Vocab: Land Profile not Updating to Landowner Permit Application"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "User Menu \u2014 labels from CMS Vocabulary. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -14789,13 +14491,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1719",
-          "name": "Unsuccessful Draw Result Notifications - Listing every subunit within a hunt"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Unsuccessful Draw Result Notifications - Listing every subunit within a hunt. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -14845,13 +14542,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2349",
-          "name": "Exclusion not copied during copy season"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Copy Season \u2014 carry forward missing product settings. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -14884,13 +14576,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2366",
-          "name": "Draw Hunt Group Issues: \"Error Processing Request\", Group Members not Showing"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Licensing draw group invite \u2014 no processing error for the invitee. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -14940,13 +14627,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2384",
-          "name": "Draw Hunts: Auto-Award Processing Ceased Before All Permits Awarded"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MS draw auto-award \u2014 issue leftover $0 Primitive Weapon and Gun permits. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -14960,7 +14642,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S4",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -14979,13 +14661,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1537",
-          "name": "Remove species from \"Draw Type\" list on \"Draws\" page"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Species listed in draw type custom config. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15001,13 +14678,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-1652",
-          "name": "Revocations: Closed Revocations still showing in drop downs"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Revocations: Inactive Revocations still showing in Create Revocation for Customer flow. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15023,13 +14695,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-1332",
-          "name": "Products: Product Code should be locked once filled w/ a value and saved."
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "FROM INTAKE - Product Code should be locked once filled w/ a value and saved. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15045,13 +14712,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-1863",
-          "name": "Admin Sale: Setting residency when not set on customer record  MAJOR ISSUE"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Admin Sale: Defaulting Residency when none exists on profile. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15067,13 +14729,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2164",
-          "name": "The field Surveys To is invalid. The field Surveys From is invalid."
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "The field Surveys To is invalid. The field Surveys From is invalid. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15087,15 +14744,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2191",
-          "name": "POS: Share the Harvest Donation inconsistent triggering"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "POS: Share the Harvest Donation inconsistent triggering. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -15109,15 +14761,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2377",
-          "name": "Surveys>Questions: Question creation input delay"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Survey Questions \u2014 create and edit stay usable after entering text. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Missouri customers and counter staff feel this first.",
       "rank": null
     },
@@ -15150,13 +14797,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2440",
-          "name": "Admin Sales>Not displaying product surveys"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Admin Sales \u2014 display product surveys when adding to cart. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15170,7 +14812,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -15187,16 +14829,11 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Mississippi",
-        "Arkansas"
+        "Arkansas",
+        "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2384",
-          "name": "Draw Hunts: Auto-Award Processing Ceased Before All Permits Awarded"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Draw Finalize \u2014 wait until auto-award is complete. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi and Arkansas both feel this until it is fixed.",
       "rank": null
     },
@@ -15227,15 +14864,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2116",
-          "name": "Policy_ Free of Charge Policy_ Not Removed from All Products When Trigger Product is Removed from Cart"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Licensing catalog cart \u2014 restore Free of Charge prices when the qualifier is removed. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -15249,7 +14881,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -15266,15 +14898,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4438",
-          "name": "Deer: Customers who Exchange Licenses are not being Added to Lottery (Even if they exchange for a Lottery Area)"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Check Eligibility \u2014 score lottery applicants after product exchange. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -15290,13 +14917,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-734",
-          "name": "Decal Search Error Message"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Serialized Inventory - Cart amount check results in exception. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15310,7 +14932,6 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S6",
       "shirt": "Needs Estimate",
       "clients": [
-        "Oregon",
         "Missouri"
       ],
       "tickets": [],
@@ -15347,13 +14968,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1067",
-          "name": "WMA Check-in Enhancements"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "WMA Check-In: configurable global display order for purposes and species (contract, API,\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -15505,13 +15121,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CRAR-866",
-          "name": "Copy Draw/Season - Current Year to Current Year"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Product Copy Season \u2014 allow same-year product copy with options. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15527,17 +15138,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Arkansas"
       ],
-      "tickets": [
-        {
-          "key": "CRAR-2178",
-          "name": "SCP product not auto-issuing on approval of CLAP product "
-        },
-        {
-          "key": "MDWFP-2394",
-          "name": "Commercial Application/Special Permit products no longer being auto-awarded after approval"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Specialty Permit Application Approval \u2014 auto-issue granted products on Approve. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Arkansas customers and counter staff feel this first.",
       "rank": null
     },
@@ -15553,13 +15155,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2374",
-          "name": "Draw Hunts: \"Deer - Group\" group members not seeing the \"Hunt Area Sub Location\" they were assigned"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Leader Only draws \u2014 group members see assigned Hunt Area Sub Location. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -15592,13 +15189,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2389",
-          "name": "Draw Hunts: Unable to Update Quota Pool due to no Hunt Area Sublocation"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Draw quota pools \u2014 raise quota and assign missing Hunt Area Sub Location after execution. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15614,17 +15206,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2499",
-          "name": "Surveys>Events>\"Do not add to Cart\" event not functioning properly"
-        },
-        {
-          "key": "COMO-2238",
-          "name": "Products/Transaction: \"Already purchased' error message when not already on acct"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Catalog \u2014 usable after Do Not Add to Cart. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15655,17 +15238,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S6",
       "shirt": "Needs Estimate",
       "clients": [
-        "Arkansas",
-        "Louisiana",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1930",
-          "name": "UA2 - Customer cannot get to catalog"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Licensing catalog \u2014 Missing/Expired after residency check can proceed when attestation\u2026. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Arkansas, Louisiana, and Mississippi all feel this until it is fixed.",
       "rank": null
     },
@@ -15696,7 +15272,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S6",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -15781,8 +15357,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S6",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
-        "Minnesota"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -15818,13 +15393,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5365",
-          "name": "UA2 - INT Event Header Not in Vocab & Mispelled"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 - Event Header Not in Vocab & Mispelled. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -15857,13 +15427,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1833",
-          "name": "Shooting Range_ Editing Session Data Returns to 'Check-in' button"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Shooting Range Editing Session Data Returns to 'Check-in' button. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -15879,17 +15444,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1502",
-          "name": "Staging - Shooting Range_ Reservations>Locations Error"
-        },
-        {
-          "key": "CROH-1498",
-          "name": "Shooting Range Module_ Staging_ Locations Issue"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Reserv - Error occurred when setting up Shooting Range Location (OH Staging). If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -15903,16 +15459,10 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q3-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Oregon",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1782",
-          "name": "VEMS_ Volunteer Can Add Students to Other Volunteer's Events"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Only allow edits if volunteer is associated to the roster for an event (configurable). If this stays broken, event signup or check-in fails. Oregon and Ohio both feel this until it is fixed.",
       "rank": null
     },
@@ -15928,13 +15478,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-118",
-          "name": "3.2.4 Staff Role Groups and Permissions"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Let staff access \"Edit Session Details\" for Shooting Range. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -15950,13 +15495,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2010",
-          "name": "VEMS_ Documents_ Unable to Update Documents"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "VEMS Documents Unable to Update Documents. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -15970,18 +15510,13 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q3-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Oregon",
         "Arkansas",
         "Missouri",
-        "Ohio"
+        "Ohio",
+        "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2427",
-          "name": "VEMS - Projects should not be visible to public"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Must be in position to see projects or event (make configurable). If this stays broken, event signup or check-in fails. Oregon, Arkansas, Missouri, and Ohio all feel this until it is fixed.",
       "rank": null
     },
@@ -15995,7 +15530,7 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q3-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -16014,13 +15549,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5357",
-          "name": "UA2 CC - Volunteer award triggering when volunteer has 0 award points"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 CC - Volunteer award triggering when volunteer has 0 award points. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -16053,21 +15583,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1947",
-          "name": "Reports_ Reservables- Shooting Report_ Data Not Correct (2)"
-        },
-        {
-          "key": "CROH-1949",
-          "name": "Reports_ Reservables-Attendance (Shooting Range Custome List)_ Missing Data/Fields (4)"
-        },
-        {
-          "key": "CROH-109",
-          "name": "3.1.3 Check-Out and Saving Data in OWLS"
-        }
-      ],
-      "ticketCount": 3,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Reservables Attendance and Shooting reports return no results for completed sessions. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -16083,13 +15600,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2052",
-          "name": "Shooting Range_ Unable to Check Customer In"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Shooting Range Unable to Check Customer In. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -16105,13 +15617,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5336",
-          "name": "UA2 CC - Broadcast does not appear anywhere when created"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 CC - Broadcast does not appear anywhere when created. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -16127,13 +15634,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5369",
-          "name": "UA2 - Guest Checkout does not prompt user for contact info or add to roster"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 - Guest Checkout does not prompt user for contact info or add to roster. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -16150,21 +15652,8 @@ window.ROADMAP_DATA = {
         "Arkansas",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5376",
-          "name": "[UA2] \"Allow Pending Registration for Volunteers\" functionality is not working properly"
-        },
-        {
-          "key": "OV-5375",
-          "name": "[UA2] (INT) Volunteer event registration workflow is not functioning properly"
-        },
-        {
-          "key": "OV-4614",
-          "name": "PROJECTS - Logic for Project Volunteer Limits displaying on INT"
-        }
-      ],
-      "ticketCount": 3,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Prospective volunteers cannot register for project roster slots when pending\u2026. If this stays broken, event signup or check-in fails. Arkansas and Oregon both feel this until it is fixed.",
       "rank": null
     },
@@ -16181,25 +15670,8 @@ window.ROADMAP_DATA = {
         "Arkansas",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5375",
-          "name": "[UA2] (INT) Volunteer event registration workflow is not functioning properly"
-        },
-        {
-          "key": "OV-5374",
-          "name": "UA2 - VSD Apps show inappropriate \"Active - Action Required\" status"
-        },
-        {
-          "key": "OV-4614",
-          "name": "PROJECTS - Logic for Project Volunteer Limits displaying on INT"
-        },
-        {
-          "key": "OV-5376",
-          "name": "[UA2] \"Allow Pending Registration for Volunteers\" functionality is not working properly"
-        }
-      ],
-      "ticketCount": 4,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Volunteer event registration dead-ends after selecting a position. If this stays broken, event signup or check-in fails. Arkansas and Oregon both feel this until it is fixed.",
       "rank": null
     },
@@ -16215,13 +15687,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5368",
-          "name": "PROD: Year to Year Summary Report"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "ODFW: Year to Year Summary Report \u2014 date picker UX and flexible date range (up to 365 days). If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -16237,13 +15704,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1783",
-          "name": "VEMS_ CC User (volunteer?) Can Add student Score Before Event is Held"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "VEMS CC User (volunteer?) Can Add student Score Before Event is Held. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -16259,13 +15721,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5371",
-          "name": "UA2 CC - Unable to open transaction details"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 CC - Unable to open transaction details. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -16281,13 +15738,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2078",
-          "name": "VEMS_ Dashboard_ Manage Supply Orders Link Error"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "VEMS Dashboard Manage Supply Orders Link Error. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -16337,13 +15789,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2078",
-          "name": "VEMS_ Dashboard_ Manage Supply Orders Link Error"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "VEMS Dashboard Manage Supply Orders Link Error. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -16359,17 +15806,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Missouri"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2445",
-          "name": "FlyOut Menu>Event Participation: Error when clicking on Evt. Part. in the menu on VEMS/Licensing"
-        },
-        {
-          "key": "COMO-2437",
-          "name": "Customers: Unable to open CID 037578515 in UA w/o erroring out"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "FlyOut Menu>Event Participation: Error when clicking on Evt. Part. in the menu on\u2026. If this stays broken, event signup or check-in fails. Missouri customers and counter staff feel this first.",
       "rank": null
     },
@@ -16385,13 +15823,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Missouri"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2477",
-          "name": "Certifications> Unable to print active certifications"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Certifications> Unable to print active certifications. If this stays broken, event signup or check-in fails. Missouri customers and counter staff feel this first.",
       "rank": null
     },
@@ -16407,13 +15840,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5378",
-          "name": "UA2 CC - Contact Search does not filter out \"Is Volunteer\""
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 CC - Contact Search does not filter out \"Is Volunteer\". If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -16429,13 +15857,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2079",
-          "name": "VEMS_ Dashboard_ Event Participation_ Class Data error"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "VEMS Dashboard Event Participation Class Data error. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -16468,21 +15891,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2088",
-          "name": "VEMS_ Volunteers Can Only Add Students Who Have an Online (PayIt SSO) Account"
-        },
-        {
-          "key": "CROH-1670",
-          "name": "VEMS: Volunteer Instructors Need to easily add multiple students"
-        },
-        {
-          "key": "CROH-2030",
-          "name": "VEMS_ Volunteer Can't Create Student Accounts"
-        }
-      ],
-      "ticketCount": 3,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Let staff add a customer to a roster without a PayIt login. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -16498,13 +15908,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5369",
-          "name": "UA2 - Guest Checkout does not prompt user for contact info or add to roster"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 - Guest checkout confirmation page is blank and confirmation email is not received. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -16520,13 +15925,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5336",
-          "name": "UA2 CC - Broadcast does not appear anywhere when created"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 CC - Cannot open or create a Broadcast (error page). If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -16542,17 +15942,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5376",
-          "name": "[UA2] \"Allow Pending Registration for Volunteers\" functionality is not working properly"
-        },
-        {
-          "key": "OV-5375",
-          "name": "[UA2] (INT) Volunteer event registration workflow is not functioning properly"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 - Pending project volunteer lands as Registered with no next step for requirements. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -16588,13 +15979,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5322",
-          "name": "[UA2] (INT) Event leads shown project-specific set-up option while creating non-project events"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "[UA2] Event leads shown project-specific set-up option while creating non-project events. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
       "rank": null
     },
@@ -16613,13 +15999,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5337",
-          "name": "UA2 CC - Broadcasts \"Eligible?\" field gives error that required but does not have a red star"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 CC - Broadcasts \"Eligible?\" field gives error that required but does not have a red star. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
       "rank": null
     },
@@ -16638,13 +16019,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5364",
-          "name": "UA2 - CC Able to Add an Inactive Location to an Event"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 - CC Able to Add an Inactive Location to an Event. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
       "rank": null
     },
@@ -16677,13 +16053,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "OV-4303",
-          "name": "Custom Lookups Do Not Reflect Language Configuration Settings (CC)"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Custom Lookups Do Not Reflect Language Configuration Settings (CC). If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -16702,13 +16073,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2130",
-          "name": "Inbox showing notification indicator when none exist in inbox"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Inbox showing notification indicator when none exist in inbox. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
       "rank": null
     },
@@ -16727,13 +16093,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5372",
-          "name": "UA2 INT - Unable to access all messages in inbox"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 Unable to access all messages in inbox. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
       "rank": null
     },
@@ -16769,13 +16130,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2108",
-          "name": "Unable to see Events when the correct permissions exist"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Let staff see Events when the correct permissions exist. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -16834,13 +16190,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5338",
-          "name": "UA2 - CC Supply Orders page displays NOT FOUND title"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "\"NOT FOUND\" text appearing on supply ordering screen in CC. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
       "rank": null
     },
@@ -16876,13 +16227,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1867",
-          "name": "Vocabulary_ Word \"Pass\" Needs Split Out By Use"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vocabulary Word \"Pass\" Needs Split Out By Use. If this stays broken, event signup or check-in fails. Arkansas, Missouri, Ohio, and Oregon all feel this until it is fixed.",
       "rank": null
     },
@@ -16898,13 +16244,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5261",
-          "name": "UA2 - CC missing certification template"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 - CC missing certification template. If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -16918,18 +16259,13 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q3-S6",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
         "Arkansas",
         "Missouri",
+        "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2017",
-          "name": "Notifications_ VEMS_ Volunteer Event Registration Notification Links Not Working"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Notifications VEMS Volunteer Event Registration Notification Links Not Working (CROH-2017). If this stays broken, event signup or check-in fails. Ohio, Arkansas, Missouri, and Oregon all feel this until it is fixed.",
       "rank": null
     },
@@ -16982,13 +16318,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1532",
-          "name": "Linked Users_ Main User's Profile vs Customer's Issues (2)"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "FROM INTAKE - Linked Customers: Why when acting as someone else do you no see linked\u2026. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17004,13 +16335,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1457",
-          "name": "Specialty Permits_ Templates_ multiple issues"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Survey questions not showing on template when configured to do so. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17077,13 +16403,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1933",
-          "name": "Update Deer Permit Templates"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Update Deer Permit Templates. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17099,13 +16420,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Michigan"
       ],
-      "tickets": [
-        {
-          "key": "MICH-2927",
-          "name": "MOBILE API to support grouped and paginated license retrieval"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MOBILE API to support grouped and paginated license retrieval. If this stays broken, a shared CORE screen, print, or login path fails. Michigan customers and counter staff feel this first.",
       "rank": null
     },
@@ -17121,17 +16437,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1839",
-          "name": "Getting Kicked Out of Log In When Switching from LIC to VEMS"
-        },
-        {
-          "key": "COMO-2228",
-          "name": "Customer: Logged out on cross-module navigation"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Getting Kicked Out of Log In When Switching from LIC to VEMS. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17147,13 +16454,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1970",
-          "name": "Organ Donor Prompt not presented when separate prompts exist"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Organ Donor Prompt not presented when separate prompts exist. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17186,13 +16488,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1660",
-          "name": "HuntFish OH_ Unable to add or manage linked users"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Let staff manage linked user profile. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17208,13 +16505,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1676",
-          "name": "Customer Match for Merge Report not returning data"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Customer Match for Merge Report not returning data. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17230,13 +16522,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-669",
-          "name": "Boat Registration Renewal \u2013 Ownership Change Issue"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Update PayIt Login API Ingestion Process to not over-write Names and DOB if they already\u2026. If this stays broken, a shared CORE screen, print, or login path fails. Louisiana customers and counter staff feel this first.",
       "rank": null
     },
@@ -17267,7 +16554,7 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Arkansas"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -17354,13 +16641,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1527",
-          "name": "Updates needed to Map Layers"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Apply the configured map-layer changes. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17391,8 +16673,7 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota",
-        "Mississippi"
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -17445,17 +16726,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1893",
-          "name": "Linked Accounts_ Buying for Another Customer Bypasses Residency Attestation"
-        },
-        {
-          "key": "CROH-12",
-          "name": "1.2.3 Residency Declaration"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Peer-to-peer linked accounts unusable with linked residency attestation. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17471,17 +16743,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1350",
-          "name": "POS Password Reset_ Doesn't Look at Username or Module"
-        },
-        {
-          "key": "CROH-1169",
-          "name": "POS_ Requiring User Email Address"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Update Password reset to check for duplicated emails. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17497,13 +16760,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1959",
-          "name": "Organ Donor not functioning as needed"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Organ Donor selection displayed during merge. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17519,13 +16777,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2049",
-          "name": "Map_ Layers Missing"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Map Layers Missing. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17541,13 +16794,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1853",
-          "name": "Fulfillment Report Not Pulling Legacy Sales Data"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Fulfillment Report Not Pulling Legacy Sales Data. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17580,13 +16828,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2056",
-          "name": "Unable to log into mobile app following refresh"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Let staff log into mobile app following refresh. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17636,13 +16879,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-2629",
-          "name": "Missing Apprentice Field on Customer Record"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Missing Apprentice Field on Customer Record. If this stays broken, a shared CORE screen, print, or login path fails. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -17673,15 +16911,10 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1993",
-          "name": "Merge Accounts_ Not Merging Protected Records"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Merge Accounts Not Merging Protected Records. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17697,13 +16930,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-472",
-          "name": "CC: Merging business account"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Customer Merge Returning Error for Some Customer. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17720,13 +16948,8 @@ window.ROADMAP_DATA = {
         "Missouri",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1787",
-          "name": "Merged Accounts_ Agents (POS) and Customers (Sales) Not taken to 'Active' account"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Merged Accounts Agents (POS) and Customers (Sales) Not taken to 'Active' account. If this stays broken, a shared CORE screen, print, or login path fails. Missouri and Ohio both feel this until it is fixed.",
       "rank": null
     },
@@ -17759,13 +16982,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-967",
-          "name": "Linked Accounts_ handling stored financial data"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Update Embedded Pages which use the Wallet to enforce token mgmt/refresh. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17798,13 +17016,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1781",
-          "name": "Control Center_ User Permissions_ Edit/View SSN Not Working Properly"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "SSN/DL permissions allow unauthorized viewing and editing. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17820,13 +17033,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1978",
-          "name": "HuntFish OH_ Push Notification Received When Set to No"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Push Notification Received When Set to No. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17842,13 +17050,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-232",
-          "name": "6.2.4 Customer Opt-In or Opt-Out"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Make Default Value for Promotional Message work. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17864,13 +17067,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-259",
-          "name": "7.1.8 Customer Account Access"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Issues with Guardian to Member in Mobile. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17887,13 +17085,8 @@ window.ROADMAP_DATA = {
         "Missouri",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1893",
-          "name": "Linked Accounts_ Buying for Another Customer Bypasses Residency Attestation"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Linked Accounts Buying for Another Customer Bypasses Residency Attestation. If this stays broken, a shared CORE screen, print, or login path fails. Missouri and Ohio both feel this until it is fixed.",
       "rank": null
     },
@@ -17909,13 +17102,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1853",
-          "name": "Fulfillment Report Not Pulling Legacy Sales Data"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Fulfillment Report Not Pulling Legacy Sales Data. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -17931,13 +17119,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2063",
-          "name": "HuntFish OH_ Unable to Purchase for Member"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Let staff Purchase for Member. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17953,13 +17136,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2035",
-          "name": "HuntFish OH: Unable to access mobile shopping cart"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Cart Indicator barely visible in mobile app. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -17975,17 +17153,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-25",
-          "name": "1.2.16 Fulfillment"
-        },
-        {
-          "key": "CROH-61",
-          "name": "1.6.1 Hard Card Fulfillment"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Rollup divergent path still exists following config change. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -18001,13 +17170,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-78",
-          "name": "2.1.8 Text Confirmation"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Non-security related text messages need to be enabled in OH. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -18023,13 +17187,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1893",
-          "name": "Linked Accounts_ Buying for Another Customer Bypasses Residency Attestation"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Linked Accounts Decline for Residency does not seem to enforce residency rules. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -18045,17 +17204,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1781",
-          "name": "Control Center_ User Permissions_ Edit/View SSN Not Working Properly"
-        },
-        {
-          "key": "CROH-2028",
-          "name": "Sales Page_ Caching Issue_ Previous Customer's Account Still Active"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Eyeball is showing when field is not editable - eyeball should be removed if\u2026. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -18071,13 +17221,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-59",
-          "name": "1.5.14 Customer Reports"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Print Customer Details not working for migrated customers. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -18127,13 +17272,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Arkansas"
       ],
-      "tickets": [
-        {
-          "key": "CRAR-653",
-          "name": "Custom AR General License Template"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "The print template for package products does not display the list of products\u2026. If this stays broken, a shared CORE screen, print, or login path fails. Arkansas customers and counter staff feel this first.",
       "rank": null
     },
@@ -18149,13 +17289,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-368",
-          "name": "9.1.8 Customer Account Identification"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Update CC customer searching. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -18205,13 +17340,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2094",
-          "name": "HuntFish OH_ Hunting and Fishing Regulations Outdated"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Upload latest guidebooks for OH to mobile. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -18244,13 +17374,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3964",
-          "name": "UAT-VEH-POS & CC- Business Customer Creation Auto-Creates Duplicate Account"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Business Customer create \u2014 one account per save. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -18300,13 +17425,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1978",
-          "name": "HuntFish OH_ Push Notification Received When Set to No"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Not receiving push notifications for Android. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -18373,13 +17493,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2103",
-          "name": "Add Product Name Abbreviation Lookups"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Add Product Name Abbreviation Lookups. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -18393,24 +17508,15 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri",
         "Arkansas",
         "Minnesota",
         "Mississippi",
+        "Missouri",
         "Ohio",
         "Cherokee"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2473",
-          "name": "Licensing>Selecting 'Buy Now' from product details bypasses prompt for start date"
-        },
-        {
-          "key": "CROH-2120",
-          "name": "HuntFish OH_ Buying from Description Page Bypasses Product Questions"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Product Detail \u2014 Buy Now shows every product-configured prompt. If this stays broken, a shared CORE screen, print, or login path fails. Missouri, Arkansas, Minnesota, Mississippi, Ohio, and Cherokee all feel this until it is fixed.",
       "rank": null
     },
@@ -18471,13 +17577,8 @@ window.ROADMAP_DATA = {
         "Minnesota",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3964",
-          "name": "UAT-VEH-POS & CC- Business Customer Creation Auto-Creates Duplicate Account"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "CLONE - Clean up data from Business Customer create \u2014 one account per save. If this stays broken, a shared CORE screen, print, or login path fails. Louisiana, Minnesota, and Mississippi all feel this until it is fixed.",
       "rank": null
     },
@@ -18491,8 +17592,8 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota",
         "Arkansas",
+        "Minnesota",
         "Mississippi",
         "Missouri",
         "Ohio",
@@ -18513,8 +17614,7 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
-        "Arkansas"
+        "Ohio"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -18533,13 +17633,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-2118",
-          "name": "Lottery_Hunt Dates not displaying on Controlled Access Permit"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Lottery Hunt Dates and Units not displaying on Controlled Access Permit. If this stays broken, a shared CORE screen, print, or login path fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -18604,15 +17699,10 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S6",
       "shirt": "Needs Estimate",
       "clients": [
-        "Oregon"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "OV-5352",
-          "name": "UA2 - Password Reset does not send a reset email"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "UA2 - Password Reset does not send a reset email. If this stays broken, a shared CORE screen, print, or login path fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -18645,13 +17735,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-697",
-          "name": "Missing Registration & Multiple Identical Titles Issued"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "PSS File Management and duplicate records. If this stays broken, a shared CORE screen, print, or login path fails. Louisiana customers and counter staff feel this first.",
       "rank": null
     },
@@ -18667,13 +17752,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3415",
-          "name": "UAT-VEH-POS-Business Customer Contact details are not captured during customer creation."
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "POS Business Customer Profile \u2014 create fails Street 1 / City / Zip when those fields are\u2026. If this stays broken, a shared CORE screen, print, or login path fails. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -18689,13 +17769,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3415",
-          "name": "UAT-VEH-POS-Business Customer Contact details are not captured during customer creation."
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "POS Business Customer Profile - Contacts persist after create during vehicle Add Owner. If this stays broken, a shared CORE screen, print, or login path fails. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -18711,13 +17786,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2479",
-          "name": "Apprentice> Bypass not working when purchasing from product details page"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Product Detail (Licensing and POS) \u2014 honor apprentice hunter bypass the same as catalog. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -18939,9 +18009,9 @@ window.ROADMAP_DATA = {
       "sprint": "CALM 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota",
         "Arkansas",
         "Michigan",
+        "Minnesota",
         "Mississippi",
         "Ohio"
       ],
@@ -18966,13 +18036,8 @@ window.ROADMAP_DATA = {
         "Mississippi",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "MICH-3132",
-          "name": "MICHIGAN - Update Mobile APIs to call Active and Historical Licenses and Harvest Reports separately"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -19022,13 +18087,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Michigan"
       ],
-      "tickets": [
-        {
-          "key": "MICH-3040",
-          "name": "June LED Issues to Track Down "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MICH LED - displayed licenses wrong. If this stays broken, hunters hit a dead or wrong screen in the field. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -19163,6 +18223,43 @@ window.ROADMAP_DATA = {
       "shirt": "Needs Estimate",
       "clients": [
         "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CALM-3652",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "HuntFish OH_ UA_ Blank Screen After Game Check Submission",
+      "ticketTitle": "HuntFish OH_ UA_ Blank Screen After Game Check Submission",
+      "epicTitle": "HuntFish OH_ UA_ Blank Screen After Game Check Submission",
+      "sprint": "CALM 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Minnesota",
+        "Mississippi",
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CALM-3681",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Registrations not displaying in customer profile (LE Mobile)",
+      "ticketTitle": "Registrations not displaying in customer profile (LE Mobile)",
+      "epicTitle": "Registrations not displaying in customer profile (LE Mobile)",
+      "sprint": "CALM 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -19315,15 +18412,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Mississippi"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1526",
-          "name": "No one should be able to complete a duplicate boat registration on a vessel that is pending. "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -19339,17 +18431,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1542",
-          "name": "Customers/Agents able to process multiple renewals on the same vessel in a single transaction. "
-        },
-        {
-          "key": "MDWFP-1875",
-          "name": "Customer completed two renewals on the same day one is missing MI number"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "POS vessel renewal \u2014 close remaining double-renewal gaps. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -19403,13 +18486,8 @@ window.ROADMAP_DATA = {
         "Missouri",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3406",
-          "name": "QA-VEH-POS-Start Over button not working"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -19423,15 +18501,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Mississippi"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2353",
-          "name": "Boat Registration not renewing at EOM"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vehicle registration \u2014 expire on end of month when configured. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -19462,29 +18535,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota",
-        "Mississippi",
-        "Louisiana"
+        "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-1713",
-          "name": "UAT-VEH-POS-ELS Fee on Title Transactions"
-        },
-        {
-          "key": "MELS-2606",
-          "name": "UAT-VEH-POS-Issue in Transaction Fee Configuration -Agent Fee Not Applied Per Registration in Watercraft New Registration Transactions"
-        },
-        {
-          "key": "MELS-2943",
-          "name": "UAT-VEH-POS-Wrong Product/Charge_ Watercraft Transfer with Title Transaction"
-        },
-        {
-          "key": "MELS-3025",
-          "name": "UAT-VEH-POS-Cannot Perform \"Add a Lien\" and \"Release a Lien\" on the Same HIN in a Single Transaction \ufffd Results in $7 Overcharge in Agent Fee"
-        }
-      ],
-      "ticketCount": 4,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Cart & Checkout \u2014 one filing fee per registration when a title is in the same sale. If this stays broken, staff cannot finish a boat or title sale. Minnesota, Mississippi, and Louisiana all feel this until it is fixed.",
       "rank": null
     },
@@ -19500,13 +18554,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-2541",
-          "name": "UAT-VEH-POS-Owner Name Not Displaying Under Registration Details > Owner (Shows as Null After Completion)"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Licensing POS \u2014 show the business name when adding an owner. If this stays broken, staff cannot finish a boat or title sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -19522,13 +18571,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1525",
-          "name": "Boats being given brand new MI registration numbers"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MS vessel registration \u2014 keep existing MI on New Registration. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -19544,25 +18588,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-724",
-          "name": "skipped decals from PSS - marked SOLD in system"
-        },
-        {
-          "key": "CLV-722",
-          "name": "Skipped decals to be set active to reassign"
-        },
-        {
-          "key": "CLV-738",
-          "name": "skipped decals from PSS - marked sold in system - need to be active to reassign"
-        },
-        {
-          "key": "CLV-749",
-          "name": "skipped decals from PSS - marked as SOLD/VOID in system"
-        }
-      ],
-      "ticketCount": 4,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -19578,13 +18605,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-732",
-          "name": "Unable to search boat after length change: error message"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "POS Boat/Motor Search \u2014 find the boat after a Length change without an error. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -19617,13 +18639,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-743",
-          "name": "Dual Owners missing on Boat Renewal reminder"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Chase renewal file \u2014 include both current owners. If this stays broken, staff cannot finish a boat or title sale. Louisiana customers and counter staff feel this first.",
       "rank": null
     },
@@ -19639,13 +18656,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-744",
-          "name": "Investigation: 2028 decals out of sequence in 9/23 PSS transmission file"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "2028 decals from 9/23 are out of sequence. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -19676,7 +18688,7 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Louisiana"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -19695,17 +18707,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-751",
-          "name": "POS: Duplicate registration displayed for Jacky Felps"
-        },
-        {
-          "key": "CLV-757",
-          "name": "Legacy boats migrated with two decals: confirm which decal to retain"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -19719,17 +18722,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota",
-        "Mississippi",
-        "Louisiana"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3516",
-          "name": "QA-VEH-POS-Inconsistent Renewal Error Messages Displayed for NT Snowmobiles"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -19762,13 +18758,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-1166",
-          "name": "Non-Standard HIN Report"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Non Standard HIN Report \u2014 return vehicles that match the filters. If this stays broken, staff cannot finish a boat or title sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -19784,13 +18775,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-1169",
-          "name": "Vehicles Year to Year Report"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vehicle Year to Year Sales Report \u2014 complete and return the file. If this stays broken, staff cannot finish a boat or title sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -19808,13 +18794,8 @@ window.ROADMAP_DATA = {
         "Minnesota",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3513",
-          "name": "UAT-VEH-POS/CC-Additional Sales Tax Not Reflected in Vehicle Transaction History"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -19830,17 +18811,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-2930",
-          "name": "Successfully assigned a title to a non-title watercraft for a customer under the age of 18."
-        },
-        {
-          "key": "MELS-3148",
-          "name": "Register watercraft with Title exception, but all owners are under 18"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -19856,13 +18828,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1936",
-          "name": "Boat and Motor titles having incorrect owner information"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MS boat/motor titles \u2014 print both owners when more than one can be primary. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -19878,13 +18845,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3902",
-          "name": "QA-VEH-INT- System displays \"HIN\" instead of \"VIN\" for non-watercraft products"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Public My Vehicles \u2014 show VIN the same way Licensing POS does. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -19900,13 +18862,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1954",
-          "name": "\"Street 2\" AKA Supplemental address, missing from lienholder address on printed titles"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "\"Street 2\" AKA Supplemental address, missing from lienholder address on printed titles. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -19924,13 +18881,8 @@ window.ROADMAP_DATA = {
         "Minnesota",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MELS-1170",
-          "name": "Government Owned Report"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vehicles By Parameters and Vehicle Status \u2014 Owner 1 mailing and residency for business\u2026. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -19948,13 +18900,8 @@ window.ROADMAP_DATA = {
         "Minnesota",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3762",
-          "name": "UAT-VEH-POS: Transfer Blocked for Watercraft with Title Exception Owned by Under-18 Customer Due to Premature Age Policy Trigger"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "POS Transfer \u2014 do not block on selling under-18 owner before new owners are entered. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -19970,13 +18917,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3860",
-          "name": "QA-VEH-POS- 2026 Vehicle Products are not working"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "POS New Registration \u2014 hide Next until VIN Submit, and show a real ATV error instead of\u2026. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -19994,13 +18936,8 @@ window.ROADMAP_DATA = {
         "Minnesota",
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MELS-2283",
-          "name": "DR Reprint Option for Transactions Processed by NO Fee Agents in POS"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "POS Reprints \u2014 available for Vehicles and Reservations. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -20031,17 +18968,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota",
-        "Mississippi",
-        "Louisiana"
+        "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3889",
-          "name": "Duplicate Titles Need to Get New Title Numbers"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20057,13 +18987,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-1636",
-          "name": "UAT-VEH-CC & POS-Conjunction on Co-Owners"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20145,15 +19070,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3677",
-          "name": "UAT-VEH-CC-CC Admin must be able to remove title"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20169,13 +19089,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2368",
-          "name": "Cannot remove merged account from vessel"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vessel owners \u2014 leftover merged account can be removed and sales can complete. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -20186,6 +19101,23 @@ window.ROADMAP_DATA = {
       "title": "Fulfillment \u2014 notify when queue retries hit 3 or items are already locked",
       "ticketTitle": "Fulfillment \u2014 notify when queue retries hit 3 or items are already locked",
       "epicTitle": "Fulfillment \u2014 notify when queue retries hit 3 or items are already locked",
+      "sprint": "CVEH 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2717",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Voided decals \u2014 return leftover unused serials only if desired",
+      "ticketTitle": "Voided decals \u2014 return leftover unused serials only if desired",
+      "epicTitle": "Voided decals \u2014 return leftover unused serials only if desired",
       "sprint": "CVEH 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
@@ -20208,13 +19140,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-724",
-          "name": "skipped decals from PSS - marked SOLD in system"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "PSS skipped Sold decal \u2014 remaining skip on still-Active 101246. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -20228,9 +19155,7 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota",
-        "Mississippi",
-        "Louisiana"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -20264,16 +19189,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota",
-        "Louisiana"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-1636",
-          "name": "UAT-VEH-CC & POS-Conjunction on Co-Owners"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20289,13 +19208,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-750",
-          "name": "Removing decals from migrated pending applications"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20309,7 +19223,7 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -20326,15 +19240,12 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Louisiana",
+        "Minnesota",
+        "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MELS-1517",
-          "name": "Vehicles - Duplicate Registration"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20350,13 +19261,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-2148",
-          "name": "POS Customer Search > Vehicle List - Make Registration Type Visible"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20372,13 +19278,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-1495",
-          "name": "Update Liens"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20394,13 +19295,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-1496",
-          "name": "Satisfy Liens"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20417,6 +19313,91 @@ window.ROADMAP_DATA = {
         "Louisiana",
         "Minnesota",
         "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2920",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Control Center Transactions \u2014 download the receipt for a vehicle sales tax sale",
+      "ticketTitle": "Control Center Transactions \u2014 download the receipt for a vehicle sales tax sale",
+      "epicTitle": "Control Center Transactions \u2014 download the receipt for a vehicle sales tax sale",
+      "sprint": "CVEH 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2921",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Customer Age policy \u2014 choose all owners or at least one owner",
+      "ticketTitle": "Customer Age policy \u2014 choose all owners or at least one owner",
+      "epicTitle": "Customer Age policy \u2014 choose all owners or at least one owner",
+      "sprint": "CVEH 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2939",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "LA-UA2 PSS files \u2014 run each night for Louisiana testing",
+      "ticketTitle": "LA-UA2 PSS files \u2014 run each night for Louisiana testing",
+      "epicTitle": "LA-UA2 PSS files \u2014 run each night for Louisiana testing",
+      "sprint": "CVEH 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2917",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Report of Titles Sold \u2014 list titles sold in a date range",
+      "ticketTitle": "Report of Titles Sold \u2014 list titles sold in a date range",
+      "epicTitle": "Report of Titles Sold \u2014 list titles sold in a date range",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2919",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Registration Renewal \u2014 show the renewal message when the class changed and no renewal is offered",
+      "ticketTitle": "Registration Renewal \u2014 show the renewal message when the class changed and no renewal is offered",
+      "epicTitle": "Registration Renewal \u2014 show the renewal message when the class changed and no renewal is offered",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -20452,13 +19433,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-719",
-          "name": "POS/CC: Titles/Registrations Displaying Owner Twice"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20508,13 +19484,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3800",
-          "name": "UAT-VEH-POS-Unable to Log Out of H/F/V/R Agent Account When Cart Contains Unchecked-Out Items"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20547,13 +19518,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-1168",
-          "name": "Duplicate HIN/VIN Report"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20603,13 +19569,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2073",
-          "name": "Dashes not being recognized when placed in the hin/serial "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20625,13 +19586,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2173",
-          "name": "Registration number being removed after being duplicated"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "MS vessel Duplicate Registration \u2014 retain existing MI number. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -20647,13 +19603,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2176",
-          "name": "Multiple owners on a vessel registration"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Multiple owners on a vessel registration. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -20686,13 +19637,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2064",
-          "name": "Required Documents"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Required Documents. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -20708,13 +19654,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2196",
-          "name": "Co-owner on vessel incorrect "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Co-owner on vessel incorrect. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -20745,15 +19686,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S6",
       "shirt": "Needs Estimate",
       "clients": [
-        "Mississippi"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-1191",
-          "name": "FOIA Report: Public Boat Information Report"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "FOIA Report: Public Boat Information Report. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -20769,13 +19705,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Louisiana"
       ],
-      "tickets": [
-        {
-          "key": "CLV-720",
-          "name": "How to pull correct date acquired so correct date prints on titles"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -20840,15 +19771,10 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q4-S6",
       "shirt": "Needs Estimate",
       "clients": [
-        "Mississippi"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2391",
-          "name": "No renewal has been set for this product. Please contact administrator"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vessel leftover categories \u2014 inventory boats not on 2, 3, 4, or 5. If this stays broken, staff cannot finish a boat or title sale. Mississippi customers and counter staff feel this first.",
       "rank": null
     },
@@ -21017,13 +19943,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2283",
-          "name": "PILogin>Wallet>AR Enrollment: Why does the system remove toggle for AR enrollment?"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "PILogin>Wallet>AR Enrollment: Why does the system remove toggle for AR enrollment?. If this stays broken, money, statements, or renewals come out wrong. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -21037,7 +19958,7 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21105,7 +20026,7 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Arkansas"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21225,7 +20146,7 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21242,16 +20163,10 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Mississippi",
-        "Louisiana"
+        "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2375",
-          "name": "MDWFP Commission Report Failing Again in Core (fix July 2026)"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Monthly Commission Report \u2014 confirmed calculation, columns, and rows. If this stays broken, money, statements, or renewals come out wrong. Mississippi and Louisiana both feel this until it is fixed.",
       "rank": null
     },
@@ -21282,7 +20197,7 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Mississippi"
+        "Arkansas"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21316,7 +20231,7 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Ohio"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21358,16 +20273,32 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "FNCL-2634",
+      "key": "FNCL-2635",
       "q": "2026 Q4",
       "project": "FNCL",
-      "title": "NH: set up PayIt Payments in lower environments",
-      "ticketTitle": "NH: set up PayIt Payments in lower environments",
-      "epicTitle": "NH: set up PayIt Payments in lower environments",
+      "title": "WIRES \u2014 update vulnerable dependencies and Node.js to 24.22.1",
+      "ticketTitle": "WIRES \u2014 update vulnerable dependencies and Node.js to 24.22.1",
+      "epicTitle": "WIRES \u2014 update vulnerable dependencies and Node.js to 24.22.1",
       "sprint": "FNCL 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "New Hampshire",
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2652",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Fund Split Detail and EFT Statement differ by $2 on gift-certificate and credit-card purchases",
+      "ticketTitle": "Fund Split Detail and EFT Statement differ by $2 on gift-certificate and credit-card purchases",
+      "epicTitle": "Fund Split Detail and EFT Statement differ by $2 on gift-certificate and credit-card purchases",
+      "sprint": "FNCL 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
         "Ohio"
       ],
       "tickets": [],
@@ -21376,16 +20307,203 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "FNCL-2523",
+      "key": "FNCL-2654",
       "q": "2026 Q4",
       "project": "FNCL",
-      "title": "Send customer and class data to Kalkomey after purchase (Kalkomey Integration)",
-      "ticketTitle": "Send customer and class data to Kalkomey after purchase (Kalkomey Integration)",
-      "epicTitle": "Send customer and class data to Kalkomey after purchase (Kalkomey Integration)",
-      "sprint": "FNCL 2026-Q4-S5",
+      "title": "OPH \u2014 update vulnerable dependencies and Node.js to 24.22.1",
+      "ticketTitle": "OPH \u2014 update vulnerable dependencies and Node.js to 24.22.1",
+      "epicTitle": "OPH \u2014 update vulnerable dependencies and Node.js to 24.22.1",
+      "sprint": "FNCL 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2656",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Auto renew wallet \u2014 Control Center update does not show on the customer page",
+      "ticketTitle": "Auto renew wallet \u2014 Control Center update does not show on the customer page",
+      "epicTitle": "Auto renew wallet \u2014 Control Center update does not show on the customer page",
+      "sprint": "FNCL 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2660",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "WIRES Non-ACH extract \u2014 finish cash and credit before the request times out",
+      "ticketTitle": "WIRES Non-ACH extract \u2014 finish cash and credit before the request times out",
+      "epicTitle": "WIRES Non-ACH extract \u2014 finish cash and credit before the request times out",
+      "sprint": "FNCL 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2661",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "ACH Journals \u2014 delayed payment fees charged at approval are never journaled",
+      "ticketTitle": "ACH Journals \u2014 delayed payment fees charged at approval are never journaled",
+      "epicTitle": "ACH Journals \u2014 delayed payment fees charged at approval are never journaled",
+      "sprint": "FNCL 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2667",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Fund Split Detail \u2014 journaled delayed-payment inspection fee is missing from Detail",
+      "ticketTitle": "Fund Split Detail \u2014 journaled delayed-payment inspection fee is missing from Detail",
+      "epicTitle": "Fund Split Detail \u2014 journaled delayed-payment inspection fee is missing from Detail",
+      "sprint": "FNCL 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2450",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "PayIt Arkansas Outdoors Checkout Return Remiitance Report Issue",
+      "ticketTitle": "PayIt Arkansas Outdoors Checkout Return Remiitance Report Issue",
+      "epicTitle": "PayIt Arkansas Outdoors Checkout Return Remiitance Report Issue",
+      "sprint": "FNCL 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
         "Arkansas"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2634",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "NH: set up PayIt Payments in lower environments",
+      "ticketTitle": "NH: set up PayIt Payments in lower environments",
+      "epicTitle": "NH: set up PayIt Payments in lower environments",
+      "sprint": "FNCL 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "New Hampshire"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2655",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Wallet (MDWFP / Payments Hub): \"account already exists\" still appears after merge when the card is not shown",
+      "ticketTitle": "Wallet (MDWFP / Payments Hub): \"account already exists\" still appears after merge when the card is not shown",
+      "epicTitle": "Wallet (MDWFP / Payments Hub): \"account already exists\" still appears after merge when the card is not shown",
+      "sprint": "FNCL 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2665",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "ACH Journals \u2014 delayed payment product is missed when no matching PaymentAttempt exists at approval",
+      "ticketTitle": "ACH Journals \u2014 delayed payment product is missed when no matching PaymentAttempt exists at approval",
+      "epicTitle": "ACH Journals \u2014 delayed payment product is missed when no matching PaymentAttempt exists at approval",
+      "sprint": "FNCL 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2666",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Delayed payment approval \u2014 Credit Card Processing Fee is never charged when payment types omit the processor tender",
+      "ticketTitle": "Delayed payment approval \u2014 Credit Card Processing Fee is never charged when payment types omit the processor tender",
+      "epicTitle": "Delayed payment approval \u2014 Credit Card Processing Fee is never charged when payment types omit the processor tender",
+      "sprint": "FNCL 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2668",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "NACHA File Wrong_ Multiple Weeks in a row",
+      "ticketTitle": "NACHA File Wrong_ Multiple Weeks in a row",
+      "epicTitle": "NACHA File Wrong_ Multiple Weeks in a row",
+      "sprint": "FNCL 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2343",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Customer has active license - is not showing in purchase history",
+      "ticketTitle": "Customer has active license - is not showing in purchase history",
+      "epicTitle": "Customer has active license - is not showing in purchase history",
+      "sprint": "FNCL 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21404,13 +20522,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Missouri"
       ],
-      "tickets": [
-        {
-          "key": "COMO-103",
-          "name": "2.5.2\u00a0- Sales Channels"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -21424,15 +20537,10 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q4-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3085",
-          "name": "RVI Report - Transactions sales that reversed - MNHF016"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -21494,6 +20602,23 @@ window.ROADMAP_DATA = {
       "title": "Display who completed a transaction",
       "ticketTitle": "Display who completed a transaction",
       "epicTitle": "Display who completed a transaction",
+      "sprint": "FNCL 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2653",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Transaction fees \u2014 show grouped fees in configured lookup order",
+      "ticketTitle": "Transaction fees \u2014 show grouped fees in configured lookup order",
+      "epicTitle": "Transaction fees \u2014 show grouped fees in configured lookup order",
       "sprint": "FNCL 2026-Q4-S5",
       "shirt": "Needs Estimate",
       "clients": [
@@ -21635,13 +20760,42 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4455",
-          "name": "Cash Rounding Test"
-        }
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2657",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Financials_ Turn off NACHA File Job for Lower Environments",
+      "ticketTitle": "Financials_ Turn off NACHA File Job for Lower Environments",
+      "epicTitle": "Financials_ Turn off NACHA File Job for Lower Environments",
+      "sprint": "FNCL 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
       ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2669",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Products_ Fee Not Correct for Package_ Discounted Deer Permit Charge Amount Wrong",
+      "ticketTitle": "Products_ Fee Not Correct for Package_ Discounted Deer Permit Charge Amount Wrong",
+      "epicTitle": "Products_ Fee Not Correct for Package_ Discounted Deer Permit Charge Amount Wrong",
+      "sprint": "FNCL 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -21657,13 +20811,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2012",
-          "name": "Vocab: Non-resident MUST be Nonresident"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Vocab: Non-resident vocab change no being reflected in Residency dropdown. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -21696,13 +20845,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2333",
-          "name": "Draw Hunts: \"Hunt Profile\" edits reset \"Hunt Area Name\" filtering"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Control Center Draw Hunts \u2014 preserve Hunt Area Name filter after Hunt Profile save. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -21752,13 +20896,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1027",
-          "name": "Data Migration_ Customer Arrest Data"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Citation Violation Types \u2014 configured list stays after deployment. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -21789,7 +20928,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21823,7 +20962,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21908,7 +21047,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21925,7 +21064,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21978,13 +21117,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2412",
-          "name": "Draw Hunts: Users incorrectly awarded a point for \"Ineligible - GroupSize\" status for 2026 Pelahatchie Bay Alligator Draw "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -21998,15 +21132,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CROH-96",
-          "name": "2.3.2 Providing Customer Confirmation Code"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22037,7 +21166,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22054,7 +21183,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22074,13 +21203,8 @@ window.ROADMAP_DATA = {
         "Minnesota",
         "Missouri"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2538",
-          "name": "Unable to open customer accounts resulting in 500 error"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22094,8 +21218,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
-        "Minnesota"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22129,7 +21252,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22146,16 +21269,11 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri",
-        "Minnesota"
+        "Minnesota",
+        "Missouri"
       ],
-      "tickets": [
-        {
-          "key": "COMO-1622",
-          "name": "Land Profile: Registered CANNOT be referenced anywhere in Missouri's platform"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "[Land Profiles] \u2014 save confirmation is configurable. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Missouri and Minnesota both feel this until it is fixed.",
       "rank": null
     },
@@ -22171,13 +21289,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Arkansas"
       ],
-      "tickets": [
-        {
-          "key": "CRAR-2177",
-          "name": "Admins can't edit / save survey for AGFC commercial apps"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Control Center commercial application survey \u2014 Save fails with a generic error. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -22208,7 +21321,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Arkansas"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22242,15 +21355,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4454",
-          "name": "Validate military status for ~4000 migrated customers"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22266,13 +21374,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-1813",
-          "name": "Specialty Permit_ Approved Application Not Granting Product"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22303,7 +21406,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22322,13 +21425,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4454",
-          "name": "Validate military status for ~4000 migrated customers"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22342,7 +21440,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Arkansas"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22359,7 +21457,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22395,13 +21493,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2427",
-          "name": "Draws: Draw Applicant Results report failing, only report we have to track point awards and algorithm processing"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22466,8 +21559,8 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
-        "Missouri"
+        "Missouri",
+        "Ohio"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22486,17 +21579,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2540",
-          "name": "Admin Sales: Override Permission not being honored when deselected"
-        },
-        {
-          "key": "COMO-2592",
-          "name": "Admins without Override permissions can still override policies"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Control Center Sales \u2014 stop policy bypass after Policy Bypass is turned off. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -22527,15 +21611,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2543",
-          "name": "Policy: Unable to create compound policy that incl. Disability Status policy"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22549,19 +21628,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2542",
-          "name": "Customer Profile Fields>Disability Status: Required to have unique attestation for each disability created"
-        },
-        {
-          "key": "COMO-2541",
-          "name": "Customer Profile Fields: Can only require disability validation level if disability status is completed"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22575,15 +21645,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2542",
-          "name": "Customer Profile Fields>Disability Status: Required to have unique attestation for each disability created"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22599,13 +21664,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2421",
-          "name": "Package expiring before child product expires"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22619,7 +21679,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Ohio"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22638,13 +21698,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2419",
-          "name": "System throwing Unconfirmed status for residency check. "
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -22659,6 +21714,23 @@ window.ROADMAP_DATA = {
       "shirt": "Needs Estimate",
       "clients": [
         "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4241",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Citation Violation Types \u2014 configured list is the expected groupings",
+      "ticketTitle": "Citation Violation Types \u2014 configured list is the expected groupings",
+      "epicTitle": "Citation Violation Types \u2014 configured list is the expected groupings",
+      "sprint": "LICS 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22692,7 +21764,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
-        "Arkansas"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -22728,13 +21800,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4444",
-          "name": "Deer: Unable to Add a Land Profile in UA2"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Land profile \u2014 show which required fields blocked save. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -22748,15 +21815,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2516",
-          "name": "Certification Type Policy>Must be able to interact with HE and Apprentice policies"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Hunter education \u2014 disable, attest, or collect by agent type, and honor the bypass. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Missouri customers and counter staff feel this first.",
       "rank": null
     },
@@ -22770,15 +21832,10 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "Minnesota"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MELS-4176",
-          "name": "Bear Lottery: Military customers incorrectly awarded second-choice hunts during first lottery schedule"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Draw Processing Schedule \u2014 apply preference within each hunt choice. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Minnesota customers and counter staff feel this first.",
       "rank": null
     },
@@ -22936,13 +21993,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2042",
-          "name": "Check Image Library file types and remove language for those that aren't allowed"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Check Image Library file types and remove language for those that aren't allowed. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -22956,18 +22008,13 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
         "Arkansas",
         "Missouri",
+        "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "CRAR-2153",
-          "name": "\"Became Registered from Pending Review\" notification is not working"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Make \"Became Registered from Pending Review\" notification is work. If this stays broken, event signup or check-in fails. Ohio customers and counter staff feel this first.",
       "rank": null
     },
@@ -22986,13 +22033,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "CRAR-2168",
-          "name": "Html showing for VEMS requirement in AGFC prod"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Html showing for VEMS requirement in AGFC. If this stays broken, event signup or check-in fails. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -23059,13 +22101,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5261",
-          "name": "UA2 - CC missing certification template"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "OR-MG \u2014 Client Name config blocks Oregon print-template seed (Customer Certificate missing). If this stays broken, event signup or check-in fails. Oregon customers and counter staff feel this first.",
       "rank": null
     },
@@ -23104,13 +22141,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "COMO-1810",
-          "name": "VEMS: ADA Accommodation Tracking Function"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -23144,22 +22176,13 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri",
         "Arkansas",
+        "Missouri",
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2591",
-          "name": "Informational event does not appear on public site despite approval and valid display window (MO-UA)"
-        },
-        {
-          "key": "COMO-178",
-          "name": "2.6.8\u00a0- Event Registration or no registration needed"
-        }
-      ],
-      "ticketCount": 2,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -23173,18 +22196,13 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri",
         "Arkansas",
+        "Missouri",
         "Ohio",
         "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "CROH-933",
-          "name": "Engagement Start Date From field not updating"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "CLONE - Change vocabulary bug for VEMS terminology. If this stays broken, event signup or check-in fails. Missouri customers and counter staff feel this first.",
       "rank": null
     },
@@ -23320,16 +22338,10 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Oregon",
-        "Ohio"
+        "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5261",
-          "name": "UA2 - CC missing certification template"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -23343,15 +22355,10 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "CROH-174",
-          "name": "5.1.11 Attendance and Test Score"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -23365,7 +22372,10 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -23382,15 +22392,13 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Arkansas",
+        "Missouri",
+        "Ohio",
+        "Oregon"
       ],
-      "tickets": [
-        {
-          "key": "OV-5375",
-          "name": "[UA2] (INT) Volunteer event registration workflow is not functioning properly"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -23402,6 +22410,75 @@ window.ROADMAP_DATA = {
       "ticketTitle": "VEMS_ Unable to Submit Volunteer Hours_ Electronic vs Paper Hour Issue",
       "epicTitle": "VEMS_ Unable to Submit Volunteer Hours_ Electronic vs Paper Hour Issue",
       "sprint": "Core RESRV 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1811",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Hold inbound (Education Partner) cert off public web until a VEMS field day is passed",
+      "ticketTitle": "Hold inbound (Education Partner) cert off public web until a VEMS field day is passed",
+      "epicTitle": "Hold inbound (Education Partner) cert off public web until a VEMS field day is passed",
+      "sprint": "Core RESRV 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Oregon"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1807",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "VEMS_ Unable to Add Volunteers Back into Event Once Withdrawn",
+      "ticketTitle": "VEMS_ Unable to Add Volunteers Back into Event Once Withdrawn",
+      "epicTitle": "VEMS_ Unable to Add Volunteers Back into Event Once Withdrawn",
+      "sprint": "Core RESRV 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1808",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "VEMS: add attendee phone to Control Center event roster",
+      "ticketTitle": "VEMS: add attendee phone to Control Center event roster",
+      "epicTitle": "VEMS: add attendee phone to Control Center event roster",
+      "sprint": "Core RESRV 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Oregon"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1812",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Certification Report: filter and show Assessment, Fulfillment Status, and Certification Status",
+      "ticketTitle": "Certification Report: filter and show Assessment, Fulfillment Status, and Certification Status",
+      "epicTitle": "Certification Report: filter and show Assessment, Fulfillment Status, and Certification Status",
+      "sprint": "Core RESRV 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
         "PayIt"
@@ -23497,6 +22574,23 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "RESRV-1809",
+      "q": "2026 Q4",
+      "project": "RESRV",
+      "title": "Attendee registration type \u2014 allow more than one on the template; engagement picks one",
+      "ticketTitle": "Attendee registration type \u2014 allow more than one on the template; engagement picks one",
+      "epicTitle": "Attendee registration type \u2014 allow more than one on the template; engagement picks one",
+      "sprint": "Core RESRV 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "SYST-3110",
       "q": "2026 Q4",
       "project": "SYST",
@@ -23542,13 +22636,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-1924",
-          "name": "Unable to open Active Privileges for migrated customers following refresh"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -23605,13 +22694,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2047",
-          "name": "Unable to see all Linked Users in App"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -23696,13 +22780,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2429",
-          "name": "PayIt Login: Failed Login Attempt (UA) - Reoccurring Issue"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -23750,15 +22829,10 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Missouri"
+        "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2480",
-          "name": "Unable to Confirm Customer Profile Information When Logging Into Public Environment"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -23791,13 +22865,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2507",
-          "name": "PILogin>Business: Error Unable to Create Profile"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -23853,11 +22922,11 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
-        "Missouri",
+        "Arkansas",
         "Minnesota",
         "Mississippi",
-        "Arkansas"
+        "Missouri",
+        "Ohio"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -23989,13 +23058,8 @@ window.ROADMAP_DATA = {
         "Mississippi",
         "Ohio"
       ],
-      "tickets": [
-        {
-          "key": "MICH-3132",
-          "name": "MICHIGAN - Update Mobile APIs to call Active and Historical Licenses and Harvest Reports separately"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -24009,8 +23073,7 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S1",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
-        "Mississippi"
+        "Ohio"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -24193,7 +23256,6 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Oregon",
         "Arkansas",
         "Michigan",
         "Minnesota",
@@ -24201,13 +23263,8 @@ window.ROADMAP_DATA = {
         "Ohio",
         "Cherokee"
       ],
-      "tickets": [
-        {
-          "key": "CRAR-2158",
-          "name": "Edit how/what certification data displays on customers mobile app profile"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -24255,7 +23312,6 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S2",
       "shirt": "Needs Estimate",
       "clients": [
-        "Ohio",
         "Minnesota"
       ],
       "tickets": [],
@@ -24324,29 +23380,31 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-3158",
-          "name": "Print Template"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
-      "key": "SYST-3335",
+      "key": "SYST-3688",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "Print Control Updates - Tax Work - System should honor the config setting for whether or not the agent can see all licenses and transactions",
-      "ticketTitle": "MEDA-464 - Print Control Updates - Tax Work - System should honor the config setting for whether or not the agent can see all licenses and transactions",
-      "epicTitle": "MEDA-464 - Print Control Updates - Tax Work - System should honor the config setting for whether or not the agent can see all licenses and transactions",
+      "title": "Merge Processing Time in UA - MUST be improved",
+      "ticketTitle": "Merge Processing Time in UA - MUST be improved",
+      "epicTitle": "Merge Processing Time in UA - MUST be improved",
       "sprint": "SYST 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Arkansas",
+        "Louisiana",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Ohio",
+        "Oregon",
+        "Cherokee"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -24397,15 +23455,50 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
+        "Arkansas",
+        "Louisiana",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Ohio",
+        "Cherokee"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5088",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Artifact Type creation \u2014 independent validity start and end ranges for the same product",
+      "ticketTitle": "Artifact Type creation \u2014 independent validity start and end ranges for the same product",
+      "epicTitle": "Artifact Type creation \u2014 independent validity start and end ranges for the same product",
+      "sprint": "SYST 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2582",
-          "name": "Notifications>Broadcast: Error when adding image"
-        }
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5089",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Add new mcp tools for agent users, products, transactions",
+      "ticketTitle": "Add new mcp tools for agent users, products, transactions",
+      "epicTitle": "Add new mcp tools for agent users, products, transactions",
+      "sprint": "SYST 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
       ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -24414,20 +23507,15 @@ window.ROADMAP_DATA = {
       "q": "2026 Q4",
       "project": "SYST",
       "title": "ORV decal \u2014 match the registration label and instruction 2",
-      "ticketTitle": "ORV decal \u2014 match the registration label and instruction 2",
-      "epicTitle": "ORV decal \u2014 match the registration label and instruction 2",
+      "ticketTitle": "ORV decal - match the registration label and instruction 2",
+      "epicTitle": "ORV decal - match the registration label and instruction 2",
       "sprint": "SYST 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-2121",
-          "name": "ORV Decals - Validate Template Details"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -24443,13 +23531,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Minnesota"
       ],
-      "tickets": [
-        {
-          "key": "MELS-2115",
-          "name": "Snowmobile Trail Decals - Validate Template Details"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -24514,7 +23597,61 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5121",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Add Feature Flag and SQL Caching table for Organ Donor",
+      "ticketTitle": "Add Feature Flag and SQL Caching table for Organ Donor",
+      "epicTitle": "Add Feature Flag and SQL Caching table for Organ Donor",
+      "sprint": "SYST 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5123",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "POS_ Permit Sold To Customer But Issued to Another_ How?",
+      "ticketTitle": "POS_ Permit Sold To Customer But Issued to Another_ How?",
+      "epicTitle": "POS_ Permit Sold To Customer But Issued to Another_ How?",
+      "sprint": "SYST 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Arkansas",
+        "Minnesota",
+        "Mississippi",
+        "Ohio"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5126",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Customer Blocked_ PayIt Log In_ Error Message_ Email Deleted",
+      "ticketTitle": "Customer Blocked_ PayIt Log In_ Error Message_ Email Deleted",
+      "epicTitle": "Customer Blocked_ PayIt Log In_ Error Message_ Email Deleted",
+      "sprint": "SYST 2026-Q4-S3",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Ohio"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -24601,13 +23738,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-956",
-          "name": "State Fields: Unable to click keyboard to navigate to the state needed"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -24697,56 +23829,29 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-4861",
+      "key": "SYST-4879",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "Customers>Address>County: Not allowed to proceed with a county being provided",
-      "ticketTitle": "Customers>Address>County: Not allowed to proceed with a county being provided",
-      "epicTitle": "Customers>Address>County: Not allowed to proceed with a county being provided",
+      "title": "FROM DTSD - AGFC Requesting New Hard Card Design",
+      "ticketTitle": "FROM DTSD - AGFC Requesting New Hard Card Design",
+      "epicTitle": "FROM DTSD - AGFC Requesting New Hard Card Design",
       "sprint": "SYST 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-2497",
-          "name": "Customers>Address>County: Not allowed to proceed with a county being provided"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
-      "key": "SYST-4975",
+      "key": "SYST-5117",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
-      "ticketTitle": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
-      "epicTitle": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
-      "sprint": "SYST 2026-Q4-S4",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-2568",
-          "name": "Customer Profile Fields: Customer Mailing Address being required when not configured that way"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "SYST-5028",
-      "q": "2026 Q4",
-      "project": "SYST",
-      "title": "Move MN to V2 Kalkomey API",
-      "ticketTitle": "Move MN to V2 Kalkomey API",
-      "epicTitle": "Move MN to V2 Kalkomey API",
+      "title": "Unlinking Account showing Username / Password Page for Accounts w/o Login",
+      "ticketTitle": "Unlinking Account showing Username / Password Page for Accounts w/o Login",
+      "epicTitle": "Unlinking Account showing Username / Password Page for Accounts w/o Login",
       "sprint": "SYST 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
@@ -24769,13 +23874,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "COMO-1493",
-          "name": "CC>Vendors: Ability to quickly lock vendors from teh search screen"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -24825,13 +23925,42 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "MDWFP-2300",
-          "name": "Products sitting in submitted status in Artifact Search"
-        }
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-4975",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
+      "ticketTitle": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
+      "epicTitle": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
+      "sprint": "SYST 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
       ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5028",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Move MN to V2 Kalkomey API",
+      "ticketTitle": "Move MN to V2 Kalkomey API",
+      "epicTitle": "Move MN to V2 Kalkomey API",
+      "sprint": "SYST 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -24955,6 +24084,23 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "SYST-4861",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Customers>Address>County: Not allowed to proceed with a county being provided",
+      "ticketTitle": "Customers>Address>County: Not allowed to proceed with a county being provided",
+      "epicTitle": "Customers>Address>County: Not allowed to proceed with a county being provided",
+      "sprint": "SYST 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2343",
       "q": "2027 Q1",
       "project": "CVEH",
@@ -24966,13 +24112,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "PayIt"
       ],
-      "tickets": [
-        {
-          "key": "CLV-607",
-          "name": "CC: Address missing from Boat Registration"
-        }
-      ],
-      "ticketCount": 1,
+      "tickets": [],
+      "ticketCount": 0,
       "why": "Registration card \u2014 print the current owner's address. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
       "rank": null
     },
@@ -24992,6 +24133,23 @@ window.ROADMAP_DATA = {
       "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
+    },
+    {
+      "key": "FNCL-2663",
+      "q": "2027 Q4",
+      "project": "FNCL",
+      "title": "Nightly ACH processing \u2014 complete reliably when sales happen during the run",
+      "ticketTitle": "Nightly ACH processing \u2014 complete reliably when sales happen during the run",
+      "epicTitle": "Nightly ACH processing \u2014 complete reliably when sales happen during the run",
+      "sprint": "FNCL 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
     }
   ],
   "backlog": [
@@ -25005,8 +24163,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Michigan",
-        "Mississippi"
+        "Mississippi",
+        "Michigan"
       ],
       "tickets": [
         {
@@ -25149,9 +24307,10 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Mississippi",
-        "Minnesota",
         "Arkansas",
+        "Mississippi",
+        "Ohio",
+        "Minnesota",
         "Michigan"
       ],
       "tickets": [],
@@ -25281,7 +24440,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "PayIt"
+        "Michigan",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -25384,7 +24544,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Michigan",
+        "Ohio",
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -25401,7 +24563,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -25494,7 +24656,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "PayIt"
+        "Michigan",
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -25528,7 +24692,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "PayIt"
+        "Michigan",
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -25562,7 +24728,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "PayIt"
+        "Michigan",
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -25596,7 +24764,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "PayIt"
+        "Michigan",
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -25630,7 +24800,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "PayIt"
+        "Michigan",
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -25740,10 +24912,15 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
-        "PayIt"
+        "Ohio"
       ],
-      "tickets": [],
-      "ticketCount": 0,
+      "tickets": [
+        {
+          "key": "CROH-153",
+          "name": "4.5.1 Lottery Survey"
+        }
+      ],
+      "ticketCount": 1,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -25847,6 +25024,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Missouri",
         "Minnesota"
       ],
       "tickets": [],
@@ -25865,7 +25043,8 @@ window.ROADMAP_DATA = {
       "shirt": "XL - 5 sprints",
       "clients": [
         "Mississippi",
-        "Ohio"
+        "Ohio",
+        "Oregon"
       ],
       "tickets": [
         {
@@ -25945,8 +25124,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Louisiana",
         "Minnesota",
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [
@@ -25988,8 +25167,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Minnesota",
         "Louisiana",
+        "Minnesota",
         "Mississippi"
       ],
       "tickets": [
@@ -26026,36 +25205,6 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-1221",
-      "q": "Not Scheduled",
-      "project": "CVEH",
-      "title": "Vehicle Tax Calculator Changes",
-      "ticketTitle": "Vehicle Tax Calculator Changes (NC) (MN)",
-      "epicTitle": "Vehicle Tax Calculator Changes (NC) (MN)",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MELS-1728",
-          "name": "UAT-VEH-POS-Municipality/County Code search functionality"
-        },
-        {
-          "key": "MELS-2346",
-          "name": "Standardize Keyboard Navigation Across Data Input Fields"
-        },
-        {
-          "key": "MELS-1755",
-          "name": "UAT-VEH-POS-Relocate Tax Calculator"
-        }
-      ],
-      "ticketCount": 3,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -26120,9 +25269,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Minnesota",
         "Louisiana",
-        "Mississippi",
-        "Minnesota"
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -26212,7 +25361,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "PayIt"
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -26312,7 +25461,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -26359,28 +25508,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CVEH-1471",
-      "q": "Not Scheduled",
-      "project": "CVEH",
-      "title": "Navigate to Customer Profile from Vehicle View (All)",
-      "ticketTitle": "Navigate to Customer Profile from Vehicle View (NN) (All)",
-      "epicTitle": "Navigate to Customer Profile from Vehicle View (NN) (All)",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [
-        {
-          "key": "MELS-2514",
-          "name": "UAT-VEH-POS-No option for POS user to navigate to customer's full vehicle list from vehicle search results"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "CVEH-1494",
       "q": "Not Scheduled",
       "project": "CVEH",
@@ -26391,25 +25518,6 @@ window.ROADMAP_DATA = {
       "shirt": "Needs Estimate",
       "clients": [
         "Louisiana"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-1544",
-      "q": "Not Scheduled",
-      "project": "CVEH",
-      "title": "Linked Users for Vehicle Transactions (LA, MN, MS)",
-      "ticketTitle": "Linked Users for Vehicle Transactions (NN) (LA, MN, MS)",
-      "epicTitle": "Linked Users for Vehicle Transactions (NN) (LA, MN, MS)",
-      "sprint": "",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "Louisiana",
-        "Minnesota",
-        "Mississippi"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -26443,7 +25551,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -26537,8 +25645,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Louisiana",
         "Minnesota",
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [
@@ -26561,7 +25669,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "PayIt"
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -26843,6 +25951,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Mississippi",
+        "Louisiana",
         "Minnesota"
       ],
       "tickets": [
@@ -26869,7 +25979,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "PayIt"
+        "Louisiana",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -26942,6 +26053,23 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-2938",
+      "q": "Not Scheduled",
+      "project": "CVEH",
+      "title": "Control Center \u2014 require a named sales tax before the vehicle can register",
+      "ticketTitle": "Control Center \u2014 require a named sales tax before the vehicle can register",
+      "epicTitle": "Control Center \u2014 require a named sales tax before the vehicle can register",
+      "sprint": "",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-401",
       "q": "Not Scheduled",
       "project": "CVEH",
@@ -26951,8 +26079,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Minnesota",
-        "Mississippi"
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -27121,7 +26249,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Missouri"
+        "Missouri",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -27164,7 +26293,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "Missouri"
+        "Missouri",
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -27262,6 +26392,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [],
@@ -27279,6 +26410,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [],
@@ -27296,6 +26428,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [],
@@ -27313,6 +26446,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [],
@@ -27330,6 +26464,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [],
@@ -27347,6 +26482,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [],
@@ -27364,6 +26500,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [],
@@ -27415,8 +26552,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
-        "Minnesota",
         "Missouri",
+        "Minnesota",
+        "Ohio",
         "Mississippi"
       ],
       "tickets": [
@@ -27559,7 +26697,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -27615,9 +26753,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Mississippi",
         "Arkansas",
-        "Minnesota",
-        "Mississippi"
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -27659,9 +26797,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Mississippi",
         "Minnesota",
-        "Missouri"
+        "Missouri",
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -27805,7 +26943,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -27844,7 +26982,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
-        "Mississippi"
+        "Mississippi",
+        "Louisiana"
       ],
       "tickets": [
         {
@@ -27938,6 +27077,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Ohio",
         "Minnesota",
         "Michigan"
       ],
@@ -27961,6 +27101,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Minnesota",
         "Ohio"
       ],
       "tickets": [
@@ -28004,7 +27145,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "Mississippi"
+        "Mississippi",
+        "Arkansas",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -28196,7 +27339,8 @@ window.ROADMAP_DATA = {
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
-        "Minnesota"
+        "Minnesota",
+        "Arkansas"
       ],
       "tickets": [
         {
@@ -28291,7 +27435,8 @@ window.ROADMAP_DATA = {
       "clients": [
         "Mississippi",
         "Missouri",
-        "Minnesota"
+        "Minnesota",
+        "Louisiana"
       ],
       "tickets": [
         {
@@ -28398,6 +27543,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Mississippi",
         "Missouri"
       ],
       "tickets": [
@@ -28481,7 +27627,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Minnesota"
+        "Minnesota",
+        "Ohio",
+        "Missouri"
       ],
       "tickets": [
         {
@@ -28684,7 +27832,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Mississippi"
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -28900,7 +28049,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
-        "Mississippi"
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -29028,6 +28178,7 @@ window.ROADMAP_DATA = {
       "clients": [
         "Missouri",
         "Mississippi",
+        "Minnesota",
         "Ohio"
       ],
       "tickets": [
@@ -29263,8 +28414,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Mississippi",
-        "Arkansas"
+        "Arkansas",
+        "Mississippi"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -29287,13 +28438,9 @@ window.ROADMAP_DATA = {
         {
           "key": "CROH-1649",
           "name": "Q1 2026 development work - Needs to be pulled into Q4 2025"
-        },
-        {
-          "key": "CROH-153",
-          "name": "4.5.1 Lottery Survey"
         }
       ],
-      "ticketCount": 2,
+      "ticketCount": 1,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -29416,7 +28563,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "PayIt"
+        "Missouri",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -29667,7 +28815,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "PayIt"
+        "Ohio"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -30228,8 +29376,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
-        "Arkansas",
-        "Ohio"
+        "Ohio",
+        "Arkansas"
       ],
       "tickets": [
         {
@@ -30277,7 +29425,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
       "tickets": [
         {
@@ -30299,7 +29447,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
       "tickets": [
         {
@@ -30765,7 +29913,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "Oregon"
+        "Oregon",
+        "Missouri",
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -31191,7 +30341,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
       "tickets": [
         {
@@ -31213,7 +30363,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
       "tickets": [
         {
@@ -31462,7 +30612,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -31501,8 +30651,11 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
+        "Minnesota",
+        "Mississippi",
         "Missouri",
-        "Minnesota"
+        "Arkansas",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -31578,9 +30731,10 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Missouri",
-        "Mississippi",
         "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Arkansas",
         "Ohio"
       ],
       "tickets": [
@@ -31623,7 +30777,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -31641,8 +30795,8 @@ window.ROADMAP_DATA = {
       "shirt": "S - 1 sprint",
       "clients": [
         "Missouri",
-        "Arkansas",
-        "Minnesota"
+        "Minnesota",
+        "Arkansas"
       ],
       "tickets": [
         {
@@ -31757,7 +30911,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -31847,6 +31001,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
+        "Minnesota",
         "Missouri"
       ],
       "tickets": [
@@ -31941,10 +31096,10 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Louisiana",
         "Mississippi",
         "Missouri",
-        "Minnesota",
-        "Louisiana"
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -32054,37 +31209,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-2277",
-      "q": "Not Scheduled",
-      "project": "SYST",
-      "title": "User Platform Detection for Device Type Identification",
-      "ticketTitle": "User Platform Detection for Device Type Identification (CR) (MO)",
-      "epicTitle": "User Platform Detection for Device Type Identification (CR) (MO)",
-      "sprint": "",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Missouri",
-        "Ohio"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-149",
-          "name": "2.5.48\u00a0- Sales Channel Reporting"
-        },
-        {
-          "key": "CROH-882",
-          "name": "Ability to report mobile browser vs desktop sales "
-        },
-        {
-          "key": "CROH-267",
-          "name": "7.2.2 App Sales"
-        }
-      ],
-      "ticketCount": 3,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "SYST-23",
       "q": "Not Scheduled",
       "project": "SYST",
@@ -32095,10 +31219,11 @@ window.ROADMAP_DATA = {
       "shirt": "M - 2 sprints",
       "clients": [
         "Arkansas",
-        "Mississippi",
         "Minnesota",
+        "Michigan",
+        "Ohio",
         "Missouri",
-        "Ohio"
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -32149,8 +31274,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Missouri",
-        "Ohio"
+        "Ohio",
+        "Missouri"
       ],
       "tickets": [
         {
@@ -32444,8 +31569,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Minnesota",
         "Mississippi",
+        "Minnesota",
         "Missouri",
         "Ohio"
       ],
@@ -32489,7 +31614,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "XL - 5 sprints",
       "clients": [
-        "PayIt"
+        "Ohio"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -32506,6 +31631,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Minnesota",
         "Arkansas"
       ],
       "tickets": [],
@@ -32591,7 +31717,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Oregon"
       ],
       "tickets": [
         {
@@ -32613,7 +31739,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
       "tickets": [
         {
@@ -32675,10 +31801,10 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Missouri",
         "Louisiana",
         "Minnesota",
-        "Mississippi",
-        "Missouri"
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -32743,7 +31869,12 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
-        "PayIt"
+        "Mississippi",
+        "Arkansas",
+        "Minnesota",
+        "Missouri",
+        "Oregon",
+        "Louisiana"
       ],
       "tickets": [
         {
@@ -32885,7 +32016,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Mississippi"
+        "Mississippi",
+        "Minnesota",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -32915,7 +32048,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
-        "PayIt"
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -33031,7 +32165,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Arkansas",
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -33053,8 +32188,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Arkansas",
-        "Missouri"
+        "Missouri",
+        "Arkansas"
       ],
       "tickets": [
         {
@@ -33139,10 +32274,10 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Ohio",
         "Mississippi",
+        "Missouri",
         "Minnesota",
-        "Missouri"
+        "Ohio"
       ],
       "tickets": [
         {
@@ -33279,7 +32414,12 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "PayIt"
+        "Mississippi",
+        "Louisiana",
+        "Missouri",
+        "Minnesota",
+        "Arkansas",
+        "Oregon"
       ],
       "tickets": [
         {
@@ -33343,7 +32483,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Mississippi",
+        "Arkansas"
       ],
       "tickets": [
         {
@@ -33478,7 +32619,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Missouri"
+        "Missouri",
+        "Mississippi",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -33504,6 +32647,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
+        "Minnesota",
         "Mississippi"
       ],
       "tickets": [
@@ -33621,7 +32765,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "Minnesota"
+        "Minnesota",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -33655,8 +32800,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "Arkansas",
-        "Missouri"
+        "Missouri",
+        "Arkansas"
       ],
       "tickets": [
         {
@@ -33712,8 +32857,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Mississippi",
-        "Minnesota"
+        "Minnesota",
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -33755,7 +32900,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "PayIt"
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -33811,8 +32956,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Mississippi",
-        "Minnesota"
+        "Minnesota",
+        "Mississippi"
       ],
       "tickets": [
         {
@@ -33834,6 +32979,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Minnesota",
         "Arkansas"
       ],
       "tickets": [],
@@ -33851,9 +32997,9 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Minnesota",
         "Missouri",
-        "Oregon",
-        "Minnesota"
+        "Oregon"
       ],
       "tickets": [
         {
@@ -33947,7 +33093,8 @@ window.ROADMAP_DATA = {
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
-        "Minnesota"
+        "Minnesota",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -33985,7 +33132,8 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Missouri"
+        "Missouri",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -34116,6 +33264,23 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "SYST-5115",
+      "q": "Not Scheduled",
+      "project": "SYST",
+      "title": "Feature flags \u2014 record lasting client setting or temporary (SYST)",
+      "ticketTitle": "Feature flags \u2014 record lasting client setting or temporary (SYST)",
+      "epicTitle": "Feature flags \u2014 record lasting client setting or temporary (SYST)",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "SYST-516",
       "q": "Not Scheduled",
       "project": "SYST",
@@ -34126,8 +33291,8 @@ window.ROADMAP_DATA = {
       "shirt": "L - 3 sprints",
       "clients": [
         "Mississippi",
-        "Minnesota",
-        "Missouri"
+        "Missouri",
+        "Minnesota"
       ],
       "tickets": [
         {
@@ -34169,10 +33334,16 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Ohio",
         "Arkansas"
       ],
-      "tickets": [],
-      "ticketCount": 0,
+      "tickets": [
+        {
+          "key": "CROH-153",
+          "name": "4.5.1 Lottery Survey"
+        }
+      ],
+      "ticketCount": 1,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -34203,7 +33374,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "L - 3 sprints",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
       "tickets": [
         {
