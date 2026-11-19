@@ -1,5 +1,5 @@
 window.ROADMAP_DATA = {
-  "updated": "2026-11-12",
+  "updated": "2026-11-19",
   "source": "Jira Features + Bugs/Support children + Not Scheduled backlog, merged with overlay.json",
   "epics": [
     {
@@ -12,7 +12,6 @@ window.ROADMAP_DATA = {
       "sprint": "CALM 2026-Q3-S2",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Mississippi",
         "Ohio"
       ],
       "tickets": [
@@ -138,8 +137,7 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q3-S1",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Ohio",
-        "Louisiana"
+        "Ohio"
       ],
       "tickets": [
         {
@@ -258,9 +256,9 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q3-S6",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Ohio",
         "Missouri",
         "Minnesota",
+        "Ohio",
         "Mississippi"
       ],
       "tickets": [
@@ -532,7 +530,6 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S4",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Oregon",
         "Minnesota",
         "Missouri",
         "Mississippi"
@@ -552,8 +549,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S6",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Missouri",
-        "Ohio"
+        "Missouri"
       ],
       "tickets": [
         {
@@ -831,8 +827,8 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S1",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Missouri",
-        "Ohio"
+        "Ohio",
+        "Missouri"
       ],
       "tickets": [
         {
@@ -1022,7 +1018,7 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S6",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Cherokee"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -1166,30 +1162,13 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CALM-3516",
-      "q": "2026 Q4",
-      "project": "CALM",
-      "title": "Sort and paginate available vs submitted surveys on mobile",
-      "ticketTitle": "Survey Tab updates (MI)",
-      "epicTitle": "Survey Tab updates (MI)",
-      "sprint": "CALM 2026-Q4-S3",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Michigan"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Michigan officers and biologists cannot tell submitted surveys from ones still on the device when the list is one long scroll. Sort and page so field staff find the right survey without calling support. This is a field-time saver, not a new survey type.",
-      "rank": null
-    },
-    {
       "key": "CALM-3502",
       "q": "2026 Q4",
       "project": "CALM",
       "title": "Move mobile builds from Azure DevOps to GitHub and Fastlane",
       "ticketTitle": "Switch from Azure DevOps to GitHub and FastLane",
       "epicTitle": "Switch from Azure DevOps to GitHub and FastLane",
-      "sprint": "CALM 2026-Q4-S5",
+      "sprint": "CALM 2026-Q4-S4",
       "shirt": "M - 2 sprints",
       "clients": [
         "Michigan"
@@ -1197,6 +1176,23 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Mobile builds still depend on a pipeline we are leaving. If we do not move to GitHub and Fastlane, every client release gets slower and riskier. Hunters never see this; product managers will if a season build cannot ship.",
+      "rank": null
+    },
+    {
+      "key": "CALM-3516",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Sort and paginate available vs submitted surveys on mobile",
+      "ticketTitle": "Survey Tab updates (MI)",
+      "epicTitle": "Survey Tab updates (MI)",
+      "sprint": "CALM 2026-Q4-S5",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Michigan"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Michigan officers and biologists cannot tell submitted surveys from ones still on the device when the list is one long scroll. Sort and page so field staff find the right survey without calling support. This is a field-time saver, not a new survey type.",
       "rank": null
     },
     {
@@ -1209,8 +1205,7 @@ window.ROADMAP_DATA = {
       "sprint": "CALM 2026-Q4-S6",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Arkansas",
-        "Michigan"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -1306,13 +1301,87 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-1586",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Vehicle Ownership Transfer Pending State (LA, MS, MN)",
+      "ticketTitle": "Vehicle transfer \u2014 keep the current owner until an approval-required registration is approved",
+      "epicTitle": "Vehicle transfer \u2014 keep the current owner until an approval-required registration is approved",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Mississippi",
+        "Louisiana",
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-1593",
+          "name": "Pending Owner status when a boat application is in pending or more information needed. "
+        },
+        {
+          "key": "MDWFP-1480",
+          "name": "Online Boat application that has titles and liens is making it disappear when the customer uploads their transfer request."
+        },
+        {
+          "key": "MELS-2361",
+          "name": "Vehicle - Transfer to Same Owner (Add/Remove Owner) - Retain Owner Information"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-1815",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Multi-Registration Vehicle Handling (ALL)",
+      "ticketTitle": "Vehicle transfer \u2014 customer-centric registrations stay with their owners",
+      "epicTitle": "Vehicle transfer \u2014 customer-centric registrations stay with their owners",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-2445",
+          "name": "QA-VEH-POS-User able to renew a Non-Trail Snowmobile Registration"
+        },
+        {
+          "key": "MELS-3424",
+          "name": "UAT-VEH-CC-SM Dual Registration -Non-Trail Shows \"Transferred\" Status & Incorrect Search in CC After Trail Transfer"
+        },
+        {
+          "key": "MELS-3463",
+          "name": "UAT-VEH-POS-Transfer Void on Dual ATV Registration \u2013 Registration Display Issue"
+        },
+        {
+          "key": "MELS-2570",
+          "name": "UAT-VEH-POS-Non-Trail SM Registration Incorrectly Allowed for Transfer"
+        },
+        {
+          "key": "MELS-3465",
+          "name": "UAT-VEH-POS-System Assigning New Registration Number After Transfer for ATV with Dual Registration"
+        },
+        {
+          "key": "MELS-3888",
+          "name": "MN - Transfer from Non-Trail to a new Non-Trail should give new reg number"
+        }
+      ],
+      "ticketCount": 6,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2868",
       "q": "2026 Q4",
       "project": "CVEH",
       "title": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
       "ticketTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
       "epicTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
-      "sprint": "CVEH 2026-Q4-S3",
+      "sprint": "CVEH 2026-Q4-S4",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
         "Minnesota"
@@ -1356,80 +1425,6 @@ window.ROADMAP_DATA = {
         }
       ],
       "ticketCount": 3,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-1586",
-      "q": "2026 Q4",
-      "project": "CVEH",
-      "title": "Vehicle Ownership Transfer Pending State (LA, MS, MN)",
-      "ticketTitle": "Vehicle transfer \u2014 keep the current owner until an approval-required registration is approved",
-      "epicTitle": "Vehicle transfer \u2014 keep the current owner until an approval-required registration is approved",
-      "sprint": "CVEH 2026-Q4-S5",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Mississippi",
-        "Louisiana",
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MDWFP-1593",
-          "name": "Pending Owner status when a boat application is in pending or more information needed. "
-        },
-        {
-          "key": "MDWFP-1480",
-          "name": "Online Boat application that has titles and liens is making it disappear when the customer uploads their transfer request."
-        },
-        {
-          "key": "MELS-2361",
-          "name": "Vehicle - Transfer to Same Owner (Add/Remove Owner) - Retain Owner Information"
-        }
-      ],
-      "ticketCount": 3,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-1815",
-      "q": "2026 Q4",
-      "project": "CVEH",
-      "title": "Multi-Registration Vehicle Handling (ALL)",
-      "ticketTitle": "Vehicle transfer \u2014 customer-centric registrations stay with their owners",
-      "epicTitle": "Vehicle transfer \u2014 customer-centric registrations stay with their owners",
-      "sprint": "CVEH 2026-Q4-S5",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MELS-2445",
-          "name": "QA-VEH-POS-User able to renew a Non-Trail Snowmobile Registration"
-        },
-        {
-          "key": "MELS-3424",
-          "name": "UAT-VEH-CC-SM Dual Registration -Non-Trail Shows \"Transferred\" Status & Incorrect Search in CC After Trail Transfer"
-        },
-        {
-          "key": "MELS-3463",
-          "name": "UAT-VEH-POS-Transfer Void on Dual ATV Registration \u2013 Registration Display Issue"
-        },
-        {
-          "key": "MELS-2570",
-          "name": "UAT-VEH-POS-Non-Trail SM Registration Incorrectly Allowed for Transfer"
-        },
-        {
-          "key": "MELS-3465",
-          "name": "UAT-VEH-POS-System Assigning New Registration Number After Transfer for ATV with Dual Registration"
-        },
-        {
-          "key": "MELS-3888",
-          "name": "MN - Transfer from Non-Trail to a new Non-Trail should give new reg number"
-        }
-      ],
-      "ticketCount": 6,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -1557,28 +1552,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "LICS-3576",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "Camping stay limits on rolling day-windows",
-      "ticketTitle": "Licensing catalog \u2014 Missouri camping permits (700)",
-      "epicTitle": "Licensing catalog \u2014 Missouri camping permits (700)",
-      "sprint": "LICS 2026-Q4-S3",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1279",
-          "name": "Camping Permit - Required Deliverable by Q4 2026"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "Missouri camping stays are limited on a rolling window of days, not a calendar month. CORE still lets people overstay. Rangers need the system to count the days the way the rule is written.",
-      "rank": null
-    },
-    {
       "key": "LICS-3001",
       "q": "2026 Q4",
       "project": "LICS",
@@ -1640,14 +1613,36 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "LICS-3576",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Camping stay limits on rolling day-windows",
+      "ticketTitle": "Licensing catalog \u2014 Missouri camping permits (700)",
+      "epicTitle": "Licensing catalog \u2014 Missouri camping permits (700)",
+      "sprint": "LICS 2026-Q4-S4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1279",
+          "name": "Camping Permit - Required Deliverable by Q4 2026"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Missouri camping stays are limited on a rolling window of days, not a calendar month. CORE still lets people overstay. Rangers need the system to count the days the way the rule is written.",
+      "rank": null
+    },
+    {
       "key": "LICS-4031",
       "q": "2026 Q4",
       "project": "LICS",
       "title": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy",
       "ticketTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
       "epicTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
-      "sprint": "LICS 2026-Q4-S4",
-      "shirt": "M - 2 sprints",
+      "sprint": "LICS 2026-Q4-S5",
+      "shirt": "S - 1 sprint",
       "clients": [
         "Missouri"
       ],
@@ -1820,9 +1815,9 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S4",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Missouri",
         "Oregon",
         "Arkansas",
-        "Missouri",
         "Ohio"
       ],
       "tickets": [],
@@ -1840,11 +1835,11 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S5",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Missouri",
-        "Minnesota",
         "Mississippi",
         "Oregon",
         "Arkansas",
+        "Minnesota",
+        "Missouri",
         "Ohio"
       ],
       "tickets": [
@@ -1891,45 +1886,6 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "SYST-3711",
-      "q": "2026 Q4",
-      "project": "SYST",
-      "title": "Hard Card image selection needs refactored",
-      "ticketTitle": "Hard Card image selection needs refactored",
-      "epicTitle": "Hard Card image selection needs refactored",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Missouri",
-        "Ohio"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-235",
-          "name": "2.10.2\u00a0- Conservation Permit Cards 6 Images"
-        },
-        {
-          "key": "COMO-722",
-          "name": "Hard Cards: Unable to manage background images within CC"
-        },
-        {
-          "key": "COMO-236",
-          "name": "2.10.3\u00a0- Conservation Permit Cards Image Mgmt"
-        },
-        {
-          "key": "CROH-905",
-          "name": "Hard Card selection process"
-        },
-        {
-          "key": "CROH-61",
-          "name": "1.6.1 Hard Card Fulfillment"
-        }
-      ],
-      "ticketCount": 5,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -2003,7 +1959,7 @@ window.ROADMAP_DATA = {
       "title": "Printed license and receipt template fixes",
       "ticketTitle": "MO Print Template Updates (MO)",
       "epicTitle": "MO Print Template Updates (MO)",
-      "sprint": "SYST 2026-Q4-S3",
+      "sprint": "SYST 2026-Q4-S4",
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
@@ -2041,24 +1997,41 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-4958",
+      "key": "SYST-3711",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
-      "ticketTitle": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
-      "epicTitle": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
-      "sprint": "SYST 2026-Q4-S4",
+      "title": "Hard Card image selection needs refactored",
+      "ticketTitle": "Hard Card image selection needs refactored",
+      "epicTitle": "Hard Card image selection needs refactored",
+      "sprint": "SYST 2026-Q4-S5",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Minnesota",
-        "Oregon",
         "Missouri",
-        "Mississippi",
-        "Arkansas",
-        "Louisiana"
+        "Ohio"
       ],
-      "tickets": [],
-      "ticketCount": 0,
+      "tickets": [
+        {
+          "key": "COMO-235",
+          "name": "2.10.2\u00a0- Conservation Permit Cards 6 Images"
+        },
+        {
+          "key": "COMO-722",
+          "name": "Hard Cards: Unable to manage background images within CC"
+        },
+        {
+          "key": "COMO-236",
+          "name": "2.10.3\u00a0- Conservation Permit Cards Image Mgmt"
+        },
+        {
+          "key": "CROH-905",
+          "name": "Hard Card selection process"
+        },
+        {
+          "key": "CROH-61",
+          "name": "1.6.1 Hard Card Fulfillment"
+        }
+      ],
+      "ticketCount": 5,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -2072,12 +2045,12 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S5",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
+        "Missouri",
         "Arkansas",
+        "Louisiana",
         "Minnesota",
         "Mississippi",
-        "Louisiana",
-        "Oregon",
-        "Missouri"
+        "Oregon"
       ],
       "tickets": [
         {
@@ -2108,8 +2081,8 @@ window.ROADMAP_DATA = {
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
-        "Minnesota",
         "Mississippi",
+        "Minnesota",
         "Arkansas",
         "Oregon",
         "Louisiana",
@@ -2142,7 +2115,7 @@ window.ROADMAP_DATA = {
           "name": "Multi-Customer Flow"
         }
       ],
-      "ticketCount": 17,
+      "ticketCount": 20,
       "why": "Buying licenses for a spouse or child still means extra checkouts. One cart for other people is how families actually buy. Minnesota, Mississippi, Missouri, and anyone using household sales will feel this.",
       "rank": null
     },
@@ -2250,28 +2223,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CVEH-1471",
-      "q": "2027 Q1",
-      "project": "CVEH",
-      "title": "Navigate to Customer Profile from Vehicle View (All)",
-      "ticketTitle": "Licensing POS \u2014 collect a fee or a tax adjustment from the vehicle",
-      "epicTitle": "Licensing POS \u2014 collect a fee or a tax adjustment from the vehicle",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MELS-2514",
-          "name": "UAT-VEH-POS-No option for POS user to navigate to customer's full vehicle list from vehicle search results"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "CVEH-1544",
       "q": "2027 Q1",
       "project": "CVEH",
@@ -2279,7 +2230,7 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Linked Users for Vehicle Transactions (NN) (LA, MN, MS)",
       "epicTitle": "Linked Users for Vehicle Transactions (NN) (LA, MN, MS)",
       "sprint": "",
-      "shirt": "Needs Estimate",
+      "shirt": "M - 2 sprints",
       "clients": [
         "Louisiana",
         "Minnesota",
@@ -2298,11 +2249,66 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Vehicle search \u2014 one order, dealer and manufacturer numbers, and a longer POS list",
       "epicTitle": "Vehicle search \u2014 one order, dealer and manufacturer numbers, and a longer POS list",
       "sprint": "",
-      "shirt": "Needs Estimate",
+      "shirt": "M - 2 sprints",
       "clients": [
         "Louisiana",
         "Minnesota",
         "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2948",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Cart \u2014 complete a dealer plate quantity at Minnesota volume",
+      "ticketTitle": "Cart \u2014 complete a dealer plate quantity at Minnesota volume",
+      "epicTitle": "Cart \u2014 complete a dealer plate quantity at Minnesota volume",
+      "sprint": "",
+      "shirt": "L - 3 sprints",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2952",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Vehicle sale \u2014 start a customer-centric registration in the same sale",
+      "ticketTitle": "Vehicle sale \u2014 start a customer-centric registration in the same sale",
+      "epicTitle": "Vehicle sale \u2014 start a customer-centric registration in the same sale",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2956",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Minnesota vehicle sales \u2014 prove the go-live peaks",
+      "ticketTitle": "Minnesota vehicle sales \u2014 prove the go-live peaks",
+      "epicTitle": "Minnesota vehicle sales \u2014 prove the go-live peaks",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -2327,6 +2333,30 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-1471",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Navigate to Customer Profile from Vehicle View (All)",
+      "ticketTitle": "Licensing POS \u2014 collect vehicle registration fee or sales tax from the vehicle",
+      "epicTitle": "Licensing POS \u2014 collect vehicle registration fee or sales tax from the vehicle",
+      "sprint": "2027 Q1 - All Work",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-2514",
+          "name": "UAT-VEH-POS-No option for POS user to navigate to customer's full vehicle list from vehicle search results"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-1648",
       "q": "2027 Q1",
       "project": "CVEH",
@@ -2336,8 +2366,8 @@ window.ROADMAP_DATA = {
       "sprint": "2027 Q1 - All Work",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Minnesota",
         "Mississippi",
+        "Minnesota",
         "Louisiana"
       ],
       "tickets": [
@@ -2370,51 +2400,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CVEH-2909",
-      "q": "2027 Q1",
-      "project": "CVEH",
-      "title": "Licensing POS \u2014 collect an additional fee on a vehicle",
-      "ticketTitle": "Licensing POS \u2014 collect an additional fee on a vehicle",
-      "epicTitle": "Licensing POS \u2014 collect an additional fee on a vehicle",
-      "sprint": "2027 Q1 - All Work",
-      "shirt": "XS - Less than 1 sprint",
-      "clients": [
-        "Minnesota",
-        "Mississippi",
-        "Louisiana"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "FNCL-1635",
-      "q": "2027 Q1",
-      "project": "FNCL",
-      "title": "Vendor statements: newest first, printable, skip vendors with no sales",
-      "ticketTitle": "Vendors Statements Updates (CR) (MO)",
-      "epicTitle": "Vendors Statements Updates (CR) (MO)",
-      "sprint": "",
-      "shirt": "XS - Less than 1 sprint",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1698",
-          "name": "Agent EFT Statement Issues"
-        },
-        {
-          "key": "COMO-1693",
-          "name": "Vendors>Statements Tab: Sort Newest to Oldest"
-        }
-      ],
-      "ticketCount": 2,
-      "why": "Missouri vendor statements dump oldest-first and include vendors with no sales. Print newest first and skip the zeros so accounting can mail a statement. Small, and they will notice every month.",
-      "rank": null
-    },
-    {
       "key": "FNCL-1103",
       "q": "2027 Q1",
       "project": "FNCL",
@@ -2424,39 +2409,14 @@ window.ROADMAP_DATA = {
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Arkansas",
-        "Ohio",
         "Mississippi",
-        "Minnesota"
+        "Minnesota",
+        "Ohio",
+        "Arkansas"
       ],
       "tickets": [],
       "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "FNCL-1626",
-      "q": "2027 Q1",
-      "project": "FNCL",
-      "title": "Accounting reports \u2014 additional states",
-      "ticketTitle": "Accounting - Reports Update 2 (FF) (MS, MO, MN, LA)",
-      "epicTitle": "Accounting - Reports Update 2 (FF) (MS, MO, MN, LA)",
-      "sprint": "Features To Schedule (Roadmap)",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Missouri",
-        "Mississippi",
-        "Minnesota",
-        "Louisiana"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-438",
-          "name": "2.21.3\u00a0- ACH Reporting"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "Additional states need those same accounting reports, not a one-off for the first two. Louisiana, Minnesota, Mississippi, and Missouri all have to file. Same reports, more books.",
       "rank": null
     },
     {
@@ -2469,11 +2429,11 @@ window.ROADMAP_DATA = {
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "L - 3 sprints",
       "clients": [
-        "Ohio",
         "Mississippi",
         "Arkansas",
         "Minnesota",
-        "Missouri"
+        "Missouri",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -2498,8 +2458,8 @@ window.ROADMAP_DATA = {
       "q": "2027 Q1",
       "project": "FNCL",
       "title": "Clearer history of voids, refunds, and invalidations",
-      "ticketTitle": "Post-sweep voids, agent statements, and a readable history (MO, MS)",
-      "epicTitle": "Post-sweep voids, agent statements, and a readable history (MO, MS)",
+      "ticketTitle": "Post-sweep voids and agent statements (MO, MS)",
+      "epicTitle": "Post-sweep voids and agent statements (MO, MS)",
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "S - 1 sprint",
       "clients": [
@@ -2591,6 +2551,23 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "Second slice of simpler land fields for Missouri landowners: collect what the rule needs, hide the rest. Landowners abandon the form when it looks like a GIS survey. This is still configuration, not a new module.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4273",
+      "q": "2027 Q1",
+      "project": "LICS",
+      "title": "Auto-renew \u2014 prove a 250,000-transaction day for Missouri",
+      "ticketTitle": "Auto-renew \u2014 prove a 250,000-transaction day for Missouri",
+      "epicTitle": "Auto-renew \u2014 prove a 250,000-transaction day for Missouri",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -3113,17 +3090,34 @@ window.ROADMAP_DATA = {
       "sprint": "2027 Q1",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Missouri",
         "Minnesota",
         "Mississippi",
         "Louisiana",
         "Klamath",
         "Arkansas",
-        "Missouri",
         "New Hampshire",
         "Ohio"
       ],
-      "tickets": [],
-      "ticketCount": 0,
+      "tickets": [
+        {
+          "key": "COMO-2176",
+          "name": "PILogin: Text Verification Only Option Returned"
+        },
+        {
+          "key": "COMO-1736",
+          "name": "Creating a PayIt Login with matching CID, different name and DOB"
+        },
+        {
+          "key": "COMO-1519",
+          "name": "PILogin>Customer Profile: Include help note on how to locate this number"
+        },
+        {
+          "key": "COMO-1509",
+          "name": "PILogin>PW Reset: Now What? "
+        }
+      ],
+      "ticketCount": 4,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -3138,6 +3132,28 @@ window.ROADMAP_DATA = {
       "shirt": "XS - Less than 1 sprint",
       "clients": [
         "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-4958",
+      "q": "2027 Q1",
+      "project": "SYST",
+      "title": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
+      "ticketTitle": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
+      "epicTitle": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
+      "sprint": "SYST 2026-Q4-S1",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Minnesota",
+        "Missouri",
+        "Mississippi",
+        "Arkansas",
+        "Oregon",
+        "Louisiana"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -3356,12 +3372,33 @@ window.ROADMAP_DATA = {
       "q": "2027 Q2",
       "project": "CVEH",
       "title": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
-      "ticketTitle": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
-      "epicTitle": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
+      "ticketTitle": "Licensing POS \u2014 prompt for vehicle sales tax during registration (MN, by vehicle type)",
+      "epicTitle": "Licensing POS \u2014 prompt for vehicle sales tax during registration (MN, by vehicle type)",
       "sprint": "",
-      "shirt": "Needs Estimate",
+      "shirt": "M - 2 sprints",
       "clients": [
-        "Minnesota"
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2938",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Control Center \u2014 require a named sales tax before the vehicle can register",
+      "ticketTitle": "Control Center \u2014 DNR notice obligations on vehicle block registration until paid",
+      "epicTitle": "Control Center \u2014 DNR notice obligations on vehicle block registration until paid",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -3377,6 +3414,57 @@ window.ROADMAP_DATA = {
       "epicTitle": "Louisiana new registration \u2014 a notary can complete it outside specific LDWF sales locations",
       "sprint": "",
       "shirt": "M - 2 sprints",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2946",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Licensing POS \u2014 after registration add to cart, open customer Vehicles tab",
+      "ticketTitle": "Licensing POS \u2014 after registration add to cart, open customer Vehicles tab",
+      "epicTitle": "Licensing POS \u2014 after registration add to cart, open customer Vehicles tab",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-686",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Structured registration and title questions by vehicle type",
+      "ticketTitle": "Reg and Title Question Changes",
+      "epicTitle": "Reg and Title Question Changes",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Registration and title questions are a blob instead of a structure by vehicle type. A boat asks car questions and clerks skip or guess. PayIt-owned so later states inherit a sane form.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2838",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
+      "ticketTitle": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
+      "epicTitle": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
+      "sprint": "Future Work",
+      "shirt": "S - 1 sprint",
       "clients": [
         "Louisiana"
       ],
@@ -3550,8 +3638,8 @@ window.ROADMAP_DATA = {
       "sprint": "2027 Q1 - All Work",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "Louisiana",
         "Minnesota",
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [],
@@ -3591,20 +3679,29 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CVEH-2838",
+      "key": "FNCL-1635",
       "q": "2027 Q2",
-      "project": "CVEH",
-      "title": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
-      "ticketTitle": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
-      "epicTitle": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
-      "sprint": "CVEH 2026-Q4-S6",
-      "shirt": "S - 1 sprint",
+      "project": "FNCL",
+      "title": "Vendor statements: newest first, printable, skip vendors with no sales",
+      "ticketTitle": "Vendors Statements Updates (CR) (MO)",
+      "epicTitle": "Vendors Statements Updates (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "Louisiana"
+        "Missouri"
       ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "tickets": [
+        {
+          "key": "COMO-1698",
+          "name": "Agent EFT Statement Issues"
+        },
+        {
+          "key": "COMO-1693",
+          "name": "Vendors>Statements Tab: Sort Newest to Oldest"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "Missouri vendor statements dump oldest-first and include vendors with no sales. Print newest first and skip the zeros so accounting can mail a statement. Small, and they will notice every month.",
       "rank": null
     },
     {
@@ -3734,6 +3831,31 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "Minnesota and Missouri still need the next set of accounting reports they close the books on. If a report is missing, they keep a shadow spreadsheet. This is finance's month-end, not a dashboard for fun.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-1626",
+      "q": "2027 Q2",
+      "project": "FNCL",
+      "title": "Accounting reports \u2014 additional states",
+      "ticketTitle": "Accounting - Reports Update 2 (FF) (MS, MO, MN, LA)",
+      "epicTitle": "Accounting - Reports Update 2 (FF) (MS, MO, MN, LA)",
+      "sprint": "Features To Schedule (Roadmap)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri",
+        "Mississippi",
+        "Minnesota",
+        "Louisiana"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-438",
+          "name": "2.21.3\u00a0- ACH Reporting"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Additional states need those same accounting reports, not a one-off for the first two. Louisiana, Minnesota, Mississippi, and Missouri all have to file. Same reports, more books.",
       "rank": null
     },
     {
@@ -3963,6 +4085,62 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1823",
+      "q": "2027 Q2",
+      "project": "RESRV",
+      "title": "Missouri Event Registration, Time Slots, and Volunteer Create",
+      "ticketTitle": "Missouri Event Registration, Time Slots, and Volunteer Create (CR) (MO)",
+      "epicTitle": "Missouri Event Registration, Time Slots, and Volunteer Create (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2173",
+          "name": "VEMS>Customer Event Registration: How do you return to the cart to check out? "
+        },
+        {
+          "key": "COMO-1557",
+          "name": "VEMS: Volunteer Event Creation"
+        },
+        {
+          "key": "COMO-87",
+          "name": "2.4.26\u00a0- Individual time slots for registration of an event, application for a SUP"
+        },
+        {
+          "key": "COMO-88",
+          "name": "2.4.27\u00a0- Product Configuration"
+        }
+      ],
+      "ticketCount": 4,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1824",
+      "q": "2027 Q2",
+      "project": "RESRV",
+      "title": "Missouri Hard Card Certification Print Selection",
+      "ticketTitle": "Missouri Hard Card Certification Print Selection (CR) (MO)",
+      "epicTitle": "Missouri Hard Card Certification Print Selection (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-958",
+          "name": "Hard Cards/Certifications: How does hard card know which certifications to print on card?"
+        }
+      ],
+      "ticketCount": 1,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -4294,6 +4472,123 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "FNCL-2692",
+      "q": "2027 Q3",
+      "project": "FNCL",
+      "title": "Missouri Voids, Statements, and ACH Notices",
+      "ticketTitle": "Missouri Voids, Statements, and ACH Notices (CR) (MO)",
+      "epicTitle": "Missouri Voids, Statements, and ACH Notices (CR) (MO)",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2144",
+          "name": "Void: Void Transaction Does not Consider Voided Individual Products"
+        },
+        {
+          "key": "COMO-2271",
+          "name": "Voids>Concerns with transaction level vs. customer level voids"
+        },
+        {
+          "key": "COMO-1692",
+          "name": "Voids: Unable to unvoid for a Regional Office-Calendar Vendor Type - WHY?"
+        },
+        {
+          "key": "COMO-2586",
+          "name": "Reports>Statement Report: Must be able to run for all vendor accounts"
+        },
+        {
+          "key": "COMO-1697",
+          "name": "Statements: Why are statements being created for vendors WITHOUT sales?"
+        },
+        {
+          "key": "COMO-1231",
+          "name": "Notifications: Daily ACH/Bank Acct Update"
+        }
+      ],
+      "ticketCount": 7,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2693",
+      "q": "2027 Q3",
+      "project": "FNCL",
+      "title": "Missouri Auto-Renew Completeness and Notices",
+      "ticketTitle": "Missouri Auto-Renew Completeness and Notices (CR) (MO)",
+      "epicTitle": "Missouri Auto-Renew Completeness and Notices (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1843",
+          "name": "Customers>Auto-Renewal: Where does an admin user obtain this type of detailed information? "
+        },
+        {
+          "key": "COMO-1786",
+          "name": "Notifications: Missing Logic for Auto-Renewal Notifications"
+        },
+        {
+          "key": "COMO-2239",
+          "name": "Products>Auto-Renewal Mgmt: Why is CORE not smart enough to verify all settings for AR are in place? "
+        },
+        {
+          "key": "COMO-2391",
+          "name": "Auto Renewal>Licensing: No Option to Opt into AR for Migrated Fishing"
+        }
+      ],
+      "ticketCount": 4,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2694",
+      "q": "2027 Q3",
+      "project": "FNCL",
+      "title": "Missouri Sales Reports and Catalog Display",
+      "ticketTitle": "Missouri Sales Reports and Catalog Display (CR) (MO)",
+      "epicTitle": "Missouri Sales Reports and Catalog Display (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri",
+        "Mississippi",
+        "Minnesota",
+        "Louisiana"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-947",
+          "name": "POS Product Sales Report - 27001 8/14/2024"
+        },
+        {
+          "key": "COMO-615",
+          "name": "Sales Channel Reporting"
+        },
+        {
+          "key": "COMO-2626",
+          "name": "Products>Donations>Featured Items - Donations show FREE for fee when displayed under featured items"
+        },
+        {
+          "key": "COMO-523",
+          "name": "Payment Details: Limit Credit Card numbers to 16-digits"
+        },
+        {
+          "key": "COMO-1921",
+          "name": "Customers>Transactions: Required to Display In Chronological Order (Newest to Oldest)"
+        }
+      ],
+      "ticketCount": 5,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "LICS-3771",
       "q": "2027 Q3",
       "project": "LICS",
@@ -4488,12 +4783,12 @@ window.ROADMAP_DATA = {
       "title": "Merge duplicate customers into one surviving record",
       "ticketTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
       "epicTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
-      "sprint": "Changes - Future work",
+      "sprint": "SYST Bugs (prioritized)",
       "shirt": "L - 3 sprints",
       "clients": [
-        "Missouri",
         "Arkansas",
         "Minnesota",
+        "Missouri",
         "Louisiana",
         "Ohio"
       ],
@@ -4534,7 +4829,7 @@ window.ROADMAP_DATA = {
       "title": "Missouri-requested platform (part 2 of 2)",
       "ticketTitle": "MO Requests (Pt. 2 of 2) (MO)",
       "epicTitle": "MO Requests (Pt. 2 of 2) (MO)",
-      "sprint": "2026 Q4",
+      "sprint": "2027 Q1",
       "shirt": "2XL - 8 sprints",
       "clients": [
         "Missouri"
@@ -4717,28 +5012,11 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Minnesota"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Transferring a vehicle and adding/removing an owner are different legal acts; CORE lets you 'transfer to yourself.' Split them. Every title shop knows the difference; the system should too.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-686",
-      "q": "2027 Q4",
-      "project": "CVEH",
-      "title": "Structured registration and title questions by vehicle type",
-      "ticketTitle": "Reg and Title Question Changes",
-      "epicTitle": "Reg and Title Question Changes",
-      "sprint": "",
-      "shirt": "M - 2 sprints",
-      "clients": [
         "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "Registration and title questions are a blob instead of a structure by vehicle type. A boat asks car questions and clerks skip or guess. PayIt-owned so later states inherit a sane form.",
+      "why": "Transferring a vehicle and adding/removing an owner are different legal acts; CORE lets you 'transfer to yourself.' Split them. Every title shop knows the difference; the system should too.",
       "rank": null
     },
     {
@@ -4813,6 +5091,46 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "Ohio harvest reporting needs their filters\u2014game, county, ESA, flags\u2014and an Excel export biologists already use. A generic dump does not file. This is how they manage the season, not a vanity report.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4274",
+      "q": "2027 Q4",
+      "project": "LICS",
+      "title": "Application survey \u2014 leave an application and come back to finish it",
+      "ticketTitle": "Application survey \u2014 leave an application and come back to finish it",
+      "epicTitle": "Application survey \u2014 leave an application and come back to finish it",
+      "sprint": "",
+      "shirt": "L - 3 sprints",
+      "clients": [
+        "Arkansas"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4269",
+      "q": "2027 Q4",
+      "project": "LICS",
+      "title": "Commercial Application Submitted - Internal \u2014 manage the shared email and the lake email",
+      "ticketTitle": "Commercial Application Submitted - Internal \u2014 manage the shared email and the lake email",
+      "epicTitle": "Commercial Application Submitted - Internal \u2014 manage the shared email and the lake email",
+      "sprint": "Future Work",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Mississippi",
+        "Arkansas"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-2439",
+          "name": "Commercial Application Submission Notifications - Ability to send notification to all members of the task user group"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -4950,6 +5268,40 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "Missouri and Ohio send email and app messages and cannot tell if anyone opened them. Open tracking is how you know a recall or a deadline notice landed. Not marketing spam\u2014operational notices.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5141",
+      "q": "2027 Q4",
+      "project": "SYST",
+      "title": "Missouri Profile Sharing and Closed Records",
+      "ticketTitle": "Missouri Profile Sharing and Closed Records (CR) (MO)",
+      "epicTitle": "Missouri Profile Sharing and Closed Records (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2153",
+          "name": "Customer Profile Fields: Email/3rd Party Locked For Edit"
+        },
+        {
+          "key": "COMO-2454",
+          "name": "Customer Profile Fields>3rd Party Sharing: Default Value needs to be \"YES\""
+        },
+        {
+          "key": "COMO-45",
+          "name": "\u00a02.3.13.i. - Closed Records"
+        },
+        {
+          "key": "COMO-1785",
+          "name": "Licensing> 3rd party sharing NOT displaying"
+        }
+      ],
+      "ticketCount": 4,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -5239,6 +5591,254 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "SYST-3232",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Client Feedback Reporting Response",
+      "ticketTitle": "MEDA-450 - Client Feedback Reporting Response (FF) (MO)",
+      "epicTitle": "MEDA-450 - Client Feedback Reporting Response (FF) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-95",
+          "name": "2.4.34\u00a0- Summarize customer demographic information"
+        },
+        {
+          "key": "COMO-92",
+          "name": "2.4.31\u00a0- Reporting and Data Extraction"
+        },
+        {
+          "key": "COMO-64",
+          "name": "2.4.3\u00a0- Reporting"
+        },
+        {
+          "key": "COMO-292",
+          "name": "2.12.42\u00a0- Reporting"
+        },
+        {
+          "key": "COMO-113",
+          "name": "2.5.12\u00a0- Track Privilege Sales"
+        },
+        {
+          "key": "COMO-149",
+          "name": "2.5.48\u00a0- Sales Channel Reporting"
+        }
+      ],
+      "ticketCount": 13,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5145",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri SSN Handling",
+      "ticketTitle": "Missouri SSN Handling (CR) (MO)",
+      "epicTitle": "Missouri SSN Handling (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-509",
+          "name": "Cust Acct Online/POS: SSN is not masked"
+        },
+        {
+          "key": "COMO-1018",
+          "name": "SSN validation does not occur during entry"
+        },
+        {
+          "key": "COMO-1034",
+          "name": "Customers>SSN Dup Warning: Do Not Stop Them From Proceeding"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-1041",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Enhanced Agent Identity, Vendor Association, and POS Usability (MO, MN)",
+      "ticketTitle": "Enhanced Agent Identity, Vendor Association, and POS Usability (NN) (MO, MN)",
+      "epicTitle": "Enhanced Agent Identity, Vendor Association, and POS Usability (NN) (MO, MN)",
+      "sprint": "Changes - Future work",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Arkansas",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-1087",
+          "name": "1 user for agents w/ multiple locations"
+        },
+        {
+          "key": "COMO-709",
+          "name": "POS: Others Actions Vs. Agent Tools"
+        },
+        {
+          "key": "COMO-578",
+          "name": "Licensing POS - Update Order/Remove Agent Options"
+        },
+        {
+          "key": "COMO-689",
+          "name": "Vendors Gap"
+        },
+        {
+          "key": "COMO-353",
+          "name": "2.15.18\u00a0- Single Users for Multiple Agents"
+        },
+        {
+          "key": "COMO-67",
+          "name": "2.4.6\u00a0- Allow administrative users to manage accounts"
+        }
+      ],
+      "ticketCount": 18,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5142",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri CMS FAQ Images and POS Vocabulary",
+      "ticketTitle": "Missouri CMS FAQ Images and POS Vocabulary (CR) (MO)",
+      "epicTitle": "Missouri CMS FAQ Images and POS Vocabulary (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2381",
+          "name": "CMS>FAQS: Unable to add more than one image to an FAQ. This needs to be fixed for go live"
+        },
+        {
+          "key": "COMO-1389",
+          "name": "POS: Change Tile Titles to Match Missouri Terminology"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5143",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri Marketing Tag Lookup Cleanup",
+      "ticketTitle": "Missouri Marketing Tag Lookup Cleanup (CR) (MO)",
+      "epicTitle": "Missouri Marketing Tag Lookup Cleanup (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1983",
+          "name": "Marketing Tag Custom Lookups - ALL need to be removed"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5146",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri Call Center Fulfillment",
+      "ticketTitle": "Missouri Call Center Fulfillment (CR) (MO)",
+      "epicTitle": "Missouri Call Center Fulfillment (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1318",
+          "name": "Call Center Sales Fulfillment"
+        },
+        {
+          "key": "COMO-115",
+          "name": "2.5.14\u00a0- Secure Online Payments"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5147",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri Hard Card Reissue from Customer Record",
+      "ticketTitle": "Missouri Hard Card Reissue from Customer Record (CR) (MO)",
+      "epicTitle": "Missouri Hard Card Reissue from Customer Record (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1538",
+          "name": "Unable to re-issue of Hard Cards"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5144",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri Notification Resend and Correspondence",
+      "ticketTitle": "Missouri Notification Resend and Correspondence (CR) (MO)",
+      "epicTitle": "Missouri Notification Resend and Correspondence (CR) (MO)",
+      "sprint": "MEDA 2025-Q3-S06",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-776",
+          "name": "2.4.45 - Resending of Notifications"
+        },
+        {
+          "key": "COMO-775",
+          "name": "2.4.44 - Correspondence Notifications"
+        },
+        {
+          "key": "COMO-194",
+          "name": "2.6.24\u00a0- Notifications"
+        },
+        {
+          "key": "COMO-2185",
+          "name": "Reports>Sales by Time Period Report: Received 2 notifications for the same report"
+        }
+      ],
+      "ticketCount": 4,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "LICS-2766",
       "q": "2028 Q2",
       "project": "LICS",
@@ -5302,6 +5902,168 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 8,
       "why": "Agencies sell by hunt area and report harvest on a different deer-permit map. Minnesota, Mississippi, and Ohio all have that split. One map for both is how harvest gets filed in the wrong place.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5148",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Print Template Timeout",
+      "ticketTitle": "Missouri Print Template Timeout (CR) (MO)",
+      "epicTitle": "Missouri Print Template Timeout (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1413",
+          "name": "500 error when trying to print template "
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5163",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Customer Record Open Failures",
+      "ticketTitle": "Missouri Customer Record Open Failures (CR) (MO)",
+      "epicTitle": "Missouri Customer Record Open Failures (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2437",
+          "name": "Customers: Unable to open CID 037578515 in UA w/o erroring out"
+        },
+        {
+          "key": "COMO-2266",
+          "name": "500 error when trying to open customer record"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5164",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Business Profile Field Visibility",
+      "ticketTitle": "Missouri Business Profile Field Visibility (CR) (MO)",
+      "epicTitle": "Missouri Business Profile Field Visibility (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2354",
+          "name": "Customer>Business>Profile Fields: CC Settings - Fields are not showing/hidden according to config"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5165",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Control Center Password Reset URL",
+      "ticketTitle": "Missouri Control Center Password Reset URL (CR) (MO)",
+      "epicTitle": "Missouri Control Center Password Reset URL (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2232",
+          "name": "Vendor>Password Reset: Expired token link lands on Control Center 404 Error"
+        },
+        {
+          "key": "COMO-2565",
+          "name": "Notification> CC Password Reset Issue: URL is not working"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5166",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Category Group Delete",
+      "ticketTitle": "Missouri Category Group Delete (CR) (MO)",
+      "epicTitle": "Missouri Category Group Delete (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2163",
+          "name": "Category Group: Unable to Delete Range and Draw Applications"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5167",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Peer Linked User Create",
+      "ticketTitle": "Missouri Peer Linked User Create (CR) (MO)",
+      "epicTitle": "Missouri Peer Linked User Create (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2457",
+          "name": "Unable to create Peer account for Linked Users"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5168",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri POS History After Merge",
+      "ticketTitle": "Missouri POS History After Merge (CR) (MO)",
+      "epicTitle": "Missouri POS History After Merge (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2091",
+          "name": "Merged Accounts> Merged account transaction history disappears in POS"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -5364,7 +6126,6 @@ window.ROADMAP_DATA = {
       "sprint": "CALM 2026-Q3-S2",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Mississippi",
         "Ohio"
       ],
       "tickets": [
@@ -5490,8 +6251,7 @@ window.ROADMAP_DATA = {
       "sprint": "CVEH 2026-Q3-S1",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Ohio",
-        "Louisiana"
+        "Ohio"
       ],
       "tickets": [
         {
@@ -5610,9 +6370,9 @@ window.ROADMAP_DATA = {
       "sprint": "FNCL 2026-Q3-S6",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Ohio",
         "Missouri",
         "Minnesota",
+        "Ohio",
         "Mississippi"
       ],
       "tickets": [
@@ -5884,7 +6644,6 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S4",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Oregon",
         "Minnesota",
         "Missouri",
         "Mississippi"
@@ -5904,8 +6663,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q3-S6",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Missouri",
-        "Ohio"
+        "Missouri"
       ],
       "tickets": [
         {
@@ -6183,8 +6941,8 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S1",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Missouri",
-        "Ohio"
+        "Ohio",
+        "Missouri"
       ],
       "tickets": [
         {
@@ -6374,7 +7132,7 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q3-S6",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Cherokee"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -6518,30 +7276,13 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CALM-3516",
-      "q": "2026 Q4",
-      "project": "CALM",
-      "title": "Sort and paginate available vs submitted surveys on mobile",
-      "ticketTitle": "Survey Tab updates (MI)",
-      "epicTitle": "Survey Tab updates (MI)",
-      "sprint": "CALM 2026-Q4-S3",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Michigan"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Michigan officers and biologists cannot tell submitted surveys from ones still on the device when the list is one long scroll. Sort and page so field staff find the right survey without calling support. This is a field-time saver, not a new survey type.",
-      "rank": null
-    },
-    {
       "key": "CALM-3502",
       "q": "2026 Q4",
       "project": "CALM",
       "title": "Move mobile builds from Azure DevOps to GitHub and Fastlane",
       "ticketTitle": "Switch from Azure DevOps to GitHub and FastLane",
       "epicTitle": "Switch from Azure DevOps to GitHub and FastLane",
-      "sprint": "CALM 2026-Q4-S5",
+      "sprint": "CALM 2026-Q4-S4",
       "shirt": "M - 2 sprints",
       "clients": [
         "Michigan"
@@ -6549,6 +7290,23 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Mobile builds still depend on a pipeline we are leaving. If we do not move to GitHub and Fastlane, every client release gets slower and riskier. Hunters never see this; product managers will if a season build cannot ship.",
+      "rank": null
+    },
+    {
+      "key": "CALM-3516",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Sort and paginate available vs submitted surveys on mobile",
+      "ticketTitle": "Survey Tab updates (MI)",
+      "epicTitle": "Survey Tab updates (MI)",
+      "sprint": "CALM 2026-Q4-S5",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Michigan"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Michigan officers and biologists cannot tell submitted surveys from ones still on the device when the list is one long scroll. Sort and page so field staff find the right survey without calling support. This is a field-time saver, not a new survey type.",
       "rank": null
     },
     {
@@ -6561,8 +7319,7 @@ window.ROADMAP_DATA = {
       "sprint": "CALM 2026-Q4-S6",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Arkansas",
-        "Michigan"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -6658,13 +7415,87 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-1586",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Vehicle Ownership Transfer Pending State (LA, MS, MN)",
+      "ticketTitle": "Vehicle transfer \u2014 keep the current owner until an approval-required registration is approved",
+      "epicTitle": "Vehicle transfer \u2014 keep the current owner until an approval-required registration is approved",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Mississippi",
+        "Louisiana",
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-1593",
+          "name": "Pending Owner status when a boat application is in pending or more information needed. "
+        },
+        {
+          "key": "MDWFP-1480",
+          "name": "Online Boat application that has titles and liens is making it disappear when the customer uploads their transfer request."
+        },
+        {
+          "key": "MELS-2361",
+          "name": "Vehicle - Transfer to Same Owner (Add/Remove Owner) - Retain Owner Information"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-1815",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Multi-Registration Vehicle Handling (ALL)",
+      "ticketTitle": "Vehicle transfer \u2014 customer-centric registrations stay with their owners",
+      "epicTitle": "Vehicle transfer \u2014 customer-centric registrations stay with their owners",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-2445",
+          "name": "QA-VEH-POS-User able to renew a Non-Trail Snowmobile Registration"
+        },
+        {
+          "key": "MELS-3424",
+          "name": "UAT-VEH-CC-SM Dual Registration -Non-Trail Shows \"Transferred\" Status & Incorrect Search in CC After Trail Transfer"
+        },
+        {
+          "key": "MELS-3463",
+          "name": "UAT-VEH-POS-Transfer Void on Dual ATV Registration \u2013 Registration Display Issue"
+        },
+        {
+          "key": "MELS-2570",
+          "name": "UAT-VEH-POS-Non-Trail SM Registration Incorrectly Allowed for Transfer"
+        },
+        {
+          "key": "MELS-3465",
+          "name": "UAT-VEH-POS-System Assigning New Registration Number After Transfer for ATV with Dual Registration"
+        },
+        {
+          "key": "MELS-3888",
+          "name": "MN - Transfer from Non-Trail to a new Non-Trail should give new reg number"
+        }
+      ],
+      "ticketCount": 6,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2868",
       "q": "2026 Q4",
       "project": "CVEH",
       "title": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
       "ticketTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
       "epicTitle": "Register & Title \u2014 guide Minnesota titled and non-titled watercraft",
-      "sprint": "CVEH 2026-Q4-S3",
+      "sprint": "CVEH 2026-Q4-S4",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
         "Minnesota"
@@ -6708,80 +7539,6 @@ window.ROADMAP_DATA = {
         }
       ],
       "ticketCount": 3,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-1586",
-      "q": "2026 Q4",
-      "project": "CVEH",
-      "title": "Vehicle Ownership Transfer Pending State (LA, MS, MN)",
-      "ticketTitle": "Vehicle transfer \u2014 keep the current owner until an approval-required registration is approved",
-      "epicTitle": "Vehicle transfer \u2014 keep the current owner until an approval-required registration is approved",
-      "sprint": "CVEH 2026-Q4-S5",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Mississippi",
-        "Louisiana",
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MDWFP-1593",
-          "name": "Pending Owner status when a boat application is in pending or more information needed. "
-        },
-        {
-          "key": "MDWFP-1480",
-          "name": "Online Boat application that has titles and liens is making it disappear when the customer uploads their transfer request."
-        },
-        {
-          "key": "MELS-2361",
-          "name": "Vehicle - Transfer to Same Owner (Add/Remove Owner) - Retain Owner Information"
-        }
-      ],
-      "ticketCount": 3,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-1815",
-      "q": "2026 Q4",
-      "project": "CVEH",
-      "title": "Multi-Registration Vehicle Handling (ALL)",
-      "ticketTitle": "Vehicle transfer \u2014 customer-centric registrations stay with their owners",
-      "epicTitle": "Vehicle transfer \u2014 customer-centric registrations stay with their owners",
-      "sprint": "CVEH 2026-Q4-S5",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MELS-2445",
-          "name": "QA-VEH-POS-User able to renew a Non-Trail Snowmobile Registration"
-        },
-        {
-          "key": "MELS-3424",
-          "name": "UAT-VEH-CC-SM Dual Registration -Non-Trail Shows \"Transferred\" Status & Incorrect Search in CC After Trail Transfer"
-        },
-        {
-          "key": "MELS-3463",
-          "name": "UAT-VEH-POS-Transfer Void on Dual ATV Registration \u2013 Registration Display Issue"
-        },
-        {
-          "key": "MELS-2570",
-          "name": "UAT-VEH-POS-Non-Trail SM Registration Incorrectly Allowed for Transfer"
-        },
-        {
-          "key": "MELS-3465",
-          "name": "UAT-VEH-POS-System Assigning New Registration Number After Transfer for ATV with Dual Registration"
-        },
-        {
-          "key": "MELS-3888",
-          "name": "MN - Transfer from Non-Trail to a new Non-Trail should give new reg number"
-        }
-      ],
-      "ticketCount": 6,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -6909,28 +7666,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "LICS-3576",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "Camping stay limits on rolling day-windows",
-      "ticketTitle": "Licensing catalog \u2014 Missouri camping permits (700)",
-      "epicTitle": "Licensing catalog \u2014 Missouri camping permits (700)",
-      "sprint": "LICS 2026-Q4-S3",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1279",
-          "name": "Camping Permit - Required Deliverable by Q4 2026"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "Missouri camping stays are limited on a rolling window of days, not a calendar month. CORE still lets people overstay. Rangers need the system to count the days the way the rule is written.",
-      "rank": null
-    },
-    {
       "key": "LICS-3001",
       "q": "2026 Q4",
       "project": "LICS",
@@ -6992,14 +7727,36 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "LICS-3576",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Camping stay limits on rolling day-windows",
+      "ticketTitle": "Licensing catalog \u2014 Missouri camping permits (700)",
+      "epicTitle": "Licensing catalog \u2014 Missouri camping permits (700)",
+      "sprint": "LICS 2026-Q4-S4",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1279",
+          "name": "Camping Permit - Required Deliverable by Q4 2026"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Missouri camping stays are limited on a rolling window of days, not a calendar month. CORE still lets people overstay. Rangers need the system to count the days the way the rule is written.",
+      "rank": null
+    },
+    {
       "key": "LICS-4031",
       "q": "2026 Q4",
       "project": "LICS",
       "title": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy",
       "ticketTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
       "epicTitle": "Critical Data Elements for Missouri - Transaction Auxiliary Table in Legacy (MO)  ",
-      "sprint": "LICS 2026-Q4-S4",
-      "shirt": "M - 2 sprints",
+      "sprint": "LICS 2026-Q4-S5",
+      "shirt": "S - 1 sprint",
       "clients": [
         "Missouri"
       ],
@@ -7172,9 +7929,9 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S4",
       "shirt": "S - 1 sprint",
       "clients": [
+        "Missouri",
         "Oregon",
         "Arkansas",
-        "Missouri",
         "Ohio"
       ],
       "tickets": [],
@@ -7192,11 +7949,11 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S5",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Missouri",
-        "Minnesota",
         "Mississippi",
         "Oregon",
         "Arkansas",
+        "Minnesota",
+        "Missouri",
         "Ohio"
       ],
       "tickets": [
@@ -7243,45 +8000,6 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "SYST-3711",
-      "q": "2026 Q4",
-      "project": "SYST",
-      "title": "Hard Card image selection needs refactored",
-      "ticketTitle": "Hard Card image selection needs refactored",
-      "epicTitle": "Hard Card image selection needs refactored",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Missouri",
-        "Ohio"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-235",
-          "name": "2.10.2\u00a0- Conservation Permit Cards 6 Images"
-        },
-        {
-          "key": "COMO-722",
-          "name": "Hard Cards: Unable to manage background images within CC"
-        },
-        {
-          "key": "COMO-236",
-          "name": "2.10.3\u00a0- Conservation Permit Cards Image Mgmt"
-        },
-        {
-          "key": "CROH-905",
-          "name": "Hard Card selection process"
-        },
-        {
-          "key": "CROH-61",
-          "name": "1.6.1 Hard Card Fulfillment"
-        }
-      ],
-      "ticketCount": 5,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -7355,7 +8073,7 @@ window.ROADMAP_DATA = {
       "title": "Printed license and receipt template fixes",
       "ticketTitle": "MO Print Template Updates (MO)",
       "epicTitle": "MO Print Template Updates (MO)",
-      "sprint": "SYST 2026-Q4-S3",
+      "sprint": "SYST 2026-Q4-S4",
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
@@ -7393,24 +8111,41 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-4958",
+      "key": "SYST-3711",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
-      "ticketTitle": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
-      "epicTitle": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
-      "sprint": "SYST 2026-Q4-S4",
+      "title": "Hard Card image selection needs refactored",
+      "ticketTitle": "Hard Card image selection needs refactored",
+      "epicTitle": "Hard Card image selection needs refactored",
+      "sprint": "SYST 2026-Q4-S5",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Minnesota",
-        "Oregon",
         "Missouri",
-        "Mississippi",
-        "Arkansas",
-        "Louisiana"
+        "Ohio"
       ],
-      "tickets": [],
-      "ticketCount": 0,
+      "tickets": [
+        {
+          "key": "COMO-235",
+          "name": "2.10.2\u00a0- Conservation Permit Cards 6 Images"
+        },
+        {
+          "key": "COMO-722",
+          "name": "Hard Cards: Unable to manage background images within CC"
+        },
+        {
+          "key": "COMO-236",
+          "name": "2.10.3\u00a0- Conservation Permit Cards Image Mgmt"
+        },
+        {
+          "key": "CROH-905",
+          "name": "Hard Card selection process"
+        },
+        {
+          "key": "CROH-61",
+          "name": "1.6.1 Hard Card Fulfillment"
+        }
+      ],
+      "ticketCount": 5,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -7424,12 +8159,12 @@ window.ROADMAP_DATA = {
       "sprint": "SYST 2026-Q4-S5",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
+        "Missouri",
         "Arkansas",
+        "Louisiana",
         "Minnesota",
         "Mississippi",
-        "Louisiana",
-        "Oregon",
-        "Missouri"
+        "Oregon"
       ],
       "tickets": [
         {
@@ -7460,8 +8195,8 @@ window.ROADMAP_DATA = {
       "shirt": "M - 2 sprints",
       "clients": [
         "Missouri",
-        "Minnesota",
         "Mississippi",
+        "Minnesota",
         "Arkansas",
         "Oregon",
         "Louisiana",
@@ -7494,7 +8229,7 @@ window.ROADMAP_DATA = {
           "name": "Multi-Customer Flow"
         }
       ],
-      "ticketCount": 17,
+      "ticketCount": 20,
       "why": "Buying licenses for a spouse or child still means extra checkouts. One cart for other people is how families actually buy. Minnesota, Mississippi, Missouri, and anyone using household sales will feel this.",
       "rank": null
     },
@@ -7602,28 +8337,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CVEH-1471",
-      "q": "2027 Q1",
-      "project": "CVEH",
-      "title": "Navigate to Customer Profile from Vehicle View (All)",
-      "ticketTitle": "Licensing POS \u2014 collect a fee or a tax adjustment from the vehicle",
-      "epicTitle": "Licensing POS \u2014 collect a fee or a tax adjustment from the vehicle",
-      "sprint": "",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Minnesota"
-      ],
-      "tickets": [
-        {
-          "key": "MELS-2514",
-          "name": "UAT-VEH-POS-No option for POS user to navigate to customer's full vehicle list from vehicle search results"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "CVEH-1544",
       "q": "2027 Q1",
       "project": "CVEH",
@@ -7631,7 +8344,7 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Linked Users for Vehicle Transactions (NN) (LA, MN, MS)",
       "epicTitle": "Linked Users for Vehicle Transactions (NN) (LA, MN, MS)",
       "sprint": "",
-      "shirt": "Needs Estimate",
+      "shirt": "M - 2 sprints",
       "clients": [
         "Louisiana",
         "Minnesota",
@@ -7650,11 +8363,66 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Vehicle search \u2014 one order, dealer and manufacturer numbers, and a longer POS list",
       "epicTitle": "Vehicle search \u2014 one order, dealer and manufacturer numbers, and a longer POS list",
       "sprint": "",
-      "shirt": "Needs Estimate",
+      "shirt": "M - 2 sprints",
       "clients": [
         "Louisiana",
         "Minnesota",
         "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2948",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Cart \u2014 complete a dealer plate quantity at Minnesota volume",
+      "ticketTitle": "Cart \u2014 complete a dealer plate quantity at Minnesota volume",
+      "epicTitle": "Cart \u2014 complete a dealer plate quantity at Minnesota volume",
+      "sprint": "",
+      "shirt": "L - 3 sprints",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2952",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Vehicle sale \u2014 start a customer-centric registration in the same sale",
+      "ticketTitle": "Vehicle sale \u2014 start a customer-centric registration in the same sale",
+      "epicTitle": "Vehicle sale \u2014 start a customer-centric registration in the same sale",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2956",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Minnesota vehicle sales \u2014 prove the go-live peaks",
+      "ticketTitle": "Minnesota vehicle sales \u2014 prove the go-live peaks",
+      "epicTitle": "Minnesota vehicle sales \u2014 prove the go-live peaks",
+      "sprint": "",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -7679,6 +8447,30 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-1471",
+      "q": "2027 Q1",
+      "project": "CVEH",
+      "title": "Navigate to Customer Profile from Vehicle View (All)",
+      "ticketTitle": "Licensing POS \u2014 collect vehicle registration fee or sales tax from the vehicle",
+      "epicTitle": "Licensing POS \u2014 collect vehicle registration fee or sales tax from the vehicle",
+      "sprint": "2027 Q1 - All Work",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-2514",
+          "name": "UAT-VEH-POS-No option for POS user to navigate to customer's full vehicle list from vehicle search results"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-1648",
       "q": "2027 Q1",
       "project": "CVEH",
@@ -7688,8 +8480,8 @@ window.ROADMAP_DATA = {
       "sprint": "2027 Q1 - All Work",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Minnesota",
         "Mississippi",
+        "Minnesota",
         "Louisiana"
       ],
       "tickets": [
@@ -7722,51 +8514,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CVEH-2909",
-      "q": "2027 Q1",
-      "project": "CVEH",
-      "title": "Licensing POS \u2014 collect an additional fee on a vehicle",
-      "ticketTitle": "Licensing POS \u2014 collect an additional fee on a vehicle",
-      "epicTitle": "Licensing POS \u2014 collect an additional fee on a vehicle",
-      "sprint": "2027 Q1 - All Work",
-      "shirt": "XS - Less than 1 sprint",
-      "clients": [
-        "Minnesota",
-        "Mississippi",
-        "Louisiana"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "FNCL-1635",
-      "q": "2027 Q1",
-      "project": "FNCL",
-      "title": "Vendor statements: newest first, printable, skip vendors with no sales",
-      "ticketTitle": "Vendors Statements Updates (CR) (MO)",
-      "epicTitle": "Vendors Statements Updates (CR) (MO)",
-      "sprint": "",
-      "shirt": "XS - Less than 1 sprint",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-1698",
-          "name": "Agent EFT Statement Issues"
-        },
-        {
-          "key": "COMO-1693",
-          "name": "Vendors>Statements Tab: Sort Newest to Oldest"
-        }
-      ],
-      "ticketCount": 2,
-      "why": "Missouri vendor statements dump oldest-first and include vendors with no sales. Print newest first and skip the zeros so accounting can mail a statement. Small, and they will notice every month.",
-      "rank": null
-    },
-    {
       "key": "FNCL-1103",
       "q": "2027 Q1",
       "project": "FNCL",
@@ -7776,39 +8523,14 @@ window.ROADMAP_DATA = {
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "M - 2 sprints",
       "clients": [
-        "Arkansas",
-        "Ohio",
         "Mississippi",
-        "Minnesota"
+        "Minnesota",
+        "Ohio",
+        "Arkansas"
       ],
       "tickets": [],
       "ticketCount": 0,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "FNCL-1626",
-      "q": "2027 Q1",
-      "project": "FNCL",
-      "title": "Accounting reports \u2014 additional states",
-      "ticketTitle": "Accounting - Reports Update 2 (FF) (MS, MO, MN, LA)",
-      "epicTitle": "Accounting - Reports Update 2 (FF) (MS, MO, MN, LA)",
-      "sprint": "Features To Schedule (Roadmap)",
-      "shirt": "S - 1 sprint",
-      "clients": [
-        "Missouri",
-        "Mississippi",
-        "Minnesota",
-        "Louisiana"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-438",
-          "name": "2.21.3\u00a0- ACH Reporting"
-        }
-      ],
-      "ticketCount": 1,
-      "why": "Additional states need those same accounting reports, not a one-off for the first two. Louisiana, Minnesota, Mississippi, and Missouri all have to file. Same reports, more books.",
       "rank": null
     },
     {
@@ -7821,11 +8543,11 @@ window.ROADMAP_DATA = {
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "L - 3 sprints",
       "clients": [
-        "Ohio",
         "Mississippi",
         "Arkansas",
         "Minnesota",
-        "Missouri"
+        "Missouri",
+        "Ohio"
       ],
       "tickets": [
         {
@@ -7850,8 +8572,8 @@ window.ROADMAP_DATA = {
       "q": "2027 Q1",
       "project": "FNCL",
       "title": "Clearer history of voids, refunds, and invalidations",
-      "ticketTitle": "Post-sweep voids, agent statements, and a readable history (MO, MS)",
-      "epicTitle": "Post-sweep voids, agent statements, and a readable history (MO, MS)",
+      "ticketTitle": "Post-sweep voids and agent statements (MO, MS)",
+      "epicTitle": "Post-sweep voids and agent statements (MO, MS)",
       "sprint": "Features To Schedule (Roadmap)",
       "shirt": "S - 1 sprint",
       "clients": [
@@ -7943,6 +8665,23 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "Second slice of simpler land fields for Missouri landowners: collect what the rule needs, hide the rest. Landowners abandon the form when it looks like a GIS survey. This is still configuration, not a new module.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4273",
+      "q": "2027 Q1",
+      "project": "LICS",
+      "title": "Auto-renew \u2014 prove a 250,000-transaction day for Missouri",
+      "ticketTitle": "Auto-renew \u2014 prove a 250,000-transaction day for Missouri",
+      "epicTitle": "Auto-renew \u2014 prove a 250,000-transaction day for Missouri",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -8465,17 +9204,34 @@ window.ROADMAP_DATA = {
       "sprint": "2027 Q1",
       "shirt": "M - 2 sprints",
       "clients": [
+        "Missouri",
         "Minnesota",
         "Mississippi",
         "Louisiana",
         "Klamath",
         "Arkansas",
-        "Missouri",
         "New Hampshire",
         "Ohio"
       ],
-      "tickets": [],
-      "ticketCount": 0,
+      "tickets": [
+        {
+          "key": "COMO-2176",
+          "name": "PILogin: Text Verification Only Option Returned"
+        },
+        {
+          "key": "COMO-1736",
+          "name": "Creating a PayIt Login with matching CID, different name and DOB"
+        },
+        {
+          "key": "COMO-1519",
+          "name": "PILogin>Customer Profile: Include help note on how to locate this number"
+        },
+        {
+          "key": "COMO-1509",
+          "name": "PILogin>PW Reset: Now What? "
+        }
+      ],
+      "ticketCount": 4,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -8490,6 +9246,28 @@ window.ROADMAP_DATA = {
       "shirt": "XS - Less than 1 sprint",
       "clients": [
         "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-4958",
+      "q": "2027 Q1",
+      "project": "SYST",
+      "title": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
+      "ticketTitle": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
+      "epicTitle": "Linked Accounts Management (MN, AR, MS, MO, OR, LA)",
+      "sprint": "SYST 2026-Q4-S1",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Minnesota",
+        "Missouri",
+        "Mississippi",
+        "Arkansas",
+        "Oregon",
+        "Louisiana"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -8708,12 +9486,33 @@ window.ROADMAP_DATA = {
       "q": "2027 Q2",
       "project": "CVEH",
       "title": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
-      "ticketTitle": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
-      "epicTitle": "Licensing POS \u2014 prompt for vehicle sales tax when the sale requires it",
+      "ticketTitle": "Licensing POS \u2014 prompt for vehicle sales tax during registration (MN, by vehicle type)",
+      "epicTitle": "Licensing POS \u2014 prompt for vehicle sales tax during registration (MN, by vehicle type)",
       "sprint": "",
-      "shirt": "Needs Estimate",
+      "shirt": "M - 2 sprints",
       "clients": [
-        "Minnesota"
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2938",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Control Center \u2014 require a named sales tax before the vehicle can register",
+      "ticketTitle": "Control Center \u2014 DNR notice obligations on vehicle block registration until paid",
+      "epicTitle": "Control Center \u2014 DNR notice obligations on vehicle block registration until paid",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Louisiana"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -8729,6 +9528,57 @@ window.ROADMAP_DATA = {
       "epicTitle": "Louisiana new registration \u2014 a notary can complete it outside specific LDWF sales locations",
       "sprint": "",
       "shirt": "M - 2 sprints",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2946",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Licensing POS \u2014 after registration add to cart, open customer Vehicles tab",
+      "ticketTitle": "Licensing POS \u2014 after registration add to cart, open customer Vehicles tab",
+      "epicTitle": "Licensing POS \u2014 after registration add to cart, open customer Vehicles tab",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-686",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Structured registration and title questions by vehicle type",
+      "ticketTitle": "Reg and Title Question Changes",
+      "epicTitle": "Reg and Title Question Changes",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Registration and title questions are a blob instead of a structure by vehicle type. A boat asks car questions and clerks skip or guess. PayIt-owned so later states inherit a sane form.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2838",
+      "q": "2027 Q2",
+      "project": "CVEH",
+      "title": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
+      "ticketTitle": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
+      "epicTitle": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
+      "sprint": "Future Work",
+      "shirt": "S - 1 sprint",
       "clients": [
         "Louisiana"
       ],
@@ -8902,8 +9752,8 @@ window.ROADMAP_DATA = {
       "sprint": "2027 Q1 - All Work",
       "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "Louisiana",
         "Minnesota",
+        "Louisiana",
         "Mississippi"
       ],
       "tickets": [],
@@ -8943,20 +9793,29 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CVEH-2838",
+      "key": "FNCL-1635",
       "q": "2027 Q2",
-      "project": "CVEH",
-      "title": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
-      "ticketTitle": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
-      "epicTitle": "Louisiana fulfillment delivery \u2014 place outgoing files in the PSS SFTP location",
-      "sprint": "CVEH 2026-Q4-S6",
-      "shirt": "S - 1 sprint",
+      "project": "FNCL",
+      "title": "Vendor statements: newest first, printable, skip vendors with no sales",
+      "ticketTitle": "Vendors Statements Updates (CR) (MO)",
+      "epicTitle": "Vendors Statements Updates (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
       "clients": [
-        "Louisiana"
+        "Missouri"
       ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "tickets": [
+        {
+          "key": "COMO-1698",
+          "name": "Agent EFT Statement Issues"
+        },
+        {
+          "key": "COMO-1693",
+          "name": "Vendors>Statements Tab: Sort Newest to Oldest"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "Missouri vendor statements dump oldest-first and include vendors with no sales. Print newest first and skip the zeros so accounting can mail a statement. Small, and they will notice every month.",
       "rank": null
     },
     {
@@ -9086,6 +9945,31 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "Minnesota and Missouri still need the next set of accounting reports they close the books on. If a report is missing, they keep a shadow spreadsheet. This is finance's month-end, not a dashboard for fun.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-1626",
+      "q": "2027 Q2",
+      "project": "FNCL",
+      "title": "Accounting reports \u2014 additional states",
+      "ticketTitle": "Accounting - Reports Update 2 (FF) (MS, MO, MN, LA)",
+      "epicTitle": "Accounting - Reports Update 2 (FF) (MS, MO, MN, LA)",
+      "sprint": "Features To Schedule (Roadmap)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri",
+        "Mississippi",
+        "Minnesota",
+        "Louisiana"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-438",
+          "name": "2.21.3\u00a0- ACH Reporting"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "Additional states need those same accounting reports, not a one-off for the first two. Louisiana, Minnesota, Mississippi, and Missouri all have to file. Same reports, more books.",
       "rank": null
     },
     {
@@ -9315,6 +10199,62 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1823",
+      "q": "2027 Q2",
+      "project": "RESRV",
+      "title": "Missouri Event Registration, Time Slots, and Volunteer Create",
+      "ticketTitle": "Missouri Event Registration, Time Slots, and Volunteer Create (CR) (MO)",
+      "epicTitle": "Missouri Event Registration, Time Slots, and Volunteer Create (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2173",
+          "name": "VEMS>Customer Event Registration: How do you return to the cart to check out? "
+        },
+        {
+          "key": "COMO-1557",
+          "name": "VEMS: Volunteer Event Creation"
+        },
+        {
+          "key": "COMO-87",
+          "name": "2.4.26\u00a0- Individual time slots for registration of an event, application for a SUP"
+        },
+        {
+          "key": "COMO-88",
+          "name": "2.4.27\u00a0- Product Configuration"
+        }
+      ],
+      "ticketCount": 4,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "RESRV-1824",
+      "q": "2027 Q2",
+      "project": "RESRV",
+      "title": "Missouri Hard Card Certification Print Selection",
+      "ticketTitle": "Missouri Hard Card Certification Print Selection (CR) (MO)",
+      "epicTitle": "Missouri Hard Card Certification Print Selection (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-958",
+          "name": "Hard Cards/Certifications: How does hard card know which certifications to print on card?"
+        }
+      ],
+      "ticketCount": 1,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
@@ -9646,6 +10586,123 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "FNCL-2692",
+      "q": "2027 Q3",
+      "project": "FNCL",
+      "title": "Missouri Voids, Statements, and ACH Notices",
+      "ticketTitle": "Missouri Voids, Statements, and ACH Notices (CR) (MO)",
+      "epicTitle": "Missouri Voids, Statements, and ACH Notices (CR) (MO)",
+      "sprint": "",
+      "shirt": "M - 2 sprints",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2144",
+          "name": "Void: Void Transaction Does not Consider Voided Individual Products"
+        },
+        {
+          "key": "COMO-2271",
+          "name": "Voids>Concerns with transaction level vs. customer level voids"
+        },
+        {
+          "key": "COMO-1692",
+          "name": "Voids: Unable to unvoid for a Regional Office-Calendar Vendor Type - WHY?"
+        },
+        {
+          "key": "COMO-2586",
+          "name": "Reports>Statement Report: Must be able to run for all vendor accounts"
+        },
+        {
+          "key": "COMO-1697",
+          "name": "Statements: Why are statements being created for vendors WITHOUT sales?"
+        },
+        {
+          "key": "COMO-1231",
+          "name": "Notifications: Daily ACH/Bank Acct Update"
+        }
+      ],
+      "ticketCount": 7,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2693",
+      "q": "2027 Q3",
+      "project": "FNCL",
+      "title": "Missouri Auto-Renew Completeness and Notices",
+      "ticketTitle": "Missouri Auto-Renew Completeness and Notices (CR) (MO)",
+      "epicTitle": "Missouri Auto-Renew Completeness and Notices (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1843",
+          "name": "Customers>Auto-Renewal: Where does an admin user obtain this type of detailed information? "
+        },
+        {
+          "key": "COMO-1786",
+          "name": "Notifications: Missing Logic for Auto-Renewal Notifications"
+        },
+        {
+          "key": "COMO-2239",
+          "name": "Products>Auto-Renewal Mgmt: Why is CORE not smart enough to verify all settings for AR are in place? "
+        },
+        {
+          "key": "COMO-2391",
+          "name": "Auto Renewal>Licensing: No Option to Opt into AR for Migrated Fishing"
+        }
+      ],
+      "ticketCount": 4,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2694",
+      "q": "2027 Q3",
+      "project": "FNCL",
+      "title": "Missouri Sales Reports and Catalog Display",
+      "ticketTitle": "Missouri Sales Reports and Catalog Display (CR) (MO)",
+      "epicTitle": "Missouri Sales Reports and Catalog Display (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri",
+        "Mississippi",
+        "Minnesota",
+        "Louisiana"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-947",
+          "name": "POS Product Sales Report - 27001 8/14/2024"
+        },
+        {
+          "key": "COMO-615",
+          "name": "Sales Channel Reporting"
+        },
+        {
+          "key": "COMO-2626",
+          "name": "Products>Donations>Featured Items - Donations show FREE for fee when displayed under featured items"
+        },
+        {
+          "key": "COMO-523",
+          "name": "Payment Details: Limit Credit Card numbers to 16-digits"
+        },
+        {
+          "key": "COMO-1921",
+          "name": "Customers>Transactions: Required to Display In Chronological Order (Newest to Oldest)"
+        }
+      ],
+      "ticketCount": 5,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "LICS-3771",
       "q": "2027 Q3",
       "project": "LICS",
@@ -9840,12 +10897,12 @@ window.ROADMAP_DATA = {
       "title": "Merge duplicate customers into one surviving record",
       "ticketTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
       "epicTitle": "Interactive Customer Merge Management / Prime Customer Record (FF) (MO)",
-      "sprint": "Changes - Future work",
+      "sprint": "SYST Bugs (prioritized)",
       "shirt": "L - 3 sprints",
       "clients": [
-        "Missouri",
         "Arkansas",
         "Minnesota",
+        "Missouri",
         "Louisiana",
         "Ohio"
       ],
@@ -9886,7 +10943,7 @@ window.ROADMAP_DATA = {
       "title": "Missouri-requested platform (part 2 of 2)",
       "ticketTitle": "MO Requests (Pt. 2 of 2) (MO)",
       "epicTitle": "MO Requests (Pt. 2 of 2) (MO)",
-      "sprint": "2026 Q4",
+      "sprint": "2027 Q1",
       "shirt": "2XL - 8 sprints",
       "clients": [
         "Missouri"
@@ -10069,28 +11126,11 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "S - 1 sprint",
       "clients": [
-        "Minnesota"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Transferring a vehicle and adding/removing an owner are different legal acts; CORE lets you 'transfer to yourself.' Split them. Every title shop knows the difference; the system should too.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-686",
-      "q": "2027 Q4",
-      "project": "CVEH",
-      "title": "Structured registration and title questions by vehicle type",
-      "ticketTitle": "Reg and Title Question Changes",
-      "epicTitle": "Reg and Title Question Changes",
-      "sprint": "",
-      "shirt": "M - 2 sprints",
-      "clients": [
         "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "Registration and title questions are a blob instead of a structure by vehicle type. A boat asks car questions and clerks skip or guess. PayIt-owned so later states inherit a sane form.",
+      "why": "Transferring a vehicle and adding/removing an owner are different legal acts; CORE lets you 'transfer to yourself.' Split them. Every title shop knows the difference; the system should too.",
       "rank": null
     },
     {
@@ -10165,6 +11205,46 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "Ohio harvest reporting needs their filters\u2014game, county, ESA, flags\u2014and an Excel export biologists already use. A generic dump does not file. This is how they manage the season, not a vanity report.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4274",
+      "q": "2027 Q4",
+      "project": "LICS",
+      "title": "Application survey \u2014 leave an application and come back to finish it",
+      "ticketTitle": "Application survey \u2014 leave an application and come back to finish it",
+      "epicTitle": "Application survey \u2014 leave an application and come back to finish it",
+      "sprint": "",
+      "shirt": "L - 3 sprints",
+      "clients": [
+        "Arkansas"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4269",
+      "q": "2027 Q4",
+      "project": "LICS",
+      "title": "Commercial Application Submitted - Internal \u2014 manage the shared email and the lake email",
+      "ticketTitle": "Commercial Application Submitted - Internal \u2014 manage the shared email and the lake email",
+      "epicTitle": "Commercial Application Submitted - Internal \u2014 manage the shared email and the lake email",
+      "sprint": "Future Work",
+      "shirt": "S - 1 sprint",
+      "clients": [
+        "Mississippi",
+        "Arkansas"
+      ],
+      "tickets": [
+        {
+          "key": "MDWFP-2439",
+          "name": "Commercial Application Submission Notifications - Ability to send notification to all members of the task user group"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -10302,6 +11382,40 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 2,
       "why": "Missouri and Ohio send email and app messages and cannot tell if anyone opened them. Open tracking is how you know a recall or a deadline notice landed. Not marketing spam\u2014operational notices.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5141",
+      "q": "2027 Q4",
+      "project": "SYST",
+      "title": "Missouri Profile Sharing and Closed Records",
+      "ticketTitle": "Missouri Profile Sharing and Closed Records (CR) (MO)",
+      "epicTitle": "Missouri Profile Sharing and Closed Records (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2153",
+          "name": "Customer Profile Fields: Email/3rd Party Locked For Edit"
+        },
+        {
+          "key": "COMO-2454",
+          "name": "Customer Profile Fields>3rd Party Sharing: Default Value needs to be \"YES\""
+        },
+        {
+          "key": "COMO-45",
+          "name": "\u00a02.3.13.i. - Closed Records"
+        },
+        {
+          "key": "COMO-1785",
+          "name": "Licensing> 3rd party sharing NOT displaying"
+        }
+      ],
+      "ticketCount": 4,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -10591,6 +11705,254 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "SYST-3232",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Client Feedback Reporting Response",
+      "ticketTitle": "MEDA-450 - Client Feedback Reporting Response (FF) (MO)",
+      "epicTitle": "MEDA-450 - Client Feedback Reporting Response (FF) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-95",
+          "name": "2.4.34\u00a0- Summarize customer demographic information"
+        },
+        {
+          "key": "COMO-92",
+          "name": "2.4.31\u00a0- Reporting and Data Extraction"
+        },
+        {
+          "key": "COMO-64",
+          "name": "2.4.3\u00a0- Reporting"
+        },
+        {
+          "key": "COMO-292",
+          "name": "2.12.42\u00a0- Reporting"
+        },
+        {
+          "key": "COMO-113",
+          "name": "2.5.12\u00a0- Track Privilege Sales"
+        },
+        {
+          "key": "COMO-149",
+          "name": "2.5.48\u00a0- Sales Channel Reporting"
+        }
+      ],
+      "ticketCount": 13,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5145",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri SSN Handling",
+      "ticketTitle": "Missouri SSN Handling (CR) (MO)",
+      "epicTitle": "Missouri SSN Handling (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-509",
+          "name": "Cust Acct Online/POS: SSN is not masked"
+        },
+        {
+          "key": "COMO-1018",
+          "name": "SSN validation does not occur during entry"
+        },
+        {
+          "key": "COMO-1034",
+          "name": "Customers>SSN Dup Warning: Do Not Stop Them From Proceeding"
+        }
+      ],
+      "ticketCount": 3,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-1041",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Enhanced Agent Identity, Vendor Association, and POS Usability (MO, MN)",
+      "ticketTitle": "Enhanced Agent Identity, Vendor Association, and POS Usability (NN) (MO, MN)",
+      "epicTitle": "Enhanced Agent Identity, Vendor Association, and POS Usability (NN) (MO, MN)",
+      "sprint": "Changes - Future work",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Arkansas",
+        "Ohio"
+      ],
+      "tickets": [
+        {
+          "key": "MELS-1087",
+          "name": "1 user for agents w/ multiple locations"
+        },
+        {
+          "key": "COMO-709",
+          "name": "POS: Others Actions Vs. Agent Tools"
+        },
+        {
+          "key": "COMO-578",
+          "name": "Licensing POS - Update Order/Remove Agent Options"
+        },
+        {
+          "key": "COMO-689",
+          "name": "Vendors Gap"
+        },
+        {
+          "key": "COMO-353",
+          "name": "2.15.18\u00a0- Single Users for Multiple Agents"
+        },
+        {
+          "key": "COMO-67",
+          "name": "2.4.6\u00a0- Allow administrative users to manage accounts"
+        }
+      ],
+      "ticketCount": 18,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5142",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri CMS FAQ Images and POS Vocabulary",
+      "ticketTitle": "Missouri CMS FAQ Images and POS Vocabulary (CR) (MO)",
+      "epicTitle": "Missouri CMS FAQ Images and POS Vocabulary (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2381",
+          "name": "CMS>FAQS: Unable to add more than one image to an FAQ. This needs to be fixed for go live"
+        },
+        {
+          "key": "COMO-1389",
+          "name": "POS: Change Tile Titles to Match Missouri Terminology"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5143",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri Marketing Tag Lookup Cleanup",
+      "ticketTitle": "Missouri Marketing Tag Lookup Cleanup (CR) (MO)",
+      "epicTitle": "Missouri Marketing Tag Lookup Cleanup (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1983",
+          "name": "Marketing Tag Custom Lookups - ALL need to be removed"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5146",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri Call Center Fulfillment",
+      "ticketTitle": "Missouri Call Center Fulfillment (CR) (MO)",
+      "epicTitle": "Missouri Call Center Fulfillment (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1318",
+          "name": "Call Center Sales Fulfillment"
+        },
+        {
+          "key": "COMO-115",
+          "name": "2.5.14\u00a0- Secure Online Payments"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5147",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri Hard Card Reissue from Customer Record",
+      "ticketTitle": "Missouri Hard Card Reissue from Customer Record (CR) (MO)",
+      "epicTitle": "Missouri Hard Card Reissue from Customer Record (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1538",
+          "name": "Unable to re-issue of Hard Cards"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5144",
+      "q": "2028 Q1",
+      "project": "SYST",
+      "title": "Missouri Notification Resend and Correspondence",
+      "ticketTitle": "Missouri Notification Resend and Correspondence (CR) (MO)",
+      "epicTitle": "Missouri Notification Resend and Correspondence (CR) (MO)",
+      "sprint": "MEDA 2025-Q3-S06",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-776",
+          "name": "2.4.45 - Resending of Notifications"
+        },
+        {
+          "key": "COMO-775",
+          "name": "2.4.44 - Correspondence Notifications"
+        },
+        {
+          "key": "COMO-194",
+          "name": "2.6.24\u00a0- Notifications"
+        },
+        {
+          "key": "COMO-2185",
+          "name": "Reports>Sales by Time Period Report: Received 2 notifications for the same report"
+        }
+      ],
+      "ticketCount": 4,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "LICS-2766",
       "q": "2028 Q2",
       "project": "LICS",
@@ -10654,6 +12016,168 @@ window.ROADMAP_DATA = {
       ],
       "ticketCount": 8,
       "why": "Agencies sell by hunt area and report harvest on a different deer-permit map. Minnesota, Mississippi, and Ohio all have that split. One map for both is how harvest gets filed in the wrong place.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5148",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Print Template Timeout",
+      "ticketTitle": "Missouri Print Template Timeout (CR) (MO)",
+      "epicTitle": "Missouri Print Template Timeout (CR) (MO)",
+      "sprint": "",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-1413",
+          "name": "500 error when trying to print template "
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5163",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Customer Record Open Failures",
+      "ticketTitle": "Missouri Customer Record Open Failures (CR) (MO)",
+      "epicTitle": "Missouri Customer Record Open Failures (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2437",
+          "name": "Customers: Unable to open CID 037578515 in UA w/o erroring out"
+        },
+        {
+          "key": "COMO-2266",
+          "name": "500 error when trying to open customer record"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5164",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Business Profile Field Visibility",
+      "ticketTitle": "Missouri Business Profile Field Visibility (CR) (MO)",
+      "epicTitle": "Missouri Business Profile Field Visibility (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2354",
+          "name": "Customer>Business>Profile Fields: CC Settings - Fields are not showing/hidden according to config"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5165",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Control Center Password Reset URL",
+      "ticketTitle": "Missouri Control Center Password Reset URL (CR) (MO)",
+      "epicTitle": "Missouri Control Center Password Reset URL (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2232",
+          "name": "Vendor>Password Reset: Expired token link lands on Control Center 404 Error"
+        },
+        {
+          "key": "COMO-2565",
+          "name": "Notification> CC Password Reset Issue: URL is not working"
+        }
+      ],
+      "ticketCount": 2,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5166",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Category Group Delete",
+      "ticketTitle": "Missouri Category Group Delete (CR) (MO)",
+      "epicTitle": "Missouri Category Group Delete (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2163",
+          "name": "Category Group: Unable to Delete Range and Draw Applications"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5167",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri Peer Linked User Create",
+      "ticketTitle": "Missouri Peer Linked User Create (CR) (MO)",
+      "epicTitle": "Missouri Peer Linked User Create (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2457",
+          "name": "Unable to create Peer account for Linked Users"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5168",
+      "q": "2028 Q2",
+      "project": "SYST",
+      "title": "Missouri POS History After Merge",
+      "ticketTitle": "Missouri POS History After Merge (CR) (MO)",
+      "epicTitle": "Missouri POS History After Merge (CR) (MO)",
+      "sprint": "SYST Bugs (prioritized)",
+      "shirt": "XS - Less than 1 sprint",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [
+        {
+          "key": "COMO-2091",
+          "name": "Merged Accounts> Merged account transaction history disappears in POS"
+        }
+      ],
+      "ticketCount": 1,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -18213,23 +19737,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CALM-3602",
-      "q": "2026 Q4",
-      "project": "CALM",
-      "title": "License detail \u2014 Exchange License opens the embedded Make an Exchange page",
-      "ticketTitle": "License detail \u2014 Exchange License opens the embedded Make an Exchange page",
-      "epicTitle": "License detail \u2014 Exchange License opens the embedded Make an Exchange page",
-      "sprint": "CALM 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "Minnesota"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "CALM-3652",
       "q": "2026 Q4",
       "project": "CALM",
@@ -18267,13 +19774,81 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CALM-3602",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "License detail \u2014 Exchange License opens the embedded Make an Exchange page",
+      "ticketTitle": "License detail \u2014 Exchange License opens the embedded Make an Exchange page",
+      "epicTitle": "License detail \u2014 Exchange License opens the embedded Make an Exchange page",
+      "sprint": "CALM 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CALM-3677",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Validation & Harvest Reporting \u2014 load failure should not say licenses",
+      "ticketTitle": "Validation & Harvest Reporting \u2014 load failure should not say licenses",
+      "epicTitle": "Validation & Harvest Reporting \u2014 load failure should not say licenses",
+      "sprint": "CALM 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CALM-3679",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Consumer mobile app \u2014 sync the primary customer and linked users together",
+      "ticketTitle": "Consumer mobile app \u2014 sync the primary customer and linked users together",
+      "epicTitle": "Consumer mobile app \u2014 sync the primary customer and linked users together",
+      "sprint": "CALM 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CALM-3684",
+      "q": "2026 Q4",
+      "project": "CALM",
+      "title": "Double DPA recorded when submitting on mobile",
+      "ticketTitle": "Double DPA recorded when submitting on mobile",
+      "epicTitle": "Double DPA recorded when submitting on mobile",
+      "sprint": "CALM 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CALM-2775",
       "q": "2026 Q4",
       "project": "CALM",
       "title": "WMA Check-Out: General surveys",
       "ticketTitle": "WMA Check-Out: General surveys",
       "epicTitle": "WMA Check-Out: General surveys",
-      "sprint": "CALM 2026-Q4-S4",
+      "sprint": "CALM 2026-Q4-S5",
       "shirt": "Needs Estimate",
       "clients": [
         "PayIt"
@@ -18290,7 +19865,7 @@ window.ROADMAP_DATA = {
       "title": "WMA History: General surveys",
       "ticketTitle": "WMA History: General surveys",
       "epicTitle": "WMA History: General surveys",
-      "sprint": "CALM 2026-Q4-S4",
+      "sprint": "CALM 2026-Q4-S5",
       "shirt": "Needs Estimate",
       "clients": [
         "PayIt"
@@ -18301,16 +19876,16 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CALM-3677",
+      "key": "CALM-3647",
       "q": "2026 Q4",
       "project": "CALM",
-      "title": "Validation & Harvest Reporting \u2014 load failure should not say licenses",
-      "ticketTitle": "Validation & Harvest Reporting \u2014 load failure should not say licenses",
-      "epicTitle": "Validation & Harvest Reporting \u2014 load failure should not say licenses",
+      "title": "MOBILE - FROM DTSD - Edit how/what certification data displays on customers mobile app profile",
+      "ticketTitle": "MOBILE - FROM DTSD - Edit how/what certification data displays on customers mobile app profile",
+      "epicTitle": "MOBILE - FROM DTSD - Edit how/what certification data displays on customers mobile app profile",
       "sprint": "CALM 2026-Q4-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Arkansas"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -19129,23 +20704,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CVEH-2723",
-      "q": "2026 Q4",
-      "project": "CVEH",
-      "title": "PSS skipped Sold decal \u2014 remaining skip on still-Active 101246",
-      "ticketTitle": "PSS skipped Sold decal \u2014 remaining skip on still-Active 101246",
-      "epicTitle": "PSS skipped Sold decal \u2014 remaining skip on still-Active 101246",
-      "sprint": "CVEH 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "PSS skipped Sold decal \u2014 remaining skip on still-Active 101246. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
-      "rank": null
-    },
-    {
       "key": "CVEH-2733",
       "q": "2026 Q4",
       "project": "CVEH",
@@ -19186,23 +20744,6 @@ window.ROADMAP_DATA = {
       "title": "Control Center \u2014 admin manages co-owner conjunctions",
       "ticketTitle": "Control Center \u2014 admin manages co-owner conjunctions",
       "epicTitle": "Control Center \u2014 admin manages co-owner conjunctions",
-      "sprint": "CVEH 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "CVEH-2806",
-      "q": "2026 Q4",
-      "project": "CVEH",
-      "title": "Delete decals from migrated applications",
-      "ticketTitle": "Delete decals from migrated applications",
-      "epicTitle": "Delete decals from migrated applications",
       "sprint": "CVEH 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
@@ -19371,6 +20912,40 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-2723",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "PSS skipped Sold decal \u2014 remaining skip on still-Active 101246",
+      "ticketTitle": "PSS skipped Sold decal \u2014 remaining skip on still-Active 101246",
+      "epicTitle": "PSS skipped Sold decal \u2014 remaining skip on still-Active 101246",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "PSS skipped Sold decal \u2014 remaining skip on still-Active 101246. If this stays broken, staff cannot finish a boat or title sale. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2806",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Delete decals from migrated applications",
+      "ticketTitle": "Delete decals from migrated applications",
+      "epicTitle": "Delete decals from migrated applications",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2917",
       "q": "2026 Q4",
       "project": "CVEH",
@@ -19394,6 +20969,91 @@ window.ROADMAP_DATA = {
       "title": "Registration Renewal \u2014 show the renewal message when the class changed and no renewal is offered",
       "ticketTitle": "Registration Renewal \u2014 show the renewal message when the class changed and no renewal is offered",
       "epicTitle": "Registration Renewal \u2014 show the renewal message when the class changed and no renewal is offered",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2923",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Licensing POS \u2014 one title per vehicle in a cart",
+      "ticketTitle": "Licensing POS \u2014 one title per vehicle in a cart",
+      "epicTitle": "Licensing POS \u2014 one title per vehicle in a cart",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2943",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Vehicles - Auto - Registration Renewal: Add To Cart stays enabled when no renewal product is offered",
+      "ticketTitle": "Vehicles - Auto - Registration Renewal: Add To Cart stays enabled when no renewal product is offered",
+      "epicTitle": "Vehicles - Auto - Registration Renewal: Add To Cart stays enabled when no renewal product is offered",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2955",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "CC - Auto - error shown when adding HIN attribute alongside another attribute",
+      "ticketTitle": "CC - Auto - error shown when adding HIN attribute alongside another attribute",
+      "epicTitle": "CC - Auto - error shown when adding HIN attribute alongside another attribute",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2959",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Shopping cart \u2014 show the registration on a duplicate title and a standalone title",
+      "ticketTitle": "Shopping cart \u2014 show the registration on a duplicate title and a standalone title",
+      "epicTitle": "Shopping cart \u2014 show the registration on a duplicate title and a standalone title",
+      "sprint": "CVEH 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2966",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Minnesota title file \u2014 turn on the central-mail job in UA2",
+      "ticketTitle": "Minnesota title file \u2014 turn on the central-mail job in UA2",
+      "epicTitle": "Minnesota title file \u2014 turn on the central-mail job in UA2",
       "sprint": "CVEH 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
@@ -19534,6 +21194,57 @@ window.ROADMAP_DATA = {
       "shirt": "Needs Estimate",
       "clients": [
         "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2913",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Licensing POS \u2014 update Minnesota duplicate fulfillment configuration across product years",
+      "ticketTitle": "Licensing POS \u2014 update Minnesota duplicate fulfillment configuration across product years",
+      "epicTitle": "Licensing POS \u2014 update Minnesota duplicate fulfillment configuration across product years",
+      "sprint": "CVEH 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2969",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Pending title application \u2014 view, edit, add, and remove a lien before approval",
+      "ticketTitle": "Pending title application \u2014 view, edit, add, and remove a lien before approval",
+      "epicTitle": "Pending title application \u2014 view, edit, add, and remove a lien before approval",
+      "sprint": "CVEH 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2970",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Vehicle title \u2014 download the watercraft title application",
+      "ticketTitle": "Vehicle title \u2014 download the watercraft title application",
+      "epicTitle": "Vehicle title \u2014 download the watercraft title application",
+      "sprint": "CVEH 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -19813,6 +21524,23 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "CVEH-2751",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Louisiana fulfillment jobs \u2014 download and view files sent to PSS",
+      "ticketTitle": "Louisiana fulfillment jobs \u2014 download and view files the job generated",
+      "epicTitle": "Louisiana fulfillment jobs \u2014 download and view files the job generated",
+      "sprint": "CVEH 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Louisiana"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Louisiana fulfillment jobs \u2014 download and view files sent to PSS. If this stays broken, staff cannot finish a boat or title sale. Louisiana customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
       "key": "CVEH-2765",
       "q": "2026 Q4",
       "project": "CVEH",
@@ -19887,6 +21615,40 @@ window.ROADMAP_DATA = {
       "title": "POS vessel renewal \u2014 refuse a second renewal when two adds overlap",
       "ticketTitle": "POS vessel renewal \u2014 refuse a second renewal when two adds overlap",
       "epicTitle": "POS vessel renewal \u2014 refuse a second renewal when two adds overlap",
+      "sprint": "CVEH 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2967",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "Shopping cart \u2014 keep a required title and its lien charges with the registration",
+      "ticketTitle": "Shopping cart \u2014 keep a required title and its lien charges with the registration",
+      "epicTitle": "Shopping cart \u2014 keep a required title and its lien charges with the registration",
+      "sprint": "CVEH 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "CVEH-2968",
+      "q": "2026 Q4",
+      "project": "CVEH",
+      "title": "New registration \u2014 show the HIN that will be assigned, not an internal id",
+      "ticketTitle": "New registration \u2014 show the HIN that will be assigned, not an internal id",
+      "epicTitle": "New registration \u2014 show the HIN that will be assigned, not an internal id",
       "sprint": "CVEH 2026-Q4-S6",
       "shirt": "Needs Estimate",
       "clients": [
@@ -20324,23 +22086,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "FNCL-2656",
-      "q": "2026 Q4",
-      "project": "FNCL",
-      "title": "Auto renew wallet \u2014 Control Center update does not show on the customer page",
-      "ticketTitle": "Auto renew wallet \u2014 Control Center update does not show on the customer page",
-      "epicTitle": "Auto renew wallet \u2014 Control Center update does not show on the customer page",
-      "sprint": "FNCL 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "Ohio"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "FNCL-2660",
       "q": "2026 Q4",
       "project": "FNCL",
@@ -20409,23 +22154,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "FNCL-2634",
-      "q": "2026 Q4",
-      "project": "FNCL",
-      "title": "NH: set up PayIt Payments in lower environments",
-      "ticketTitle": "NH: set up PayIt Payments in lower environments",
-      "epicTitle": "NH: set up PayIt Payments in lower environments",
-      "sprint": "FNCL 2026-Q4-S4",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "New Hampshire"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "FNCL-2655",
       "q": "2026 Q4",
       "project": "FNCL",
@@ -20436,6 +22164,40 @@ window.ROADMAP_DATA = {
       "shirt": "Needs Estimate",
       "clients": [
         "Mississippi"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2656",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Auto renew wallet \u2014 Control Center update does not show on the customer page",
+      "ticketTitle": "Auto renew wallet \u2014 Control Center update does not show on the customer page",
+      "epicTitle": "Auto renew wallet \u2014 Control Center update does not show on the customer page",
+      "sprint": "FNCL 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2663",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Nightly ACH processing \u2014 complete reliably when sales happen during the run",
+      "ticketTitle": "Nightly ACH processing \u2014 complete reliably when sales happen during the run",
+      "epicTitle": "Nightly ACH processing \u2014 complete reliably when sales happen during the run",
+      "sprint": "FNCL 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -20483,6 +22245,40 @@ window.ROADMAP_DATA = {
       "title": "NACHA File Wrong_ Multiple Weeks in a row",
       "ticketTitle": "NACHA File Wrong_ Multiple Weeks in a row",
       "epicTitle": "NACHA File Wrong_ Multiple Weeks in a row",
+      "sprint": "FNCL 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2688",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "Activity Swept at a later date than initial statement not included in WIRES",
+      "ticketTitle": "Activity Swept at a later date than initial statement not included in WIRES",
+      "epicTitle": "Activity Swept at a later date than initial statement not included in WIRES",
+      "sprint": "FNCL 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2691",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "New Agents have not received statements or been swept properly since creation",
+      "ticketTitle": "New Agents have not received statements or been swept properly since creation ",
+      "epicTitle": "New Agents have not received statements or been swept properly since creation ",
       "sprint": "FNCL 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
@@ -20606,6 +22402,23 @@ window.ROADMAP_DATA = {
       "shirt": "Needs Estimate",
       "clients": [
         "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "FNCL-2634",
+      "q": "2026 Q4",
+      "project": "FNCL",
+      "title": "NH: set up PayIt Payments in lower environments",
+      "ticketTitle": "NH: set up PayIt Payments in lower environments",
+      "epicTitle": "NH: set up PayIt Payments in lower environments",
+      "sprint": "FNCL 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "New Hampshire"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21577,7 +23390,7 @@ window.ROADMAP_DATA = {
       "sprint": "LICS 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21619,57 +23432,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "LICS-4083",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "Disability Status \u2014 attest with Accept or Decline",
-      "ticketTitle": "Disability Status \u2014 attest with Accept or Decline",
-      "epicTitle": "Disability Status \u2014 attest with Accept or Decline",
-      "sprint": "LICS 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "LICS-4084",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "Disability Status \u2014 unique attestation message per status",
-      "ticketTitle": "Disability Status \u2014 unique attestation message per status",
-      "epicTitle": "Disability Status \u2014 unique attestation message per status",
-      "sprint": "LICS 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "LICS-4124",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "2026 Super Sportsman \u2014 correct stored package dates on impacted transactions",
-      "ticketTitle": "2026 Super Sportsman \u2014 correct stored package dates on impacted transactions",
-      "epicTitle": "2026 Super Sportsman \u2014 correct stored package dates on impacted transactions",
-      "sprint": "LICS 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "Mississippi"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "LICS-4206",
       "q": "2026 Q4",
       "project": "LICS",
@@ -21680,40 +23442,6 @@ window.ROADMAP_DATA = {
       "shirt": "Needs Estimate",
       "clients": [
         "Ohio"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "LICS-4222",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "System throwing Unconfirmed status for residency check.",
-      "ticketTitle": "System throwing Unconfirmed status for residency check. ",
-      "epicTitle": "System throwing Unconfirmed status for residency check. ",
-      "sprint": "LICS 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "LICS-4232",
-      "q": "2026 Q4",
-      "project": "LICS",
-      "title": "Disable Garnet caching in all environments",
-      "ticketTitle": "Disable Garnet caching in all environments",
-      "epicTitle": "Disable Garnet caching in all environments",
-      "sprint": "LICS 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -21738,12 +23466,12 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "LICS-3897",
+      "key": "LICS-4083",
       "q": "2026 Q4",
       "project": "LICS",
-      "title": "Commercial Application Survey \u2014 find species by common or scientific name",
-      "ticketTitle": "Commercial Application Survey \u2014 find species by common or scientific name",
-      "epicTitle": "Commercial Application Survey \u2014 find species by common or scientific name",
+      "title": "Disability Status \u2014 attest with Accept or Decline",
+      "ticketTitle": "Disability Status \u2014 attest with Accept or Decline",
+      "epicTitle": "Disability Status \u2014 attest with Accept or Decline",
       "sprint": "LICS 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
@@ -21751,16 +23479,16 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "Commercial Application Survey \u2014 find species by common or scientific name. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
-      "key": "LICS-4000",
+      "key": "LICS-4084",
       "q": "2026 Q4",
       "project": "LICS",
-      "title": "Document upload \u2014 accept files up to 10 MB",
-      "ticketTitle": "Document upload \u2014 accept files up to 10 MB",
-      "epicTitle": "Document upload \u2014 accept files up to 10 MB",
+      "title": "Disability Status \u2014 unique attestation message per status",
+      "ticketTitle": "Disability Status \u2014 unique attestation message per status",
+      "epicTitle": "Disability Status \u2014 unique attestation message per status",
       "sprint": "LICS 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
@@ -21768,33 +23496,33 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "Document upload \u2014 accept files up to 10 MB. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Arkansas customers and counter staff feel this first.",
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
-      "key": "LICS-4001",
+      "key": "LICS-4124",
       "q": "2026 Q4",
       "project": "LICS",
-      "title": "File Upload \u2014 replace a lottery application hunt list",
-      "ticketTitle": "File Upload \u2014 replace a lottery application hunt list",
-      "epicTitle": "File Upload \u2014 replace a lottery application hunt list",
+      "title": "2026 Super Sportsman \u2014 correct stored package dates on impacted transactions",
+      "ticketTitle": "2026 Super Sportsman \u2014 correct stored package dates on impacted transactions",
+      "epicTitle": "2026 Super Sportsman \u2014 correct stored package dates on impacted transactions",
       "sprint": "LICS 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Mississippi"
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "File Upload \u2014 replace a lottery application hunt list. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
-      "key": "LICS-4017",
+      "key": "LICS-4222",
       "q": "2026 Q4",
       "project": "LICS",
-      "title": "Land profile \u2014 show which required fields blocked save",
-      "ticketTitle": "Land profile \u2014 show which required fields blocked save",
-      "epicTitle": "Land profile \u2014 show which required fields blocked save",
+      "title": "System throwing Unconfirmed status for residency check.",
+      "ticketTitle": "System throwing Unconfirmed status for residency check. ",
+      "epicTitle": "System throwing Unconfirmed status for residency check. ",
       "sprint": "LICS 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
@@ -21802,16 +23530,16 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "Land profile \u2014 show which required fields blocked save. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
-      "key": "LICS-4034",
+      "key": "LICS-4232",
       "q": "2026 Q4",
       "project": "LICS",
-      "title": "Hunter education \u2014 disable, attest, or collect by agent type, and honor the bypass",
-      "ticketTitle": "Hunter education \u2014 disable, attest, or collect by agent type, and honor the bypass",
-      "epicTitle": "Hunter education \u2014 disable, attest, or collect by agent type, and honor the bypass",
+      "title": "Disable Garnet caching in all environments",
+      "ticketTitle": "Disable Garnet caching in all environments",
+      "epicTitle": "Disable Garnet caching in all environments",
       "sprint": "LICS 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
@@ -21819,7 +23547,41 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "Hunter education \u2014 disable, attest, or collect by agent type, and honor the bypass. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Missouri customers and counter staff feel this first.",
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4262",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Configurable Permit \u2014 optional season valid dates",
+      "ticketTitle": "Configurable Permit \u2014 optional season valid dates",
+      "epicTitle": "Configurable Permit \u2014 optional season valid dates",
+      "sprint": "LICS 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4263",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Minnesota firearm deer permits \u2014 store the season dates on held sales",
+      "ticketTitle": "Minnesota firearm deer permits \u2014 store the season dates on held sales",
+      "epicTitle": "Minnesota firearm deer permits \u2014 store the season dates on held sales",
+      "sprint": "LICS 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
     {
@@ -21837,6 +23599,91 @@ window.ROADMAP_DATA = {
       "tickets": [],
       "ticketCount": 0,
       "why": "Draw Processing Schedule \u2014 apply preference within each hunt choice. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Minnesota customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "LICS-3897",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Commercial Application Survey \u2014 find species by common or scientific name",
+      "ticketTitle": "Commercial Application Survey \u2014 find species by common or scientific name",
+      "epicTitle": "Commercial Application Survey \u2014 find species by common or scientific name",
+      "sprint": "LICS 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Commercial Application Survey \u2014 find species by common or scientific name. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4000",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Document upload \u2014 accept files up to 10 MB",
+      "ticketTitle": "Document upload \u2014 accept files up to 10 MB",
+      "epicTitle": "Document upload \u2014 accept files up to 10 MB",
+      "sprint": "LICS 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Document upload \u2014 accept files up to 10 MB. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Arkansas customers and counter staff feel this first.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4001",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "File Upload \u2014 replace a lottery application hunt list",
+      "ticketTitle": "File Upload \u2014 replace a lottery application hunt list",
+      "epicTitle": "File Upload \u2014 replace a lottery application hunt list",
+      "sprint": "LICS 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "File Upload \u2014 replace a lottery application hunt list. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4017",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Land profile \u2014 show which required fields blocked save",
+      "ticketTitle": "Land profile \u2014 show which required fields blocked save",
+      "epicTitle": "Land profile \u2014 show which required fields blocked save",
+      "sprint": "LICS 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Land profile \u2014 show which required fields blocked save. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Shared CORE work \u2014 not a client-specific product.",
+      "rank": null
+    },
+    {
+      "key": "LICS-4034",
+      "q": "2026 Q4",
+      "project": "LICS",
+      "title": "Hunter education \u2014 disable, attest, or collect by agent type, and honor the bypass",
+      "ticketTitle": "Hunter education \u2014 disable, attest, or collect by agent type, and honor the bypass",
+      "epicTitle": "Hunter education \u2014 disable, attest, or collect by agent type, and honor the bypass",
+      "sprint": "LICS 2026-Q4-S5",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "Hunter education \u2014 disable, attest, or collect by agent type, and honor the bypass. If this stays broken, a hunter cannot buy or a clerk cannot finish the sale. Missouri customers and counter staff feel this first.",
       "rank": null
     },
     {
@@ -22429,6 +24276,9 @@ window.ROADMAP_DATA = {
       "sprint": "Core RESRV 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
+        "Arkansas",
+        "Missouri",
+        "Ohio",
         "Oregon"
       ],
       "tickets": [],
@@ -22591,33 +24441,17 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-3110",
+      "key": "RESRV-1825",
       "q": "2026 Q4",
-      "project": "SYST",
-      "title": "Awaiting Submission - boat registration 8/5",
-      "ticketTitle": "Awaiting Submission - boat registration 8/5",
-      "epicTitle": "Awaiting Submission - boat registration 8/5",
-      "sprint": "SYST 2026-Q3-S5",
+      "project": "RESRV",
+      "title": "VEMS: add volunteer email and phone to web and Control Center rosters",
+      "ticketTitle": "VEMS: add volunteer email and phone to web and Control Center rosters",
+      "epicTitle": "VEMS: add volunteer email and phone to web and Control Center rosters",
+      "sprint": "Core RESRV 2026-Q4-S6",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Awaiting Submission - boat registration 8/5. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
-      "rank": null
-    },
-    {
-      "key": "SYST-3374",
-      "q": "2026 Q4",
-      "project": "SYST",
-      "title": "Reprocess DERG purchases",
-      "ticketTitle": "Reprocess DERG purchases",
-      "epicTitle": "Reprocess DERG purchases",
-      "sprint": "SYST 2026-Q3-S5",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
+        "Arkansas",
+        "Oregon"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -23354,6 +25188,40 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "SYST-5086",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Remove google apis from Agent locations",
+      "ticketTitle": "Remove google apis from Agent locations",
+      "epicTitle": "Remove google apis from Agent locations",
+      "sprint": "SYST 2026-Q4-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5093",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Update AGFC Waterfowl Guidebook Link in Mobile App",
+      "ticketTitle": "Update AGFC Waterfowl Guidebook Link in Mobile App",
+      "epicTitle": "Update AGFC Waterfowl Guidebook Link in Mobile App",
+      "sprint": "SYST 2026-Q4-S2",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "SYST-5097",
       "q": "2026 Q4",
       "project": "SYST",
@@ -23412,33 +25280,16 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-4460",
+      "key": "SYST-4879",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "Investigate ASUB Records Blocked from Fulfillment Export and Re-trigger After Correction",
-      "ticketTitle": "Investigate ASUB Records Blocked from Fulfillment Export and Re-trigger After Correction",
-      "epicTitle": "Investigate ASUB Records Blocked from Fulfillment Export and Re-trigger After Correction",
+      "title": "FROM DTSD - AGFC Requesting New Hard Card Design",
+      "ticketTitle": "FROM DTSD - AGFC Requesting New Hard Card Design",
+      "epicTitle": "FROM DTSD - AGFC Requesting New Hard Card Design",
       "sprint": "SYST 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
         "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Investigate ASUB Records Blocked from Fulfillment Export and Re-trigger After Correction. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
-      "rank": null
-    },
-    {
-      "key": "SYST-4987",
-      "q": "2026 Q4",
-      "project": "SYST",
-      "title": "PayIt Login \u2014 enable for Missouri production",
-      "ticketTitle": "PayIt Login \u2014 enable for Missouri production",
-      "epicTitle": "PayIt Login \u2014 enable for Missouri production",
-      "sprint": "SYST 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "Missouri"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -23543,23 +25394,6 @@ window.ROADMAP_DATA = {
       "title": "NH appsettings files",
       "ticketTitle": "NH appsettings files",
       "epicTitle": "NH appsettings files",
-      "sprint": "SYST 2026-Q4-S3",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "New Hampshire"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "SYST-5110",
-      "q": "2026 Q4",
-      "project": "SYST",
-      "title": "NH SSO setup",
-      "ticketTitle": "NH SSO setup",
-      "epicTitle": "NH SSO setup",
       "sprint": "SYST 2026-Q4-S3",
       "shirt": "Needs Estimate",
       "clients": [
@@ -23693,6 +25527,23 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "SYST-1055",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "A11Y INT, CC - Common (Header) - Session timeout not adjustable",
+      "ticketTitle": "A11Y INT, CC - Common (Header) - Session timeout not adjustable",
+      "epicTitle": "A11Y INT, CC - Common (Header) - Session timeout not adjustable",
+      "sprint": "SYST 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "SYST-1064",
       "q": "2026 Q4",
       "project": "SYST",
@@ -23795,6 +25646,40 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "SYST-2084",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Random Log outs/Time outs happening in Agent POS and CC",
+      "ticketTitle": "Random Log outs/Time outs happening in Agent POS and CC",
+      "epicTitle": "Random Log outs/Time outs happening in Agent POS and CC",
+      "sprint": "SYST 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-4113",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Update MnVehicleTitlesCentralMailExportJob with retry policy to handle transient errors of Fulfillment API",
+      "ticketTitle": "Update MnVehicleTitlesCentralMailExportJob with retry policy to handle transient errors of Fulfillment API",
+      "epicTitle": "Update MnVehicleTitlesCentralMailExportJob with retry policy to handle transient errors of Fulfillment API",
+      "sprint": "SYST 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "SYST-4596",
       "q": "2026 Q4",
       "project": "SYST",
@@ -23829,12 +25714,97 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-4879",
+      "key": "SYST-4975",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "FROM DTSD - AGFC Requesting New Hard Card Design",
-      "ticketTitle": "FROM DTSD - AGFC Requesting New Hard Card Design",
-      "epicTitle": "FROM DTSD - AGFC Requesting New Hard Card Design",
+      "title": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
+      "ticketTitle": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
+      "epicTitle": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
+      "sprint": "SYST 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-4987",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "PayIt Login \u2014 enable for Missouri production",
+      "ticketTitle": "PayIt Login \u2014 enable for Missouri production",
+      "epicTitle": "PayIt Login \u2014 enable for Missouri production",
+      "sprint": "SYST 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Missouri"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5036",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "EBCI unable to create customers via terminal",
+      "ticketTitle": "EBCI unable to create customers via terminal",
+      "epicTitle": "EBCI unable to create customers via terminal",
+      "sprint": "SYST 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5108",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "ORV, OHM, and snowmobile registration card \u2014 fold line and fees",
+      "ticketTitle": "ORV, OHM, and snowmobile registration card \u2014 fold line and fees",
+      "epicTitle": "ORV, OHM, and snowmobile registration card \u2014 fold line and fees",
+      "sprint": "SYST 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "Minnesota"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5110",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "NH SSO setup",
+      "ticketTitle": "NH SSO setup",
+      "epicTitle": "NH SSO setup",
+      "sprint": "SYST 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "New Hampshire"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5113",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Offline DMAP sync resulted in 3 game checks when hunter reported checking only 2",
+      "ticketTitle": "Offline DMAP sync resulted in 3 game checks when hunter reported checking only 2",
+      "epicTitle": "Offline DMAP sync resulted in 3 game checks when hunter reported checking only 2",
       "sprint": "SYST 2026-Q4-S4",
       "shirt": "Needs Estimate",
       "clients": [
@@ -23863,12 +25833,29 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-3026",
+      "key": "SYST-5134",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "CLONE - CC>Vendors: Ability to quickly lock vendors from teh search screen",
-      "ticketTitle": "CLONE - CC>Vendors: Ability to quickly lock vendors from teh search screen",
-      "epicTitle": "CLONE - CC>Vendors: Ability to quickly lock vendors from teh search screen",
+      "title": "Hard Cards \u2014 Active apprentice hunting licenses missing from fulfillment license lists",
+      "ticketTitle": "Hard Cards \u2014 Active apprentice hunting licenses missing from fulfillment license lists",
+      "epicTitle": "Hard Cards \u2014 Active apprentice hunting licenses missing from fulfillment license lists",
+      "sprint": "SYST 2026-Q4-S4",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-4957",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Audit Trail Missing for Roles/Permission History",
+      "ticketTitle": "Audit Trail Missing for Roles/Permission History",
+      "epicTitle": "Audit Trail Missing for Roles/Permission History",
       "sprint": "SYST 2026-Q4-S5",
       "shirt": "Needs Estimate",
       "clients": [
@@ -23880,46 +25867,12 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-4423",
+      "key": "SYST-4962",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "Failed Artifact Review & Cleanup",
-      "ticketTitle": "Failed Artifact Review & Cleanup",
-      "epicTitle": "Failed Artifact Review & Cleanup",
-      "sprint": "SYST 2026-Q4-S5",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Failed Artifact Review & Cleanup. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
-      "rank": null
-    },
-    {
-      "key": "SYST-4757",
-      "q": "2026 Q4",
-      "project": "SYST",
-      "title": "Unmerged File not able to be accessed",
-      "ticketTitle": "Unmerged File not able to be accessed",
-      "epicTitle": "Unmerged File not able to be accessed",
-      "sprint": "SYST 2026-Q4-S5",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "Unmerged File not able to be accessed. If this stays broken, a shared CORE screen, print, or login path fails. Shared CORE work \u2014 not a client-specific product.",
-      "rank": null
-    },
-    {
-      "key": "SYST-4919",
-      "q": "2026 Q4",
-      "project": "SYST",
-      "title": "Products sitting in submitted status in Artifact Search",
-      "ticketTitle": "Products sitting in submitted status in Artifact Search",
-      "epicTitle": "Products sitting in submitted status in Artifact Search",
+      "title": "Review and adjust password generation logic in SsoService.GeneratePassword to prevent infinite loop",
+      "ticketTitle": "Review and adjust password generation logic in SsoService.GeneratePassword to prevent infinite loop",
+      "epicTitle": "Review and adjust password generation logic in SsoService.GeneratePassword to prevent infinite loop",
       "sprint": "SYST 2026-Q4-S5",
       "shirt": "Needs Estimate",
       "clients": [
@@ -23931,33 +25884,16 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-4975",
+      "key": "SYST-5010",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
-      "ticketTitle": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
-      "epicTitle": "Customer Profile Fields: Customer Mailing Address being required when not configured that way",
+      "title": "LA Ownership Letter leaves out the owner's Street 2 (unit or apartment)",
+      "ticketTitle": "LA Ownership Letter leaves out the owner's Street 2 (unit or apartment)",
+      "epicTitle": "LA Ownership Letter leaves out the owner's Street 2 (unit or apartment)",
       "sprint": "SYST 2026-Q4-S5",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "SYST-5028",
-      "q": "2026 Q4",
-      "project": "SYST",
-      "title": "Move MN to V2 Kalkomey API",
-      "ticketTitle": "Move MN to V2 Kalkomey API",
-      "epicTitle": "Move MN to V2 Kalkomey API",
-      "sprint": "SYST 2026-Q4-S5",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
+        "Louisiana"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -24084,12 +26020,80 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-4861",
+      "key": "SYST-4537",
       "q": "2026 Q4",
       "project": "SYST",
-      "title": "Customers>Address>County: Not allowed to proceed with a county being provided",
-      "ticketTitle": "Customers>Address>County: Not allowed to proceed with a county being provided",
-      "epicTitle": "Customers>Address>County: Not allowed to proceed with a county being provided",
+      "title": "Remove CSP from local codebase",
+      "ticketTitle": "Remove CSP from local codebase",
+      "epicTitle": "Remove CSP from local codebase",
+      "sprint": "SYST 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-4538",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Move away from momentJS",
+      "ticketTitle": "Move away from momentJS",
+      "epicTitle": "Move away from momentJS",
+      "sprint": "SYST 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-4578",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Add Inbox Notification option to Linked User Notfications",
+      "ticketTitle": "Add Inbox Notification option to Linked User Notfications",
+      "epicTitle": "Add Inbox Notification option to Linked User Notfications",
+      "sprint": "SYST 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-4667",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "FROM DTSD - Vendors: Why is address type required w/ every update made to Profile",
+      "ticketTitle": "FROM DTSD - Vendors: Why is address type required w/ every update made to Profile",
+      "epicTitle": "FROM DTSD - Vendors: Why is address type required w/ every update made to Profile",
+      "sprint": "SYST 2026-Q4-S6",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
+      "key": "SYST-5013",
+      "q": "2026 Q4",
+      "project": "SYST",
+      "title": "Shared web pages \u2014 minimize JavaScript to improve load performance",
+      "ticketTitle": "Shared web pages \u2014 minimize JavaScript to improve load performance",
+      "epicTitle": "Shared web pages \u2014 minimize JavaScript to improve load performance",
       "sprint": "SYST 2026-Q4-S6",
       "shirt": "Needs Estimate",
       "clients": [
@@ -24118,6 +26122,23 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
+      "key": "FNCL-2695",
+      "q": "2027 Q1",
+      "project": "FNCL",
+      "title": "Payment method cannot be stored",
+      "ticketTitle": "Payment method cannot be stored",
+      "epicTitle": "Payment method cannot be stored",
+      "sprint": "FNCL 2027-Q1-S1",
+      "shirt": "Needs Estimate",
+      "clients": [
+        "PayIt"
+      ],
+      "tickets": [],
+      "ticketCount": 0,
+      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
+      "rank": null
+    },
+    {
       "key": "RESRV-1708",
       "q": "2027 Q3",
       "project": "RESRV",
@@ -24128,23 +26149,6 @@ window.ROADMAP_DATA = {
       "shirt": "Needs Estimate",
       "clients": [
         "Ohio"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "FNCL-2663",
-      "q": "2027 Q4",
-      "project": "FNCL",
-      "title": "Nightly ACH processing \u2014 complete reliably when sales happen during the run",
-      "ticketTitle": "Nightly ACH processing \u2014 complete reliably when sales happen during the run",
-      "epicTitle": "Nightly ACH processing \u2014 complete reliably when sales happen during the run",
-      "sprint": "FNCL 2026-Q4-S4",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -24544,9 +26548,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "Michigan",
-        "Ohio",
-        "Minnesota"
+        "PayIt"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -26053,23 +28055,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "CVEH-2938",
-      "q": "Not Scheduled",
-      "project": "CVEH",
-      "title": "Control Center \u2014 require a named sales tax before the vehicle can register",
-      "ticketTitle": "Control Center \u2014 require a named sales tax before the vehicle can register",
-      "epicTitle": "Control Center \u2014 require a named sales tax before the vehicle can register",
-      "sprint": "",
-      "shirt": "Needs Estimate",
-      "clients": [
-        "Minnesota"
-      ],
-      "tickets": [],
-      "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "CVEH-401",
       "q": "Not Scheduled",
       "project": "CVEH",
@@ -26736,7 +28721,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "Needs Estimate",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -26926,7 +28911,7 @@ window.ROADMAP_DATA = {
       "sprint": "",
       "shirt": "M - 2 sprints",
       "clients": [
-        "PayIt"
+        "Missouri"
       ],
       "tickets": [],
       "ticketCount": 0,
@@ -28584,7 +30569,7 @@ window.ROADMAP_DATA = {
       "ticketTitle": "Fulfillment Desires ",
       "epicTitle": "Fulfillment Desires ",
       "sprint": "",
-      "shirt": "Needs Estimate",
+      "shirt": "L - 3 sprints",
       "clients": [
         "PayIt"
       ],
@@ -30642,52 +32627,6 @@ window.ROADMAP_DATA = {
       "rank": null
     },
     {
-      "key": "SYST-1041",
-      "q": "Not Scheduled",
-      "project": "SYST",
-      "title": "Enhanced Agent Identity, Vendor Association, and POS Usability (MO, MN)",
-      "ticketTitle": "Enhanced Agent Identity, Vendor Association, and POS Usability (NN) (MO, MN)",
-      "epicTitle": "Enhanced Agent Identity, Vendor Association, and POS Usability (NN) (MO, MN)",
-      "sprint": "",
-      "shirt": "L - 3 sprints",
-      "clients": [
-        "Minnesota",
-        "Mississippi",
-        "Missouri",
-        "Arkansas",
-        "Ohio"
-      ],
-      "tickets": [
-        {
-          "key": "MELS-1087",
-          "name": "1 user for agents w/ multiple locations"
-        },
-        {
-          "key": "COMO-709",
-          "name": "POS: Others Actions Vs. Agent Tools"
-        },
-        {
-          "key": "COMO-578",
-          "name": "Licensing POS - Update Order/Remove Agent Options"
-        },
-        {
-          "key": "COMO-689",
-          "name": "Vendors Gap"
-        },
-        {
-          "key": "COMO-353",
-          "name": "2.15.18\u00a0- Single Users for Multiple Agents"
-        },
-        {
-          "key": "COMO-67",
-          "name": "2.4.6\u00a0- Allow administrative users to manage accounts"
-        }
-      ],
-      "ticketCount": 16,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
       "key": "SYST-1108",
       "q": "Not Scheduled",
       "project": "SYST",
@@ -32219,48 +34158,6 @@ window.ROADMAP_DATA = {
       ],
       "tickets": [],
       "ticketCount": 0,
-      "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
-      "rank": null
-    },
-    {
-      "key": "SYST-3232",
-      "q": "Not Scheduled",
-      "project": "SYST",
-      "title": "Client Feedback Reporting Response",
-      "ticketTitle": "MEDA-450 - Client Feedback Reporting Response (FF) (MO)",
-      "epicTitle": "MEDA-450 - Client Feedback Reporting Response (FF) (MO)",
-      "sprint": "",
-      "shirt": "M - 2 sprints",
-      "clients": [
-        "Missouri"
-      ],
-      "tickets": [
-        {
-          "key": "COMO-95",
-          "name": "2.4.34\u00a0- Summarize customer demographic information"
-        },
-        {
-          "key": "COMO-92",
-          "name": "2.4.31\u00a0- Reporting and Data Extraction"
-        },
-        {
-          "key": "COMO-64",
-          "name": "2.4.3\u00a0- Reporting"
-        },
-        {
-          "key": "COMO-292",
-          "name": "2.12.42\u00a0- Reporting"
-        },
-        {
-          "key": "COMO-113",
-          "name": "2.5.12\u00a0- Track Privilege Sales"
-        },
-        {
-          "key": "COMO-149",
-          "name": "2.5.48\u00a0- Sales Channel Reporting"
-        }
-      ],
-      "ticketCount": 13,
       "why": "This epic is on the published roadmap. The title is a first draft from the Jira summary. Replace this why with what changes, why a director cares, and who it is for.",
       "rank": null
     },
